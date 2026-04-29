@@ -1,0 +1,45 @@
+name: Validate Skills Library
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Validate JSON files
+        run: |
+          python -m json.tool skills.json > /dev/null
+          python -m json.tool custom_skills/data_analysis/manifest.json > /dev/null
+          python -m json.tool schemas/skill.schema.json > /dev/null
+          python -m json.tool schemas/output.schema.json > /dev/null
+          python -m json.tool mcp.json > /dev/null
+
+      - name: Validate OpenAPI YAML
+        run: |
+          python - <<'PY'
+          import yaml
+          with open("openapi.yaml", "r", encoding="utf-8") as f:
+              yaml.safe_load(f)
+          print("openapi.yaml is valid YAML")
+          PY
+
+      - name: Run tests
+        run: |
+          pytest

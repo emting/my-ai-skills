@@ -1,0 +1,40 @@
+{
+  "id": "data_analysis",
+  "name": "Data Analysis Skill",
+  "version": "1.0.0",
+  "description": "Analyze CSV or Excel files and generate Markdown reports.",
+  "entrypoint": "run.py",
+  "runtime": "python",
+  "requirements": [
+    "pandas",
+    "openpyxl",
+    "tabulate"
+  ],
+  "inputs": {
+    "input": {
+      "type": "file",
+      "required": true,
+      "extensions": [".csv", ".xlsx", ".xls"]
+    },
+    "output": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "outputs": {
+    "report": {
+      "type": "markdown"
+    }
+  },
+  "permissions": {
+    "read_files": true,
+    "write_files": true,
+    "network": false
+  },
+  "safety": {
+    "handles_sensitive_data": true,
+    "requires_user_confirmation": false,
+    "destructive": false
+  },
+  "risk_level": "medium"
+}

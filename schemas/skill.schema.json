@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Skill Manifest",
+  "type": "object",
+  "required": ["id", "name", "version", "description", "entrypoint", "runtime", "inputs", "outputs", "permissions"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+    "name": {"type": "string"},
+    "version": {"type": "string"},
+    "description": {"type": "string"},
+    "entrypoint": {"type": "string"},
+    "runtime": {"type": "string"},
+    "requirements": {"type": "array", "items": {"type": "string"}},
+    "inputs": {"type": "object"},
+    "outputs": {"type": "object"},
+    "permissions": {"type": "object"},
+    "safety": {"type": "object"},
+    "risk_level": {"type": "string", "enum": ["low", "medium", "high"]}
+  }
+}

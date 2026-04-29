@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Skill Output",
+  "type": "object",
+  "properties": {
+    "format": {"type": "string"},
+    "path": {"type": "string"},
+    "summary": {"type": "string"}
+  },
+  "required": ["format", "path"]
+}

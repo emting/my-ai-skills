@@ -1,0 +1,73 @@
+{
+  "name": "my-ai-skills",
+  "version": "1.0.0",
+  "description": "Personal AI skills library for agents, coding assistants, and automation tools.",
+  "default_language": "zh-TW",
+  "maintainer": {
+    "name": "YOUR_NAME",
+    "github": "https://github.com/YOUR_USERNAME"
+  },
+  "compatibility": {
+    "markdown": true,
+    "openapi": true,
+    "mcp": true,
+    "cli_scripts": true
+  },
+  "skills": [
+    {
+      "id": "data_analysis",
+      "name": "Data Analysis",
+      "visibility": "private",
+      "type": "cli",
+      "description": "Analyze CSV or Excel files and generate Markdown reports.",
+      "location": "custom_skills/data_analysis/",
+      "entrypoint": "custom_skills/data_analysis/run.py",
+      "instruction_file": "custom_skills/data_analysis/SKILL.md",
+      "manifest": "custom_skills/data_analysis/manifest.json",
+      "runtime": "python",
+      "command": "python custom_skills/data_analysis/run.py --input {{input_file}} --output {{output_file}}",
+      "inputs": [
+        {
+          "name": "input_file",
+          "type": "file",
+          "required": true,
+          "description": "CSV or Excel file to analyze."
+        },
+        {
+          "name": "output_file",
+          "type": "string",
+          "required": true,
+          "description": "Markdown report output path."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "report",
+          "type": "markdown"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false
+      },
+      "risk_level": "medium",
+      "tags": ["data", "csv", "excel", "report"]
+    },
+    {
+      "id": "weather_api",
+      "name": "Weather API",
+      "visibility": "shared",
+      "type": "openapi",
+      "description": "Query current weather by city name.",
+      "openapi": "openapi.yaml",
+      "operation_id": "getCurrentWeather",
+      "permissions": {
+        "network": true,
+        "api_key_required": true
+      },
+      "risk_level": "low",
+      "tags": ["api", "weather"]
+    }
+  ]
+}
