@@ -62,6 +62,20 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 
 `workflows/website_audit.md`
 
+
+### 5. [Community] Awesome Agent Skills
+
+**用途：**
+引用社群整理的 agent skills 資源，作為新增技能、參考技能格式與擴充能力時的共用來源。
+
+**來源：**
+
+`https://github.com/heilcheng/awesome-agent-skills`
+
+**位置：**
+
+`community_skills/awesome-agent-skills/`
+
 ## Usage Policy
 
 當 AI Agent 使用本技能庫時，請遵守以下原則：
@@ -104,11 +118,12 @@ my-ai-skills/
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/my-ai-skills.git
+git clone --recurse-submodules https://github.com/YOUR_USERNAME/my-ai-skills.git
 cd my-ai-skills
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+git submodule update --init --recursive
 ```
 
 ## Safety

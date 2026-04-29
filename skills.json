@@ -52,7 +52,12 @@
         "network": false
       },
       "risk_level": "medium",
-      "tags": ["data", "csv", "excel", "report"]
+      "tags": [
+        "data",
+        "csv",
+        "excel",
+        "report"
+      ]
     },
     {
       "id": "weather_api",
@@ -67,7 +72,31 @@
         "api_key_required": true
       },
       "risk_level": "low",
-      "tags": ["api", "weather"]
+      "tags": [
+        "api",
+        "weather"
+      ]
+    },
+    {
+      "id": "awesome_agent_skills",
+      "name": "Awesome Agent Skills",
+      "visibility": "shared",
+      "type": "community_submodule",
+      "description": "Community-maintained collection of agent skills and references.",
+      "source": "https://github.com/heilcheng/awesome-agent-skills",
+      "location": "community_skills/awesome-agent-skills/",
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": false
+      },
+      "risk_level": "low",
+      "tags": [
+        "community",
+        "agent-skills",
+        "reference",
+        "examples"
+      ]
     }
   ]
 }
