@@ -18,6 +18,15 @@ Recommended approaches:
 - Integration: Git submodule
 - Use when: looking for external agent skill examples, references, or reusable community skill patterns.
 
+
+### cloudflare-skills
+
+- Source: https://github.com/cloudflare/skills
+- Local path: `community_skills/cloudflare-skills/`
+- Integration: Git submodule
+- Use when: working with Cloudflare Workers, Pages, KV, D1, R2, AI, Tunnel, WAF, Wrangler, Durable Objects, Agents SDK, Cloudflare Email Service, Workers best practices, or Cloudflare MCP server setup.
+- Notes: Read the relevant `skills/<name>/SKILL.md` before executing commands. Treat `.mcp.json` as a reference until credentials and permissions are explicitly configured.
+
 ## Submodule Commands
 
 Clone with submodules:

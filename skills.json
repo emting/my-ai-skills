@@ -60,6 +60,191 @@
       ]
     },
     {
+      "id": "to_prd",
+      "name": "To PRD",
+      "visibility": "private",
+      "type": "instruction",
+      "description": "Synthesize conversation and codebase context into a structured PRD in Markdown.",
+      "location": "custom_skills/to_prd/",
+      "instruction_file": "custom_skills/to_prd/SKILL.md",
+      "manifest": "custom_skills/to_prd/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "conversation_context",
+          "type": "text",
+          "required": true,
+          "description": "User goal, prior discussion, or decision context."
+        },
+        {
+          "name": "codebase_context",
+          "type": "files_or_directory",
+          "required": false,
+          "description": "Relevant repository context when the PRD depends on existing implementation."
+        },
+        {
+          "name": "output_file",
+          "type": "string",
+          "required": false,
+          "description": "Optional Markdown output path for the generated PRD."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prd",
+          "type": "markdown"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false
+      },
+      "risk_level": "low",
+      "tags": [
+        "prd",
+        "spec",
+        "documentation",
+        "planning"
+      ]
+    },
+    {
+      "id": "write_a_skill",
+      "name": "Write a Skill",
+      "visibility": "private",
+      "type": "instruction",
+      "description": "Create a new agent skill with structure, trigger guidance, and supporting resources.",
+      "location": "custom_skills/write_a_skill/",
+      "instruction_file": "custom_skills/write_a_skill/SKILL.md",
+      "manifest": "custom_skills/write_a_skill/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "task_description",
+          "type": "text",
+          "required": true,
+          "description": "What the new skill should help an agent do."
+        },
+        {
+          "name": "usage_examples",
+          "type": "text",
+          "required": false,
+          "description": "Optional examples, keywords, or triggering phrases."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "skill_bundle",
+          "type": "markdown_and_metadata"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false
+      },
+      "risk_level": "low",
+      "tags": [
+        "skill-authoring",
+        "agents",
+        "metadata",
+        "workflow"
+      ]
+    },
+    {
+      "id": "lovable_github_cloudflare_worker",
+      "name": "Lovable GitHub Cloudflare Worker",
+      "visibility": "private",
+      "type": "workflow",
+      "description": "Stabilize a Lovable-generated project into a GitHub-managed and Cloudflare Worker-ready delivery pipeline.",
+      "location": "custom_skills/lovable_github_cloudflare_worker/",
+      "instruction_file": "custom_skills/lovable_github_cloudflare_worker/SKILL.md",
+      "manifest": "custom_skills/lovable_github_cloudflare_worker/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "project_path",
+          "type": "string",
+          "required": true,
+          "description": "Local path to the Lovable-generated project."
+        },
+        {
+          "name": "github_repo",
+          "type": "string",
+          "required": false,
+          "description": "Target GitHub repository URL or identifier."
+        },
+        {
+          "name": "cloudflare_target",
+          "type": "text",
+          "required": false,
+          "description": "Worker name, routes, bindings, and deployment constraints."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "delivery_report",
+          "type": "markdown"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true
+      },
+      "risk_level": "high",
+      "tags": [
+        "lovable",
+        "github",
+        "cloudflare",
+        "worker",
+        "deployment"
+      ]
+    },
+    {
+      "id": "mcp_builder",
+      "name": "MCP Builder",
+      "visibility": "private",
+      "type": "instruction",
+      "description": "Guide MCP server setup, Warp integration, and validation steps for new tools or services.",
+      "location": "custom_skills/mcp_builder/",
+      "instruction_file": "custom_skills/mcp_builder/SKILL.md",
+      "manifest": "custom_skills/mcp_builder/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "server_name",
+          "type": "string",
+          "required": true,
+          "description": "Name of the MCP server or external tool to integrate."
+        },
+        {
+          "name": "integration_context",
+          "type": "text",
+          "required": false,
+          "description": "Authentication, install, or environment requirements."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mcp_setup_plan",
+          "type": "markdown_and_json"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true
+      },
+      "risk_level": "medium",
+      "tags": [
+        "mcp",
+        "integration",
+        "warp",
+        "tooling"
+      ]
+    },
+    {
       "id": "weather_api",
       "name": "Weather API",
       "visibility": "shared",
@@ -91,11 +276,220 @@
         "network": false
       },
       "risk_level": "low",
+      "activation_policy": "reference_index",
+      "notes": "Use this as an index to discover community skills. Read target repository docs before using any linked skill.",
       "tags": [
         "community",
         "agent-skills",
         "reference",
         "examples"
+      ]
+    },
+    {
+      "id": "sentry_skills",
+      "name": "Sentry Skills",
+      "visibility": "shared",
+      "type": "community_reference",
+      "description": "Reference source for AGENTS.md authoring, code review, bug finding, and skill authoring workflows.",
+      "source": "https://github.com/getsentry/skills",
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": false
+      },
+      "risk_level": "low",
+      "activation_policy": "preferred",
+      "notes": "Reference-only by default. Read the repository README and target skill docs before use.",
+      "tags": [
+        "community",
+        "agents-md",
+        "code-review",
+        "find-bugs",
+        "skill-authoring"
+      ]
+    },
+    {
+      "id": "pm_skills",
+      "name": "PM Skills",
+      "visibility": "shared",
+      "type": "community_reference",
+      "description": "Reference source for PRDs, discovery, roadmap planning, and structured product workflows.",
+      "source": "https://github.com/product-on-purpose/pm-skills",
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": false
+      },
+      "risk_level": "low",
+      "activation_policy": "preferred",
+      "notes": "Prefer this repo when a task needs product planning structure or multi-step PM workflows.",
+      "tags": [
+        "community",
+        "prd",
+        "product-management",
+        "workflow",
+        "roadmap"
+      ]
+    },
+    {
+      "id": "firecrawl_cli",
+      "name": "Firecrawl CLI",
+      "visibility": "shared",
+      "type": "community_reference",
+      "description": "Reference source for public web research, search, scraping, crawling, and site mapping workflows.",
+      "source": "https://github.com/firecrawl/cli",
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": true
+      },
+      "risk_level": "medium",
+      "activation_policy": "preferred_with_approval",
+      "notes": "Use only for public web tasks. Confirm network usage and any paid API requirements before execution.",
+      "tags": [
+        "community",
+        "web-research",
+        "scraping",
+        "search",
+        "crawl"
+      ]
+    },
+    {
+      "id": "nutrient_agent_skill",
+      "name": "Nutrient Agent Skill",
+      "visibility": "shared",
+      "type": "community_reference",
+      "description": "Reference source for OCR, document conversion, extraction, and PII redaction workflows.",
+      "source": "https://github.com/PSPDFKit-labs/nutrient-agent-skill",
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": true,
+        "api_key_required": true
+      },
+      "risk_level": "high",
+      "activation_policy": "conditional",
+      "notes": "Requires explicit approval before sending documents to third-party services.",
+      "tags": [
+        "community",
+        "ocr",
+        "pdf",
+        "redaction",
+        "document-processing"
+      ]
+    },
+    {
+      "id": "claude_seo",
+      "name": "Claude SEO",
+      "visibility": "shared",
+      "type": "community_reference",
+      "description": "Reference source for deep SEO audits, schema analysis, GEO, and website optimization workflows.",
+      "source": "https://github.com/AgriciDaniel/claude-seo",
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": true
+      },
+      "risk_level": "medium",
+      "activation_policy": "conditional",
+      "notes": "Use when advanced SEO analysis is needed and networked tools are acceptable.",
+      "tags": [
+        "community",
+        "seo",
+        "website-audit",
+        "schema",
+        "geo"
+      ]
+    },
+    {
+      "id": "tutor_skills",
+      "name": "Tutor Skills",
+      "visibility": "shared",
+      "type": "community_reference",
+      "description": "Reference source for study-vault generation, tutoring flows, and curriculum-style knowledge workflows.",
+      "source": "https://github.com/RoundTable02/tutor-skills",
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "conditional",
+      "notes": "Best for tutoring or learning tasks that benefit from generated notes and quiz loops.",
+      "tags": [
+        "community",
+        "tutoring",
+        "study-vault",
+        "education",
+        "quiz"
+      ]
+    },
+    {
+      "id": "coderabbit_skills",
+      "name": "CodeRabbit Skills",
+      "visibility": "shared",
+      "type": "community_reference",
+      "description": "Reference source for PR review and guarded autofix workflows when CodeRabbit is already in use.",
+      "source": "https://github.com/coderabbitai/skills",
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": true
+      },
+      "risk_level": "medium",
+      "activation_policy": "conditional",
+      "notes": "Use only when the repository already has CodeRabbit configured and authenticated.",
+      "tags": [
+        "community",
+        "code-review",
+        "pr",
+        "autofix",
+        "coderabbit"
+      ]
+    },
+    {
+      "id": "cloudflare_skills",
+      "name": "Cloudflare Skills",
+      "visibility": "shared",
+      "type": "community_submodule",
+      "description": "Official Cloudflare agent skills for Workers, Pages, KV, D1, R2, AI, Tunnel, WAF, Wrangler, Durable Objects, Agents SDK, Email Service, web performance, and MCP server references.",
+      "source": "https://github.com/cloudflare/skills",
+      "location": "community_skills/cloudflare-skills/",
+      "instruction_files": [
+        "community_skills/cloudflare-skills/skills/cloudflare/SKILL.md",
+        "community_skills/cloudflare-skills/skills/agents-sdk/SKILL.md",
+        "community_skills/cloudflare-skills/skills/durable-objects/SKILL.md",
+        "community_skills/cloudflare-skills/skills/cloudflare-email-service/SKILL.md",
+        "community_skills/cloudflare-skills/skills/wrangler/SKILL.md",
+        "community_skills/cloudflare-skills/skills/workers-best-practices/SKILL.md",
+        "community_skills/cloudflare-skills/skills/web-perf/SKILL.md",
+        "community_skills/cloudflare-skills/skills/sandbox-sdk/SKILL.md"
+      ],
+      "mcp_reference": "community_skills/cloudflare-skills/.mcp.json",
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": true,
+        "api_key_required": true
+      },
+      "risk_level": "medium",
+      "activation_policy": "preferred_with_approval",
+      "notes": "Use as official Cloudflare guidance. Before executing Wrangler, MCP, deploy, or API operations, confirm target account, project, environment, and credentials. Do not expose Cloudflare API tokens.",
+      "tags": [
+        "community",
+        "official",
+        "cloudflare",
+        "workers",
+        "pages",
+        "wrangler",
+        "durable-objects",
+        "agents-sdk",
+        "mcp",
+        "kv",
+        "d1",
+        "r2",
+        "waf",
+        "email"
       ]
     }
   ]

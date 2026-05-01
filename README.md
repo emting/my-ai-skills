@@ -76,6 +76,32 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 
 `community_skills/awesome-agent-skills/`
 
+
+### 6. [Community] Cloudflare Skills
+
+**用途：**
+引用 Cloudflare 官方 agent skills，讓 Agent 在處理 Workers、Pages、KV、D1、R2、AI、Tunnel、WAF、Wrangler、Durable Objects、Agents SDK、Email Service 等 Cloudflare 任務時可讀取官方指令包。
+
+**來源：**
+
+`https://github.com/cloudflare/skills`
+
+**位置：**
+
+`community_skills/cloudflare-skills/`
+
+**可用內容：**
+
+- `skills/cloudflare/SKILL.md`
+- `skills/agents-sdk/SKILL.md`
+- `skills/durable-objects/SKILL.md`
+- `skills/cloudflare-email-service/SKILL.md`
+- `skills/wrangler/SKILL.md`
+- `skills/workers-best-practices/SKILL.md`
+- `skills/web-perf/SKILL.md`
+- `skills/sandbox-sdk/SKILL.md`
+- `.mcp.json` for Cloudflare MCP server references
+
 ## Usage Policy
 
 當 AI Agent 使用本技能庫時，請遵守以下原則：
@@ -87,14 +113,34 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 5. 若任務涉及敏感資料，必須先確認資料來源與授權。
 6. 不得將 `.env`、API Key、Token、私密檔案上傳至公開 repo。
 
+## Local Skills Inventory
+
+本機已安裝的 agent skills 整理於 `LOCAL_SKILLS_INVENTORY.md`，包含：
+
+- `~/.agents/skills` 與 `~/.skills` 的對應關係
+- 目前已安裝 skill 清單
+- 是否已能從本機證據確認對應 GitHub repo
+- 後續是否建議納入本技能庫正式管理
+
+機器可讀版本整理於 `local_skills_catalog.json`，格式與 `skills.json` 相容，方便後續自動選 skill、比對來源與做批次納管。
+
+目前已優先納管的本機 skills：
+
+- `custom_skills/to_prd/`
+- `custom_skills/write_a_skill/`
+- `custom_skills/lovable_github_cloudflare_worker/`
+- `custom_skills/mcp_builder/`
+
 ## Repository Structure
 
 ```text
 my-ai-skills/
 ├── README.md
+├── LOCAL_SKILLS_INVENTORY.md
 ├── SKILL.md
 ├── AGENTS.md
 ├── skills.json
+├── local_skills_catalog.json
 ├── openapi.yaml
 ├── mcp.json
 ├── custom_skills/

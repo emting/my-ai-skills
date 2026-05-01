@@ -1,3 +1,6 @@
 [submodule "community_skills/awesome-agent-skills"]
 	path = community_skills/awesome-agent-skills
 	url = https://github.com/heilcheng/awesome-agent-skills.git
+[submodule "community_skills/cloudflare-skills"]
+	path = community_skills/cloudflare-skills
+	url = https://github.com/cloudflare/skills.git
