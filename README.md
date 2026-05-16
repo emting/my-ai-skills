@@ -133,7 +133,24 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 摘要、重組、補洞、改寫或轉格式
 
 
-### 9. [Community] Awesome Agent Skills
+### 9. [Private] research-lab — AI 研究實驗室
+
+**用途：**
+把市場、產品、競品、技術趨勢、商業模式、教育／AI／補教、廣告投放、SEO／GEO 或成長策略等複雜研究題目，拆成廣度掃描、深度鑽研、交叉驗證與可決策報告。
+
+**位置：**
+
+`custom_skills/research-lab/`
+
+**適用情境：**
+
+- 市場研究、產品研究、競品分析
+- 技術趨勢、商業模式、教育／AI／補教主題研究
+- 廣告投放、SEO／GEO、成長策略研究
+- 壓力測試與需要形成決策報告的複雜問題
+
+
+### 10. [Community] Awesome Agent Skills
 
 **用途：**
 引用社群整理的 agent skills 資源，作為新增技能、參考技能格式與擴充能力時的共用來源。
@@ -147,7 +164,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 `community_skills/awesome-agent-skills/`
 
 
-### 10. [Community] Cloudflare Skills
+### 11. [Community] Cloudflare Skills
 
 **用途：**
 引用 Cloudflare 官方 agent skills，讓 Agent 在處理 Workers、Pages、KV、D1、R2、AI、Tunnel、WAF、Wrangler、Durable Objects、Agents SDK、Email Service 等 Cloudflare 任務時可讀取官方指令包。
@@ -204,6 +221,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - `custom_skills/full-sprint/`
 - `custom_skills/optimizing-google-ads/`
 - `custom_skills/adapting-notion-docs/`
+- `custom_skills/research-lab/`
 
 ## Repository Structure
 

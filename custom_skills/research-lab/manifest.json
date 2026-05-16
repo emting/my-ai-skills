@@ -1,0 +1,94 @@
+{
+  "id": "research-lab",
+  "name": "research-lab — AI 研究實驗室",
+  "version": "1.0.0",
+  "license": "MIT",
+  "category": "Research / Decision Intelligence",
+  "capability": "research-lab",
+  "description": "Break complex research, investigation, market analysis, product analysis, competitor analysis, technical trend research, business model analysis, growth strategy, SEO/GEO, education, AI, or tutoring topics into verifiable breadth scans, depth dives, cross-validation, and decision-ready reports.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "language": "zh-TW",
+  "inputs": {
+    "research_topic": {
+      "type": "text",
+      "required": true,
+      "description": "Research topic, keyword, market, product, strategy, technology, or decision question."
+    },
+    "mode": {
+      "type": "string",
+      "required": false,
+      "description": "full, breadth_only, depth_only, or quick. Defaults to full when not specified."
+    },
+    "decision_context": {
+      "type": "text",
+      "required": false,
+      "description": "Decision use case, constraints, time range, geography, industry scope, and required depth."
+    },
+    "source_materials": {
+      "type": "files_or_urls_or_text",
+      "required": false,
+      "description": "Optional documents, links, notes, competitor names, data, or prior research."
+    }
+  },
+  "outputs": {
+    "breadth_scan": {
+      "type": "markdown"
+    },
+    "depth_research": {
+      "type": "markdown"
+    },
+    "decision_report": {
+      "type": "markdown"
+    },
+    "next_research_questions": {
+      "type": "markdown"
+    }
+  },
+  "permissions": {
+    "filesystem_read": true,
+    "filesystem_write": true,
+    "network": true
+  },
+  "safety": {
+    "handles_sensitive_data": false,
+    "requires_user_confirmation": false,
+    "destructive": false,
+    "rules": [
+      "Tie each subtask back to the original research topic.",
+      "Mark uncertainty and confidence for risky conclusions.",
+      "Separate facts, inferences, and recommendations.",
+      "Do not invent sources, evidence, or statistics."
+    ]
+  },
+  "risk_level": "medium",
+  "default_config": {
+    "mode": "full",
+    "breadth_dimensions_min": 4,
+    "breadth_dimensions_max": 12,
+    "depth_levels": [
+      "L0_overview",
+      "L1_subquestions",
+      "L2_evidence_cases",
+      "L3_actionable_conclusions"
+    ],
+    "output_style": "decision_ready_report",
+    "separate_facts_inferences_recommendations": true,
+    "mark_uncertainty": true
+  },
+  "activation_policy": "use_for_complex_research_and_decision_reports",
+  "tags": [
+    "research",
+    "market-research",
+    "product-research",
+    "competitor-analysis",
+    "technical-trends",
+    "business-model",
+    "growth-strategy",
+    "seo",
+    "geo",
+    "education",
+    "ai",
+    "decision-report"
+  ]
+}

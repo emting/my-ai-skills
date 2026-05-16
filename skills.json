@@ -556,6 +556,83 @@
       ]
     },
     {
+      "id": "research-lab",
+      "name": "research-lab — AI 研究實驗室",
+      "visibility": "private",
+      "type": "workflow",
+      "description": "Break complex research, investigation, market analysis, product analysis, competitor analysis, technical trend research, business model analysis, growth strategy, SEO/GEO, education, AI, or tutoring topics into verifiable breadth scans, depth dives, cross-validation, and decision-ready reports.",
+      "location": "custom_skills/research-lab/",
+      "instruction_file": "custom_skills/research-lab/SKILL.md",
+      "manifest": "custom_skills/research-lab/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "research_topic",
+          "type": "text",
+          "required": true,
+          "description": "Research topic, keyword, market, product, strategy, technology, or decision question."
+        },
+        {
+          "name": "mode",
+          "type": "string",
+          "required": false,
+          "description": "full, breadth_only, depth_only, or quick. Defaults to full when not specified."
+        },
+        {
+          "name": "decision_context",
+          "type": "text",
+          "required": false,
+          "description": "Decision use case, constraints, time range, geography, industry scope, and required depth."
+        },
+        {
+          "name": "source_materials",
+          "type": "files_or_urls_or_text",
+          "required": false,
+          "description": "Optional documents, links, notes, competitor names, data, or prior research."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "breadth_scan",
+          "type": "markdown"
+        },
+        {
+          "name": "depth_research",
+          "type": "markdown"
+        },
+        {
+          "name": "decision_report",
+          "type": "markdown"
+        },
+        {
+          "name": "next_research_questions",
+          "type": "markdown"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true
+      },
+      "risk_level": "medium",
+      "activation_policy": "use_for_complex_research_and_decision_reports",
+      "notes": "Tie every subtask back to the original research topic. Separate facts, inferences, and recommendations. Mark uncertainty and confidence for risky conclusions. Do not invent sources, evidence, or statistics.",
+      "tags": [
+        "research",
+        "market-research",
+        "product-research",
+        "competitor-analysis",
+        "technical-trends",
+        "business-model",
+        "growth-strategy",
+        "seo",
+        "geo",
+        "education",
+        "ai",
+        "decision-report"
+      ]
+    },
+    {
       "id": "weather_api",
       "name": "Weather API",
       "visibility": "shared",
