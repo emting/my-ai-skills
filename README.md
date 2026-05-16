@@ -81,7 +81,24 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 上線前檢核與工程／設計需求整理
 
 
-### 6. [Community] Awesome Agent Skills
+### 6. [Private] Full Sprint
+
+**用途：**
+把高層目標轉成可執行、可驗證、可暫停、可恢復、可審計的 Sprint Contract，並在安全邊界、scope、constraints、驗收條件與 budget 內持續推進工程、重構、測試修復、文件或 feature 任務。
+
+**位置：**
+
+`custom_skills/full-sprint/`
+
+**適用情境：**
+
+- 使用者提到 `全力衝刺`、`sprint`、`/sprint`、`/goal`
+- 長任務、自主執行、持續推進、跑到完成
+- 需要每輪 checkpoint、驗證、log、completion audit 與 final report
+- 需要在明確 scope、out_of_scope、constraints 與 validation commands 內交付
+
+
+### 7. [Community] Awesome Agent Skills
 
 **用途：**
 引用社群整理的 agent skills 資源，作為新增技能、參考技能格式與擴充能力時的共用來源。
@@ -95,7 +112,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 `community_skills/awesome-agent-skills/`
 
 
-### 7. [Community] Cloudflare Skills
+### 8. [Community] Cloudflare Skills
 
 **用途：**
 引用 Cloudflare 官方 agent skills，讓 Agent 在處理 Workers、Pages、KV、D1、R2、AI、Tunnel、WAF、Wrangler、Durable Objects、Agents SDK、Email Service 等 Cloudflare 任務時可讀取官方指令包。
@@ -149,6 +166,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - `custom_skills/lovable_github_cloudflare_worker/`
 - `custom_skills/mcp_builder/`
 - `custom_skills/website-custom-optimizer/`
+- `custom_skills/full-sprint/`
 
 ## Repository Structure
 

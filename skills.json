@@ -322,6 +322,93 @@
       ]
     },
     {
+      "id": "full-sprint",
+      "name": "Full Sprint",
+      "visibility": "private",
+      "type": "workflow",
+      "description": "Turn a high-level goal into an executable, verifiable, pauseable, resumable, auditable sprint contract and continue PLAN → ACT → VERIFY → REVIEW → ITERATE within explicit safety, scope, validation, and budget limits.",
+      "location": "custom_skills/full-sprint/",
+      "instruction_file": "custom_skills/full-sprint/SKILL.md",
+      "manifest": "custom_skills/full-sprint/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "objective",
+          "type": "text",
+          "required": true,
+          "description": "High-level engineering, refactor, documentation, migration, prototype, or feature delivery goal."
+        },
+        {
+          "name": "scope",
+          "type": "list",
+          "required": true,
+          "description": "Files, directories, modules, or documents that may be modified."
+        },
+        {
+          "name": "out_of_scope",
+          "type": "list",
+          "required": false,
+          "description": "Explicitly forbidden areas such as schema, CI/CD, secrets, deploy config, auth, or public API."
+        },
+        {
+          "name": "success_criteria",
+          "type": "list",
+          "required": true,
+          "description": "Checklist of conditions that must be true before completion."
+        },
+        {
+          "name": "validation_commands",
+          "type": "list",
+          "required": true,
+          "description": "Commands or checks used to verify each checkpoint and final completion."
+        },
+        {
+          "name": "permission_profile",
+          "type": "string",
+          "required": false,
+          "description": "read-only, suggest, auto-edit, or full-sprint. Defaults to auto-edit unless full-sprint is explicitly requested."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sprint_contract",
+          "type": "yaml_or_json"
+        },
+        {
+          "name": "sprint_log",
+          "type": "markdown"
+        },
+        {
+          "name": "validation_history",
+          "type": "jsonl"
+        },
+        {
+          "name": "final_report",
+          "type": "markdown"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "shell": true,
+        "git": true,
+        "network": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_or_goal_execution_request",
+      "notes": "Do not enter full-sprint if scope, success criteria, or validation are missing. Stop for approval before production deploy, destructive database operations, secrets, credentials, permissions, mass delete, CI/CD, dependencies, public API, schema, migration, or data format changes.",
+      "tags": [
+        "sprint",
+        "autonomous-agent",
+        "engineering-workflow",
+        "checkpoint",
+        "validation",
+        "task-contract",
+        "long-running-task",
+        "safe-execution"
+      ]
+    },
+    {
       "id": "weather_api",
       "name": "Weather API",
       "visibility": "shared",

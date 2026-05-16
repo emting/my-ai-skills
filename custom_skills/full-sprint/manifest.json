@@ -1,0 +1,130 @@
+{
+  "id": "full-sprint",
+  "name": "Full Sprint",
+  "version": "3.0.0",
+  "author": "user-custom",
+  "license": "MIT",
+  "category": "Engineering / Autonomous Agent Workflow",
+  "capability": "durable-autonomous-sprint-execution",
+  "description": "Turn a high-level goal into an executable, verifiable, pauseable, resumable, auditable sprint contract and continue PLAN → ACT → VERIFY → REVIEW → ITERATE within explicit safety, scope, validation, and budget limits.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "language": "zh-TW",
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "required_toolsets": [
+    "terminal",
+    "git",
+    "read_file",
+    "write_file",
+    "edit_file",
+    "shell",
+    "grep",
+    "list_files"
+  ],
+  "inputs": {
+    "objective": {
+      "type": "text",
+      "required": true,
+      "description": "High-level engineering, refactor, documentation, migration, prototype, or feature delivery goal."
+    },
+    "scope": {
+      "type": "list",
+      "required": true,
+      "description": "Files, directories, modules, or documents that may be modified."
+    },
+    "out_of_scope": {
+      "type": "list",
+      "required": false,
+      "description": "Explicitly forbidden areas such as schema, CI/CD, secrets, deploy config, auth, or public API."
+    },
+    "constraints": {
+      "type": "list",
+      "required": false,
+      "description": "Rules such as no new dependencies, API compatibility, no deploy, no schema changes, or no mass delete."
+    },
+    "success_criteria": {
+      "type": "list",
+      "required": true,
+      "description": "Checklist of conditions that must be true before completion."
+    },
+    "validation_commands": {
+      "type": "list",
+      "required": true,
+      "description": "Commands or checks used to verify each checkpoint and final completion."
+    },
+    "permission_profile": {
+      "type": "string",
+      "required": false,
+      "description": "read-only, suggest, auto-edit, or full-sprint. Defaults to auto-edit unless full-sprint is explicitly requested."
+    }
+  },
+  "outputs": {
+    "sprint_contract": {
+      "type": "yaml_or_json"
+    },
+    "sprint_log": {
+      "type": "markdown"
+    },
+    "validation_history": {
+      "type": "jsonl"
+    },
+    "final_report": {
+      "type": "markdown"
+    }
+  },
+  "permissions": {
+    "filesystem_read": true,
+    "filesystem_write": true,
+    "network": false,
+    "shell": true,
+    "git": true
+  },
+  "safety": {
+    "handles_sensitive_data": true,
+    "requires_user_confirmation": true,
+    "destructive": false,
+    "default_permission_profile": "auto-edit",
+    "forbidden_without_explicit_approval": [
+      "production_deploy",
+      "destructive_database_operations",
+      "secret_changes",
+      "credential_changes",
+      "account_role_permission_changes",
+      "mass_delete",
+      "ci_cd_pipeline_changes",
+      "new_dependencies",
+      "public_api_changes",
+      "schema_or_migration_changes",
+      "data_format_changes"
+    ]
+  },
+  "risk_level": "high",
+  "default_config": {
+    "permission_profile": "auto-edit",
+    "max_steps": 20,
+    "max_retries_per_checkpoint": 2,
+    "time_budget_minutes": 60,
+    "token_budget": 100000,
+    "allow_new_dependencies": false,
+    "allow_public_api_changes": false,
+    "allow_schema_changes": false,
+    "allow_deploy": false,
+    "allow_secret_changes": false,
+    "allow_mass_delete": false
+  },
+  "activation_policy": "explicit_or_goal_execution_request",
+  "tags": [
+    "sprint",
+    "autonomous-agent",
+    "engineering-workflow",
+    "checkpoint",
+    "validation",
+    "task-contract",
+    "long-running-task",
+    "safe-execution"
+  ]
+}
