@@ -1,0 +1,108 @@
+{
+  "id": "website-custom-optimizer",
+  "name": "Website Custom Optimizer",
+  "version": "1.0.0",
+  "capability": "website-custom-optimization",
+  "description": "Diagnose and optimize websites, landing pages, product pages, service pages, enrollment pages, internal portals, and knowledge bases for clarity, trust, SEO, UX, CRO, mobile experience, performance, accessibility, launch readiness, and execution planning.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "language": "zh-TW",
+  "inputs": {
+    "website_or_page": {
+      "type": "url_or_text_or_screenshot_summary",
+      "required": false,
+      "description": "Website URL, page content, screenshot summary, existing copy, or project description to optimize."
+    },
+    "website_type": {
+      "type": "string",
+      "required": false,
+      "description": "official, landing, ecommerce, saas, gov, content, internal, event, enrollment, or custom. Defaults to auto_detect."
+    },
+    "goal": {
+      "type": "string",
+      "required": false,
+      "description": "conversion, seo, trust, usability, performance, accessibility, branding, launch_readiness, or conversion_and_clarity."
+    },
+    "target_audience": {
+      "type": "text",
+      "required": false,
+      "description": "Primary user group, customer segment, visitor intent, or stakeholder audience."
+    },
+    "pages_scope": {
+      "type": "string",
+      "required": false,
+      "description": "single_page, key_pages, or full_site. Defaults to key_pages."
+    },
+    "mode": {
+      "type": "string",
+      "required": false,
+      "description": "quick, standard, full, launch, or cro. Defaults to standard."
+    }
+  },
+  "outputs": {
+    "website_optimization_report": {
+      "type": "markdown"
+    },
+    "implementation_roadmap": {
+      "type": "markdown"
+    },
+    "technical_requirements": {
+      "type": "markdown"
+    },
+    "launch_readiness_checklist": {
+      "type": "markdown"
+    }
+  },
+  "permissions": {
+    "read_files": true,
+    "write_files": true,
+    "network": true,
+    "browser_automation": true,
+    "third_party_processing": false
+  },
+  "safety": {
+    "handles_sensitive_data": true,
+    "requires_user_confirmation": true,
+    "destructive": false,
+    "disallowed_uses": [
+      "phishing",
+      "fraud",
+      "impersonation",
+      "dark_patterns",
+      "fabricated_social_proof",
+      "misleading_tracking"
+    ]
+  },
+  "risk_level": "medium",
+  "default_config": {
+    "mode": "standard",
+    "language": "Traditional Chinese",
+    "website_type": "auto_detect",
+    "goal": "conversion_and_clarity",
+    "pages_scope": "key_pages",
+    "analysis_depth": "practical",
+    "seo": true,
+    "performance": true,
+    "accessibility": true,
+    "mobile_first": true,
+    "conversion_rate_optimization": true,
+    "copywriting": true,
+    "information_architecture": true,
+    "trust_elements": true,
+    "ab_testing_plan": true,
+    "implementation_roadmap": true,
+    "quality_gate": "strict",
+    "output_directory": "website-optimization-output/"
+  },
+  "tags": [
+    "website",
+    "landing-page",
+    "seo",
+    "cro",
+    "ux",
+    "copywriting",
+    "accessibility",
+    "performance",
+    "launch-checklist"
+  ]
+}

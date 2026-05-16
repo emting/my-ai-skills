@@ -245,6 +245,83 @@
       ]
     },
     {
+      "id": "website-custom-optimizer",
+      "name": "Website Custom Optimizer",
+      "visibility": "private",
+      "type": "instruction",
+      "description": "Diagnose and optimize websites, landing pages, product pages, service pages, enrollment pages, internal portals, and knowledge bases for clarity, trust, SEO, UX, CRO, mobile experience, performance, accessibility, launch readiness, and execution planning.",
+      "location": "custom_skills/website-custom-optimizer/",
+      "instruction_file": "custom_skills/website-custom-optimizer/SKILL.md",
+      "manifest": "custom_skills/website-custom-optimizer/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "website_or_page",
+          "type": "url_or_text_or_screenshot_summary",
+          "required": false,
+          "description": "Website URL, page content, screenshot summary, existing copy, or project description to optimize."
+        },
+        {
+          "name": "website_type",
+          "type": "string",
+          "required": false,
+          "description": "Website or page type. Defaults to auto_detect."
+        },
+        {
+          "name": "goal",
+          "type": "string",
+          "required": false,
+          "description": "Primary optimization goal such as conversion, SEO, trust, usability, performance, accessibility, branding, or launch readiness."
+        },
+        {
+          "name": "target_audience",
+          "type": "text",
+          "required": false,
+          "description": "Primary user group, customer segment, visitor intent, or stakeholder audience."
+        },
+        {
+          "name": "mode",
+          "type": "string",
+          "required": false,
+          "description": "quick, standard, full, launch, or cro. Defaults to standard."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "website_optimization_report",
+          "type": "markdown"
+        },
+        {
+          "name": "implementation_roadmap",
+          "type": "markdown"
+        },
+        {
+          "name": "launch_readiness_checklist",
+          "type": "markdown"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "browser_automation": true
+      },
+      "risk_level": "medium",
+      "activation_policy": "use_for_website_optimization",
+      "notes": "Do not fabricate social proof, metrics, testimonials, media coverage, or certifications. Avoid dark patterns. Ask for authorization before browser automation, crawling, third-party processing, or analyzing non-public content.",
+      "tags": [
+        "website",
+        "landing-page",
+        "seo",
+        "cro",
+        "ux",
+        "copywriting",
+        "accessibility",
+        "performance",
+        "launch-checklist"
+      ]
+    },
+    {
       "id": "weather_api",
       "name": "Weather API",
       "visibility": "shared",

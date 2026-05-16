@@ -63,7 +63,25 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 `workflows/website_audit.md`
 
 
-### 5. [Community] Awesome Agent Skills
+### 5. [Private] Website Custom Optimizer
+
+**用途：**
+依據網站目標與主要受眾，診斷並優化官方網站、Landing Page、產品頁、服務頁、招生頁、活動頁、知識庫與內部入口網，產出網站診斷、資訊架構、文案重寫、SEO、CRO、效能、可近用性、A/B 測試與執行路線圖。
+
+**位置：**
+
+`custom_skills/website-custom-optimizer/`
+
+**適用情境：**
+
+- 網站健檢與改版規劃
+- Landing Page 轉換率優化
+- 首頁架構設計與網站文案重寫
+- SEO、UX/UI、行動版、效能與可近用性檢核
+- 上線前檢核與工程／設計需求整理
+
+
+### 6. [Community] Awesome Agent Skills
 
 **用途：**
 引用社群整理的 agent skills 資源，作為新增技能、參考技能格式與擴充能力時的共用來源。
@@ -77,7 +95,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 `community_skills/awesome-agent-skills/`
 
 
-### 6. [Community] Cloudflare Skills
+### 7. [Community] Cloudflare Skills
 
 **用途：**
 引用 Cloudflare 官方 agent skills，讓 Agent 在處理 Workers、Pages、KV、D1、R2、AI、Tunnel、WAF、Wrangler、Durable Objects、Agents SDK、Email Service 等 Cloudflare 任務時可讀取官方指令包。
@@ -130,6 +148,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - `custom_skills/write_a_skill/`
 - `custom_skills/lovable_github_cloudflare_worker/`
 - `custom_skills/mcp_builder/`
+- `custom_skills/website-custom-optimizer/`
 
 ## Repository Structure
 
