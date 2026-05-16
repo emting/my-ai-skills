@@ -1,0 +1,45 @@
+{
+  "id": "lovable_github_cloudflare_worker",
+  "name": "Lovable GitHub Cloudflare Worker",
+  "version": "1.0.0",
+  "description": "Stabilize a Lovable-generated project into a GitHub-managed and Cloudflare Worker-ready delivery pipeline.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "inputs": {
+    "project_path": {
+      "type": "string",
+      "required": true,
+      "description": "Local path to the Lovable-generated project."
+    },
+    "github_repo": {
+      "type": "string",
+      "required": false,
+      "description": "Target GitHub repository URL or identifier."
+    },
+    "cloudflare_target": {
+      "type": "text",
+      "required": false,
+      "description": "Worker name, routes, bindings, and deployment constraints."
+    }
+  },
+  "outputs": {
+    "delivery_report": {
+      "type": "markdown"
+    }
+  },
+  "permissions": {
+    "read_files": true,
+    "write_files": true,
+    "network": true
+  },
+  "safety": {
+    "handles_sensitive_data": true,
+    "requires_user_confirmation": true,
+    "destructive": false
+  },
+  "risk_level": "high",
+  "source": {
+    "local_path": "~/.skills/lovable-github-cloudflare-worker/SKILL.md",
+    "status": "imported_local"
+  }
+}

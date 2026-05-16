@@ -16,6 +16,23 @@ When a user asks for a task, follow this order:
 4. Check `openapi.yaml` for available API endpoints.
 5. Check `community_skills/` only if no custom skill is suitable.
 
+## Preferred Community References
+
+Use community skills only after local options are exhausted. Treat them as reference-first resources and read their docs before execution.
+
+Priority community references:
+
+- `getsentry/skills`: `AGENTS.md` maintenance, code review, bug finding, skill writing.
+- `product-on-purpose/pm-skills`: PRD, discovery, roadmap, stakeholder alignment, technical discovery.
+- `firecrawl/cli`: public web research, scraping, search, crawling, and site mapping.
+
+Conditional community references:
+
+- `PSPDFKit-labs/nutrient-agent-skill`: use only with explicit approval for third-party document processing and required API keys.
+- `AgriciDaniel/claude-seo`: use for advanced SEO or website audit tasks when networked analysis is acceptable.
+- `RoundTable02/tutor-skills`: use for tutoring, study-vault, or curriculum-style knowledge workflows.
+- `coderabbitai/skills`: use only when CodeRabbit is already available for the repository or PR.
+
 ## Execution Rules
 
 Before running any script:
@@ -26,6 +43,7 @@ Before running any script:
 4. Check whether environment variables are needed.
 5. Do not execute destructive actions unless explicitly requested.
 6. Never expose secrets or private data.
+7. For community skills, confirm whether the skill is reference-only or requires network access, browser automation, paid APIs, or third-party data processing.
 
 ## Available Skill Categories
 

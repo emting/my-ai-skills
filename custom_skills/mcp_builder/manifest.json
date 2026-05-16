@@ -1,0 +1,40 @@
+{
+  "id": "mcp_builder",
+  "name": "MCP Builder",
+  "version": "1.0.0",
+  "description": "Guide MCP server setup, Warp integration, and validation steps for new tools or services.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "inputs": {
+    "server_name": {
+      "type": "string",
+      "required": true,
+      "description": "Name of the MCP server or external tool to integrate."
+    },
+    "integration_context": {
+      "type": "text",
+      "required": false,
+      "description": "Authentication, install, or environment requirements."
+    }
+  },
+  "outputs": {
+    "mcp_setup_plan": {
+      "type": "markdown_and_json"
+    }
+  },
+  "permissions": {
+    "read_files": true,
+    "write_files": true,
+    "network": true
+  },
+  "safety": {
+    "handles_sensitive_data": true,
+    "requires_user_confirmation": true,
+    "destructive": false
+  },
+  "risk_level": "medium",
+  "source": {
+    "local_path": "~/.skills/mcp-builder/SKILL.md",
+    "status": "imported_local"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "name": "local-installed-skills-catalog",
+  "version": "1.0.0",
+  "description": "Machine-readable inventory of locally installed skills discovered under ~/.skills.",
+  "source_root": "~/.skills",
+  "generated_from": "LOCAL_SKILLS_INVENTORY.md",
+  "skills": [
+    {
+      "id": "awesome_design_md",
+      "name": "awesome-design-md",
+      "type": "local_skill",
+      "category": "design_system",
+      "local_path": "~/.skills/awesome-design-md",
+      "source_status": "referenced",
+      "source": "https://github.com/VoltAgent/awesome-design-md",
+      "managed_in_library": false
+    },
+    {
+      "id": "build_fix_local",
+      "name": "build-fix-local",
+      "type": "local_skill",
+      "category": "engineering_workflow",
+      "local_path": "~/.skills/build-fix-local",
+      "source_status": "unknown",
+      "managed_in_library": false
+    },
+    {
+      "id": "code_review_local",
+      "name": "code-review-local",
+      "type": "local_skill",
+      "category": "engineering_workflow",
+      "local_path": "~/.skills/code-review-local",
+      "source_status": "unknown",
+      "managed_in_library": false
+    },
+    {
+      "id": "debug_local",
+      "name": "debug-local",
+      "type": "local_skill",
+      "category": "engineering_workflow",
+      "local_path": "~/.skills/debug-local",
+      "source_status": "unknown",
+      "managed_in_library": false
+    },
+    {
+      "id": "graphify",
+      "name": "graphify",
+      "type": "local_skill",
+      "category": "knowledge_graph",
+      "local_path": "~/.skills/graphify",
+      "source_status": "unknown",
+      "managed_in_library": false
+    },
+    {
+      "id": "grill_me",
+      "name": "grill-me",
+      "type": "local_skill",
+      "category": "decision_review",
+      "local_path": "~/.skills/grill-me",
+      "source_status": "unknown",
+      "managed_in_library": false
+    },
+    {
+      "id": "image_workflow",
+      "name": "image-workflow",
+      "type": "local_skill",
+      "category": "content_workflow",
+      "local_path": "~/.skills/image-workflow",
+      "source_status": "unknown",
+      "managed_in_library": false
+    },
+    {
+      "id": "local_workflow",
+      "name": "local-workflow",
+      "type": "local_skill",
+      "category": "engineering_workflow",
+      "local_path": "~/.skills/local-workflow",
+      "source_status": "unknown",
+      "managed_in_library": false
+    },
+    {
+      "id": "lovable_github_cloudflare_worker",
+      "name": "lovable-github-cloudflare-worker",
+      "type": "local_skill",
+      "category": "delivery_workflow",
+      "local_path": "~/.skills/lovable-github-cloudflare-worker",
+      "source_status": "unknown",
+      "managed_in_library": true,
+      "library_location": "custom_skills/lovable_github_cloudflare_worker/"
+    },
+    {
+      "id": "mcp_builder",
+      "name": "mcp-builder",
+      "type": "local_skill",
+      "category": "tooling_integration",
+      "local_path": "~/.skills/mcp-builder",
+      "source_status": "unknown",
+      "managed_in_library": true,
+      "library_location": "custom_skills/mcp_builder/"
+    },
+    {
+      "id": "prompt_master",
+      "name": "prompt-master",
+      "type": "local_skill",
+      "category": "prompt_engineering",
+      "local_path": "~/.skills/prompt-master",
+      "source_status": "confirmed",
+      "source": "https://github.com/nidhinjs/prompt-master.git",
+      "managed_in_library": false
+    },
+    {
+      "id": "research_local",
+      "name": "research-local",
+      "type": "local_skill",
+      "category": "engineering_workflow",
+      "local_path": "~/.skills/research-local",
+      "source_status": "unknown",
+      "managed_in_library": false
+    },
+    {
+      "id": "rumor_buster",
+      "name": "rumor-buster",
+      "type": "local_skill",
+      "category": "analysis_communication",
+      "local_path": "~/.skills/rumor-buster",
+      "source_status": "unknown",
+      "managed_in_library": false
+    },
+    {
+      "id": "skill_creator",
+      "name": "skill-creator",
+      "type": "local_skill",
+      "category": "skill_authoring",
+      "local_path": "~/.skills/skill-creator",
+      "source_status": "unknown",
+      "managed_in_library": false
+    },
+    {
+      "id": "systematic_debugging",
+      "name": "systematic-debugging",
+      "type": "local_skill",
+      "category": "engineering_workflow",
+      "local_path": "~/.skills/systematic-debugging",
+      "source_status": "unknown",
+      "managed_in_library": false
+    },
+    {
+      "id": "tdd_local",
+      "name": "tdd-local",
+      "type": "local_skill",
+      "category": "engineering_workflow",
+      "local_path": "~/.skills/tdd-local",
+      "source_status": "unknown",
+      "managed_in_library": false
+    },
+    {
+      "id": "to_prd",
+      "name": "to-prd",
+      "type": "local_skill",
+      "category": "product_documentation",
+      "local_path": "~/.skills/to-prd",
+      "source_status": "unknown",
+      "managed_in_library": true,
+      "library_location": "custom_skills/to_prd/"
+    },
+    {
+      "id": "write_a_skill",
+      "name": "write-a-skill",
+      "type": "local_skill",
+      "category": "skill_authoring",
+      "local_path": "~/.skills/write-a-skill",
+      "source_status": "unknown",
+      "managed_in_library": true,
+      "library_location": "custom_skills/write_a_skill/"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "to_prd",
+  "name": "To PRD",
+  "version": "1.0.0",
+  "description": "Turn conversation and codebase context into a structured PRD in Markdown.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "inputs": {
+    "conversation_context": {
+      "type": "text",
+      "required": true,
+      "description": "User goal, prior discussion, or decision context."
+    },
+    "codebase_context": {
+      "type": "directory_or_files",
+      "required": false,
+      "description": "Relevant repository context when the PRD depends on existing implementation."
+    },
+    "output": {
+      "type": "string",
+      "required": false,
+      "description": "Optional output path for the generated PRD markdown."
+    }
+  },
+  "outputs": {
+    "prd": {
+      "type": "markdown"
+    }
+  },
+  "permissions": {
+    "read_files": true,
+    "write_files": true,
+    "network": false
+  },
+  "safety": {
+    "handles_sensitive_data": false,
+    "requires_user_confirmation": false,
+    "destructive": false
+  },
+  "risk_level": "low",
+  "source": {
+    "local_path": "~/.skills/to-prd/SKILL.md",
+    "status": "imported_local"
+  }
+}

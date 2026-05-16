@@ -1,0 +1,40 @@
+{
+  "id": "write_a_skill",
+  "name": "Write a Skill",
+  "version": "1.0.0",
+  "description": "Create a new agent skill with structure, trigger guidance, and supporting resources.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "inputs": {
+    "task_description": {
+      "type": "text",
+      "required": true,
+      "description": "What the new skill should help an agent do."
+    },
+    "usage_examples": {
+      "type": "text",
+      "required": false,
+      "description": "Optional examples, keywords, or triggering phrases."
+    }
+  },
+  "outputs": {
+    "skill_bundle": {
+      "type": "markdown_and_metadata"
+    }
+  },
+  "permissions": {
+    "read_files": true,
+    "write_files": true,
+    "network": false
+  },
+  "safety": {
+    "handles_sensitive_data": false,
+    "requires_user_confirmation": false,
+    "destructive": false
+  },
+  "risk_level": "low",
+  "source": {
+    "local_path": "~/.skills/write-a-skill/SKILL.md",
+    "status": "imported_local"
+  }
+}
