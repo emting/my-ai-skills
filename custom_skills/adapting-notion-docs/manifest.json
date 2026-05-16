@@ -1,0 +1,77 @@
+{
+  "id": "adapting-notion-docs",
+  "name": "智能文件角色適應器",
+  "version": "1.0.0",
+  "license": "MIT",
+  "category": "Documentation / Notion / Role Adapter",
+  "capability": "notion-document-role-adaptation",
+  "description": "Adapt to Notion document type, content maturity, and user intent, then switch into the most useful assistant role to summarize, restructure, rewrite, fill gaps, critique, convert formats, or produce action-ready documentation.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "language": "zh-TW",
+  "inputs": {
+    "document_content": {
+      "type": "text_or_notion_page_content",
+      "required": true,
+      "description": "Notion page content, notes, SOP draft, meeting notes, strategy draft, spec, learning notes, or database page content."
+    },
+    "user_intent": {
+      "type": "text",
+      "required": false,
+      "description": "What the user wants: understand, summarize, rewrite, fill gaps, critique, convert format, or produce actions."
+    },
+    "target_format": {
+      "type": "string",
+      "required": false,
+      "description": "summary, sop, strategy, prd, technical_spec, learning_notes, meeting_notes, action_plan, or auto_detect."
+    }
+  },
+  "outputs": {
+    "notion_ready_content": {
+      "type": "markdown"
+    },
+    "role_selection_summary": {
+      "type": "brief_text"
+    },
+    "open_questions": {
+      "type": "markdown"
+    }
+  },
+  "permissions": {
+    "filesystem_read": true,
+    "filesystem_write": true,
+    "network": false,
+    "notion_read": true,
+    "notion_write": false
+  },
+  "safety": {
+    "handles_sensitive_data": true,
+    "requires_user_confirmation": false,
+    "destructive": false,
+    "rules": [
+      "Do not invent facts; mark uncertainty as 待確認.",
+      "Do not expose sensitive Notion content to public repositories or third-party systems.",
+      "Preserve important source meaning and tone unless the user asks for a rewrite."
+    ]
+  },
+  "risk_level": "low",
+  "default_config": {
+    "document_type": "auto_detect",
+    "intent": "auto_detect",
+    "output_style": "notion_friendly_markdown",
+    "include_long_diagnosis": false,
+    "mark_uncertainty": "待確認"
+  },
+  "activation_policy": "use_for_notion_document_adaptation_tasks",
+  "tags": [
+    "notion",
+    "documents",
+    "notes",
+    "sop",
+    "strategy",
+    "meeting-notes",
+    "prd",
+    "learning-notes",
+    "role-adapter"
+  ]
+}

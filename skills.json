@@ -490,6 +490,72 @@
       ]
     },
     {
+      "id": "adapting-notion-docs",
+      "name": "智能文件角色適應器",
+      "visibility": "private",
+      "type": "instruction",
+      "description": "Adapt to Notion document type, content maturity, and user intent, then switch into the most useful assistant role to summarize, restructure, rewrite, fill gaps, critique, convert formats, or produce action-ready documentation.",
+      "location": "custom_skills/adapting-notion-docs/",
+      "instruction_file": "custom_skills/adapting-notion-docs/SKILL.md",
+      "manifest": "custom_skills/adapting-notion-docs/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "document_content",
+          "type": "text_or_notion_page_content",
+          "required": true,
+          "description": "Notion page content, notes, SOP draft, meeting notes, strategy draft, spec, learning notes, or database page content."
+        },
+        {
+          "name": "user_intent",
+          "type": "text",
+          "required": false,
+          "description": "What the user wants: understand, summarize, rewrite, fill gaps, critique, convert format, or produce actions."
+        },
+        {
+          "name": "target_format",
+          "type": "string",
+          "required": false,
+          "description": "summary, sop, strategy, prd, technical_spec, learning_notes, meeting_notes, action_plan, or auto_detect."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "notion_ready_content",
+          "type": "markdown"
+        },
+        {
+          "name": "role_selection_summary",
+          "type": "brief_text"
+        },
+        {
+          "name": "open_questions",
+          "type": "markdown"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false,
+        "notion_read": true,
+        "notion_write": false
+      },
+      "risk_level": "low",
+      "activation_policy": "use_for_notion_document_adaptation_tasks",
+      "notes": "Do not invent facts; mark uncertain information as 待確認. Preserve important source meaning and tone unless the user asks for a rewrite. Do not expose sensitive Notion content to public repositories or third-party systems.",
+      "tags": [
+        "notion",
+        "documents",
+        "notes",
+        "sop",
+        "strategy",
+        "meeting-notes",
+        "prd",
+        "learning-notes",
+        "role-adapter"
+      ]
+    },
+    {
       "id": "weather_api",
       "name": "Weather API",
       "visibility": "shared",

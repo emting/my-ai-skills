@@ -116,7 +116,24 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - Google Ads API、n8n、MCP Server、Notion 廣告營運資料庫規劃
 
 
-### 8. [Community] Awesome Agent Skills
+### 8. [Private] 智能文件角色適應器
+
+**用途：**
+根據 Notion 文件類型、內容成熟度與使用者意圖，自動切換成文件整理者、策略顧問、SOP 設計師、學習教練或產品／技術 PM，產出可直接貼回 Notion 的摘要、重構、補全、改寫、SOP、PRD、學習筆記或行動方案。
+
+**位置：**
+
+`custom_skills/adapting-notion-docs/`
+
+**適用情境：**
+
+- Notion 筆記、SOP、策略稿、會議紀錄、規格書或學習資料整理
+- 判斷文件類型並選擇最適合的助理角色
+- 將鬆散筆記整理成可執行文件
+- 摘要、重組、補洞、改寫或轉格式
+
+
+### 9. [Community] Awesome Agent Skills
 
 **用途：**
 引用社群整理的 agent skills 資源，作為新增技能、參考技能格式與擴充能力時的共用來源。
@@ -130,7 +147,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 `community_skills/awesome-agent-skills/`
 
 
-### 9. [Community] Cloudflare Skills
+### 10. [Community] Cloudflare Skills
 
 **用途：**
 引用 Cloudflare 官方 agent skills，讓 Agent 在處理 Workers、Pages、KV、D1、R2、AI、Tunnel、WAF、Wrangler、Durable Objects、Agents SDK、Email Service 等 Cloudflare 任務時可讀取官方指令包。
@@ -186,6 +203,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - `custom_skills/website-custom-optimizer/`
 - `custom_skills/full-sprint/`
 - `custom_skills/optimizing-google-ads/`
+- `custom_skills/adapting-notion-docs/`
 
 ## Repository Structure
 
