@@ -98,7 +98,25 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 需要在明確 scope、out_of_scope、constraints 與 validation commands 內交付
 
 
-### 7. [Community] Awesome Agent Skills
+### 7. [Private] Google Ads AI Copilot
+
+**用途：**
+整合 Google Ads、n8n、Notion 與 AI Agent 成為廣告副駕駛，產出 read-only 健康報告、搜尋字詞稽核、否定關鍵字建議、RSA 文案、預算 pacing、行動佇列與自動化規劃；所有會花錢或影響帳戶的操作都需人類批准。
+
+**位置：**
+
+`custom_skills/optimizing-google-ads/`
+
+**適用情境：**
+
+- 慕熙 Moosie 或在地服務的小額廣告投放監控
+- 每日／每週 Google Ads 健康報告
+- 搜尋字詞稽核、否定關鍵字與高意圖字詞整理
+- Google Ads RSA 文案、預算 pacing、30 天行動計畫
+- Google Ads API、n8n、MCP Server、Notion 廣告營運資料庫規劃
+
+
+### 8. [Community] Awesome Agent Skills
 
 **用途：**
 引用社群整理的 agent skills 資源，作為新增技能、參考技能格式與擴充能力時的共用來源。
@@ -112,7 +130,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 `community_skills/awesome-agent-skills/`
 
 
-### 8. [Community] Cloudflare Skills
+### 9. [Community] Cloudflare Skills
 
 **用途：**
 引用 Cloudflare 官方 agent skills，讓 Agent 在處理 Workers、Pages、KV、D1、R2、AI、Tunnel、WAF、Wrangler、Durable Objects、Agents SDK、Email Service 等 Cloudflare 任務時可讀取官方指令包。
@@ -167,6 +185,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - `custom_skills/mcp_builder/`
 - `custom_skills/website-custom-optimizer/`
 - `custom_skills/full-sprint/`
+- `custom_skills/optimizing-google-ads/`
 
 ## Repository Structure
 

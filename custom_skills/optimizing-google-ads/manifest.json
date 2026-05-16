@@ -1,0 +1,110 @@
+{
+  "id": "optimizing-google-ads",
+  "name": "Google Ads AI Copilot",
+  "version": "1.0.0",
+  "license": "MIT",
+  "category": "Marketing / Ads Operations / AI Copilot",
+  "capability": "google-ads-ai-copilot",
+  "description": "Analyze Google Ads performance and produce read-only health reports, search term audits, negative keyword suggestions, RSA copy ideas, budget pacing, action queues, and n8n/Notion/MCP integration plans with human approval required before write or spend-impacting operations.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "language": "zh-TW",
+  "inputs": {
+    "ads_data": {
+      "type": "csv_or_table_or_text_or_screenshot_summary",
+      "required": false,
+      "description": "Google Ads report data, campaign summary, keyword data, search terms, conversion data, or screenshot summary."
+    },
+    "business_context": {
+      "type": "text",
+      "required": false,
+      "description": "Business, offer, audience, location, service area, monthly budget, campaign goal, and constraints."
+    },
+    "task_type": {
+      "type": "string",
+      "required": false,
+      "description": "health_report, search_terms_audit, ad_copy, budget_pacing, funnel_diagnosis, automation_plan, or action_queue."
+    },
+    "approval_mode": {
+      "type": "string",
+      "required": false,
+      "description": "read_only, approval_required, or approved_write. Defaults to read_only."
+    }
+  },
+  "outputs": {
+    "ads_copilot_report": {
+      "type": "markdown"
+    },
+    "action_queue": {
+      "type": "markdown"
+    },
+    "approval_requests": {
+      "type": "markdown"
+    },
+    "automation_plan": {
+      "type": "markdown"
+    }
+  },
+  "permissions": {
+    "filesystem_read": true,
+    "filesystem_write": true,
+    "network": true,
+    "google_ads_read": true,
+    "google_ads_write": false,
+    "notion_write": false,
+    "n8n_write": false,
+    "mcp_write_tools": false
+  },
+  "safety": {
+    "handles_sensitive_data": true,
+    "requires_user_confirmation": true,
+    "destructive": false,
+    "default_mode": "read_only_analysis",
+    "forbidden_without_explicit_approval": [
+      "google_ads_mutate_operations",
+      "budget_changes",
+      "campaign_pause",
+      "keyword_changes",
+      "negative_keyword_changes",
+      "ad_copy_publish",
+      "notion_write",
+      "n8n_workflow_update",
+      "mcp_write_tool_execution"
+    ],
+    "always_forbidden": [
+      "campaign_delete",
+      "fabricated_testimonials",
+      "guaranteed_admission_claims",
+      "exaggerated_education_outcomes",
+      "credential_exposure"
+    ]
+  },
+  "risk_level": "high",
+  "default_config": {
+    "mode": "read_only_analysis",
+    "write_operations": "require_human_approval",
+    "budget_change_limit_per_action": "20_percent",
+    "allow_campaign_delete": false,
+    "allow_campaign_pause": "suggest_only",
+    "allow_keyword_negative_add": "approval_required",
+    "allow_budget_change": "approval_required",
+    "allow_ad_copy_publish": "approval_required",
+    "default_market": "Taiwan",
+    "default_currency": "TWD",
+    "micro_budget_context": "NT$3000_per_month"
+  },
+  "activation_policy": "use_for_google_ads_ai_copilot_tasks",
+  "tags": [
+    "google-ads",
+    "ads-copilot",
+    "ppc",
+    "search-terms",
+    "negative-keywords",
+    "rsa-copy",
+    "budget-pacing",
+    "n8n",
+    "notion",
+    "mcp",
+    "moosie"
+  ]
+}

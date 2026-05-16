@@ -409,6 +409,87 @@
       ]
     },
     {
+      "id": "optimizing-google-ads",
+      "name": "Google Ads AI Copilot",
+      "visibility": "private",
+      "type": "workflow",
+      "description": "Analyze Google Ads performance and produce read-only health reports, search term audits, negative keyword suggestions, RSA copy ideas, budget pacing, action queues, and n8n/Notion/MCP integration plans with human approval required before write or spend-impacting operations.",
+      "location": "custom_skills/optimizing-google-ads/",
+      "instruction_file": "custom_skills/optimizing-google-ads/SKILL.md",
+      "manifest": "custom_skills/optimizing-google-ads/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "ads_data",
+          "type": "csv_or_table_or_text_or_screenshot_summary",
+          "required": false,
+          "description": "Google Ads report data, campaign summary, keyword data, search terms, conversion data, or screenshot summary."
+        },
+        {
+          "name": "business_context",
+          "type": "text",
+          "required": false,
+          "description": "Business, offer, audience, location, service area, monthly budget, campaign goal, and constraints."
+        },
+        {
+          "name": "task_type",
+          "type": "string",
+          "required": false,
+          "description": "health_report, search_terms_audit, ad_copy, budget_pacing, funnel_diagnosis, automation_plan, or action_queue."
+        },
+        {
+          "name": "approval_mode",
+          "type": "string",
+          "required": false,
+          "description": "read_only, approval_required, or approved_write. Defaults to read_only."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ads_copilot_report",
+          "type": "markdown"
+        },
+        {
+          "name": "action_queue",
+          "type": "markdown"
+        },
+        {
+          "name": "approval_requests",
+          "type": "markdown"
+        },
+        {
+          "name": "automation_plan",
+          "type": "markdown"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "google_ads_read": true,
+        "google_ads_write": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "use_for_google_ads_ai_copilot_tasks",
+      "notes": "Default to read-only analysis. Do not delete campaigns, expose credentials, fabricate performance claims, or execute Google Ads mutate, Notion write, n8n workflow update, or MCP write operations without explicit human approval for that specific action. Budget changes must not exceed 20% per action.",
+      "tags": [
+        "google-ads",
+        "ads-copilot",
+        "ppc",
+        "search-terms",
+        "negative-keywords",
+        "rsa-copy",
+        "budget-pacing",
+        "n8n",
+        "notion",
+        "mcp",
+        "moosie"
+      ]
+    },
+    {
       "id": "weather_api",
       "name": "Weather API",
       "visibility": "shared",
