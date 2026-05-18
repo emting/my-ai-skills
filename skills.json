@@ -725,6 +725,91 @@
       ]
     },
     {
+      "id": "analyzing-business-models",
+      "name": "Analyzing Business Models",
+      "visibility": "private",
+      "type": "instruction",
+      "description": "Diagnose businesses, products, personal brands, services, courses, consulting offers, and projects with the Business Model Canvas to evaluate sustainability, weak links, and North Star metrics tied to revenue.",
+      "location": "custom_skills/analyzing-business-models/",
+      "instruction_file": "custom_skills/analyzing-business-models/SKILL.md",
+      "manifest": "custom_skills/analyzing-business-models/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "business_description",
+          "type": "text",
+          "required": true,
+          "description": "Business, product, service, course, content product, consulting offer, personal brand, or project description."
+        },
+        {
+          "name": "customer_segments",
+          "type": "text",
+          "required": false,
+          "description": "Who buys, who uses, who decides, and what customer segment is being served."
+        },
+        {
+          "name": "revenue_streams",
+          "type": "text",
+          "required": false,
+          "description": "Subscription, one-time sales, consulting fees, course fees, advertising, commissions, licensing, or other revenue streams."
+        },
+        {
+          "name": "cost_structure",
+          "type": "text",
+          "required": false,
+          "description": "People, tools, ads, suppliers, time, platform fees, fixed costs, variable costs, and key expenses."
+        },
+        {
+          "name": "key_resources",
+          "type": "text",
+          "required": false,
+          "description": "People, knowledge, systems, audience, data, partnerships, brand assets, operational capabilities, or platform dependencies."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "business_model_canvas",
+          "type": "markdown_table"
+        },
+        {
+          "name": "sustainability_diagnosis",
+          "type": "markdown"
+        },
+        {
+          "name": "weak_links",
+          "type": "markdown"
+        },
+        {
+          "name": "north_star_metric",
+          "type": "markdown"
+        },
+        {
+          "name": "priority_fixes",
+          "type": "markdown_list"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "use_for_business_model_canvas_diagnosis_tasks",
+      "notes": "Do not fabricate revenue, cost, market size, or customer data. Mark missing revenue or cost information as assumptions or required follow-up data.",
+      "tags": [
+        "business-model",
+        "business-model-canvas",
+        "strategy",
+        "sustainability",
+        "value-proposition",
+        "customer-segments",
+        "revenue-streams",
+        "cost-structure",
+        "north-star-metric",
+        "business-diagnosis"
+      ]
+    },
+    {
       "id": "weather_api",
       "name": "Weather API",
       "visibility": "shared",

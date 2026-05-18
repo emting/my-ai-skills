@@ -167,7 +167,24 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 建立 CIS、CSR、PESO 與利益關係人溝通
 
 
-### 11. [Community] Awesome Agent Skills
+### 11. [Private] Analyzing Business Models／商業模式九宮格診斷
+
+**用途：**
+用商業模式九宮格診斷事業、產品、個人品牌、服務、課程、內容產品或顧問案是否具備可持續性，找出價值主張、客群、通路、關鍵資源、成本與收益之間的斷點，並產出北極星指標與優先修正項。
+
+**位置：**
+
+`custom_skills/analyzing-business-models/`
+
+**適用情境：**
+
+- 盤點新事業、服務、課程、內容產品或顧問案
+- 商業模式說不清楚，收入與成本無法對上
+- 從價值主張反推客群、通路、活動、資源與夥伴
+- 判斷北極星指標是否真的連到營收
+
+
+### 12. [Community] Awesome Agent Skills
 
 **用途：**
 引用社群整理的 agent skills 資源，作為新增技能、參考技能格式與擴充能力時的共用來源。
@@ -181,7 +198,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 `community_skills/awesome-agent-skills/`
 
 
-### 12. [Community] Cloudflare Skills
+### 13. [Community] Cloudflare Skills
 
 **用途：**
 引用 Cloudflare 官方 agent skills，讓 Agent 在處理 Workers、Pages、KV、D1、R2、AI、Tunnel、WAF、Wrangler、Durable Objects、Agents SDK、Email Service 等 Cloudflare 任務時可讀取官方指令包。
@@ -240,6 +257,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - `custom_skills/adapting-notion-docs/`
 - `custom_skills/research-lab/`
 - `custom_skills/managing-public-relations/`
+- `custom_skills/analyzing-business-models/`
 
 ## Repository Structure
 

@@ -1,0 +1,101 @@
+{
+  "id": "analyzing-business-models",
+  "name": "Analyzing Business Models",
+  "version": "1.0.0",
+  "license": "MIT",
+  "category": "Strategy / Business Model / Sustainability",
+  "capability": "business-model-canvas-diagnosis",
+  "description": "Diagnose businesses, products, personal brands, services, courses, consulting offers, and projects with the Business Model Canvas to evaluate sustainability, weak links, and North Star metrics tied to revenue.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "language": "zh-TW",
+  "inputs": {
+    "business_description": {
+      "type": "text",
+      "required": true,
+      "description": "Business, product, service, course, content product, consulting offer, personal brand, or project description."
+    },
+    "product_or_offer": {
+      "type": "text",
+      "required": false,
+      "description": "What is sold or delivered, including product, service, course, subscription, consulting package, or content product."
+    },
+    "customer_segments": {
+      "type": "text",
+      "required": false,
+      "description": "Who buys, who uses, who decides, and what customer segment is being served."
+    },
+    "revenue_streams": {
+      "type": "text",
+      "required": false,
+      "description": "Subscription, one-time sales, consulting fees, course fees, advertising, commissions, licensing, or other revenue streams."
+    },
+    "cost_structure": {
+      "type": "text",
+      "required": false,
+      "description": "People, tools, ads, suppliers, time, platform fees, fixed costs, variable costs, and key expenses."
+    },
+    "key_resources": {
+      "type": "text",
+      "required": false,
+      "description": "People, knowledge, systems, audience, data, partnerships, brand assets, operational capabilities, or platform dependencies."
+    }
+  },
+  "outputs": {
+    "business_model_canvas": {
+      "type": "markdown_table"
+    },
+    "sustainability_diagnosis": {
+      "type": "markdown"
+    },
+    "weak_links": {
+      "type": "markdown"
+    },
+    "north_star_metric": {
+      "type": "markdown"
+    },
+    "priority_fixes": {
+      "type": "markdown_list"
+    }
+  },
+  "permissions": {
+    "filesystem_read": true,
+    "filesystem_write": true,
+    "network": false,
+    "browser_automation": false,
+    "third_party_processing": false
+  },
+  "safety": {
+    "handles_sensitive_data": false,
+    "requires_user_confirmation": false,
+    "destructive": false,
+    "rules": [
+      "Do not fabricate revenue, cost, market size, or customer data.",
+      "Mark missing revenue or cost information as assumptions or required follow-up data.",
+      "Do not present strategic diagnosis as guaranteed financial results.",
+      "If no revenue stream or cost information exists, ask for missing data or provide a hypothesis-only diagnosis."
+    ]
+  },
+  "risk_level": "medium",
+  "default_config": {
+    "language": "Traditional Chinese",
+    "canvas_blocks_count": 9,
+    "priority_fixes_count": 3,
+    "require_revenue_cost_check": true,
+    "require_north_star_metric": true,
+    "quality_gate": "strict"
+  },
+  "activation_policy": "use_for_business_model_canvas_diagnosis_tasks",
+  "tags": [
+    "business-model",
+    "business-model-canvas",
+    "strategy",
+    "sustainability",
+    "value-proposition",
+    "customer-segments",
+    "revenue-streams",
+    "cost-structure",
+    "north-star-metric",
+    "business-diagnosis"
+  ]
+}
