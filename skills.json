@@ -252,6 +252,7 @@
       "description": "Diagnose and optimize websites, landing pages, product pages, service pages, enrollment pages, internal portals, and knowledge bases for clarity, trust, SEO, UX, CRO, mobile experience, performance, accessibility, launch readiness, and execution planning.",
       "location": "custom_skills/website-custom-optimizer/",
       "instruction_file": "custom_skills/website-custom-optimizer/SKILL.md",
+      "reference_file": "custom_skills/website-custom-optimizer/REFERENCE.md",
       "manifest": "custom_skills/website-custom-optimizer/manifest.json",
       "runtime": "instruction_only",
       "inputs": [
@@ -293,6 +294,14 @@
         },
         {
           "name": "implementation_roadmap",
+          "type": "markdown"
+        },
+        {
+          "name": "technical_requirements",
+          "type": "markdown"
+        },
+        {
+          "name": "ab_testing_plan",
           "type": "markdown"
         },
         {
@@ -630,6 +639,89 @@
         "education",
         "ai",
         "decision-report"
+      ]
+    },
+    {
+      "id": "managing-public-relations",
+      "name": "Managing Public Relations",
+      "visibility": "private",
+      "type": "instruction",
+      "description": "Build public relations strategy, brand messaging, stakeholder communication, PESO media strategy, media interview preparation, and crisis response plans.",
+      "location": "custom_skills/managing-public-relations/",
+      "instruction_file": "custom_skills/managing-public-relations/SKILL.md",
+      "manifest": "custom_skills/managing-public-relations/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "brand_or_event_context",
+          "type": "text",
+          "required": true,
+          "description": "Brand background, event summary, current situation, public issue, complaint, backlash, or crisis context."
+        },
+        {
+          "name": "goal",
+          "type": "string",
+          "required": false,
+          "description": "awareness, trust, investment, partnership, crisis_repair, media_interview, brand_story, or stakeholder_alignment."
+        },
+        {
+          "name": "stakeholders",
+          "type": "list_or_text",
+          "required": false,
+          "description": "Consumers, investors, employees, media, government, suppliers, partners, community, or other stakeholders."
+        },
+        {
+          "name": "risks_and_constraints",
+          "type": "text",
+          "required": false,
+          "description": "Legal risk, known facts, unknown facts, regulatory concerns, customer harm, employee impact, public sentiment, or timing constraints."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "public_relations_plan",
+          "type": "markdown"
+        },
+        {
+          "name": "core_messages",
+          "type": "markdown_table"
+        },
+        {
+          "name": "media_strategy",
+          "type": "markdown_table"
+        },
+        {
+          "name": "crisis_sop",
+          "type": "markdown_table"
+        },
+        {
+          "name": "external_statement_draft",
+          "type": "markdown"
+        },
+        {
+          "name": "media_q_and_a",
+          "type": "markdown"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false
+      },
+      "risk_level": "high",
+      "activation_policy": "use_for_public_relations_brand_and_crisis_tasks",
+      "notes": "Do not help conceal major facts, fabricate evidence, manipulate media, or mislead stakeholders. High-risk crisis issues require legal counsel and professional PR support.",
+      "tags": [
+        "public-relations",
+        "pr",
+        "brand",
+        "crisis-management",
+        "media-strategy",
+        "stakeholder-communication",
+        "peso",
+        "csr",
+        "cis",
+        "media-qa"
       ]
     },
     {

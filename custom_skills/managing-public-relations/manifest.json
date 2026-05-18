@@ -1,0 +1,113 @@
+{
+  "id": "managing-public-relations",
+  "name": "Managing Public Relations",
+  "version": "1.0.0",
+  "license": "MIT",
+  "category": "Communications / Public Relations / Crisis Management",
+  "capability": "public-relations-brand-crisis-management",
+  "description": "Build public relations strategy, brand messaging, stakeholder communication, PESO media strategy, media interview preparation, and crisis response plans.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "language": "zh-TW",
+  "inputs": {
+    "brand_or_event_context": {
+      "type": "text",
+      "required": true,
+      "description": "Brand background, event summary, current situation, public issue, complaint, backlash, or crisis context."
+    },
+    "goal": {
+      "type": "string",
+      "required": false,
+      "description": "awareness, trust, investment, partnership, crisis_repair, media_interview, brand_story, or stakeholder_alignment."
+    },
+    "stakeholders": {
+      "type": "list_or_text",
+      "required": false,
+      "description": "Consumers, investors, employees, media, government, suppliers, partners, community, or other stakeholders."
+    },
+    "media_context": {
+      "type": "text",
+      "required": false,
+      "description": "Relevant media outlets, reporters, channels, social platforms, owned channels, or interview context."
+    },
+    "risks_and_constraints": {
+      "type": "text",
+      "required": false,
+      "description": "Legal risk, known facts, unknown facts, regulatory concerns, customer harm, employee impact, public sentiment, or timing constraints."
+    }
+  },
+  "outputs": {
+    "public_relations_plan": {
+      "type": "markdown"
+    },
+    "core_messages": {
+      "type": "markdown_table"
+    },
+    "media_strategy": {
+      "type": "markdown_table"
+    },
+    "crisis_sop": {
+      "type": "markdown_table"
+    },
+    "external_statement_draft": {
+      "type": "markdown"
+    },
+    "media_q_and_a": {
+      "type": "markdown"
+    }
+  },
+  "permissions": {
+    "filesystem_read": true,
+    "filesystem_write": true,
+    "network": false,
+    "browser_automation": false,
+    "third_party_processing": false
+  },
+  "safety": {
+    "handles_sensitive_data": true,
+    "requires_user_confirmation": true,
+    "destructive": false,
+    "disallowed_uses": [
+      "hiding_material_facts",
+      "media_manipulation",
+      "misinformation",
+      "fabricated_evidence",
+      "fabricated_endorsements",
+      "defamation",
+      "victim_blaming"
+    ],
+    "rules": [
+      "Do not help conceal major facts, fabricate evidence, manipulate media, or mislead stakeholders.",
+      "Mark unknown facts clearly and avoid overpromising outcomes.",
+      "When legal liability, regulatory exposure, personal injury, data breach, finance, medical, or other high-risk crisis issues appear, advise involving legal counsel and professional PR support.",
+      "Ensure internal and external messages do not contradict each other."
+    ]
+  },
+  "risk_level": "high",
+  "default_config": {
+    "language": "Traditional Chinese",
+    "core_messages_count": 3,
+    "crisis_phases": [
+      "prevention",
+      "control",
+      "repair"
+    ],
+    "include_peso": true,
+    "include_statement_draft": true,
+    "include_media_q_and_a": true,
+    "quality_gate": "strict"
+  },
+  "activation_policy": "use_for_public_relations_brand_and_crisis_tasks",
+  "tags": [
+    "public-relations",
+    "pr",
+    "brand",
+    "crisis-management",
+    "media-strategy",
+    "stakeholder-communication",
+    "peso",
+    "csr",
+    "cis",
+    "media-qa"
+  ]
+}

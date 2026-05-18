@@ -5,6 +5,7 @@
   "capability": "website-custom-optimization",
   "description": "Diagnose and optimize websites, landing pages, product pages, service pages, enrollment pages, internal portals, and knowledge bases for clarity, trust, SEO, UX, CRO, mobile experience, performance, accessibility, launch readiness, and execution planning.",
   "entrypoint": "SKILL.md",
+  "reference_file": "REFERENCE.md",
   "runtime": "instruction_only",
   "language": "zh-TW",
   "inputs": {
@@ -49,6 +50,9 @@
     "technical_requirements": {
       "type": "markdown"
     },
+    "ab_testing_plan": {
+      "type": "markdown"
+    },
     "launch_readiness_checklist": {
       "type": "markdown"
     }
@@ -71,6 +75,12 @@
       "dark_patterns",
       "fabricated_social_proof",
       "misleading_tracking"
+    ],
+    "rules": [
+      "Do not fabricate social proof, metrics, testimonials, media coverage, certifications, or expected lift percentages.",
+      "Mark assumptions and missing data explicitly instead of pretending a full-site audit is complete.",
+      "Ask for authorization before browser automation, crawling, third-party processing, or analyzing non-public content.",
+      "For forms, login, payment, children, medical, finance, legal, or government services, flag privacy, security, and compliance risks."
     ]
   },
   "risk_level": "medium",

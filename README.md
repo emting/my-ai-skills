@@ -150,7 +150,24 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 壓力測試與需要形成決策報告的複雜問題
 
 
-### 10. [Community] Awesome Agent Skills
+### 10. [Private] Managing Public Relations／公關品牌與危機處理
+
+**用途：**
+協助企業、品牌或個人建立公關策略、品牌訊息、利益關係人管理、媒體應對、PESO 媒體組合與危機處理流程，並產出核心訊息、媒體策略、對外聲明草稿、媒體 Q&A 與危機 SOP。
+
+**位置：**
+
+`custom_skills/managing-public-relations/`
+
+**適用情境：**
+
+- 提升品牌知名度、信任感、投資吸引力或合作機會
+- 設計企業公關、B2B 公關、媒體訪談或品牌故事
+- 處理負面新聞、客訴、社群炎上或危機事件
+- 建立 CIS、CSR、PESO 與利益關係人溝通
+
+
+### 11. [Community] Awesome Agent Skills
 
 **用途：**
 引用社群整理的 agent skills 資源，作為新增技能、參考技能格式與擴充能力時的共用來源。
@@ -164,7 +181,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 `community_skills/awesome-agent-skills/`
 
 
-### 11. [Community] Cloudflare Skills
+### 12. [Community] Cloudflare Skills
 
 **用途：**
 引用 Cloudflare 官方 agent skills，讓 Agent 在處理 Workers、Pages、KV、D1、R2、AI、Tunnel、WAF、Wrangler、Durable Objects、Agents SDK、Email Service 等 Cloudflare 任務時可讀取官方指令包。
@@ -222,6 +239,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - `custom_skills/optimizing-google-ads/`
 - `custom_skills/adapting-notion-docs/`
 - `custom_skills/research-lab/`
+- `custom_skills/managing-public-relations/`
 
 ## Repository Structure
 
