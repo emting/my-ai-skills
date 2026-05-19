@@ -891,6 +891,85 @@
       ]
     },
     {
+      "id": "making-decisions",
+      "name": "Making Decisions",
+      "visibility": "private",
+      "type": "instruction",
+      "description": "Structure ambiguous choices into clear decision statements, comparable options, weighted evaluation criteria, uncertainty maps, recommendations, counterarguments, and low-cost validation experiments.",
+      "location": "custom_skills/making-decisions/",
+      "instruction_file": "custom_skills/making-decisions/SKILL.md",
+      "manifest": "custom_skills/making-decisions/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "decision_question",
+          "type": "text",
+          "required": true,
+          "description": "The choice, tradeoff, prioritization question, project decision, technology selection, or planning problem to decide."
+        },
+        {
+          "name": "candidate_options",
+          "type": "list_or_text",
+          "required": false,
+          "description": "Current options, including known proposals, paths, tools, projects, or alternatives."
+        },
+        {
+          "name": "goals_and_success_criteria",
+          "type": "text",
+          "required": false,
+          "description": "Primary goal, success metrics, desired outcome, or what the decision must optimize for."
+        },
+        {
+          "name": "constraints",
+          "type": "text",
+          "required": false,
+          "description": "Time, budget, resources, risk tolerance, must-not-violate conditions, or other constraints."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "decision_summary",
+          "type": "markdown"
+        },
+        {
+          "name": "option_comparison_matrix",
+          "type": "markdown_table"
+        },
+        {
+          "name": "uncertainty_map",
+          "type": "markdown_table"
+        },
+        {
+          "name": "validation_plan",
+          "type": "markdown"
+        },
+        {
+          "name": "recommendation_and_counterargument",
+          "type": "markdown"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false
+      },
+      "risk_level": "low",
+      "activation_policy": "use_for_decision_tradeoff_prioritization_and_planning_tasks",
+      "notes": "Do not present uncertain judgments as facts. Always consider status quo, delayed decision, and small-test options. Recommendations must map to the user's stated goal.",
+      "tags": [
+        "decision-making",
+        "decision-support",
+        "tradeoffs",
+        "prioritization",
+        "risk-assessment",
+        "option-comparison",
+        "validation-plan",
+        "startup-direction",
+        "technology-selection",
+        "ai-workflow"
+      ]
+    },
+    {
       "id": "weather_api",
       "name": "Weather API",
       "visibility": "shared",

@@ -201,7 +201,24 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 用 CRM、回訪、折價券、返利、試用或社群證據提升成交
 
 
-### 13. [Community] Awesome Agent Skills
+### 13. [Private] Making Decisions／決策類 Skill
+
+**用途：**
+協助把模糊問題、候選方案與權衡條件整理成可判斷、可比較、可執行的決策流程，產出決策摘要、方案比較矩陣、不確定性地圖、推薦方案、反方觀點與低成本驗證計畫。
+
+**位置：**
+
+`custom_skills/making-decisions/`
+
+**適用情境：**
+
+- 多方案比較、優先級排序與風險評估
+- 創業方向、專案投入、工具或技術選型
+- 腦力激盪後收斂成決策
+- CLI 工具與 AI 工作流規劃
+
+
+### 14. [Community] Awesome Agent Skills
 
 **用途：**
 引用社群整理的 agent skills 資源，作為新增技能、參考技能格式與擴充能力時的共用來源。
@@ -215,7 +232,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 `community_skills/awesome-agent-skills/`
 
 
-### 14. [Community] Cloudflare Skills
+### 15. [Community] Cloudflare Skills
 
 **用途：**
 引用 Cloudflare 官方 agent skills，讓 Agent 在處理 Workers、Pages、KV、D1、R2、AI、Tunnel、WAF、Wrangler、Durable Objects、Agents SDK、Email Service 等 Cloudflare 任務時可讀取官方指令包。
@@ -276,6 +293,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - `custom_skills/managing-public-relations/`
 - `custom_skills/analyzing-business-models/`
 - `custom_skills/designing-pricing-systems/`
+- `custom_skills/making-decisions/`
 
 ## Repository Structure
 

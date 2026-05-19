@@ -1,0 +1,96 @@
+{
+  "id": "making-decisions",
+  "name": "Making Decisions",
+  "version": "1.0.0",
+  "license": "MIT",
+  "category": "Decision Support / Strategy / Planning",
+  "capability": "decision-structuring-and-validation",
+  "description": "Structure ambiguous choices into clear decision statements, comparable options, weighted evaluation criteria, uncertainty maps, recommendations, counterarguments, and low-cost validation experiments.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "language": "zh-TW",
+  "inputs": {
+    "decision_question": {
+      "type": "text",
+      "required": true,
+      "description": "The choice, tradeoff, prioritization question, project decision, technology selection, or planning problem to decide."
+    },
+    "candidate_options": {
+      "type": "list_or_text",
+      "required": false,
+      "description": "Current options, including known proposals, paths, tools, projects, or alternatives."
+    },
+    "goals_and_success_criteria": {
+      "type": "text",
+      "required": false,
+      "description": "Primary goal, success metrics, desired outcome, or what the decision must optimize for."
+    },
+    "constraints": {
+      "type": "text",
+      "required": false,
+      "description": "Time, budget, resources, risk tolerance, must-not-violate conditions, or other constraints."
+    },
+    "known_data_and_assumptions": {
+      "type": "text",
+      "required": false,
+      "description": "Known evidence, assumptions, unknowns, prior research, or beliefs behind the decision."
+    }
+  },
+  "outputs": {
+    "decision_summary": {
+      "type": "markdown"
+    },
+    "option_comparison_matrix": {
+      "type": "markdown_table"
+    },
+    "uncertainty_map": {
+      "type": "markdown_table"
+    },
+    "validation_plan": {
+      "type": "markdown"
+    },
+    "recommendation_and_counterargument": {
+      "type": "markdown"
+    }
+  },
+  "permissions": {
+    "filesystem_read": true,
+    "filesystem_write": true,
+    "network": false,
+    "browser_automation": false,
+    "third_party_processing": false
+  },
+  "safety": {
+    "handles_sensitive_data": false,
+    "requires_user_confirmation": false,
+    "destructive": false,
+    "rules": [
+      "Do not present uncertain judgments as facts; mark assumptions and unknowns clearly.",
+      "Do not ignore the status quo, delayed decision, or small-test options.",
+      "For high-risk decisions, include counterarguments, reversibility, and risk mitigation.",
+      "Recommendations must map to the user's stated goal, not a generic best practice."
+    ]
+  },
+  "risk_level": "low",
+  "default_config": {
+    "language": "Traditional Chinese",
+    "ask_clarifying_questions_max": 3,
+    "include_status_quo_option": true,
+    "include_small_test_option": true,
+    "include_counterargument": true,
+    "quality_gate": "strict"
+  },
+  "activation_policy": "use_for_decision_tradeoff_prioritization_and_planning_tasks",
+  "tags": [
+    "decision-making",
+    "decision-support",
+    "tradeoffs",
+    "prioritization",
+    "risk-assessment",
+    "option-comparison",
+    "validation-plan",
+    "startup-direction",
+    "technology-selection",
+    "ai-workflow"
+  ]
+}
