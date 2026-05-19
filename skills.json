@@ -810,6 +810,87 @@
       ]
     },
     {
+      "id": "designing-pricing-systems",
+      "name": "Designing Pricing Systems",
+      "visibility": "private",
+      "type": "instruction",
+      "description": "Design pricing strategy, quotation logic, sales conversion flows, repurchase systems, CRM follow-up, discounts, trials, referrals, and social proof for products and services.",
+      "location": "custom_skills/designing-pricing-systems/",
+      "instruction_file": "custom_skills/designing-pricing-systems/SKILL.md",
+      "manifest": "custom_skills/designing-pricing-systems/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "product_or_service",
+          "type": "text",
+          "required": true,
+          "description": "Product, service, course, consulting offer, supplement, restaurant, retail store, community product, or other offer."
+        },
+        {
+          "name": "cost_and_margin",
+          "type": "text",
+          "required": false,
+          "description": "Cost, gross margin, time cost, delivery cost, ad cost, platform fees, or operating cost."
+        },
+        {
+          "name": "customer_segment",
+          "type": "text",
+          "required": false,
+          "description": "Target customer, buying context, purchase motivation, objections, and willingness to pay."
+        },
+        {
+          "name": "channels",
+          "type": "text",
+          "required": false,
+          "description": "Sales channels, traffic channels, storefront, landing page, social media, CRM, sales calls, or offline flow."
+        },
+        {
+          "name": "competitor_prices",
+          "type": "text",
+          "required": false,
+          "description": "Competitor pricing, market anchors, customer comparison points, and public price references."
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pricing_strategy",
+          "type": "markdown_table"
+        },
+        {
+          "name": "quotation_system",
+          "type": "markdown"
+        },
+        {
+          "name": "sales_conversion_flow",
+          "type": "markdown_table"
+        },
+        {
+          "name": "repurchase_and_referral_system",
+          "type": "markdown"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "use_for_pricing_quotation_conversion_and_repurchase_tasks",
+      "notes": "Do not fabricate testimonials, results, scarcity, discounts, medical effects, or financial returns. If the user cannot deliver the promised value, recommend reducing the promise, changing the offer, or improving delivery before raising price.",
+      "tags": [
+        "pricing",
+        "sales",
+        "quotation",
+        "conversion",
+        "crm",
+        "repurchase",
+        "referral",
+        "discounts",
+        "trial",
+        "social-proof"
+      ]
+    },
+    {
       "id": "weather_api",
       "name": "Weather API",
       "visibility": "shared",

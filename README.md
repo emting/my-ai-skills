@@ -184,7 +184,24 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 判斷北極星指標是否真的連到營收
 
 
-### 12. [Community] Awesome Agent Skills
+### 12. [Private] Designing Pricing Systems／定價策略與成交系統
+
+**用途：**
+協助設計價格、報價情境、成交流程與回購系統，判斷該採短期高溢價、長期品牌、封閉式報價或公開標準品策略，並產出至少兩種價格方案、一條成交路徑與回購／推薦設計。
+
+**位置：**
+
+`custom_skills/designing-pricing-systems/`
+
+**適用情境：**
+
+- 不知道產品該賣高價還是合理價
+- 客戶嫌貴，但可能是不懂價值
+- 設計顧問、課程、保健品、餐廳、實體店或社群商品的成交系統
+- 用 CRM、回訪、折價券、返利、試用或社群證據提升成交
+
+
+### 13. [Community] Awesome Agent Skills
 
 **用途：**
 引用社群整理的 agent skills 資源，作為新增技能、參考技能格式與擴充能力時的共用來源。
@@ -198,7 +215,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 `community_skills/awesome-agent-skills/`
 
 
-### 13. [Community] Cloudflare Skills
+### 14. [Community] Cloudflare Skills
 
 **用途：**
 引用 Cloudflare 官方 agent skills，讓 Agent 在處理 Workers、Pages、KV、D1、R2、AI、Tunnel、WAF、Wrangler、Durable Objects、Agents SDK、Email Service 等 Cloudflare 任務時可讀取官方指令包。
@@ -258,6 +275,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - `custom_skills/research-lab/`
 - `custom_skills/managing-public-relations/`
 - `custom_skills/analyzing-business-models/`
+- `custom_skills/designing-pricing-systems/`
 
 ## Repository Structure
 
