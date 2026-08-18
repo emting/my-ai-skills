@@ -38,5 +38,5 @@
 - 修正 registry 與 data-analysis、To PRD manifest 之間的 metadata drift。
 - schema 接受現有技能使用的連字號 ID，並對 inputs、outputs、permissions 與 safety 提供結構驗證。
 
-[1.2.0]: https://github.com/emting/my-ai-skills/commit/d145302
+[1.2.0]: https://github.com/emting/my-ai-skills/commit/2710101f41f5d71286fe74e58d44cb9d3d1c6d56
 [1.1.0]: https://github.com/emting/my-ai-skills/commit/39851329f9578389274960f57f711e8162843491
