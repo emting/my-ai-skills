@@ -35,7 +35,13 @@
   "safety": {
     "handles_sensitive_data": true,
     "requires_user_confirmation": true,
-    "destructive": false
+    "destructive": false,
+    "rules": [
+      "Do not print, commit, or transmit secrets, tokens, private keys, or account data.",
+      "Require explicit user confirmation before git push, Cloudflare deploy, route/binding changes, or cloud resource changes.",
+      "Run build, test, smoke test, and rollback checks before any deployment recommendation.",
+      "Do not claim a deployment succeeded without observing an explicit provider result."
+    ]
   },
   "risk_level": "high",
   "source": {

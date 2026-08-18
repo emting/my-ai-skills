@@ -30,7 +30,13 @@
   "safety": {
     "handles_sensitive_data": true,
     "requires_user_confirmation": true,
-    "destructive": false
+    "destructive": false,
+    "rules": [
+      "Never output real API keys, tokens, private keys, or credentials.",
+      "Use placeholders and environment-variable references for authentication examples.",
+      "Require explicit user confirmation before overwriting existing MCP configuration or enabling an external service.",
+      "Identify paid, privileged, networked, or third-party data-processing effects before authorization."
+    ]
   },
   "risk_level": "medium",
   "source": {

@@ -352,6 +352,22 @@ pip install -r requirements.txt
 git submodule update --init --recursive
 ```
 
+若要把 repository 內所有契約完整的 skills 安裝到本機 Agent，建議使用 symlink 模式。這樣更新 repository 後，本機載入內容會同步更新；安裝器不會覆蓋既有的非 symlink 目錄。
+
+```bash
+python scripts/install_local_skills.py
+python scripts/verify_local_install.py
+python scripts/smoke_test_skills.py
+```
+
+預設安裝位置是 `~/.agents/skills`；若該位置不存在，安裝器會建立它。卸載時只會移除指向本 repository `custom_skills/` 的 symlink，不會刪除其他技能或使用者資料：
+
+```bash
+python scripts/install_local_skills.py --uninstall
+```
+
+本 repository 目前包含 80 個可安裝套件，其中 79 個是 instruction-only skills，1 個是 Python CLI。`smoke_test_skills.py` 對 instruction-only skills 只做唯讀 dry-run，不會自動登入、發送網路請求、部署、推送或修改第三方服務。
+
 ## Safety
 
 請勿提交以下內容：
@@ -376,6 +392,8 @@ MIT License
 
 ```bash
 python scripts/validate_repo.py
+python scripts/verify_local_install.py
+python scripts/smoke_test_skills.py
 pytest -q
 python -m compileall -q custom_skills tests scripts
 ```
