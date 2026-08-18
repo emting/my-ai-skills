@@ -1,7 +1,7 @@
 {
   "name": "my-ai-skills",
-  "version": "1.2.0",
-  "description": "Open-source AI skills library for agents, coding assistants, and automation tools, including a normalized 66-skill archive import.",
+  "version": "1.3.0",
+  "description": "Open-source AI skills library for agents, coding assistants, and automation tools, including normalized Markdown and directory-based ZIP skill archives.",
   "default_language": "zh-TW",
   "maintainer": {
     "name": "emting",
@@ -7117,6 +7117,2790 @@
         "end_line": 2044,
         "status": "normalized_and_hardened"
       }
+    },
+    {
+      "id": "agent-bible-sq3r-fast-guide",
+      "name": "agent-bible-sq3r-fast-guide",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Guide users through high-speed Bible reading using the SQ3R-Fast methodology (Survey, Question, Read, Recite, Review) and structured taxonomy tags (#god/attr,",
+      "location": "custom_skills/agent-bible-sq3r-fast-guide/",
+      "entrypoint": "custom_skills/agent-bible-sq3r-fast-guide/SKILL.md",
+      "instruction_file": "custom_skills/agent-bible-sq3r-fast-guide/SKILL.md",
+      "manifest": "custom_skills/agent-bible-sq3r-fast-guide/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": false,
+        "filesystem_write": false,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 2,
+        "start_line": 1,
+        "end_line": 55,
+        "status": "normalized_and_hardened",
+        "sha256": "d956dd58610437a495d383fc96b7fad8354ecd457194fc57104f7aee53515bfe",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "agent-bible-sq3r-fast-guide/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "ai-research-lab",
+        "research-to-insight"
+      ]
+    },
+    {
+      "id": "agent-big-e-life-coach",
+      "name": "agent-big-e-life-coach",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Provide life coaching, emotional regulation, spiritual gamification, and podcast script creation in the persona of Podcast Host Big E (大E). Use when the user asks for Big E life coaching, podcast episode scripts, emotional management guides, or reflective growth notes.",
+      "location": "custom_skills/agent-big-e-life-coach/",
+      "entrypoint": "custom_skills/agent-big-e-life-coach/SKILL.md",
+      "instruction_file": "custom_skills/agent-big-e-life-coach/SKILL.md",
+      "manifest": "custom_skills/agent-big-e-life-coach/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供的背景、文件、素材或限制條件。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": false,
+        "filesystem_write": true,
+        "network": false,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": false,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "low",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "privacy-sensitive"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 3,
+        "start_line": 1,
+        "end_line": 52,
+        "status": "normalized_and_hardened",
+        "sha256": "d24a2ecf6de29f0d84ac29f7fd3f1c1c3ce18cbe9e598a2de8dd7d2ff81f27f8",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "agent-big-e-life-coach/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "decision-making-superpowers"
+      ]
+    },
+    {
+      "id": "agent-cyber-bully-lecturer",
+      "name": "agent-cyber-bully-lecturer",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Provide cybersecurity education, threat analysis, and defense recommendations in the persona of 'Cyber Frenchie Principal' (法鬥校長), using humorous canine analogies and security verification hierarchies. Use when the user asks for cybersecurity advice, phishing prevention, OWASP vulnerabilities, or security sniff logs.",
+      "location": "custom_skills/agent-cyber-bully-lecturer/",
+      "entrypoint": "custom_skills/agent-cyber-bully-lecturer/SKILL.md",
+      "instruction_file": "custom_skills/agent-cyber-bully-lecturer/SKILL.md",
+      "manifest": "custom_skills/agent-cyber-bully-lecturer/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": false,
+        "filesystem_write": false,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 4,
+        "start_line": 1,
+        "end_line": 54,
+        "status": "normalized_and_hardened",
+        "sha256": "a6dcee2303c40c070fa0153cd8e3b49821581144f25f6b4f3991298586910df0",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "agent-cyber-bully-lecturer/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "ai-security-agent-governance"
+      ]
+    },
+    {
+      "id": "agent-senior-prd-architect-sophia",
+      "name": "agent-senior-prd-architect-sophia",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Draft comprehensive, rigorous Product Requirement Documents (PRD), Mermaid system logic flows, and QA/edge case checklists in the persona of Senior PRD Architect Sophia Lin (林婷婷). Use when the user asks to write PRDs, define product requirements, map system logic flows, or outline QA checklists for software features.",
+      "location": "custom_skills/agent-senior-prd-architect-sophia/",
+      "entrypoint": "custom_skills/agent-senior-prd-architect-sophia/SKILL.md",
+      "instruction_file": "custom_skills/agent-senior-prd-architect-sophia/SKILL.md",
+      "manifest": "custom_skills/agent-senior-prd-architect-sophia/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 5,
+        "start_line": 1,
+        "end_line": 51,
+        "status": "normalized_and_hardened",
+        "sha256": "d3849006d8f0c81f69843c3448949f2e9bda1812f23c01602a676a2b37ca2e72",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "agent-senior-prd-architect-sophia/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "ai-project-feasibility-assessment"
+      ]
+    },
+    {
+      "id": "agent-skills-actions-auditor",
+      "name": "agent-skills-actions-auditor",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Audit agent skills and actions, identify optimization opportunities, fix syntax or parameter issues, and refine prompt instructions. Use when the user asks to audit Codex/agent skills, optimize agent actions, or refine skill instructions.",
+      "location": "custom_skills/agent-skills-actions-auditor/",
+      "entrypoint": "custom_skills/agent-skills-actions-auditor/SKILL.md",
+      "instruction_file": "custom_skills/agent-skills-actions-auditor/SKILL.md",
+      "manifest": "custom_skills/agent-skills-actions-auditor/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 6,
+        "start_line": 1,
+        "end_line": 28,
+        "status": "normalized_and_hardened",
+        "sha256": "c1642ad0ccf287bf60a892b7a1a47eaa0536bb322581c3645b4f43777adb6bde",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "agent-skills-actions-auditor/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "ai-security-agent-governance",
+        "enterprise-sovereign-ai-adoption"
+      ]
+    },
+    {
+      "id": "app-performance-benchmark-optimizer",
+      "name": "app-performance-benchmark-optimizer",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Establish app performance benchmarks, identify latency or memory bottlenecks, and execute measurable code optimizations with before/after reports. Use when the user asks to optimize app performance, profile latency, or fix performance bottlenecks.",
+      "location": "custom_skills/app-performance-benchmark-optimizer/",
+      "entrypoint": "custom_skills/app-performance-benchmark-optimizer/SKILL.md",
+      "instruction_file": "custom_skills/app-performance-benchmark-optimizer/SKILL.md",
+      "manifest": "custom_skills/app-performance-benchmark-optimizer/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": true,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 14,
+        "start_line": 1,
+        "end_line": 28,
+        "status": "normalized_and_hardened",
+        "sha256": "830353c7648a733ab69db7930d6c00405114a4d2a2f3a681c85b90f38264956a",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "app-performance-benchmark-optimizer/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "website-auditing"
+      ]
+    },
+    {
+      "id": "cloudflare-skills",
+      "name": "cloudflare-skills",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Cloudflare 微服務、Workers/Pages 部署與 DNS 設定診斷 Skill。當使用者需要管理、部署或排錯 Cloudflare 服務與網域設定時使用。",
+      "location": "custom_skills/cloudflare-skills/",
+      "entrypoint": "custom_skills/cloudflare-skills/SKILL.md",
+      "instruction_file": "custom_skills/cloudflare-skills/SKILL.md",
+      "manifest": "custom_skills/cloudflare-skills/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": false,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": true,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": true,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 20,
+        "start_line": 1,
+        "end_line": 29,
+        "status": "normalized_and_hardened",
+        "sha256": "50c8e5f4db31e2702f492fab06357514b8818039b8585e5646e238f7b0b7252d",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "cloudflare-skills/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "website-auditing",
+        "website-landing-page-builder"
+      ]
+    },
+    {
+      "id": "daily-devotional-prayer-guide",
+      "name": "daily-devotional-prayer-guide",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Guide users through a structured 4-phase daily spiritual devotional and prayer workflow (preparation, SOAP meditation, deep reflection questions, and responsive prayer). Use when the user asks for daily devotional guidance, Bible verse meditation, SOAP reflection, or structured prayer prompts.",
+      "location": "custom_skills/daily-devotional-prayer-guide/",
+      "entrypoint": "custom_skills/daily-devotional-prayer-guide/SKILL.md",
+      "instruction_file": "custom_skills/daily-devotional-prayer-guide/SKILL.md",
+      "manifest": "custom_skills/daily-devotional-prayer-guide/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供的背景、文件、素材或限制條件。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": false,
+        "filesystem_write": false,
+        "network": false,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": false,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "privacy-sensitive"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 24,
+        "start_line": 1,
+        "end_line": 56,
+        "status": "normalized_and_hardened",
+        "sha256": "2ae35ce23cc0b99f6c86c7361ed490c07b878914f096c720017d89c1dd20eb80",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "daily-devotional-prayer-guide/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      }
+    },
+    {
+      "id": "emil-design-eng",
+      "name": "emil-design-eng",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great. Use when designing, building, or reviewing UI components, animations, transitions, or web interfaces.",
+      "location": "custom_skills/emil-design-eng/",
+      "entrypoint": "custom_skills/emil-design-eng/SKILL.md",
+      "instruction_file": "custom_skills/emil-design-eng/SKILL.md",
+      "manifest": "custom_skills/emil-design-eng/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": true,
+        "third_party_processing": true,
+        "shell": true,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 29,
+        "start_line": 1,
+        "end_line": 253,
+        "status": "normalized_and_hardened",
+        "sha256": "81168dda4c9e7e62c72642dfb5bb3dc66234272a3d48de1e501db7afdee3c268",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "emil-design-eng/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "design-proposal-portfolio-persuasion",
+        "ui-minimalist-animation-enhancer"
+      ]
+    },
+    {
+      "id": "full-sprint-execution",
+      "name": "full-sprint-execution",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "軟體工程 Full Sprint 安全執行與交付 Skill。當使用者需要在限制範疇、測試保護與 Sprint 契約下進行多檔案開發或重構時使用。",
+      "location": "custom_skills/full-sprint-execution/",
+      "entrypoint": "custom_skills/full-sprint-execution/SKILL.md",
+      "instruction_file": "custom_skills/full-sprint-execution/SKILL.md",
+      "manifest": "custom_skills/full-sprint-execution/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供的背景、文件、素材或限制條件。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": false,
+        "shell": false,
+        "git": true,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 31,
+        "start_line": 1,
+        "end_line": 30,
+        "status": "normalized_and_hardened",
+        "sha256": "8ecafa6be11b825a48d08aca36108cff2eaae1b819b8409c6bb3ca1dcfb6da86",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "full-sprint-execution/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "startup-venture-builder",
+        "agent-task-packaging"
+      ]
+    },
+    {
+      "id": "game-inspiration-world-builder",
+      "name": "game-inspiration-world-builder",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Generate 3D world inspiration concepts and autonomously build matching game code and assets. Use when the user asks to generate 3D world concepts, design game worlds, or build a game matching visual inspiration images.",
+      "location": "custom_skills/game-inspiration-world-builder/",
+      "entrypoint": "custom_skills/game-inspiration-world-builder/SKILL.md",
+      "instruction_file": "custom_skills/game-inspiration-world-builder/SKILL.md",
+      "manifest": "custom_skills/game-inspiration-world-builder/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": false,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 32,
+        "start_line": 1,
+        "end_line": 27,
+        "status": "normalized_and_hardened",
+        "sha256": "9072d42db4a9fa114add988cbbb2057798d6f22a745f1c4dccb4530092552d27",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "game-inspiration-world-builder/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      }
+    },
+    {
+      "id": "google-ads-audit",
+      "name": "google-ads-audit",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Google Ads 廣告帳戶與成效審查/稽核 Skill。當使用者需要審查 Google Ads 帳戶架構、關鍵字策略、成效指標 (CPA/ROAS) 或優化廣告文案時使用。",
+      "location": "custom_skills/google-ads-audit/",
+      "entrypoint": "custom_skills/google-ads-audit/SKILL.md",
+      "instruction_file": "custom_skills/google-ads-audit/SKILL.md",
+      "manifest": "custom_skills/google-ads-audit/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": true,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 34,
+        "start_line": 1,
+        "end_line": 33,
+        "status": "normalized_and_hardened",
+        "sha256": "a396201135a6987c92863089b69ebbfdeed521c30f77019c0538f44403e52a75",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "google-ads-audit/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "marketing-brief-competitor-analyst"
+      ]
+    },
+    {
+      "id": "high-energy-daily-routine-designer",
+      "name": "high-energy-daily-routine-designer",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Audit personal lifestyle and design an optimized daily routine for high energy covering sleep, nutrition, exercise, social, creative, and career growth. Use when the user asks for life audit, daily routine design, or energy optimization plan.",
+      "location": "custom_skills/high-energy-daily-routine-designer/",
+      "entrypoint": "custom_skills/high-energy-daily-routine-designer/SKILL.md",
+      "instruction_file": "custom_skills/high-energy-daily-routine-designer/SKILL.md",
+      "manifest": "custom_skills/high-energy-daily-routine-designer/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供的背景、文件、素材或限制條件。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": false,
+        "filesystem_write": false,
+        "network": false,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": false,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "privacy-sensitive",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 35,
+        "start_line": 1,
+        "end_line": 27,
+        "status": "normalized_and_hardened",
+        "sha256": "c6901c385de77a7dd4c496963088b32856cc551cb757497fc1b38d6ade7e0d84",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "high-energy-daily-routine-designer/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      }
+    },
+    {
+      "id": "interactive-skill-learning-curriculum",
+      "name": "interactive-skill-learning-curriculum",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Research optimal learning methods for any target skill and design an interactive curriculum with videos, podcasts, reading materials, and checkable milestones. Use when the user asks to teach a skill, create a learning roadmap, or build an interactive course curriculum.",
+      "location": "custom_skills/interactive-skill-learning-curriculum/",
+      "entrypoint": "custom_skills/interactive-skill-learning-curriculum/SKILL.md",
+      "instruction_file": "custom_skills/interactive-skill-learning-curriculum/SKILL.md",
+      "manifest": "custom_skills/interactive-skill-learning-curriculum/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 36,
+        "start_line": 1,
+        "end_line": 29,
+        "status": "normalized_and_hardened",
+        "sha256": "e38bff228387d021bd562bf4915b2c158c62fb02ba3c7477369b683720f7ec70",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "interactive-skill-learning-curriculum/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "progressive-quiz-generator"
+      ]
+    },
+    {
+      "id": "life-scenario-simulation-matrix",
+      "name": "life-scenario-simulation-matrix",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Conduct a 50-question life audit and simulate 30-year life trajectories across career, health, exercise, and relationship variables into structured matrices. Use when the user asks for a 50-question life survey or 30-year life scenario simulation.",
+      "location": "custom_skills/life-scenario-simulation-matrix/",
+      "entrypoint": "custom_skills/life-scenario-simulation-matrix/SKILL.md",
+      "instruction_file": "custom_skills/life-scenario-simulation-matrix/SKILL.md",
+      "manifest": "custom_skills/life-scenario-simulation-matrix/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 37,
+        "start_line": 1,
+        "end_line": 25,
+        "status": "normalized_and_hardened",
+        "sha256": "b9078bac991f7c87184f9031c5ca4d695258ffdc8db5f8f4b2530627063ea019",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "life-scenario-simulation-matrix/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "decision-making-superpowers"
+      ]
+    },
+    {
+      "id": "multi-agent-research-workflow",
+      "name": "multi-agent-research-workflow",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "An advanced multi-agent research workflow inspired by Claude Research architecture, enhanced with Full Sprint engineering controls. Use when conducting deep multi-perspective research, executing parallel subagent investigation tasks, or synthesizing research into actionable software engineering sprint contracts.",
+      "location": "custom_skills/multi-agent-research-workflow/",
+      "entrypoint": "custom_skills/multi-agent-research-workflow/SKILL.md",
+      "instruction_file": "custom_skills/multi-agent-research-workflow/SKILL.md",
+      "manifest": "custom_skills/multi-agent-research-workflow/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": true,
+        "git": true,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 45,
+        "start_line": 1,
+        "end_line": 67,
+        "status": "normalized_and_hardened",
+        "sha256": "0d403e4f3469165a3db2138c9be7b04aabd340b5c1f80baa1cf68baf527e0bc9",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "multi-agent-research-workflow/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "ai-research-lab",
+        "research-to-insight"
+      ]
+    },
+    {
+      "id": "naval-backstage-simulator",
+      "name": "naval-backstage-simulator",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Simulate a multi-expert backstage debate synthesized through Naval Ravikant's mental models (leverage, specific knowledge, compounding, judgment) to produce concise, high-leverage, plain-text aphorisms and execution logic (ESSENCE_DISTILLATION.txt). Use when the user asks for Naval Ravikant style decision framework, multi-expert debate distillation, or plain-text high-leverage advice.",
+      "location": "custom_skills/naval-backstage-simulator/",
+      "entrypoint": "custom_skills/naval-backstage-simulator/SKILL.md",
+      "instruction_file": "custom_skills/naval-backstage-simulator/SKILL.md",
+      "manifest": "custom_skills/naval-backstage-simulator/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": false,
+        "filesystem_write": false,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 47,
+        "start_line": 1,
+        "end_line": 50,
+        "status": "normalized_and_hardened",
+        "sha256": "fbca53901ebb038cef761296299c9b737a2f24da5fe27ff36097d5609ae83fcb",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "naval-backstage-simulator/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      }
+    },
+    {
+      "id": "open-slide",
+      "name": "open-slide",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Create, draft, edit, and manage web-native React presentations using the open-slide framework. Use when the user requests creating slides, building presentation decks with React/open-slide, editing slide components, or exporting open-slide presentations.",
+      "location": "custom_skills/open-slide/",
+      "entrypoint": "custom_skills/open-slide/SKILL.md",
+      "instruction_file": "custom_skills/open-slide/SKILL.md",
+      "manifest": "custom_skills/open-slide/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": true,
+        "third_party_processing": true,
+        "shell": true,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 52,
+        "start_line": 1,
+        "end_line": 108,
+        "status": "normalized_and_hardened",
+        "sha256": "46bd95857016624d92cdd46524be8ba6652504cfdc78675f9249c12465354e1a",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "open-slide/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "presentation-structure-visual-script",
+        "presentation-yaml-design-architect"
+      ]
+    },
+    {
+      "id": "presentation-yaml-design-architect",
+      "name": "presentation-yaml-design-architect",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Transform presentation topics or draft text into a structured presentation design blueprint in YAML format (PRESENTATION_DESIGN.yaml) specifying global design specs, color schemes, layout rules, page-by-page visual descriptions, and content generation prompts. Use when the user asks to generate presentation design blueprints, YAML slide architectures, or structured presentation visual specs.",
+      "location": "custom_skills/presentation-yaml-design-architect/",
+      "entrypoint": "custom_skills/presentation-yaml-design-architect/SKILL.md",
+      "instruction_file": "custom_skills/presentation-yaml-design-architect/SKILL.md",
+      "manifest": "custom_skills/presentation-yaml-design-architect/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供的背景、文件、素材或限制條件。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": false,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "low",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "imported",
+        "instruction-only"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 61,
+        "start_line": 1,
+        "end_line": 70,
+        "status": "normalized_and_hardened",
+        "sha256": "89a4c5e77ac3e8a4ed42412e6805678320f6e40136ff0d95076d18ba027f9785",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "presentation-yaml-design-architect/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      }
+    },
+    {
+      "id": "product-idea-scoring-matrix",
+      "name": "product-idea-scoring-matrix",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Generate 100 product or SaaS ideas based on skills/interests and score each across market demand, execution difficulty, differentiation, startup cost, and time-to-first-revenue. Use when the user asks for 100 product ideas, SaaS ideation, or startup idea scoring matrix.",
+      "location": "custom_skills/product-idea-scoring-matrix/",
+      "entrypoint": "custom_skills/product-idea-scoring-matrix/SKILL.md",
+      "instruction_file": "custom_skills/product-idea-scoring-matrix/SKILL.md",
+      "manifest": "custom_skills/product-idea-scoring-matrix/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 64,
+        "start_line": 1,
+        "end_line": 29,
+        "status": "normalized_and_hardened",
+        "sha256": "641d7aed3dfc168933ad00e0f25f20288957972c7f96b1b7aed1ee400d4a6648",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "product-idea-scoring-matrix/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "ai-project-feasibility-assessment"
+      ]
+    },
+    {
+      "id": "system-file-audit-organizer",
+      "name": "system-file-audit-organizer",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Audit system files and directories, execute obvious file organization tasks, and generate user-confirmation proposals for major changes. Use when the user asks to audit computer files, clean up downloads/desktop, or organize system folders.",
+      "location": "custom_skills/system-file-audit-organizer/",
+      "entrypoint": "custom_skills/system-file-audit-organizer/SKILL.md",
+      "instruction_file": "custom_skills/system-file-audit-organizer/SKILL.md",
+      "manifest": "custom_skills/system-file-audit-organizer/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 79,
+        "start_line": 1,
+        "end_line": 28,
+        "status": "normalized_and_hardened",
+        "sha256": "6d34d9b01bc8839fdc068d735ed9fca0872b4a0d4877282b1c50d978df056d14",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "system-file-audit-organizer/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      }
+    },
+    {
+      "id": "threads-api-skill",
+      "name": "threads-api-skill",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Comprehensive assistance with Meta's Threads API development for building applications that integrate with Meta's Threads social platform, including OAuth authentication, text/media/carousel posting, profile data retrieval, analytics insights, and webhook processing. Use when the user asks to integrate with Threads API, post to Threads, fetch Threads metrics, or set up Threads webhooks.",
+      "location": "custom_skills/threads-api-skill/",
+      "entrypoint": "custom_skills/threads-api-skill/SKILL.md",
+      "instruction_file": "custom_skills/threads-api-skill/SKILL.md",
+      "manifest": "custom_skills/threads-api-skill/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": true,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": true,
+        "git": true,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 80,
+        "start_line": 1,
+        "end_line": 54,
+        "status": "normalized_and_hardened",
+        "sha256": "39505a8171a4c20560f24f6cf63d10e5ad6372bf7bf0a2c299d4e1e4aa90647c",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "threads-api-skill/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "threads-viral-consultant"
+      ]
+    },
+    {
+      "id": "ui-minimalist-animation-enhancer",
+      "name": "ui-minimalist-animation-enhancer",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Refine web/app UI for minimalism, improve information hierarchy, and add fluid entrance and exit animations. Use when the user asks to improve UI, add entrance/exit animations, simplify layout, or make interface aesthetic and clean.",
+      "location": "custom_skills/ui-minimalist-animation-enhancer/",
+      "entrypoint": "custom_skills/ui-minimalist-animation-enhancer/SKILL.md",
+      "instruction_file": "custom_skills/ui-minimalist-animation-enhancer/SKILL.md",
+      "manifest": "custom_skills/ui-minimalist-animation-enhancer/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": false,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 82,
+        "start_line": 1,
+        "end_line": 28,
+        "status": "normalized_and_hardened",
+        "sha256": "a23c3a77ee8ca4a9801e267ea5ded6bbcfe480c3cc05f78b71888cb2474dc6c1",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "ui-minimalist-animation-enhancer/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "design-proposal-portfolio-persuasion"
+      ]
+    },
+    {
+      "id": "veo-short-video-prompt-engineer",
+      "name": "veo-short-video-prompt-engineer",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Google Veo 3.1 電影級影音提示詞工程與生成式導演 Skill。支援 T2V、I2V/R2V 主體錨定、首尾插值、原生音訊 2.0、多鏡頭敘事與 JSON 工業級提示詞。適用於撰寫 Veo 3/3.1 提示詞、短影音腳本、分鏡指令、電影級運鏡與光影設定。",
+      "location": "custom_skills/veo-short-video-prompt-engineer/",
+      "entrypoint": "custom_skills/veo-short-video-prompt-engineer/SKILL.md",
+      "instruction_file": "custom_skills/veo-short-video-prompt-engineer/SKILL.md",
+      "manifest": "custom_skills/veo-short-video-prompt-engineer/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 83,
+        "start_line": 1,
+        "end_line": 106,
+        "status": "normalized_and_hardened",
+        "sha256": "cb6dda0a832c140323c5548fe934533ac91125ba64f9d9332b1bdce50a6a095d",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "veo-short-video-prompt-engineer/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "video-editing-preproduction-script-cuts"
+      ]
+    },
+    {
+      "id": "website-auditing",
+      "name": "website-auditing",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "網站與 SEO 綜合稽核 Skill。當使用者需要對網站進行技術 SEO、載入速度、行動版體驗或內容品質稽核時使用。",
+      "location": "custom_skills/website-auditing/",
+      "entrypoint": "custom_skills/website-auditing/SKILL.md",
+      "instruction_file": "custom_skills/website-auditing/SKILL.md",
+      "manifest": "custom_skills/website-auditing/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": true,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 86,
+        "start_line": 1,
+        "end_line": 33,
+        "status": "normalized_and_hardened",
+        "sha256": "7dcbea94c78c2b3a1eac02360ea7d6b13d9474af517c03b53491671cbf3cec51",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "website-auditing/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "website-landing-page-builder"
+      ]
+    },
+    {
+      "id": "weekly-podcast-script",
+      "name": "weekly-podcast-script",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Write, refine, and optimize weekly podcast scripts in the persona of Podcast Host Big E (大E) with natural Taiwanese spoken phrasing. Use when the user asks to generate a weekly podcast script, transform raw notes or transcripts into a podcast episode, or draft a weekly podcast script.",
+      "location": "custom_skills/weekly-podcast-script/",
+      "entrypoint": "custom_skills/weekly-podcast-script/SKILL.md",
+      "instruction_file": "custom_skills/weekly-podcast-script/SKILL.md",
+      "manifest": "custom_skills/weekly-podcast-script/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": true,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 88,
+        "start_line": 1,
+        "end_line": 58,
+        "status": "normalized_and_hardened",
+        "sha256": "f3961aaccbabcb6a38a242e74a478f7edc4d70b6fb2ee40825649635f2ceb213",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "weekly-podcast-script/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "couple-podcast-hosting"
+      ]
+    },
+    {
+      "id": "workspace-project-cleanup-agent",
+      "name": "workspace-project-cleanup-agent",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Audit workspace projects, identify abandoned or duplicate work, and safely execute cleanup on git-tracked branches. Use when the user asks to clean up workspace, find abandoned or duplicate projects, or organize codebase projects.",
+      "location": "custom_skills/workspace-project-cleanup-agent/",
+      "entrypoint": "custom_skills/workspace-project-cleanup-agent/SKILL.md",
+      "instruction_file": "custom_skills/workspace-project-cleanup-agent/SKILL.md",
+      "manifest": "custom_skills/workspace-project-cleanup-agent/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供的背景、文件、素材或限制條件。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": false,
+        "shell": false,
+        "git": true,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "human-gated"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 89,
+        "start_line": 1,
+        "end_line": 27,
+        "status": "normalized_and_hardened",
+        "sha256": "937d6f0753c1c6bc605e8cb43c4bea3e713092cbce958fcd318e43ead3992e82",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "workspace-project-cleanup-agent/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "system-file-audit-organizer"
+      ]
+    },
+    {
+      "id": "youtube-transcript-summarizer",
+      "name": "youtube-transcript-summarizer",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Summarize YouTube video transcripts into structured, easily readable notes with key points, Q&A format for interviews, action items, conclusions, and key quotes. Use when the user asks to summarize a YouTube video transcript, process transcript text into notes, or extract structured summaries from YouTube transcripts.",
+      "location": "custom_skills/youtube-transcript-summarizer/",
+      "entrypoint": "custom_skills/youtube-transcript-summarizer/SKILL.md",
+      "instruction_file": "custom_skills/youtube-transcript-summarizer/SKILL.md",
+      "manifest": "custom_skills/youtube-transcript-summarizer/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "imported",
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive"
+      ],
+      "source": {
+        "type": "user_provided_backup",
+        "file": "docs/sources/skills_export_20260818.zip",
+        "section_number": 91,
+        "start_line": 1,
+        "end_line": 72,
+        "status": "normalized_and_hardened",
+        "sha256": "49ef1f747206563157ea8f9b74cd48e89b33c21acc21493631cd2124286c5716",
+        "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+        "source_path": "youtube-transcript-summarizer/SKILL.md",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-08-18",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true
+      },
+      "related_skills": [
+        "youtube-learning-summary-exporter"
+      ]
     }
   ]
 }

@@ -7,7 +7,7 @@
 
 > **目前定位：** 可供個人與社群共同維護的 skills prototype。所有涉及第三方服務寫入、部署、預算、憑證或破壞性操作，仍必須依照 skill manifest 與 `SECURITY.md` 的人工批准規則執行。
 
-本版本已將使用者提供的 `Skills_Full_Configurations_Backup_20260818.md` 中 **66 項 skills** 逐一正規化並納管至 `custom_skills/`。每一項都具備獨立的 `SKILL.md`、`manifest.json`、來源行號、輸入／輸出契約、權限宣告、風險分級、人工核准點與停止條件；完整索引請見 [`docs/skill-archive-catalog.md`](docs/skill-archive-catalog.md)。
+本版本已將兩批使用者提供的技能來源正規化並納管至 `custom_skills/`：第一批 Markdown 備份含 **66 項 skills**；最新 `skills_export.zip` 含 91 項，其中 63 項與既有 ID 重疊而保留原版本，另有 **28 項以獨立 ID 新增**。目前 repository 共 108 個可安裝套件；每個新增項目都具備獨立的 `SKILL.md`、`manifest.json`、來源 SHA-256、輸入／輸出契約、權限宣告、風險分級、人工核准點與停止條件。完整索引請見 [`docs/skill-archive-catalog.md`](docs/skill-archive-catalog.md) 與 [`docs/skill-archive-catalog-zip.md`](docs/skill-archive-catalog-zip.md)。
 
 本儲存庫目標是支援以下使用情境：
 
@@ -327,7 +327,7 @@ PR 描述至少應包含變更目的、影響的 skill、輸入／輸出是否�
 
 ## Core Skills
 
-本節保留原有的核心技能與既有整合入口。附件匯入的 66 項技能以獨立目錄納管，不覆蓋既有技能；若要查看完整清單、類別、風險與關聯技能，請使用 [`docs/skill-archive-catalog.md`](docs/skill-archive-catalog.md)。
+本節保留原有的核心技能與既有整合入口。兩批附件匯入技能均以獨立目錄納管，不覆蓋既有技能；若要查看完整清單、類別、風險與關聯技能，請使用 [`docs/skill-archive-catalog.md`](docs/skill-archive-catalog.md) 與 [`docs/skill-archive-catalog-zip.md`](docs/skill-archive-catalog-zip.md)。
 
 ### 1. Data Analysis Skill
 
@@ -673,7 +673,7 @@ python scripts/smoke_test_skills.py
 python scripts/install_local_skills.py --uninstall
 ```
 
-本 repository 目前包含 80 個可安裝套件，其中 79 個是 instruction-only skills，1 個是 Python CLI。`smoke_test_skills.py` 對 instruction-only skills 只做唯讀 dry-run，不會自動登入、發送網路請求、部署、推送或修改第三方服務。
+本 repository 目前包含 108 個可安裝套件，其中 107 個是 instruction-only skills，1 個是 Python CLI。`smoke_test_skills.py` 對 instruction-only skills 只做唯讀 dry-run，不會自動登入、發送網路請求、部署、推送或修改第三方服務。
 
 ## Safety
 
@@ -706,15 +706,18 @@ python -m compileall -q custom_skills tests scripts
 python scripts/self_assessment.py
 ```
 
-`self_assessment.py` 使用 [`docs/self-assessment-rubric.md`](docs/self-assessment-rubric.md) 的 10 維度量表，並以 `evals/skills.json` 的 80 組技能契約案例檢查封裝完整度、來源可重現性、權限資料流、觸發選擇、安全治理、行為評估、可維護性與 CI 品質。GitHub Actions 將 **9.5/10** 設為最低品質閘門；分數必須由腳本重現，不接受只依賴人工宣稱的自評。
+`self_assessment.py` 使用 [`docs/self-assessment-rubric.md`](docs/self-assessment-rubric.md) 的 10 維度量表，並以 `evals/skills.json` 的 108 組技能契約案例檢查封裝完整度、來源可重現性、權限資料流、觸發選擇、安全治理、行為評估、可維護性與 CI 品質。GitHub Actions 將 **9.5/10** 設為最低品質閘門；分數必須由腳本重現，不接受只依賴人工宣稱的自評。
 
-若要重新匯入相同格式的技能備份，可執行：
+若要重新匯入技能備份，可使用同一個入口處理 Markdown 備份或目錄型 ZIP。Markdown 匯入器會保留既有技能並依來源段落重建；ZIP 匯入器會安全解壓、拒絕路徑穿越與 symlink、保留 `references/` 與 `assets/` 等附加資源，且只新增尚不存在的 skill ID：
 
 ```bash
 python scripts/import_skill_archive.py --backup /path/to/Skills_Full_Configurations_Backup_YYYYMMDD.md
+python scripts/import_skill_archive.py --backup /path/to/skills_export.zip
+# 等價的 ZIP 專用入口：
+python scripts/import_skill_zip.py --archive /path/to/skills_export.zip
 ```
 
-匯入工具只會產生標準化的 instruction-only skill 套件與 registry metadata；它不會自動啟動外部服務、提交秘密或執行第三方寫入操作。匯入後必須重新執行上述驗證命令。
+匯入工具只會產生標準化的 instruction-only skill 套件與 registry metadata；它不會自動啟動外部服務、提交秘密或執行第三方寫入操作。匯入後必須重新執行上述驗證命令。ZIP 來源會保存於 `docs/sources/`，並以 archive SHA-256 與各 `SKILL.md` SHA-256 提供可重現追蹤。
 
 `skills.json` 是快速索引；每個本地技能的 `manifest.json` 才是該技能名稱、版本、輸入、輸出、權限、風險與安全條件的權威來源。pull request 不應只修改其中一份而讓兩者產生 drift。
 

@@ -2,6 +2,22 @@
 
 本檔案記錄對使用者、技能契約與公開維護流程有影響的變更。版本遵循語意化版本概念；若 manifest、輸出格式或安全邊界改變，應在此說明。
 
+## [1.3.0] - 2026-08-18
+
+### Added
+
+- 解析並整併 `skills_export.zip` 的 91 個目錄型 skills；其中 63 個與既有 ID 重疊而保留原版本，新增 28 個獨立 skill packages。
+- 新增 `scripts/import_skill_zip.py`，支援安全解壓、ZIP 路徑穿越與 symlink 阻擋、附加資源保留、archive SHA-256、來源追蹤與可重跑匯入。
+- 擴充 `scripts/import_skill_archive.py --backup`，現在同時接受原有 Markdown 備份與目錄型 ZIP。
+- 新增 `docs/skill-archive-catalog-zip.md`，記錄 ZIP 來源 hash、整併決策、風險、網路能力、敏感資料與關聯技能。
+- 擴充 ZIP importer 測試，覆蓋既有技能不覆蓋、附加資源保留、標準契約生成與路徑穿越阻擋。
+
+### Changed
+
+- repository 目前為 108 個可安裝套件、118 個 registry entries 與 108 組技能契約 evals；新增項目均使用 `instruction_only` runtime，外部寫入預設關閉。
+- `README.md` 補充雙格式匯入、來源保存與安全重跑說明；`verify_local_install.py` 移除硬編碼的 80 套件數量，改為可選的明確數量閘門。
+- 所有新增 skill 均補齊輸入／輸出、permissions、capabilities、connectors、data_egress、external_write、activation、stop conditions、approval scope、rollback 與資料最小化契約。
+
 ## [1.2.0] - 2026-08-18
 
 ### Added

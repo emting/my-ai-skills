@@ -431,6 +431,14 @@ def main() -> int:
     backup = args.backup.resolve()
     if not backup.exists():
         raise SystemExit(f"backup does not exist: {backup}")
+    if backup.suffix.lower() == ".zip":
+        try:
+            from .import_skill_zip import import_zip_archive
+        except ImportError:
+            from import_skill_zip import import_zip_archive
+        result = import_zip_archive(backup)
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 0
     skills = parse_backup(backup)
     if len(skills) != 66 or any(not skill["id"] for skill in skills):
         raise SystemExit(f"expected 66 named skills, found {len(skills)}")

@@ -1,0 +1,189 @@
+{
+  "id": "app-performance-benchmark-optimizer",
+  "name": "app-performance-benchmark-optimizer",
+  "version": "1.0.0",
+  "description": "Establish app performance benchmarks, identify latency or memory bottlenecks, and execute measurable code optimizations with before/after reports. Use when the user asks to optimize app performance, profile latency, or fix performance bottlenecks.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "requirements": [],
+  "inputs": {
+    "request": {
+      "type": "text",
+      "required": true,
+      "description": "使用者希望完成的任務、問題或產出目標。"
+    },
+    "context": {
+      "type": "text",
+      "required": false,
+      "description": "背景、受眾、現況、限制與已知決策脈絡。"
+    },
+    "source_materials": {
+      "type": "text_or_files",
+      "required": false,
+      "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+    },
+    "constraints": {
+      "type": "list",
+      "required": false,
+      "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+    }
+  },
+  "outputs": {
+    "result": {
+      "type": "markdown",
+      "required": true,
+      "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+    },
+    "assumptions_and_risks": {
+      "type": "markdown",
+      "required": true,
+      "description": "假設、未驗證事項、風險、限制與人工核准點。"
+    },
+    "verification": {
+      "type": "markdown",
+      "required": true,
+      "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+    }
+  },
+  "permissions": {
+    "filesystem_read": true,
+    "filesystem_write": true,
+    "network": true,
+    "api_key_required": false,
+    "browser_automation": false,
+    "third_party_processing": true,
+    "shell": false,
+    "git": true,
+    "google_ads_read": false,
+    "google_ads_write": false,
+    "notion_read": false,
+    "notion_write": false,
+    "n8n_write": false,
+    "mcp_write_tools": false
+  },
+  "safety": {
+    "handles_sensitive_data": false,
+    "requires_user_confirmation": true,
+    "destructive": false,
+    "rules": [
+      "先確認任務目標、輸入來源、使用授權、範圍與輸出格式；缺少關鍵資訊時先列出假設並提出最少必要問題。",
+      "不得捏造事實、數據、案例、評價、客戶反饋、媒體報導、認證或研究來源；無法驗證的內容必須標示為假設或待驗證。",
+      "只使用使用者提供或明確授權的內容；不得繞過登入、CAPTCHA、付費牆、存取控制或第三方服務限制。",
+      "外部服務一律採唯讀或草稿模式；發送、發佈、建立、更新、刪除、部署、交易、預算變更與權限變更前必須取得明確人工批准。",
+      "涉及外部資料時記錄來源、擷取時間與查證限制；將可觀察事實、推論與建議分開呈現。",
+      "本技能只提供分析、草稿與驗證建議；涉及高影響決策或外部操作時，必須由適當的人員在執行前覆核。"
+    ],
+    "disallowed_uses": [
+      "不得用於未授權存取、憑證收集、冒充他人、垃圾訊息、操縱或規避平台政策。",
+      "不得把未經授權的第三方內容、個資或機密資料重新發布到公開服務。"
+    ],
+    "forbidden_without_explicit_approval": [
+      "對外發送或發佈內容",
+      "建立、更新或刪除第三方服務資料",
+      "部署、改變權限、改變預算或執行不可逆操作"
+    ],
+    "always_forbidden": [
+      "繞過身份驗證、CAPTCHA、付費牆或存取控制",
+      "捏造來源、證據、數據、認證或使用者同意"
+    ],
+    "stop_conditions": [
+      "授權、資料來源、範圍、身份或外部操作權限無法確認時停止高影響部分。",
+      "發現來源矛盾、敏感資料暴露、輸出無法驗證或任務目標漂移時停止並要求人工判斷。"
+    ],
+    "approval_scope": [
+      "exact_action",
+      "exact_target",
+      "exact_diff",
+      "rollback_or_recovery_plan"
+    ],
+    "audit_requirements": [
+      "record_sources",
+      "record_assumptions",
+      "record_approval_before_write"
+    ],
+    "rollback_required": true,
+    "dry_run_default": true,
+    "data_minimization": "redact_by_default"
+  },
+  "risk_level": "high",
+  "activation_policy": "explicit_request",
+  "default_config": {
+    "mode": "draft_or_read_only",
+    "language": "zh-TW",
+    "source_archive": "docs/sources/skills_export_20260818.zip",
+    "source_item": 14,
+    "preserved_resources": []
+  },
+  "platforms": [
+    "markdown",
+    "manus",
+    "codex",
+    "copilot"
+  ],
+  "source": {
+    "type": "user_provided_backup",
+    "file": "docs/sources/skills_export_20260818.zip",
+    "section_number": 14,
+    "start_line": 1,
+    "end_line": 28,
+    "status": "normalized_and_hardened",
+    "sha256": "830353c7648a733ab69db7930d6c00405114a4d2a2f3a681c85b90f38264956a",
+    "archive_sha256": "9df813fcdec9d0c5948f5d8892a115b859f93a409a6b0b1e080df3c8581ed4e4",
+    "source_path": "app-performance-benchmark-optimizer/SKILL.md",
+    "normalizer_version": "1.4.0",
+    "normalized_at": "2026-08-18",
+    "hash_algorithm": "sha256",
+    "provenance_verified": true
+  },
+  "related_skills": [
+    "website-auditing"
+  ],
+  "schema_version": "1.1.0",
+  "contract_version": "1.1.0",
+  "capabilities": {
+    "filesystem": "workspace_read_write",
+    "network": "public_read_only",
+    "shell": "none",
+    "git": "read_write",
+    "browser": "none"
+  },
+  "connectors": [],
+  "data_egress": {
+    "mode": "approved_third_party_processing",
+    "connectors": [],
+    "allowed_data_classes": [
+      "public_data"
+    ],
+    "approval_required": true,
+    "minimize_and_redact": true,
+    "retention": "none_by_default"
+  },
+  "external_write": {
+    "allowed": false,
+    "mode": "draft_or_read_only",
+    "approval_required": true,
+    "approval_scope": []
+  },
+  "execution": {
+    "executor": "instruction_only",
+    "adapter": "SKILL.md",
+    "network_is_not_implied": true
+  },
+  "activation": {
+    "positive_examples": [
+      "使用者明確要求：「Establish app performance benchmarks, identify latency or memory bottlenecks, and execute measurable code optimizations with before/after reports. Use when the user asks to optimize app performance, profile latency, or fix performance bottlenecks.」",
+      "請依照 app-performance-benchmark-optimizer 的專門流程完成指定任務。"
+    ],
+    "negative_examples": [
+      "任務只涉及與「app-performance-benchmark-optimizer」無關的主題，不需要其專門流程。"
+    ],
+    "exclude_when": [
+      "若任務不涉及「app-performance-benchmark-optimizer」的核心目的、輸入或輸出，不要啟用本技能。"
+    ],
+    "priority": 70,
+    "delegates_to": [
+      "website-auditing"
+    ],
+    "selection_notes": "先檢查任務目的、輸入資料與外部權限；相鄰技能重疊時以最小權限與最窄範圍優先。"
+  }
+}

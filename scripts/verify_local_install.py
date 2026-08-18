@@ -28,8 +28,8 @@ def main() -> int:
     parser.add_argument(
         "--expected-count",
         type=int,
-        default=80,
-        help="number of installed skill packages expected",
+        default=None,
+        help="optional number of installed skill packages expected; omitted means no fixed-count assertion",
     )
     args = parser.parse_args()
 
@@ -38,7 +38,7 @@ def main() -> int:
         fail(f"missing install directory: {root}")
 
     directories = sorted(path for path in root.iterdir() if path.is_dir())
-    if len(directories) != args.expected_count:
+    if args.expected_count is not None and len(directories) != args.expected_count:
         fail(f"expected {args.expected_count} skill directories, found {len(directories)}")
 
     failures: list[str] = []

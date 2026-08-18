@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GoogleVeo31PromptSchema",
+  "type": "object",
+  "properties": {
+    "project_metadata": {
+      "type": "object",
+      "properties": {
+        "target_model": { "type": "string", "enum": ["Google Veo 3.1", "Google Veo 3.1 Fast"] },
+        "duration_seconds": { "type": "integer", "enum": [4, 6, 8] },
+        "resolution": { "type": "string", "enum": ["720p", "1080p"] },
+        "aspect_ratio": { "type": "string", "enum": ["16:9", "9:16"] },
+        "workflow_mode": { "type": "string", "enum": ["T2V", "I2V", "R2V", "Interpolation"] }
+      },
+      "required": ["target_model", "duration_seconds", "resolution", "aspect_ratio", "workflow_mode"]
+    },
+    "visual_pipeline": {
+      "type": "object",
+      "properties": {
+        "cinematography": {
+          "type": "object",
+          "properties": {
+            "shot_type": { "type": "string" },
+            "camera_movement": { "type": "string" },
+            "lens_optics": { "type": "string" },
+            "framing": { "type": "string" }
+          },
+          "required": ["shot_type", "camera_movement", "lens_optics"]
+        },
+        "subject": {
+          "type": "object",
+          "properties": {
+            "identity": { "type": "string" },
+            "wardrobe_details": { "type": "string" },
+            "expression": { "type": "string" },
+            "action_sequence": { "type": "string" }
+          },
+          "required": ["identity", "action_sequence"]
+        },
+        "environment": {
+          "type": "object",
+          "properties": {
+            "setting": { "type": "string" },
+            "props_and_atmosphere": { "type": "string" }
+          },
+          "required": ["setting"]
+        },
+        "lighting_and_color": {
+          "type": "object",
+          "properties": {
+            "lighting_style": { "type": "string" },
+            "color_grading": { "type": "string" }
+          },
+          "required": ["lighting_style", "color_grading"]
+        }
+      },
+      "required": ["cinematography", "subject", "environment", "lighting_and_color"]
+    },
+    "audio_pipeline": {
+      "type": "object",
+      "properties": {
+        "dialogue": { "type": "string" },
+        "sound_effects_sfx": { "type": "string" },
+        "ambient_music": { "type": "string" }
+      },
+      "required": ["sound_effects_sfx", "ambient_music"]
+    },
+    "negative_parameters": {
+      "type": "object",
+      "properties": {
+        "negative_prompt": { "type": "string" }
+      },
+      "required": ["negative_prompt"]
+    }
+  },
+  "required": ["project_metadata", "visual_pipeline", "audio_pipeline", "negative_parameters"]
+}

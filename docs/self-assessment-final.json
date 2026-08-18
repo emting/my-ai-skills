@@ -4,24 +4,24 @@
     "package_completeness": {
       "score": 1.0,
       "evidence": {
-        "manifests": 80,
-        "skill_dirs": 80,
-        "complete": 80
+        "manifests": 108,
+        "skill_dirs": 108,
+        "complete": 108
       }
     },
     "registry_schema": {
       "score": 1.0,
       "evidence": {
         "validator_passed": true,
-        "tail": "Repository validation passed: 80 manifests, 90 registry entries, OpenAPI, MCP, and referenced paths verified.\n"
+        "tail": "Repository validation passed: 108 manifests, 118 registry entries, OpenAPI, MCP, and referenced paths verified.\n"
       }
     },
     "source_reproducibility": {
       "score": 1.0,
       "evidence": {
-        "archive": 66,
-        "complete_fields": 594,
-        "expected_fields": 594,
+        "archive": 94,
+        "complete_fields": 846,
+        "expected_fields": 846,
         "required_fields": [
           "file",
           "section_number",
@@ -38,8 +38,8 @@
     "documentation_structure": {
       "score": 1.0,
       "evidence": {
-        "passing": 80,
-        "total": 80,
+        "passing": 108,
+        "total": 108,
         "duplicate_h1": 0,
         "missing": {}
       }
@@ -47,32 +47,32 @@
     "permission_dataflow": {
       "score": 1.0,
       "evidence": {
-        "passing": 80,
-        "total": 80,
+        "passing": 108,
+        "total": 108,
         "missing": []
       }
     },
     "activation_selection": {
       "score": 1.0,
       "evidence": {
-        "passing": 80,
-        "total": 80,
+        "passing": 108,
+        "total": 108,
         "missing": []
       }
     },
     "safety_governance": {
       "score": 1.0,
       "evidence": {
-        "passing": 80,
-        "total": 80,
+        "passing": 108,
+        "total": 108,
         "failures": []
       }
     },
     "behavior_evaluation": {
       "score": 1.0,
       "evidence": {
-        "skills_with_cases": 80,
-        "total": 80
+        "skills_with_cases": 108,
+        "total": 108
       }
     },
     "maintainability": {
