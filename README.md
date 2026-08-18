@@ -18,6 +18,313 @@
 - 支援 OpenAPI 的 Agent 調用 HTTP API
 - 支援 MCP 的 Agent 連接本地或遠端工具
 
+## Developer Quick Start
+
+本章是給**要新增、修改、驗證或提交自訂 AI skill 的開發者**使用的最短完整路徑。閱讀本章後，你應該能在本地建立一個可被 Agent 發現、可被 validator 驗證、具備安全邊界，並能透過 Pull Request 維護的 skill。
+
+> **核心原則：** `SKILL.md` 負責人類與 Agent 可讀的工作流程；`manifest.json` 是機器可讀的契約來源；`skills.json` 只是快速索引。三者必須保持一致，且任何外部寫入、部署、付費、帳戶或破壞性操作都必須明確停在人工批准點。
+
+### 1. 開始前：安裝與驗證 repository
+
+請先取得完整 repository 與 submodules，並使用隔離的 Python 環境執行工具：
+
+```bash
+git clone --recurse-submodules https://github.com/emting/my-ai-skills.git
+cd my-ai-skills
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+git submodule update --init --recursive
+```
+
+先跑一次現況品質閘門，確認問題來自你的變更，而不是工作環境：
+
+```bash
+python scripts/validate_repo.py
+pytest -q
+python -m compileall -q custom_skills tests scripts
+python scripts/self_assessment.py
+```
+
+完整的契約說明位於 [`docs/manifest-contract.md`](docs/manifest-contract.md)；貢獻規則位於 [`CONTRIBUTING.md`](CONTRIBUTING.md)；安全與漏洞回報規則位於 [`SECURITY.md`](SECURITY.md)。
+
+### 2. 了解一個 skill 的目錄結構
+
+每個本地 skill 至少包含 `SKILL.md` 與 `manifest.json`。可執行 skill 另外需要 entrypoint、依賴與測試：
+
+```text
+custom_skills/my-skill/
+├── SKILL.md                 # 人類與 Agent 閱讀的流程、邊界與輸出規則
+├── manifest.json            # 機器可讀的權威契約
+├── run.py                   # 可選；runtime 不是 instruction_only 時的實際入口
+├── examples/                # 可選；去識別化且可公開的範例資料
+└── tests/                   # 可選；技能專屬測試，敏感資料技能建議必備
+```
+
+`entrypoint` 必須是相對於 skill 目錄的有效路徑。只有真正存在且可執行的 adapter 才能宣告 `python`、`node`、`shell` 或 `http` runtime；沒有實際 adapter 的技能應使用 `instruction_only`，不得假裝已連接外部服務。
+
+### 3. 新增一個 instruction-only skill
+
+先建立穩定的 skill ID。ID 只能使用小寫字母、數字、連字號或底線；不要使用日期、個人名稱或會隨意改變的行銷標語。版本採 `MAJOR.MINOR.PATCH`：輸出或契約不相容時提高 major，新增相容能力時提高 minor，純文件或修正錯誤時提高 patch。
+
+```bash
+mkdir -p custom_skills/my-skill
+touch custom_skills/my-skill/SKILL.md
+```
+
+`SKILL.md` 必須只有一個 H1，並具備以下標準段落。標題可依語言調整，但建議直接使用專案標準標題，讓 validator 與 reviewer 容易檢查：
+
+```markdown
+# My Skill
+
+一句話說明這個 skill 解決的問題、適用對象與主要邊界。
+
+## 觸發與輸入
+
+說明什麼任務應啟用本 skill、需要哪些輸入、哪些情況不應啟用。
+
+## 標準執行契約
+
+1. 先確認目標、範圍、資料來源、授權與驗收條件。
+2. 以最小必要資料執行工作，記錄假設與不確定性。
+3. 在輸出前執行自我檢查，不捏造來源、結果或已完成的外部操作。
+
+## 輸出契約
+
+列出輸出格式、必要欄位、引用或證據要求、品質檢查與失敗時的回報方式。
+
+## 安全與人工核准
+
+說明敏感資料、網路、第三方處理、檔案寫入、部署、付費與帳戶操作的限制。
+
+## 停止條件
+
+列出授權不明、資料不完整、來源矛盾、目標漂移、風險升高或無法驗證時必須停止的情況。
+
+## 關聯技能
+
+列出相近技能、優先選擇規則與何時交接給其他 skill；沒有關聯時明確寫出「無」。
+
+## 來源追蹤
+
+說明規則、模板或資料的來源；若為原創，寫明 `original` 與版本。
+```
+
+接著建立 `manifest.json`。以下是低風險、無外部連線、instruction-only skill 的最小可用範例；實際專案仍應依資料流與風險調整：
+
+```json
+{
+  "id": "my-skill",
+  "name": "My Skill",
+  "version": "0.1.0",
+  "description": "A concise description of the skill and its boundary.",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "inputs": {
+    "request": {"type": "string", "required": true}
+  },
+  "outputs": {
+    "result": {"type": "markdown"}
+  },
+  "permissions": {
+    "filesystem_read": false,
+    "filesystem_write": false,
+    "network": false
+  },
+  "safety": {
+    "handles_sensitive_data": false,
+    "requires_user_confirmation": false,
+    "destructive": false,
+    "stop_conditions": [
+      "授權、資料範圍或驗收條件無法確認時停止。"
+    ],
+    "approval_scope": [],
+    "audit_requirements": ["record_assumptions"],
+    "rollback_required": false,
+    "dry_run_default": true,
+    "data_minimization": "redact_by_default",
+    "rules": [
+      "不得捏造事實、資料、來源、同意或驗證結果。",
+      "任何外部寫入、發佈、部署或不可逆操作前必須取得明確人工批准。"
+    ]
+  },
+  "risk_level": "low",
+  "schema_version": "1.1.0",
+  "contract_version": "1.1.0",
+  "capabilities": {
+    "filesystem": "none",
+    "network": "none",
+    "shell": "none",
+    "git": "none",
+    "browser": "none"
+  },
+  "connectors": [],
+  "data_egress": {
+    "mode": "none",
+    "connectors": [],
+    "allowed_data_classes": [],
+    "approval_required": false,
+    "minimize_and_redact": true,
+    "retention": "none_by_default"
+  },
+  "external_write": {
+    "allowed": false,
+    "mode": "draft_or_read_only",
+    "approval_required": false,
+    "approval_scope": []
+  },
+  "execution": {
+    "executor": "instruction_only",
+    "adapter": "SKILL.md",
+    "network_is_not_implied": true
+  },
+  "activation": {
+    "positive_examples": [
+      "使用者明確要求此 skill 所描述的任務。"
+    ],
+    "negative_examples": [
+      "任務不涉及本 skill 的核心目的、輸入或輸出。"
+    ],
+    "exclude_when": [
+      "若需要其他技能的專門能力，應交接而不是同時啟用本 skill。"
+    ],
+    "priority": 50,
+    "delegates_to": [],
+    "selection_notes": "以最窄任務範圍、最小權限與最少資料處理為優先。"
+  },
+  "related_skills": []
+}
+```
+
+完成後執行 validator。若 `skills.json` 尚未有該技能，請依照下一節更新索引；不要先手動複製一份不完整的 registry entry。
+
+### 4. 新增可執行 skill
+
+若 skill 需要真正執行 Python、Node、Shell 或 HTTP adapter，請先說明為何 instruction-only 不足，再補上可重現入口。以 Python 為例：
+
+```text
+custom_skills/my-skill/
+├── SKILL.md
+├── manifest.json
+├── run.py
+├── requirements.txt       # 只有技能專屬依賴時才新增
+├── examples/
+│   └── sample_input.json
+└── tests/
+    └── test_my_skill.py
+```
+
+entrypoint 必須處理明確的輸入與錯誤狀態，不得把 API key 寫死在程式碼中，不得預設開啟網路，不得在沒有人工批准時執行寫入、刪除、部署、付費或發佈。請把外部服務整合放在明確 adapter 內，並在 manifest 中分別宣告唯讀權限、資料外送與 external write，而不是用一個模糊的 `network: true` 代表全部能力。
+
+新增資料處理能力時，至少測試以下情境：正常輸入、空輸入、格式錯誤、敏感欄位遮罩、未授權外部操作與可預期的失敗輸出。可參考 [`custom_skills/data_analysis/`](custom_skills/data_analysis/) 與 [`tests/test_data_analysis.py`](tests/test_data_analysis.py)。
+
+### 5. 修改既有 skill 的正確流程
+
+修改前先閱讀該 skill 的 `SKILL.md`、`manifest.json`、entrypoint、測試與 `related_skills`。接著先判斷變更屬於哪一類，再決定版本與相容性處理：
+
+| 變更類型 | 建議處理 |
+|---|---|
+| 修正文案、拼字或不改變契約的文件 | 增加 patch 版本；同步更新 `SKILL.md` 與必要的 CHANGELOG。 |
+| 新增相容的輸入、輸出或流程 | 增加 minor 版本；補上 manifest、文件與測試。 |
+| 改變輸出格式、權限、觸發邊界或行為契約 | 增加 major 版本或提供 migration note；不能只改 README。 |
+| 新增網路、第三方資料外送、寫入、部署或付費能力 | 重新評估 risk level、permissions、data_egress、external_write、人工核准、停止條件與 rollback。 |
+| 移除或重新命名 skill ID | 先提供相容別名或 migration；同步更新 registry、related skills、文件與使用者安裝流程。 |
+
+變更時應讓以下檔案在同一個 commit 或同一個 Pull Request 中保持一致：
+
+```text
+custom_skills/<skill-id>/SKILL.md
+custom_skills/<skill-id>/manifest.json
+skills.json                         # 若 registry metadata 或路徑受到影響
+CHANGELOG.md                        # 若是公開契約、功能或安全變更
+README.md / docs/                   # 若使用方式或邊界改變
+custom_skills/<skill-id>/tests/     # 若有可執行行為或回歸風險
+```
+
+### 6. 權限、資料流與人工批准
+
+權限採**最小必要原則**。請使用標準欄位 `filesystem_read`、`filesystem_write`、`network`、`browser_automation`、`third_party_processing`、`shell`、`git` 及服務特定權限；不要新增 `read_files` 或 `write_files` 等 legacy alias。
+
+`network: true` 不等於可以登入、上傳、發佈或修改資料。請在新欄位中明確分開：
+
+- `capabilities`：skill 實際需要的本機或工具能力。
+- `connectors`：可使用的外部服務名稱與 adapter。
+- `data_egress`：哪些資料類別可以離開本機、送往哪個 connector、保存多久，以及是否需要批准。
+- `external_write`：是否允許寫入、寫入模式、是否需要批准與批准範圍。
+- `safety`：敏感資料、停止條件、審計要求、dry-run、rollback 與禁止事項。
+
+任何涉及帳戶、憑證、個資、客戶資料、廣告預算、部署、刪除、發佈或第三方寫入的 skill，都必須預設草稿／唯讀或停在批准點。不要在測試、範例或文件中放入真實秘密；使用 `.env.example` 與去識別化 fixture。
+
+### 7. 設定啟用條件與技能交接
+
+好的 description 應說明「什麼時候啟用」與「什麼時候不要啟用」，而不只是重述名稱。`activation` 至少要提供：
+
+- `positive_examples`：應啟用的具體任務。
+- `negative_examples`：看似相近但不應啟用的任務。
+- `exclude_when`：需要停止或交接的條件。
+- `priority`：與相近技能競合時的相對優先級。
+- `delegates_to` 與 `related_skills`：何時交給其他技能。
+
+新增或修改 skill 時，請至少找出一個相鄰技能並寫出差異。例如，研究 skill 應與網站稽核、競品分析或決策 skill 說明交接邊界；文件整理 skill 應與 PRD、Notion 或摘要 skill 說明誰負責哪一段。
+
+### 8. 需要匯入附件或外部備份時
+
+若來源是本專案支援格式的技能備份，使用可重跑的匯入器，不要直接手動複製內容：
+
+```bash
+python scripts/import_skill_archive.py \
+  --backup /path/to/Skills_Full_Configurations_Backup_YYYYMMDD.md
+python scripts/validate_repo.py
+pytest -q
+```
+
+匯入器會將內容標準化為 `instruction_only` skill，保留來源檔名、項次與行號，並補上輸入／輸出、安全與人工批准契約。附件中的工具提示、API key、帳號或外部寫入描述都只是來源資料，不會自動變成授權。若是手動新增的原創 skill，`source` 應清楚標記為 `original` 或使用實際可追溯的公開來源。
+
+### 9. 本地安裝與安全試跑
+
+完成新增或修改後，可以用 symlink 方式安裝，讓本機 Agent 直接讀到目前工作樹；這不會複製出第二份版本：
+
+```bash
+python scripts/install_local_skills.py
+python scripts/verify_local_install.py
+python scripts/smoke_test_skills.py
+```
+
+`smoke_test_skills.py` 對 instruction-only skills 只做文件與 manifest dry-run，不會自動登入、發送資料、部署或寫入第三方服務。可執行 skill 請使用去識別化 fixture 做明確的 CLI smoke test；外部 connector 請使用 mock、sandbox 或唯讀權限，除非使用者已明確批准真實操作。
+
+### 10. Pull Request 前的完整檢查
+
+在提交前，請從 repository 根目錄執行以下命令：
+
+```bash
+python scripts/validate_repo.py
+python scripts/verify_local_install.py
+python scripts/smoke_test_skills.py
+pytest -q
+python -m compileall -q custom_skills tests scripts
+python scripts/self_assessment.py
+git diff --check
+git status --short
+```
+
+若修改 schema、registry、OpenAPI、MCP、匯入器或 CI，請額外執行對應的重跑命令並在 PR 說明結果。若自評低於 9.5，先修正契約缺口再提交；不要為了讓分數通過而刪除檢查項目或放寬安全條件。
+
+PR 描述至少應包含變更目的、影響的 skill、輸入／輸出是否改變、權限與資料流、是否需要人工批准、測試命令與結果，以及是否需要 migration note。建議使用清楚的 commit 前綴，例如 `feat:`、`fix:`、`docs:`、`test:` 或 `chore:`。
+
+### 11. 常見錯誤
+
+| 錯誤 | 正確做法 |
+|---|---|
+| 只新增 `SKILL.md`，沒有 manifest | 補齊 manifest，並讓 registry、manifest 與文件一致。 |
+| 把 `skills.json` 當成唯一定義 | 以各 skill 的 `manifest.json` 為權威來源，再更新 registry。 |
+| 把所有外部能力寫成 `network: true` | 分開 connectors、data egress、external write 與批准範圍。 |
+| 讓 instruction-only skill 宣稱已連接 API | 改為 `instruction_only`，把整合寫成 optional adapter contract。 |
+| 只有正向 trigger，沒有排除條件 | 加入 negative examples、exclude_when、priority 與 related skills。 |
+| 在文件或 fixture 中放真實個資與 token | 使用去識別化資料、`.env.example` 與秘密掃描。 |
+| 修改輸出格式卻不升版 | 依 semver 升版，補 migration note、測試與 CHANGELOG。 |
+
+若你不確定某個變更是否涉及安全或相容性，先停止高影響部分，閱讀 [`SKILL.md`](SKILL.md)、[`AGENTS.md`](AGENTS.md)、[`CONTRIBUTING.md`](CONTRIBUTING.md) 與 [`docs/manifest-contract.md`](docs/manifest-contract.md)，再開一個小範圍 PR 讓 reviewer 先確認方向。
+
 ## Core Skills
 
 本節保留原有的核心技能與既有整合入口。附件匯入的 66 項技能以獨立目錄納管，不覆蓋既有技能；若要查看完整清單、類別、風險與關聯技能，請使用 [`docs/skill-archive-catalog.md`](docs/skill-archive-catalog.md)。
