@@ -1,0 +1,112 @@
+{
+  "id": "moosie-ai-startup-brand-assets",
+  "name": "Moosie Ai Startup Brand Assets",
+  "version": "1.0.0",
+  "description": "Moosie Education AI 新創申請與品牌資產整理，包含英文官網、LinkedIn、Pitch deck 與對外品牌敘事。",
+  "entrypoint": "SKILL.md",
+  "runtime": "instruction_only",
+  "requirements": [],
+  "inputs": {
+    "request": {
+      "type": "text",
+      "required": true,
+      "description": "使用者希望完成的任務、問題或產出目標。"
+    },
+    "context": {
+      "type": "text",
+      "required": false,
+      "description": "背景、受眾、現況、限制與已知決策脈絡。"
+    },
+    "source_materials": {
+      "type": "text_or_files",
+      "required": false,
+      "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+    },
+    "constraints": {
+      "type": "list",
+      "required": false,
+      "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+    }
+  },
+  "outputs": {
+    "result": {
+      "type": "markdown",
+      "required": true,
+      "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+    },
+    "assumptions_and_risks": {
+      "type": "markdown",
+      "required": true,
+      "description": "假設、未驗證事項、風險、限制與人工核准點。"
+    },
+    "verification": {
+      "type": "markdown",
+      "required": true,
+      "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+    }
+  },
+  "permissions": {
+    "filesystem_read": true,
+    "filesystem_write": true,
+    "network": true,
+    "api_key_required": false,
+    "browser_automation": false,
+    "third_party_processing": true,
+    "shell": false,
+    "git": false,
+    "google_ads_read": false,
+    "google_ads_write": false,
+    "notion_read": false,
+    "notion_write": false,
+    "n8n_write": false,
+    "mcp_write_tools": false
+  },
+  "safety": {
+    "handles_sensitive_data": false,
+    "requires_user_confirmation": false,
+    "destructive": false,
+    "rules": [
+      "先確認任務目標、輸入來源、使用授權、範圍與輸出格式；缺少關鍵資訊時先列出假設並提出最少必要問題。",
+      "不得捏造事實、數據、案例、評價、客戶反饋、媒體報導、認證或研究來源；無法驗證的內容必須標示為假設或待驗證。",
+      "只使用使用者提供或明確授權的內容；不得繞過登入、CAPTCHA、付費牆、存取控制或第三方服務限制。",
+      "外部服務一律採唯讀或草稿模式；發送、發佈、建立、更新、刪除、部署、交易、預算變更與權限變更前必須取得明確人工批准。",
+      "涉及外部資料時記錄來源、擷取時間與查證限制；將可觀察事實、推論與建議分開呈現。"
+    ],
+    "disallowed_uses": [
+      "不得用於未授權存取、憑證收集、冒充他人、垃圾訊息、操縱或規避平台政策。",
+      "不得把未經授權的第三方內容、個資或機密資料重新發布到公開服務。"
+    ],
+    "forbidden_without_explicit_approval": [
+      "對外發送或發佈內容",
+      "建立、更新或刪除第三方服務資料",
+      "部署、改變權限、改變預算或執行不可逆操作"
+    ],
+    "always_forbidden": [
+      "繞過身份驗證、CAPTCHA、付費牆或存取控制",
+      "捏造來源、證據、數據、認證或使用者同意"
+    ]
+  },
+  "risk_level": "medium",
+  "activation_policy": "intent_match_with_scope_check",
+  "default_config": {
+    "mode": "draft_or_read_only",
+    "language": "zh-TW",
+    "source_archive": "docs/sources/Skills_Full_Configurations_Backup_20260818.md",
+    "source_item": 15
+  },
+  "platforms": [
+    "markdown",
+    "manus",
+    "codex",
+    "copilot"
+  ],
+  "source": {
+    "type": "user_provided_backup",
+    "file": "docs/sources/Skills_Full_Configurations_Backup_20260818.md",
+    "section_number": 15,
+    "start_line": 448,
+    "end_line": 473,
+    "status": "normalized_and_hardened"
+  },
+  "related_skills": []
+}

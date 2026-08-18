@@ -7,6 +7,8 @@
 
 > **目前定位：** 可供個人與社群共同維護的 skills prototype。所有涉及第三方服務寫入、部署、預算、憑證或破壞性操作，仍必須依照 skill manifest 與 `SECURITY.md` 的人工批准規則執行。
 
+本版本已將使用者提供的 `Skills_Full_Configurations_Backup_20260818.md` 中 **66 項 skills** 逐一正規化並納管至 `custom_skills/`。每一項都具備獨立的 `SKILL.md`、`manifest.json`、來源行號、輸入／輸出契約、權限宣告、風險分級、人工核准點與停止條件；完整索引請見 [`docs/skill-archive-catalog.md`](docs/skill-archive-catalog.md)。
+
 本儲存庫目標是支援以下使用情境：
 
 - Warp / Terminal AI 讀取任務說明
@@ -17,6 +19,8 @@
 - 支援 MCP 的 Agent 連接本地或遠端工具
 
 ## Core Skills
+
+本節保留原有的核心技能與既有整合入口。附件匯入的 66 項技能以獨立目錄納管，不覆蓋既有技能；若要查看完整清單、類別、風險與關聯技能，請使用 [`docs/skill-archive-catalog.md`](docs/skill-archive-catalog.md)。
 
 ### 1. Data Analysis Skill
 
@@ -375,6 +379,14 @@ python scripts/validate_repo.py
 pytest -q
 python -m compileall -q custom_skills tests scripts
 ```
+
+若要重新匯入相同格式的技能備份，可執行：
+
+```bash
+python scripts/import_skill_archive.py --backup /path/to/Skills_Full_Configurations_Backup_YYYYMMDD.md
+```
+
+匯入工具只會產生標準化的 instruction-only skill 套件與 registry metadata；它不會自動啟動外部服務、提交秘密或執行第三方寫入操作。匯入後必須重新執行上述驗證命令。
 
 `skills.json` 是快速索引；每個本地技能的 `manifest.json` 才是該技能名稱、版本、輸入、輸出、權限、風險與安全條件的權威來源。pull request 不應只修改其中一份而讓兩者產生 drift。
 
