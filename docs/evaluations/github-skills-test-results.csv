@@ -1,0 +1,109 @@
+rank,id,name,runtime,risk_level,test_scope,status,check_count,passed_checks,failed_checks,eval_case_count,connector_count,external_write_allowed,recommendation_score,recommendation_level,recommendation_reason
+1,agent-big-e-life-coach,agent-big-e-life-coach,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+2,agent-task-packaging,Agent Task Packaging,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+3,ai-agent-task-delegation-framework,Ai Agent Task Delegation Framework,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+4,ai-project-feasibility-assessment,ai-project-feasibility-assessment\,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+5,business-efficiency-scaling-strategy,Business Efficiency Scaling Strategy,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+6,checklist-manifesto-agent,Checklist Manifesto Agent,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+7,couple-podcast-hosting,Couple Podcast Hosting,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+8,course-outline-source-enricher,Course Outline Source Enricher,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+9,gemini-spark-instructions,Gemini Spark Instructions,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+10,making-decisions,Making Decisions,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+11,minerva-82-hcs-daily-coach,Minerva 82 Hcs Daily Coach,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+12,newsletter-topic-selection-writing,Newsletter Topic Selection Writing,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+13,precise-narrative-storytelling,Precise Narrative Storytelling,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+14,presentation-structure-visual-script,Presentation Structure Visual Script,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+15,presentation-yaml-design-architect,presentation-yaml-design-architect,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+16,problem-reframing-constraints,Problem Reframing Constraints,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+17,progressive-quiz-generator,Progressive Quiz Generator,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+18,questioning-leadership-dialogue,Questioning Leadership Dialogue,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+19,speak-human-tw,Speak Human Tw,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+20,to_prd,To PRD,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+21,write_a_skill,Write a Skill,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,100.0,A｜優先推薦,測試通過、低風險、無外部寫入且不依賴連線器。
+22,adapting-notion-docs,智能文件角色適應器,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,1,False,98.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+23,routine-task-report-aggregation,Routine Task Report Aggregation,instruction_only,low,contract_and_read_only_dry_run,PASS,22,22,0,4,0,True,95.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+24,500dishes-restaurant-info-enrichment,500Dishes Restaurant Info Enrichment,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+25,agent-bible-sq3r-fast-guide,agent-bible-sq3r-fast-guide,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+26,ai-research-lab,Ai Research Lab,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+27,analyzing-business-models,Analyzing Business Models,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+28,article-to-social-content-pack,Article To Social Content Pack,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+29,daily-devotional-prayer-guide,daily-devotional-prayer-guide,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+30,data_analysis,Data Analysis Skill,python,medium,offline_executable_smoke_test,PASS,28,28,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+31,decision-consulting-matrix,Decision Consulting Matrix,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+32,decision-making-superpowers,Decision Making Superpowers,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+33,designing-pricing-systems,Designing Pricing Systems,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+34,interactive-skill-learning-curriculum,interactive-skill-learning-curriculum,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+35,logotype-design-logic-practice,Logotype Design Logic Practice,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+36,marketing-brief-competitor-analyst,Marketing Brief Competitor Analyst,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+37,mcp_builder,MCP Builder,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+38,merchant-info-verification,Merchant Info Verification,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+39,moosie-ai-startup-brand-assets,Moosie Ai Startup Brand Assets,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+40,multi-agent-research-workflow,multi-agent-research-workflow,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+41,mvp-validation-iteration,Mvp Validation Iteration,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+42,pricing-strategy-conversion-system,Pricing Strategy Conversion System,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+43,product-idea-scoring-matrix,product-idea-scoring-matrix,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+44,product-revenue-growth-tracker,Product Revenue Growth Tracker,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+45,real-estate-market-modeler,Real Estate Market Modeler,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+46,renovation-expense-tracker,Renovation Expense Tracker,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+47,research-lab,research-lab — AI 研究實驗室,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+48,research-to-insight,Research To Insight,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+49,single-source-of-truth-knowledgebase,Single Source Of Truth Knowledgebase,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+50,social-content-batch-production,Social Content Batch Production,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+51,startup-venture-builder,Startup Venture Builder,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+52,threads-viral-consultant,Threads Viral Consultant,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+53,veo-short-video-prompt-engineer,veo-short-video-prompt-engineer,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,92.0,A-｜條件優先推薦,測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。
+54,notion-smart-doc-role-adapter,Notion Smart Doc Role Adapter,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,1,False,90.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+55,website-custom-optimizer,Website Custom Optimizer,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,1,False,90.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+56,youtube-transcript-summarizer,youtube-transcript-summarizer,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,1,False,90.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+57,pdf-study-guide-generator,Pdf Study Guide Generator,instruction_only,medium,contract_and_read_only_dry_run,PASS,22,22,0,4,0,True,87.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+58,agent-cyber-bully-lecturer,agent-cyber-bully-lecturer,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+59,agent-senior-prd-architect-sophia,agent-senior-prd-architect-sophia,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+60,agent-skills-actions-auditor,agent-skills-actions-auditor,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+61,ai-content-monetization-side-hustle,Ai Content Monetization Side Hustle,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+62,ai-security-agent-governance,Ai Security Agent Governance,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+63,ai-virtual-board-supervisor-agent,Ai Virtual Board Supervisor Agent,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+64,app-performance-benchmark-optimizer,app-performance-benchmark-optimizer,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+65,business-model-canvas-diagnosis,Business Model Canvas Diagnosis,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+66,client-filtering-brand-positioning,Client Filtering Brand Positioning,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+67,customer-service-email-routing,Customer Service Email Routing,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+68,design-proposal-portfolio-persuasion,Design Proposal Portfolio Persuasion,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+69,emil-design-eng,emil-design-eng,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+70,enterprise-sovereign-ai-adoption,Enterprise Sovereign Ai Adoption,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+71,full-sprint-execution,full-sprint-execution,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+72,game-inspiration-world-builder,game-inspiration-world-builder,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+73,high-energy-daily-routine-designer,high-energy-daily-routine-designer,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+74,life-scenario-simulation-matrix,life-scenario-simulation-matrix,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+75,lovable_github_cloudflare_worker,Lovable GitHub Cloudflare Worker,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+76,managing-public-relations,Managing Public Relations,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+77,mimo-hermes-openclaw-diagnosis,Mimo Hermes Openclaw Diagnosis,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+78,moosie-niche-demolisher,Moosie Niche Demolisher,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+79,naval-backstage-simulator,naval-backstage-simulator,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+80,negotiation-strategy-script,Negotiation Strategy Script,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+81,open-slide,open-slide,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+82,opus-5-skill-calibration-standards,Opus 5 Skill Calibration Standards,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+83,parent-communication-trust-building,Parent Communication Trust Building,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+84,personal-brand-sponsorship,Personal Brand Sponsorship,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+85,pr-brand-crisis-management,Pr Brand Crisis Management,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+86,product-launch-gate-checklist,Product Launch Gate Checklist,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+87,reconcile,Reconcile,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+88,rumor-buster,Rumor Buster,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+89,social-data-retrospective-private-domain,Social Data Retrospective Private Domain,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+90,startup-cashflow-pnl-planning,Startup Cashflow Pnl Planning,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+91,system-file-audit-organizer,system-file-audit-organizer,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+92,ui-minimalist-animation-enhancer,ui-minimalist-animation-enhancer,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+93,video-editing-preproduction-script-cuts,Video Editing Preproduction Script Cuts,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+94,warp-ai-multi-agent,Warp Ai Multi Agent,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+95,website-auditing,website-auditing,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+96,weekly-podcast-script,weekly-podcast-script,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+97,workspace-project-cleanup-agent,workspace-project-cleanup-agent,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+98,youtube-learning-summary-exporter,Youtube Learning Summary Exporter,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,False,82.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+99,cloudflare-skills,cloudflare-skills,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,1,False,80.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+100,google-ads-audit,google-ads-audit,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,1,False,80.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+101,notion-ai-workflow-design,Notion Ai Workflow Design,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,1,False,80.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+102,optimizing-google-ads,Google Ads AI Copilot,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,1,False,80.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+103,threads-api-skill,threads-api-skill,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,1,False,80.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+104,website-landing-page-builder,Website Landing Page Builder,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,1,False,80.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+105,dual-agent-human-sop,Dual Agent Human Sop,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,True,77.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+106,full-sprint,Full Sprint,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,True,77.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+107,openclaw-agent-handbook,Openclaw Agent Handbook,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,0,True,77.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
+108,user-instructions,User Instructions,instruction_only,high,contract_and_read_only_dry_run,PASS,22,22,0,4,1,True,75.0,B｜條件推薦,測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。
