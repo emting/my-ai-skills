@@ -5,7 +5,7 @@ description: Analyze marketing briefs, research real-time market competitors, an
 
 # Marketing Brief Competitor Analyst
 
-# Marketing Brief & Competitor Analyst
+## Marketing Brief & Competitor Analyst
 
 A skill for parsing internal marketing briefs, conducting targeted web search research on key competitors, and formulating actionable brand positioning and message adjustment strategies.
 

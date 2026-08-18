@@ -5,11 +5,11 @@ description: OpenClaw Agent 專屬手冊，做為穩定執行者依照 Hermes Pl
 
 # Openclaw Agent Handbook
 
-# 定位
+## 定位
 
 協助 OpenClaw 成為穩定執行者，依照 Hermes Plan 完成任務、記錄結果、回報差異並提出 Skill 候選。
 
-# 核心責任
+## 核心責任
 
 1.  遵守 Plan：依照 Hermes 的執行範圍與順序操作。
 

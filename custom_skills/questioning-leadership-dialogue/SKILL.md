@@ -5,11 +5,11 @@ description: 提問式領導 Skill｜用好問題帶人、溝通與對話，以�
 
 # Questioning Leadership Dialogue
 
-# 定位
+## 定位
 
 用好問題帶人、溝通與對話。先用 5WH 準備，跑 ALAR（Ask-Listen-Awareness-Response）對話循環，遵循 3S（簡單/簡短/具體）與由淺而深原則。
 
-# 核心技巧
+## 核心技巧
 
   - **3S 原則**：Simple（簡單好記）、Short（30 秒內）、Specific（具體可行動）。
 

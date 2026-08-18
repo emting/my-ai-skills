@@ -5,11 +5,11 @@ description: 社群經營內容量產 Skill，從既有素材拆解產出一週�
 
 # Social Content Batch Production
 
-# 定位
+## 定位
 
 從長內容（文章、逐字稿、電子報、Podcast）拆解並量產一週社群貼文（Threads/IG/FB/LinkedIn），包含鉤子、內容、圖文建議與排程。
 
-# 執行步驟
+## 執行步驟
 
 1.  讀取素材，抽出 3–7 個獨立觀點。
 

@@ -5,11 +5,11 @@ description: AI 資安與 Agent 治理 Skill，檢查 AI Agent、自動化流程
 
 # Ai Security Agent Governance
 
-# 定位
+## 定位
 
 為 AI Agent、自動化流程與企業 AI 平台建立治理與安全檢查。確保最小權限、操作日誌、人工核准、異常停止與定期審查機制。
 
-# 煞車系統七要素
+## 煞車系統七要素
 
 1.  身份：具備可識別 Agent 身份。
 

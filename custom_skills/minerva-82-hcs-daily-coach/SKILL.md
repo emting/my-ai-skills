@@ -5,11 +5,11 @@ description: Minerva 82 HCs 每日教練 Agent Skill，將 Minerva 82 HCs 心智
 
 # Minerva 82 Hcs Daily Coach
 
-# 定位
+## 定位
 
 將 Minerva 82 HCs 心智習慣與基礎概念轉成每日學習教練 Skill，協助使用者每天進行 HC 學習、反思、應用與追蹤。
 
-# 每日教練流程
+## 每日教練流程
 
 1.  **今日聚焦**：選定 1 個 HC。
 

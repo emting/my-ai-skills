@@ -65,7 +65,7 @@ description: "Designs pricing strategy, quotation logic, sales conversion flows,
 ## Required Output Format
 
 ```markdown
-# 定價策略與成交系統
+## 定價策略與成交系統
 
 ## 1. 產品摘要
 - 產品：
@@ -122,3 +122,44 @@ description: "Designs pricing strategy, quotation logic, sales conversion flows,
 競品價格與限制：
 【競品價格、客戶常見異議、法規或交付限制】
 ```
+
+## 標準執行契約
+
+### 觸發與輸入
+
+僅在使用者需求與本技能描述相符時啟用。先確認目標、受眾、上下文、資料來源、限制與輸出格式；未提供的資訊不得自行補成事實。
+
+### 執行順序
+
+1. 盤點輸入、授權、敏感資料與外部依賴。
+2. 依技能核心流程處理，分開標示事實、推論、假設與建議。
+3. 產出可審閱結果，列出來源、未驗證事項、風險與人工決策點。
+4. 輸出前檢查範圍、引用、敏感資料與高影響操作。
+
+## 輸出契約
+
+- **pricing_strategy**：依技能規格提供
+- **quotation_system**：依技能規格提供
+- **sales_conversion_flow**：依技能規格提供
+- **repurchase_and_referral_system**：依技能規格提供
+
+## 安全與人工核准
+
+目前風險等級：**medium**。
+
+- Do not fabricate testimonials, results, scarcity, discounts, medical effects, or financial returns.
+- Mark missing cost, margin, or competitor price data as required follow-up data or assumptions.
+- If the user cannot deliver the promised value, recommend reducing the promise, changing the offer, or improving delivery before raising price.
+- For supplements, medical, financial, or education outcome claims, avoid guarantee language and use compliant, verifiable wording.
+
+## 停止條件
+
+若授權、來源、範圍、關鍵數字、身份或外部操作權限無法確認，停止高影響部分並回報缺口；若發現矛盾、敏感資料暴露或輸出無法驗證，暫停後續動作並要求人工判斷。
+
+## 關聯技能
+
+本技能與 目前沒有經人工確認的直接關聯技能 有功能相近或可互補的關係；選擇時以任務範圍、資料來源與權限邊界為準。
+
+## 來源追蹤
+
+此技能為 repository 內既有技能；來源與維護責任以 manifest 為準。

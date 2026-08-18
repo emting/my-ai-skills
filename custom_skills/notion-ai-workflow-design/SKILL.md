@@ -5,11 +5,11 @@ description: 協助判斷工作流程應沉澱成文件、Skill、資料庫自�
 
 # Notion Ai Workflow Design
 
-# 定位
+## 定位
 
 協助判斷一個工作流程應該沉澱成 Notion 文件、Skill、資料庫自動化、N8N 流程或 AI Agent，並把它設計成可重複使用的 Notion AI 工作流。
 
-# 工作流設計流程
+## 工作流設計流程
 
 1.  **任務辨識**：這是一次性任務，還是重複流程？
 

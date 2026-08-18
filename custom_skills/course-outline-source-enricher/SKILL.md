@@ -5,7 +5,7 @@ description: Extract, verify, and format URLs and web references within course o
 
 # Course Outline Source Enricher
 
-# Course Outline Source Enricher
+## Course Outline Source Enricher
 
 A skill that parses course outlines or syllabi, extracts all embedded or implied web links and references, verifies their validity, and formats them into a standardized "Data Sources / Reference Links" section.
 

@@ -41,3 +41,6 @@ jobs:
 
       - name: Compile Python sources
         run: python -m compileall -q custom_skills tests scripts
+
+      - name: Run skill self-assessment gate
+        run: python scripts/self_assessment.py

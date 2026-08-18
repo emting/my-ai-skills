@@ -5,7 +5,7 @@ description: 將長文、對話、影音逐字稿或核心主題，一鍵改寫�
 
 # Article To Social Content Pack
 
-# Article to Social Content Pack (文章一鍵轉多平台社群內容包)
+## Article to Social Content Pack (文章一鍵轉多平台社群內容包)
 
 將深度文章、對話紀錄、Podcast 逐字稿或核心觀點，拆解改寫為符合台灣繁體中文在地語感（去 AI 味、說人話）與現代社群傳遞節奏的多平台內容矩陣大禮包，並可自動匯出同步至 Google Drive、Docs 與 Sheets。
 

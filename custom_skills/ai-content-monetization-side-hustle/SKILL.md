@@ -5,11 +5,11 @@ description: AI 自媒體斜槓變現 Skill，用 AI 完成市場研究、個人
 
 # Ai Content Monetization Side Hustle
 
-# 定位
+## 定位
 
 協助個人將 AI 與自媒體結合，完成自我盤點、受眾 Persona、一句話定位、多平台內容轉化與免費至高價的產品階梯設計。
 
-# 產品階梯
+## 產品階梯
 
   - **免費**：貼文、模板、Podcast（建立觸及與信任）。
 

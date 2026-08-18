@@ -5,7 +5,7 @@ description: 根據 Allport & Postman 謠言心理學框架，系統性分析謠
 
 # Rumor Buster
 
-# 謠言破解分析師（Rumor Buster）
+## 謠言破解分析師（Rumor Buster）
 
 本技能基於 Gordon Allport 與 Leo Postman 的經典社會心理學著作《謠言心理學》（The Psychology of Rumor），提供一套標準化的分析與破解框架。
 
@@ -39,7 +39,7 @@ $$R \\propto i \\times a$$
 
 ---
 
-# 六、 教學研究、學習與知識庫
+## 六、 教學研究、學習與知識庫
 
 ## 工具提示
 

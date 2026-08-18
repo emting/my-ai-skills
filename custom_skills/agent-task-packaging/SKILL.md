@@ -5,11 +5,11 @@ description: Agent 任務封包 Skill｜把模糊需求變成可委派可驗收�
 
 # Agent Task Packaging
 
-# 定位
+## 定位
 
 將模糊需求轉為可委派、可驗收的 Agent 任務封包。先判定適合度（ready/需補上下文/人判/不得委派），定義 Outcome、Context、Deliverables、Acceptance Criteria、Do not change 與 Stop rules。
 
-# 核心架構
+## 核心架構
 
   - **適合度標籤**：[低風險] Agent-ready、[需補充] 需補上下文、[需人工判斷] 需人類判斷、[高風險] 不得委派。
 

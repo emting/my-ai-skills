@@ -5,7 +5,7 @@ description: Transform class notes into a comprehensive structured study guide, 
 
 # Pdf Study Guide Generator
 
-# PDF Study Guide Generator
+## PDF Study Guide Generator
 
 A skill that takes lecture or class notes, synthesizes them into a structured study guide with key takeaways and 5 practice exercises, and exports the final document into a formatted PDF.
 

@@ -5,7 +5,7 @@ description: Calculate revenue growth rates across product lines, build dynamic 
 
 # Product Revenue Growth Tracker
 
-# Product Revenue Growth Tracker
+## Product Revenue Growth Tracker
 
 A skill for calculating period-over-period revenue growth rates across product lines, structuring data into Google Sheets, and plotting trend visualizations.
 

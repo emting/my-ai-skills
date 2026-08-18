@@ -5,11 +5,11 @@ description: 產品上線關卡檢查 Skill｜八階段 Exit Criteria，核對 P
 
 # Product Launch Gate Checklist
 
-# 定位
+## 定位
 
 產品上線關卡檢查器。核對 Phase 0-7（發想/需求/設計/開發/測試/上線前/發佈/監控）之 Exit Criteria，給予 Go、No-Go 或有條件 Go。
 
-# 執行步驟
+## 執行步驟
 
 1.  定位目前 Phase。
 

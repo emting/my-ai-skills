@@ -14,7 +14,11 @@
     "input": {
       "type": "file",
       "required": true,
-      "extensions": [".csv", ".xlsx", ".xls"]
+      "extensions": [
+        ".csv",
+        ".xlsx",
+        ".xls"
+      ]
     },
     "output": {
       "type": "string",
@@ -33,8 +37,32 @@
   },
   "safety": {
     "handles_sensitive_data": true,
-    "requires_user_confirmation": false,
-    "destructive": false
+    "requires_user_confirmation": true,
+    "destructive": false,
+    "stop_conditions": [
+      "授權、資料來源、範圍、身份或外部操作權限無法確認時停止高影響部分。",
+      "發現來源矛盾、敏感資料暴露、輸出無法驗證或任務目標漂移時停止並要求人工判斷。"
+    ],
+    "approval_scope": [
+      "exact_action",
+      "exact_target",
+      "exact_diff",
+      "rollback_or_recovery_plan"
+    ],
+    "audit_requirements": [
+      "record_sources",
+      "record_assumptions",
+      "record_approval_before_write"
+    ],
+    "rollback_required": false,
+    "dry_run_default": true,
+    "data_minimization": "redact_by_default",
+    "approval_reason": "輸入可能含個人或業務敏感資料；輸出檔案前需確認資料範圍與遮罩結果。",
+    "rules": [
+      "不得捏造事實、資料、來源、同意或驗證結果。",
+      "外部服務採唯讀或草稿模式；寫入、發佈、部署與不可逆操作前必須取得明確人工批准。",
+      "對敏感資料採資料最小化、遮罩與最短保留原則。"
+    ]
   },
   "risk_level": "medium",
   "default_config": {
@@ -46,5 +74,49 @@
     "Common personal-data columns are redacted in previews by default.",
     "Use --sensitive-column for domain-specific private fields.",
     "The input file is never uploaded by this CLI."
-  ]
+  ],
+  "schema_version": "1.1.0",
+  "contract_version": "1.1.0",
+  "capabilities": {
+    "filesystem": "workspace_read_write",
+    "network": "none",
+    "shell": "none",
+    "git": "none",
+    "browser": "none"
+  },
+  "connectors": [],
+  "data_egress": {
+    "mode": "none",
+    "connectors": [],
+    "allowed_data_classes": [],
+    "approval_required": true,
+    "minimize_and_redact": true,
+    "retention": "none_by_default"
+  },
+  "external_write": {
+    "allowed": false,
+    "mode": "draft_or_read_only",
+    "approval_required": true,
+    "approval_scope": []
+  },
+  "execution": {
+    "executor": "python",
+    "adapter": "run.py",
+    "network_is_not_implied": true
+  },
+  "activation": {
+    "positive_examples": [
+      "使用者明確要求：Analyze CSV or Excel files and generate privacy-conscious Markdown reports with redacted previews."
+    ],
+    "negative_examples": [
+      "任務只涉及與「Data Analysis Skill」無關的主題，不需要其專門流程。"
+    ],
+    "exclude_when": [
+      "若任務不涉及「Data Analysis Skill」的核心目的、輸入或輸出，不要啟用本技能。"
+    ],
+    "priority": 60,
+    "delegates_to": [],
+    "selection_notes": "先檢查任務目的、輸入資料與外部權限；相鄰技能重疊時以最小權限與最窄範圍優先。"
+  },
+  "related_skills": []
 }

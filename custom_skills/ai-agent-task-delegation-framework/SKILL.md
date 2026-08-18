@@ -5,11 +5,11 @@ description: AI Agent 任務委派總則（雷小蒙模式），將重複任務�
 
 # Ai Agent Task Delegation Framework
 
-# 定位
+## 定位
 
 AI Agent 任務委派母框架。將重複發生的任務（每週≥1次）拆成技能模組交給 Agent 自動執行，人僅於待審區進行驗收放行與反饋迭代。
 
-# 核心步驟
+## 核心步驟
 
 1.  盤點重複任務並計算人力 vs. Agent 成本。
 

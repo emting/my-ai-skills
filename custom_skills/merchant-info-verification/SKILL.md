@@ -5,11 +5,11 @@ description: 店家官網與社群資料查核 Skill，批次查核店家官網�
 
 # Merchant Info Verification
 
-# 定位
+## 定位
 
 將店家公開資料查核流程標準化，批次確認店家是否有正式官網，並補齊地址、Google Maps 與 Instagram 等基礎資料。
 
-# 官網判斷標準
+## 官網判斷標準
 
   - \`true\`：獨立官方網站、品牌購物網、官方訂位網、百貨/集團官方品牌頁。
 

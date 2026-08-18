@@ -5,7 +5,7 @@ description: Generate 5 quizzes with progressive difficulty and distinct sub-top
 
 # Progressive Quiz Generator
 
-# Progressive Quiz Generator
+## Progressive Quiz Generator
 
 A structured skill for creating 5 quizzes from user-provided reference data, ensuring progressive difficulty levels and distinct sub-topic coverage.
 

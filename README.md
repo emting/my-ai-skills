@@ -396,7 +396,10 @@ python scripts/verify_local_install.py
 python scripts/smoke_test_skills.py
 pytest -q
 python -m compileall -q custom_skills tests scripts
+python scripts/self_assessment.py
 ```
+
+`self_assessment.py` 使用 [`docs/self-assessment-rubric.md`](docs/self-assessment-rubric.md) 的 10 維度量表，並以 `evals/skills.json` 的 80 組技能契約案例檢查封裝完整度、來源可重現性、權限資料流、觸發選擇、安全治理、行為評估、可維護性與 CI 品質。GitHub Actions 將 **9.5/10** 設為最低品質閘門；分數必須由腳本重現，不接受只依賴人工宣稱的自評。
 
 若要重新匯入相同格式的技能備份，可執行：
 

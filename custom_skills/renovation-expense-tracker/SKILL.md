@@ -5,7 +5,7 @@ description: Process renovation receipts, categorize contractor engineering item
 
 # Renovation Expense Tracker
 
-# Renovation Expense Tracker
+## Renovation Expense Tracker
 
 A skill for parsing home/office renovation receipts and contractor invoices, categorizing engineering items, and building a structured budget tracking spreadsheet in Google Sheets.
 
@@ -17,7 +17,7 @@ A skill for parsing home/office renovation receipts and contractor invoices, cat
 
 ---
 
-# 十、 核心設定與個人指令
+## 十、 核心設定與個人指令
 
 ## 工具提示
 

@@ -5,11 +5,11 @@ description: 【Research Skill】Moosie｜Category-of-One Niche Demolisher，找
 
 # Moosie Niche Demolisher
 
-# 定位
+## 定位
 
 把 Moosie Education 的 Instagram 從一般補習班帳號重新定位成 Category-of-One。分析市場擁擠區、家長真實需求，建立難以複製的內容切角與矩陣。
 
-# 核心架構
+## 核心架構
 
 1.  **擁擠區與痛點分析**：避開泛用「有趣全美語」訴求，鎖定家長對「孩子聽得懂但不敢開口」的深層焦慮。
 

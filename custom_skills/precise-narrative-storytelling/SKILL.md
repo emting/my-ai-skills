@@ -5,11 +5,11 @@ description: 精準敘事 Skill｜把真實經驗變成好故事，用衝突找�
 
 # Precise Narrative Storytelling
 
-# 定位
+## 定位
 
 把真實經驗轉換成好故事的可重用流程。用衝突（人與環境/人/自我/社會）切入、4P（Purpose/Problem/Promise/Practice）萃取骨架，並展開三幕劇與亮點邏輯檢查。
 
-# 核心架構
+## 核心架構
 
   - **衝突類型**：人與環境、人與人、人與自我、人與社會制度。
 

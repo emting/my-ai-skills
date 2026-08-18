@@ -87,7 +87,25 @@
     "always_forbidden": [
       "繞過身份驗證、CAPTCHA、付費牆或存取控制",
       "捏造來源、證據、數據、認證或使用者同意"
-    ]
+    ],
+    "stop_conditions": [
+      "授權、資料來源、範圍、身份或外部操作權限無法確認時停止高影響部分。",
+      "發現來源矛盾、敏感資料暴露、輸出無法驗證或任務目標漂移時停止並要求人工判斷。"
+    ],
+    "approval_scope": [
+      "exact_action",
+      "exact_target",
+      "exact_diff",
+      "rollback_or_recovery_plan"
+    ],
+    "audit_requirements": [
+      "record_sources",
+      "record_assumptions",
+      "record_approval_before_write"
+    ],
+    "rollback_required": true,
+    "dry_run_default": true,
+    "data_minimization": "redact_by_default"
   },
   "risk_level": "high",
   "activation_policy": "explicit_request",
@@ -109,7 +127,57 @@
     "section_number": 22,
     "start_line": 674,
     "end_line": 703,
-    "status": "normalized_and_hardened"
+    "status": "normalized_and_hardened",
+    "sha256": "d45be815d0e9279d7f7b9cfe0c8cce5ff251279b35eac9a220b80dc9193bf429",
+    "normalizer_version": "1.3.0",
+    "normalized_at": "2026-08-18",
+    "hash_algorithm": "sha256",
+    "provenance_verified": true
   },
-  "related_skills": []
+  "related_skills": [],
+  "schema_version": "1.1.0",
+  "contract_version": "1.1.0",
+  "capabilities": {
+    "filesystem": "workspace_read_write",
+    "network": "public_read_only",
+    "shell": "none",
+    "git": "none",
+    "browser": "none"
+  },
+  "connectors": [],
+  "data_egress": {
+    "mode": "private_data_upload",
+    "connectors": [],
+    "allowed_data_classes": [
+      "user_authorized_sensitive_data"
+    ],
+    "approval_required": true,
+    "minimize_and_redact": true,
+    "retention": "none_by_default"
+  },
+  "external_write": {
+    "allowed": false,
+    "mode": "draft_or_read_only",
+    "approval_required": true,
+    "approval_scope": []
+  },
+  "execution": {
+    "executor": "instruction_only",
+    "adapter": "SKILL.md",
+    "network_is_not_implied": true
+  },
+  "activation": {
+    "positive_examples": [
+      "使用者明確要求：信件與客服分流回覆 Skill，收信分類、依知識庫產出草稿並進行風險分級與人審放行。"
+    ],
+    "negative_examples": [
+      "任務只涉及與「Customer Service Email Routing」無關的主題，不需要其專門流程。"
+    ],
+    "exclude_when": [
+      "若任務不涉及「Customer Service Email Routing」的核心目的、輸入或輸出，不要啟用本技能。"
+    ],
+    "priority": 80,
+    "delegates_to": [],
+    "selection_notes": "先檢查任務目的、輸入資料與外部權限；相鄰技能重疊時以最小權限與最窄範圍優先。"
+  }
 }

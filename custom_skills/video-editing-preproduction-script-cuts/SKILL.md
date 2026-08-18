@@ -5,11 +5,11 @@ description: 影片剪輯前製與腳本切點 Skill，從帶時間碼逐字稿�
 
 # Video Editing Preproduction Script Cuts
 
-# 定位
+## 定位
 
 從帶時間碼的逐字稿進行長影片/Podcast 前製剪輯分析：標記章節時間碼、贅語刪除區段、短影音高張力片段選段與封面文案。
 
-# 執行步驟
+## 執行步驟
 
 1.  標出主題段落與章節時間碼。
 

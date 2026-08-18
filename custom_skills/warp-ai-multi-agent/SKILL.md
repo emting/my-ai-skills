@@ -5,7 +5,7 @@ description: Warp AI Multi-Agent War Room Launch Configuration. Use when the use
 
 # Warp Ai Multi Agent
 
-# Warp AI Multi-Agent War Room
+## Warp AI Multi-Agent War Room
 
 A skill for designing and configuring Warp Terminal Launch Configurations to create a multi-pane CLI AI Agent war room layout.
 
@@ -82,7 +82,7 @@ windows:
 
 ---
 
-# 二、 商業策略、創業與定價
+## 二、 商業策略、創業與定價
 
 ## 標準執行契約
 

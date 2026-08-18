@@ -5,7 +5,7 @@ description: Startup Venture Builder for opportunity discovery, market validatio
 
 # Startup Venture Builder
 
-# Startup Venture Builder
+## Startup Venture Builder
 
 A comprehensive skill for transforming early-stage business ideas into validated, market-ready, and monetizable ventures through a 12-phase framework.
 
@@ -67,7 +67,7 @@ Always categorize statements using these explicit markers:
 
 ---
 
-# 三、 行銷、品牌、公關與溝通
+## 三、 行銷、品牌、公關與溝通
 
 ## 標準執行契約
 

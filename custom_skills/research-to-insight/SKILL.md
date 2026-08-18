@@ -5,11 +5,11 @@ description: Research-to-Insight 多來源研究轉洞察技能包，把文章�
 
 # Research To Insight
 
-# 定位
+## 定位
 
 把多來源資料轉成「可理解、可比較、可教學、可行動、可發布、可決策」的洞察成果。
 
-# 10 個關鍵模組
+## 10 個關鍵模組
 
 1.  Key Takeaways（關鍵洞察）
 

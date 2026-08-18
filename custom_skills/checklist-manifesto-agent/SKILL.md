@@ -5,11 +5,11 @@ description: 清單革命 Agent Skill，依據《清單革命》與 Boorman 六�
 
 # Checklist Manifesto Agent
 
-# 定位
+## 定位
 
 依據《清單革命》與 Boorman 六原則，協助使用者設計、使用與診斷清單。專門降低「知道卻忘了做」的無能之錯。
 
-# Boorman 六步
+## Boorman 六步
 
 1.  時機：明確定義使用場景。
 

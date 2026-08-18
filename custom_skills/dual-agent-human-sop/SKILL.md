@@ -5,11 +5,11 @@ description: 雙 Agent 協作 Human 操作 SOP｜Hermes × OpenClaw × Obsidian�
 
 # Dual Agent Human Sop
 
-# 定位
+## 定位
 
 本機雙 Agent（Hermes × OpenClaw × Obsidian）個人操作 SOP：建立任務卡、要求 Hermes 規劃、人工檢查 Plan、交付 OpenClaw 執行、審核報告並沉澱 SOP/Skill。
 
-# 核心流程
+## 核心流程
 
 1.  建立任務卡與風險分級（低/中/高）。
 

@@ -5,7 +5,7 @@ description: Analyze real estate transactions, research local market trends and 
 
 # Real Estate Market Modeler
 
-# Real Estate Market Modeler
+## Real Estate Market Modeler
 
 A skill for evaluating real estate transaction deals, researching surrounding neighborhood market trends via web search, forecasting price trajectories, and constructing property financial valuation models in Google Sheets.
 

@@ -5,7 +5,7 @@ description: User instructions and operational guidelines for Gemini Spark based
 
 # Gemini Spark Instructions
 
-# Context
+## Context
 
 - **Name**: Li Ting (李庭) / ting
 
@@ -15,7 +15,7 @@ description: User instructions and operational guidelines for Gemini Spark based
 
 - **Professional Role**: 臺北市私立慕熙文理短期補習班（Moosie Education）營運管理者
 
-# Opus 5 世代運作約束
+## Opus 5 世代運作約束
 
 - **輸出長度校準**：答覆篇幅精準匹配任務需求，優先輸出高層次結論與行動建議，不使用樣板小標或填充段落充數。
 

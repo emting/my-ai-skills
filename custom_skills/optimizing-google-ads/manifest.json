@@ -77,6 +77,30 @@
       "guaranteed_admission_claims",
       "exaggerated_education_outcomes",
       "credential_exposure"
+    ],
+    "stop_conditions": [
+      "授權、資料來源、範圍、身份或外部操作權限無法確認時停止高影響部分。",
+      "發現來源矛盾、敏感資料暴露、輸出無法驗證或任務目標漂移時停止並要求人工判斷。"
+    ],
+    "approval_scope": [
+      "exact_action",
+      "exact_target",
+      "exact_diff",
+      "rollback_or_recovery_plan"
+    ],
+    "audit_requirements": [
+      "record_sources",
+      "record_assumptions",
+      "record_approval_before_write"
+    ],
+    "rollback_required": true,
+    "dry_run_default": true,
+    "data_minimization": "redact_by_default",
+    "approval_reason": "廣告帳戶、預算、受眾與投放設定具商業與財務影響；任何寫入前需人工批准。",
+    "rules": [
+      "不得捏造事實、資料、來源、同意或驗證結果。",
+      "外部服務採唯讀或草稿模式；寫入、發佈、部署與不可逆操作前必須取得明確人工批准。",
+      "對敏感資料採資料最小化、遮罩與最短保留原則。"
     ]
   },
   "risk_level": "high",
@@ -106,5 +130,55 @@
     "notion",
     "mcp",
     "moosie"
-  ]
+  ],
+  "schema_version": "1.1.0",
+  "contract_version": "1.1.0",
+  "capabilities": {
+    "filesystem": "workspace_read_write",
+    "network": "public_read_only",
+    "shell": "none",
+    "git": "none",
+    "browser": "none"
+  },
+  "connectors": [
+    "google_ads"
+  ],
+  "data_egress": {
+    "mode": "public_data_only",
+    "connectors": [
+      "google_ads"
+    ],
+    "allowed_data_classes": [
+      "public_data"
+    ],
+    "approval_required": true,
+    "minimize_and_redact": true,
+    "retention": "none_by_default"
+  },
+  "external_write": {
+    "allowed": false,
+    "mode": "draft_or_read_only",
+    "approval_required": true,
+    "approval_scope": []
+  },
+  "execution": {
+    "executor": "instruction_only",
+    "adapter": "SKILL.md",
+    "network_is_not_implied": true
+  },
+  "activation": {
+    "positive_examples": [
+      "使用者明確要求：Analyze Google Ads performance and produce read-only health reports, search term audits, negative keyword suggestions, RSA copy ideas, budget pacing, action queues, and n8n/Notion/MCP integration plans with human approval required before write or spend-impacting operations."
+    ],
+    "negative_examples": [
+      "任務只涉及與「Google Ads AI Copilot」無關的主題，不需要其專門流程。"
+    ],
+    "exclude_when": [
+      "若任務不涉及「Google Ads AI Copilot」的核心目的、輸入或輸出，不要啟用本技能。"
+    ],
+    "priority": 80,
+    "delegates_to": [],
+    "selection_notes": "先檢查任務目的、輸入資料與外部權限；相鄰技能重疊時以最小權限與最窄範圍優先。"
+  },
+  "related_skills": []
 }

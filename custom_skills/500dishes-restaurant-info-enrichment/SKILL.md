@@ -5,7 +5,7 @@ description: 500盤餐廳對外資訊補齊 Skill，針對得獎餐廳補齊 Goo
 
 # 500Dishes Restaurant Info Enrichment
 
-# 500盤餐廳對外資訊補齊 Skill
+## 500盤餐廳對外資訊補齊 Skill
 
 ## 簡介
 

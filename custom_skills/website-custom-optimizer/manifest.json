@@ -81,7 +81,25 @@
       "Mark assumptions and missing data explicitly instead of pretending a full-site audit is complete.",
       "Ask for authorization before browser automation, crawling, third-party processing, or analyzing non-public content.",
       "For forms, login, payment, children, medical, finance, legal, or government services, flag privacy, security, and compliance risks."
-    ]
+    ],
+    "stop_conditions": [
+      "授權、資料來源、範圍、身份或外部操作權限無法確認時停止高影響部分。",
+      "發現來源矛盾、敏感資料暴露、輸出無法驗證或任務目標漂移時停止並要求人工判斷。"
+    ],
+    "approval_scope": [
+      "exact_action",
+      "exact_target",
+      "exact_diff",
+      "rollback_or_recovery_plan"
+    ],
+    "audit_requirements": [
+      "record_sources",
+      "record_assumptions",
+      "record_approval_before_write"
+    ],
+    "rollback_required": false,
+    "dry_run_default": true,
+    "data_minimization": "redact_by_default"
   },
   "risk_level": "medium",
   "default_config": {
@@ -114,5 +132,57 @@
     "accessibility",
     "performance",
     "launch-checklist"
+  ],
+  "schema_version": "1.1.0",
+  "contract_version": "1.1.0",
+  "capabilities": {
+    "filesystem": "workspace_read_write",
+    "network": "authenticated_read",
+    "shell": "none",
+    "git": "none",
+    "browser": "automated"
+  },
+  "connectors": [
+    "browser"
+  ],
+  "data_egress": {
+    "mode": "public_data_only",
+    "connectors": [
+      "browser"
+    ],
+    "allowed_data_classes": [
+      "public_data"
+    ],
+    "approval_required": true,
+    "minimize_and_redact": true,
+    "retention": "none_by_default"
+  },
+  "external_write": {
+    "allowed": false,
+    "mode": "draft_or_read_only",
+    "approval_required": true,
+    "approval_scope": []
+  },
+  "execution": {
+    "executor": "instruction_only",
+    "adapter": "SKILL.md",
+    "network_is_not_implied": true
+  },
+  "activation": {
+    "positive_examples": [
+      "已有網站，需要診斷、SEO、內容、轉換或技術優化。"
+    ],
+    "negative_examples": [
+      "從零建立一個新的 landing page 或網站。"
+    ],
+    "exclude_when": [
+      "沒有既有網站可供審查時，交由 website-landing-page-builder。"
+    ],
+    "priority": 60,
+    "delegates_to": [],
+    "selection_notes": "先檢查任務目的、輸入資料與外部權限；相鄰技能重疊時以最小權限與最窄範圍優先。"
+  },
+  "related_skills": [
+    "website-landing-page-builder"
   ]
 }

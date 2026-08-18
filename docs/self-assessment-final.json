@@ -1,0 +1,101 @@
+{
+  "score": 10.0,
+  "dimensions": {
+    "package_completeness": {
+      "score": 1.0,
+      "evidence": {
+        "manifests": 80,
+        "skill_dirs": 80,
+        "complete": 80
+      }
+    },
+    "registry_schema": {
+      "score": 1.0,
+      "evidence": {
+        "validator_passed": true,
+        "tail": "Repository validation passed: 80 manifests, 90 registry entries, OpenAPI, MCP, and referenced paths verified.\n"
+      }
+    },
+    "source_reproducibility": {
+      "score": 1.0,
+      "evidence": {
+        "archive": 66,
+        "complete_fields": 594,
+        "expected_fields": 594,
+        "required_fields": [
+          "file",
+          "section_number",
+          "start_line",
+          "end_line",
+          "sha256",
+          "normalizer_version",
+          "normalized_at",
+          "hash_algorithm",
+          "provenance_verified"
+        ]
+      }
+    },
+    "documentation_structure": {
+      "score": 1.0,
+      "evidence": {
+        "passing": 80,
+        "total": 80,
+        "duplicate_h1": 0,
+        "missing": {}
+      }
+    },
+    "permission_dataflow": {
+      "score": 1.0,
+      "evidence": {
+        "passing": 80,
+        "total": 80,
+        "missing": []
+      }
+    },
+    "activation_selection": {
+      "score": 1.0,
+      "evidence": {
+        "passing": 80,
+        "total": 80,
+        "missing": []
+      }
+    },
+    "safety_governance": {
+      "score": 1.0,
+      "evidence": {
+        "passing": 80,
+        "total": 80,
+        "failures": []
+      }
+    },
+    "behavior_evaluation": {
+      "score": 1.0,
+      "evidence": {
+        "skills_with_cases": 80,
+        "total": 80
+      }
+    },
+    "maintainability": {
+      "score": 1.0,
+      "evidence": {
+        "files": [
+          "scripts/import_skill_archive.py",
+          "scripts/install_local_skills.py",
+          "scripts/validate_repo.py"
+        ],
+        "expected": 3
+      }
+    },
+    "ci_open_source": {
+      "score": 1.0,
+      "evidence": {
+        "workflows": 1,
+        "checks": {
+          "validate_repo.py": true,
+          "pytest": true,
+          "compileall": true
+        }
+      }
+    }
+  }
+}

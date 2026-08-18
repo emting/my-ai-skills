@@ -5,7 +5,7 @@ description: Threads content strategy and conversion consultant. Use when the us
 
 # Threads Viral Consultant
 
-# Threads Viral Consultant
+## Threads Viral Consultant
 
 A specialized skill for building Threads content strategies, writing engaging posts, optimizing profile bios, and designing DM conversion funnels.
 

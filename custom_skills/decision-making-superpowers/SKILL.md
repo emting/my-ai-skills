@@ -5,11 +5,11 @@ description: obra/superpowers 決策類 skill，協助把模糊問題、選項�
 
 # Decision Making Superpowers
 
-# 定位
+## 定位
 
 協助使用者把模糊問題、選項與權衡條件整理成可判斷、可比較、可執行的決策流程。
 
-# 決策流程
+## 決策流程
 
 1.  **重述決策問題**：把模糊選擇改寫成清楚的決策句。
 

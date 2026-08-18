@@ -52,7 +52,25 @@
       "Do not invent facts; mark uncertainty as 待確認.",
       "Do not expose sensitive Notion content to public repositories or third-party systems.",
       "Preserve important source meaning and tone unless the user asks for a rewrite."
-    ]
+    ],
+    "stop_conditions": [
+      "授權、資料來源、範圍、身份或外部操作權限無法確認時停止高影響部分。",
+      "發現來源矛盾、敏感資料暴露、輸出無法驗證或任務目標漂移時停止並要求人工判斷。"
+    ],
+    "approval_scope": [
+      "exact_action",
+      "exact_target",
+      "exact_diff",
+      "rollback_or_recovery_plan"
+    ],
+    "audit_requirements": [
+      "record_sources",
+      "record_assumptions",
+      "record_approval_before_write"
+    ],
+    "rollback_required": false,
+    "dry_run_default": true,
+    "data_minimization": "redact_by_default"
   },
   "risk_level": "low",
   "default_config": {
@@ -73,5 +91,53 @@
     "prd",
     "learning-notes",
     "role-adapter"
-  ]
+  ],
+  "schema_version": "1.1.0",
+  "contract_version": "1.1.0",
+  "capabilities": {
+    "filesystem": "workspace_read_write",
+    "network": "none",
+    "shell": "none",
+    "git": "none",
+    "browser": "none"
+  },
+  "connectors": [
+    "notion"
+  ],
+  "data_egress": {
+    "mode": "none",
+    "connectors": [
+      "notion"
+    ],
+    "allowed_data_classes": [],
+    "approval_required": true,
+    "minimize_and_redact": true,
+    "retention": "none_by_default"
+  },
+  "external_write": {
+    "allowed": false,
+    "mode": "draft_or_read_only",
+    "approval_required": true,
+    "approval_scope": []
+  },
+  "execution": {
+    "executor": "instruction_only",
+    "adapter": "SKILL.md",
+    "network_is_not_implied": true
+  },
+  "activation": {
+    "positive_examples": [
+      "使用者明確要求：Adapt to Notion document type, content maturity, and user intent, then switch into the most useful assistant role to summarize, restructure, rewrite, fill gaps, critique, convert formats, or produce action-ready documentation."
+    ],
+    "negative_examples": [
+      "任務只涉及與「智能文件角色適應器」無關的主題，不需要其專門流程。"
+    ],
+    "exclude_when": [
+      "若任務不涉及「智能文件角色適應器」的核心目的、輸入或輸出，不要啟用本技能。"
+    ],
+    "priority": 40,
+    "delegates_to": [],
+    "selection_notes": "先檢查任務目的、輸入資料與外部權限；相鄰技能重疊時以最小權限與最窄範圍優先。"
+  },
+  "related_skills": []
 }

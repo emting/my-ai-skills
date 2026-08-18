@@ -5,7 +5,7 @@ description: 批量抓取指定 YouTube 頻道最新影片逐字稿，轉換為�
 
 # Youtube Learning Summary Exporter
 
-# YouTube 學習摘要與 Drive 匯出工作流 (YouTube Learning Summary Exporter)
+## YouTube 學習摘要與 Drive 匯出工作流 (YouTube Learning Summary Exporter)
 
 本 Skill 提供一站式自動化流程：從 YouTube 頻道檢索最新影片、取得逐字稿與元資料、提煉高價值結構化摘要，並將內容自動創建或更新至 Google Drive 指定資料夾中的文件。
 
@@ -31,7 +31,7 @@ description: 批量抓取指定 YouTube 頻道最新影片逐字稿，轉換為�
 
 ---
 
-# 五、 決策思維、心智模型與領導
+## 五、 決策思維、心智模型與領導
 
 ## 工具提示
 

@@ -5,11 +5,11 @@ description: AI 虛擬董事會 Supervisor Agent Skill，調度 CFO、CHRO、COO
 
 # Ai Virtual Board Supervisor Agent
 
-# 定位
+## 定位
 
 AI 虛擬董事會中央調度 Supervisor。將經營事件（報名率下降、師資缺編、現金流警告、負評、使用率低）路由給主責與協作 Agent，合併衝突並產出決策報告。
 
-# 核心職責
+## 核心職責
 
 1.  辨識事件並進行 Agent 路由。
 

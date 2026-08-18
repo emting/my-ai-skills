@@ -5,11 +5,11 @@ description: 網站／落地頁建置 Skill，用 Agent 直接產出可上線的
 
 # Website Landing Page Builder
 
-# 定位
+## 定位
 
 一頁式說明/課程招生/專案展示落地頁建置。擬定敘事段落（痛點→對照→機制→成本效益→社會證明→CTA），產出單檔 HTML/CSS/JS 與 SEO/GEO 要素。
 
-# 執行步驟
+## 執行步驟
 
 1.  定敘事段落與唯一 CTA。
 

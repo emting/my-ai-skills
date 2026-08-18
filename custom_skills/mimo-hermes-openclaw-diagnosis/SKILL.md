@@ -5,11 +5,11 @@ description: 協助設定與排錯 Xiaomi MiMo、Hermes Agent、OpenClaw 的模�
 
 # Mimo Hermes Openclaw Diagnosis
 
-# 定位
+## 定位
 
 協助設定與排錯 Xiaomi MiMo、Hermes Agent、OpenClaw 的模型連線。核心任務是先確認 API Key 類型、Base URL、provider 名稱與模型名稱是否成對正確。
 
-# 核心判斷
+## 核心判斷
 
 | 方案 | API Key | Base URL |
 
@@ -19,7 +19,7 @@ description: 協助設定與排錯 Xiaomi MiMo、Hermes Agent、OpenClaw 的模�
 
 | Token Plan | \`tp-xxxxx\` | \`https://token-plan-cn.xiaomimimo.com/v1\` |
 
-# Hermes 規則
+## Hermes 規則
 
   - 使用 custom provider 時，provider 必須是 \`custom\`。
 
@@ -27,7 +27,7 @@ description: 協助設定與排錯 Xiaomi MiMo、Hermes Agent、OpenClaw 的模�
 
   - 設定檔：\`~/.hermes/config.yaml\`、\`~/.hermes/.env\`
 
-# OpenClaw 規則
+## OpenClaw 規則
 
   - 需要 Node.js 22+
 
