@@ -1,14 +1,21 @@
-openapi: 3.1.0
+openapi: 3.0.3
 info:
-  title: Personal AI Skills API
+  title: Optional Weather API Contract
   version: 1.0.0
-  description: API definitions for personal AI skills.
+  description: >-
+    Provider-agnostic example contract for an optional weather integration.
+    This repository does not bundle or operate a production API server. Replace
+    the example server URL only in a local or deployment-specific configuration.
 servers:
   - url: https://api.example.com
-    description: Production server
+    description: Example only; no server is bundled with this repository.
+tags:
+  - name: weather
+    description: Optional weather provider operations.
 paths:
   /weather/current:
     get:
+      tags: [weather]
       operationId: getCurrentWeather
       summary: Get current weather by city
       description: Returns current weather information for a given city.
@@ -19,41 +26,50 @@ paths:
           description: City name, for example Taipei.
           schema:
             type: string
+            minLength: 1
         - name: units
           in: query
           required: false
           description: Unit system.
           schema:
             type: string
-            enum:
-              - metric
-              - imperial
+            enum: [metric, imperial]
             default: metric
       responses:
-        "200":
+        '200':
           description: Weather result.
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  city:
-                    type: string
-                  temperature:
-                    type: number
-                  condition:
-                    type: string
-                  humidity:
-                    type: number
-        "400":
+                $ref: '#/components/schemas/Weather'
+        '400':
           description: Invalid request.
-        "401":
-          description: Unauthorized.
+        '401':
+          description: Missing or invalid API key.
+        '429':
+          description: Provider rate limit exceeded.
+        '500':
+          description: Provider or integration error.
 components:
   securitySchemes:
     ApiKeyAuth:
       type: apiKey
       in: header
       name: X-API-Key
+  schemas:
+    Weather:
+      type: object
+      required: [city, temperature, condition, humidity]
+      properties:
+        city:
+          type: string
+        temperature:
+          type: number
+        condition:
+          type: string
+        humidity:
+          type: number
+          minimum: 0
+          maximum: 100
 security:
   - ApiKeyAuth: []

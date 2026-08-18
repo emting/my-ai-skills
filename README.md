@@ -1,6 +1,11 @@
-# My AI Personal Skills Library
+# my-ai-skills
 
-這是一個個人 AI Skills Library，用於集中管理可被 AI Agent、Coding Assistant、Automation Agent 讀取與調用的技能、腳本、工作流程與 API 規格。
+[![Validate skills library](https://github.com/emting/my-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/emting/my-ai-skills/actions/workflows/validate.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+這是一個公開、MIT 授權的 AI Skills Library，用於集中管理可被 AI Agent、Coding Assistant、Automation Agent 讀取與調用的技能、腳本、工作流程與 API 規格。專案目前以本地 Markdown instructions、JSON manifests 與資料分析 CLI 為核心；外部 API 與 MCP 設定採明確標示的 optional contract，不代表 repository 已經內建或啟動任何 production service。
+
+> **目前定位：** 可供個人與社群共同維護的 skills prototype。所有涉及第三方服務寫入、部署、預算、憑證或破壞性操作，仍必須依照 skill manifest 與 `SECURITY.md` 的人工批准規則執行。
 
 本儲存庫目標是支援以下使用情境：
 
@@ -13,7 +18,7 @@
 
 ## Core Skills
 
-### 1. [Private] Data Analysis Skill
+### 1. Data Analysis Skill
 
 **用途：**
 讀取 CSV / Excel 檔案，進行資料清理、統計分析與 Markdown 報告輸出。
@@ -63,7 +68,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 `workflows/website_audit.md`
 
 
-### 5. [Private] Website Custom Optimizer
+### 5. Website Custom Optimizer
 
 **用途：**
 依據網站目標與主要受眾，診斷並優化官方網站、Landing Page、產品頁、服務頁、招生頁、活動頁、知識庫與內部入口網，產出網站診斷、資訊架構、文案重寫、SEO、CRO、效能、可近用性、A/B 測試與執行路線圖。
@@ -81,7 +86,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 上線前檢核與工程／設計需求整理
 
 
-### 6. [Private] Full Sprint
+### 6. Full Sprint
 
 **用途：**
 把高層目標轉成可執行、可驗證、可暫停、可恢復、可審計的 Sprint Contract，並在安全邊界、scope、constraints、驗收條件與 budget 內持續推進工程、重構、測試修復、文件或 feature 任務。
@@ -98,7 +103,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 需要在明確 scope、out_of_scope、constraints 與 validation commands 內交付
 
 
-### 7. [Private] Google Ads AI Copilot
+### 7. Google Ads AI Copilot
 
 **用途：**
 整合 Google Ads、n8n、Notion 與 AI Agent 成為廣告副駕駛，產出 read-only 健康報告、搜尋字詞稽核、否定關鍵字建議、RSA 文案、預算 pacing、行動佇列與自動化規劃；所有會花錢或影響帳戶的操作都需人類批准。
@@ -116,7 +121,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - Google Ads API、n8n、MCP Server、Notion 廣告營運資料庫規劃
 
 
-### 8. [Private] 智能文件角色適應器
+### 8. 智能文件角色適應器
 
 **用途：**
 根據 Notion 文件類型、內容成熟度與使用者意圖，自動切換成文件整理者、策略顧問、SOP 設計師、學習教練或產品／技術 PM，產出可直接貼回 Notion 的摘要、重構、補全、改寫、SOP、PRD、學習筆記或行動方案。
@@ -133,7 +138,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 摘要、重組、補洞、改寫或轉格式
 
 
-### 9. [Private] research-lab — AI 研究實驗室
+### 9. research-lab — AI 研究實驗室
 
 **用途：**
 把市場、產品、競品、技術趨勢、商業模式、教育／AI／補教、廣告投放、SEO／GEO 或成長策略等複雜研究題目，拆成廣度掃描、深度鑽研、交叉驗證與可決策報告。
@@ -150,7 +155,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 壓力測試與需要形成決策報告的複雜問題
 
 
-### 10. [Private] Managing Public Relations／公關品牌與危機處理
+### 10. Managing Public Relations／公關品牌與危機處理
 
 **用途：**
 協助企業、品牌或個人建立公關策略、品牌訊息、利益關係人管理、媒體應對、PESO 媒體組合與危機處理流程，並產出核心訊息、媒體策略、對外聲明草稿、媒體 Q&A 與危機 SOP。
@@ -167,7 +172,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 建立 CIS、CSR、PESO 與利益關係人溝通
 
 
-### 11. [Private] Analyzing Business Models／商業模式九宮格診斷
+### 11. Analyzing Business Models／商業模式九宮格診斷
 
 **用途：**
 用商業模式九宮格診斷事業、產品、個人品牌、服務、課程、內容產品或顧問案是否具備可持續性，找出價值主張、客群、通路、關鍵資源、成本與收益之間的斷點，並產出北極星指標與優先修正項。
@@ -184,7 +189,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 判斷北極星指標是否真的連到營收
 
 
-### 12. [Private] Designing Pricing Systems／定價策略與成交系統
+### 12. Designing Pricing Systems／定價策略與成交系統
 
 **用途：**
 協助設計價格、報價情境、成交流程與回購系統，判斷該採短期高溢價、長期品牌、封閉式報價或公開標準品策略，並產出至少兩種價格方案、一條成交路徑與回購／推薦設計。
@@ -201,7 +206,7 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 - 用 CRM、回訪、折價券、返利、試用或社群證據提升成交
 
 
-### 13. [Private] Making Decisions／決策類 Skill
+### 13. Making Decisions／決策類 Skill
 
 **用途：**
 協助把模糊問題、候選方案與權衡條件整理成可判斷、可比較、可執行的決策流程，產出決策摘要、方案比較矩陣、不確定性地圖、推薦方案、反方觀點與低成本驗證計畫。
@@ -300,6 +305,10 @@ python custom_skills/data_analysis/run.py --input custom_skills/data_analysis/ex
 ```text
 my-ai-skills/
 ├── README.md
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── CODE_OF_CONDUCT.md
 ├── LOCAL_SKILLS_INVENTORY.md
 ├── SKILL.md
 ├── AGENTS.md
@@ -312,6 +321,9 @@ my-ai-skills/
 ├── workflows/
 ├── prompts/
 ├── schemas/
+├── docs/
+├── scripts/
+├── .github/
 └── tests/
 ```
 
@@ -328,7 +340,7 @@ my-ai-skills/
 ## Installation
 
 ```bash
-git clone --recurse-submodules https://github.com/YOUR_USERNAME/my-ai-skills.git
+git clone --recurse-submodules https://github.com/emting/my-ai-skills.git
 cd my-ai-skills
 python -m venv .venv
 source .venv/bin/activate
@@ -353,3 +365,27 @@ git submodule update --init --recursive
 ## License
 
 MIT License
+
+## Development and Validation
+
+完成安裝後，可用以下命令驗證 repository 的機器可讀契約、測試與 Python 語法：
+
+```bash
+python scripts/validate_repo.py
+pytest -q
+python -m compileall -q custom_skills tests scripts
+```
+
+`skills.json` 是快速索引；每個本地技能的 `manifest.json` 才是該技能名稱、版本、輸入、輸出、權限、風險與安全條件的權威來源。pull request 不應只修改其中一份而讓兩者產生 drift。
+
+## Privacy by Default
+
+資料分析 CLI 只在本地讀取輸入檔案，不會自行上傳資料到外部服務。報告 preview 預設遮罩常見姓名、Email、電話、地址與識別碼欄位；對領域特有的私有欄位，請使用 `--sensitive-column`。若完全不應輸出資料列，請使用 `--preview-rows 0`。報告分享前仍應由使用者檢查欄位名稱、聚合數值與輸出檔案的敏感性。
+
+## Integration Boundaries
+
+`openapi.yaml` 是 optional weather provider contract，使用 `https://api.example.com` 作為明確的文件範例，repository 本身沒有 production API server。`mcp.json` 預設為空的安全設定，也不會自動啟動或連接第三方 MCP server。若要建立實際 adapter，請在本地設定 `.env`、使用最小權限，並補上對應的安裝、資料流、測試與人工批准說明；不要把真正的金鑰提交到 repository。
+
+## Contributing and Security
+
+歡迎透過 pull request 提交新技能、測試、文件與治理改善。請先閱讀 [`CONTRIBUTING.md`](CONTRIBUTING.md)、[`AGENTS.md`](AGENTS.md) 與 [`SECURITY.md`](SECURITY.md)。安全問題請不要直接公開秘密或可利用 payload；請依照 `SECURITY.md` 的私密回報流程處理。

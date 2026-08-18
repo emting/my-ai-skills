@@ -76,3 +76,27 @@ Preferred output formats:
 - `.csv` for tables
 - `.png` for charts
 - `.html` only when explicitly needed
+
+## Public Repository Contract
+
+This is a public, MIT-licensed skills library. Every skill tracked in `custom_skills/` is intended to be shareable unless a separate distribution policy says otherwise. Do not use `private` metadata as an access-control mechanism; keep private skills and private inputs outside this repository.
+
+The local `manifest.json` is the source of truth for a skill's name, description, runtime, inputs, outputs, permissions, safety rules, and risk level. The matching entry in `skills.json` is an index and must stay metadata-compatible with the manifest. Use the canonical permission keys `filesystem_read`, `filesystem_write`, `network`, `browser_automation`, `third_party_processing`, `shell`, and `git` where applicable. Legacy aliases such as `read_files` and `write_files` are not accepted.
+
+## Safety Contract
+
+Skills that handle sensitive data must describe the handling boundary and must not print or upload secrets, credentials, personal data, or private documents. Read-only analysis is the default for external services. Any write, spend-impacting, deployment, permission, credential, mass-delete, or destructive operation must stop for explicit user approval unless the calling platform provides an equivalent approval gate.
+
+The data analysis CLI redacts common personal-data columns in previews by default. Use `--sensitive-column` for domain-specific private fields, and use `--preview-rows 0` when a report should contain no data preview.
+
+## Validation
+
+Run the repository checks before opening a pull request:
+
+```bash
+python scripts/validate_repo.py
+pytest -q
+python -m compileall -q custom_skills tests scripts
+```
+
+Changes to manifests, schemas, workflows, prompts, or integration configuration should include corresponding documentation or tests. Community submodules are reference sources first and must not be treated as trusted executables without reviewing their documentation and provenance.

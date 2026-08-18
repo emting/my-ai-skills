@@ -1,0 +1,10 @@
+# Default owner for all repository changes.
+* @emting
+
+# Sensitive governance and execution boundaries require explicit maintainer review.
+/AGENTS.md @emting
+/SKILL.md @emting
+/SECURITY.md @emting
+/schemas/ @emting
+/.github/ @emting
+/custom_skills/ @emting

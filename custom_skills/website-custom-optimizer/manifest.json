@@ -58,8 +58,8 @@
     }
   },
   "permissions": {
-    "read_files": true,
-    "write_files": true,
+    "filesystem_read": true,
+    "filesystem_write": true,
     "network": true,
     "browser_automation": true,
     "third_party_processing": false

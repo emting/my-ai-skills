@@ -1,11 +1,11 @@
 {
   "name": "my-ai-skills",
-  "version": "1.0.0",
-  "description": "Personal AI skills library for agents, coding assistants, and automation tools.",
+  "version": "1.1.0",
+  "description": "Open-source AI skills library for agents, coding assistants, and automation tools.",
   "default_language": "zh-TW",
   "maintainer": {
-    "name": "YOUR_NAME",
-    "github": "https://github.com/YOUR_USERNAME"
+    "name": "emting",
+    "github": "https://github.com/emting"
   },
   "compatibility": {
     "markdown": true,
@@ -16,10 +16,10 @@
   "skills": [
     {
       "id": "data_analysis",
-      "name": "Data Analysis",
-      "visibility": "private",
+      "name": "Data Analysis Skill",
+      "visibility": "public",
       "type": "cli",
-      "description": "Analyze CSV or Excel files and generate Markdown reports.",
+      "description": "Analyze CSV or Excel files and generate privacy-conscious Markdown reports with redacted previews.",
       "location": "custom_skills/data_analysis/",
       "entrypoint": "custom_skills/data_analysis/run.py",
       "instruction_file": "custom_skills/data_analysis/SKILL.md",
@@ -62,9 +62,9 @@
     {
       "id": "to_prd",
       "name": "To PRD",
-      "visibility": "private",
+      "visibility": "public",
       "type": "instruction",
-      "description": "Synthesize conversation and codebase context into a structured PRD in Markdown.",
+      "description": "Turn conversation and codebase context into a structured PRD in Markdown.",
       "location": "custom_skills/to_prd/",
       "instruction_file": "custom_skills/to_prd/SKILL.md",
       "manifest": "custom_skills/to_prd/manifest.json",
@@ -111,7 +111,7 @@
     {
       "id": "write_a_skill",
       "name": "Write a Skill",
-      "visibility": "private",
+      "visibility": "public",
       "type": "instruction",
       "description": "Create a new agent skill with structure, trigger guidance, and supporting resources.",
       "location": "custom_skills/write_a_skill/",
@@ -154,7 +154,7 @@
     {
       "id": "lovable_github_cloudflare_worker",
       "name": "Lovable GitHub Cloudflare Worker",
-      "visibility": "private",
+      "visibility": "public",
       "type": "workflow",
       "description": "Stabilize a Lovable-generated project into a GitHub-managed and Cloudflare Worker-ready delivery pipeline.",
       "location": "custom_skills/lovable_github_cloudflare_worker/",
@@ -204,7 +204,7 @@
     {
       "id": "mcp_builder",
       "name": "MCP Builder",
-      "visibility": "private",
+      "visibility": "public",
       "type": "instruction",
       "description": "Guide MCP server setup, Warp integration, and validation steps for new tools or services.",
       "location": "custom_skills/mcp_builder/",
@@ -247,7 +247,7 @@
     {
       "id": "website-custom-optimizer",
       "name": "Website Custom Optimizer",
-      "visibility": "private",
+      "visibility": "public",
       "type": "instruction",
       "description": "Diagnose and optimize websites, landing pages, product pages, service pages, enrollment pages, internal portals, and knowledge bases for clarity, trust, SEO, UX, CRO, mobile experience, performance, accessibility, launch readiness, and execution planning.",
       "location": "custom_skills/website-custom-optimizer/",
@@ -333,7 +333,7 @@
     {
       "id": "full-sprint",
       "name": "Full Sprint",
-      "visibility": "private",
+      "visibility": "public",
       "type": "workflow",
       "description": "Turn a high-level goal into an executable, verifiable, pauseable, resumable, auditable sprint contract and continue PLAN → ACT → VERIFY → REVIEW → ITERATE within explicit safety, scope, validation, and budget limits.",
       "location": "custom_skills/full-sprint/",
@@ -420,7 +420,7 @@
     {
       "id": "optimizing-google-ads",
       "name": "Google Ads AI Copilot",
-      "visibility": "private",
+      "visibility": "public",
       "type": "workflow",
       "description": "Analyze Google Ads performance and produce read-only health reports, search term audits, negative keyword suggestions, RSA copy ideas, budget pacing, action queues, and n8n/Notion/MCP integration plans with human approval required before write or spend-impacting operations.",
       "location": "custom_skills/optimizing-google-ads/",
@@ -501,7 +501,7 @@
     {
       "id": "adapting-notion-docs",
       "name": "智能文件角色適應器",
-      "visibility": "private",
+      "visibility": "public",
       "type": "instruction",
       "description": "Adapt to Notion document type, content maturity, and user intent, then switch into the most useful assistant role to summarize, restructure, rewrite, fill gaps, critique, convert formats, or produce action-ready documentation.",
       "location": "custom_skills/adapting-notion-docs/",
@@ -567,7 +567,7 @@
     {
       "id": "research-lab",
       "name": "research-lab — AI 研究實驗室",
-      "visibility": "private",
+      "visibility": "public",
       "type": "workflow",
       "description": "Break complex research, investigation, market analysis, product analysis, competitor analysis, technical trend research, business model analysis, growth strategy, SEO/GEO, education, AI, or tutoring topics into verifiable breadth scans, depth dives, cross-validation, and decision-ready reports.",
       "location": "custom_skills/research-lab/",
@@ -644,7 +644,7 @@
     {
       "id": "managing-public-relations",
       "name": "Managing Public Relations",
-      "visibility": "private",
+      "visibility": "public",
       "type": "instruction",
       "description": "Build public relations strategy, brand messaging, stakeholder communication, PESO media strategy, media interview preparation, and crisis response plans.",
       "location": "custom_skills/managing-public-relations/",
@@ -727,7 +727,7 @@
     {
       "id": "analyzing-business-models",
       "name": "Analyzing Business Models",
-      "visibility": "private",
+      "visibility": "public",
       "type": "instruction",
       "description": "Diagnose businesses, products, personal brands, services, courses, consulting offers, and projects with the Business Model Canvas to evaluate sustainability, weak links, and North Star metrics tied to revenue.",
       "location": "custom_skills/analyzing-business-models/",
@@ -812,7 +812,7 @@
     {
       "id": "designing-pricing-systems",
       "name": "Designing Pricing Systems",
-      "visibility": "private",
+      "visibility": "public",
       "type": "instruction",
       "description": "Design pricing strategy, quotation logic, sales conversion flows, repurchase systems, CRM follow-up, discounts, trials, referrals, and social proof for products and services.",
       "location": "custom_skills/designing-pricing-systems/",
@@ -893,7 +893,7 @@
     {
       "id": "making-decisions",
       "name": "Making Decisions",
-      "visibility": "private",
+      "visibility": "public",
       "type": "instruction",
       "description": "Structure ambiguous choices into clear decision statements, comparable options, weighted evaluation criteria, uncertainty maps, recommendations, counterarguments, and low-cost validation experiments.",
       "location": "custom_skills/making-decisions/",

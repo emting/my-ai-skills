@@ -28,8 +28,8 @@
     }
   },
   "permissions": {
-    "read_files": true,
-    "write_files": true,
+    "filesystem_read": true,
+    "filesystem_write": true,
     "network": true
   },
   "safety": {

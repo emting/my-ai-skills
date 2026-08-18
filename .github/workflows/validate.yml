@@ -1,45 +1,43 @@
-name: Validate Skills Library
+name: Validate skills library
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   validate:
+    name: Validate repository contracts
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository and submodules
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements.txt
 
-      - name: Validate JSON files
-        run: |
-          python -m json.tool skills.json > /dev/null
-          python -m json.tool custom_skills/data_analysis/manifest.json > /dev/null
-          python -m json.tool schemas/skill.schema.json > /dev/null
-          python -m json.tool schemas/output.schema.json > /dev/null
-          python -m json.tool mcp.json > /dev/null
-
-      - name: Validate OpenAPI YAML
-        run: |
-          python - <<'PY'
-          import yaml
-          with open("openapi.yaml", "r", encoding="utf-8") as f:
-              yaml.safe_load(f)
-          print("openapi.yaml is valid YAML")
-          PY
+      - name: Validate repository contracts
+        run: python scripts/validate_repo.py
 
       - name: Run tests
-        run: |
-          pytest
+        run: pytest -q
+
+      - name: Compile Python sources
+        run: python -m compileall -q custom_skills tests scripts

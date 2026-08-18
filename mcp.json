@@ -1,11 +1,3 @@
 {
-  "mcpServers": {
-    "personal-skills": {
-      "command": "python",
-      "args": ["server.py"],
-      "env": {
-        "API_KEY": "${API_KEY}"
-      }
-    }
-  }
+  "mcpServers": {}
 }

@@ -1,11 +1,47 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/emting/my-ai-skills/blob/main/schemas/output.schema.json",
   "title": "Skill Output",
+  "description": "Common envelope for a skill result and its generated artifacts.",
   "type": "object",
+  "required": ["format", "path"],
   "properties": {
-    "format": {"type": "string"},
-    "path": {"type": "string"},
-    "summary": {"type": "string"}
+    "format": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Output format such as markdown, json, yaml_or_json, or jsonl."
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Explicit path to the primary output artifact."
+    },
+    "summary": {
+      "type": "string"
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/artifact"
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
   },
-  "required": ["format", "path"]
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "required": ["name", "format", "path"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "format": {"type": "string", "minLength": 1},
+        "path": {"type": "string", "minLength": 1},
+        "description": {"type": "string"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
 }
