@@ -7,7 +7,19 @@
 
 > **目前定位：** 可供個人與社群共同維護的 skills prototype。所有涉及第三方服務寫入、部署、預算、憑證或破壞性操作，仍必須依照 skill manifest 與 `SECURITY.md` 的人工批准規則執行。
 
-本版本已將兩批使用者提供的技能來源正規化並納管至 `custom_skills/`：第一批 Markdown 備份含 **66 項 skills**；最新 `skills_export.zip` 含 91 項，其中 63 項與既有 ID 重疊而保留原版本，另有 **28 項以獨立 ID 新增**。目前 repository 共 108 個可安裝套件；每個新增項目都具備獨立的 `SKILL.md`、`manifest.json`、來源 SHA-256、輸入／輸出契約、權限宣告、風險分級、人工核准點與停止條件。完整索引請見 [`docs/skill-archive-catalog.md`](docs/skill-archive-catalog.md) 與 [`docs/skill-archive-catalog-zip.md`](docs/skill-archive-catalog-zip.md)。
+本版本已將兩批使用者提供的技能來源正規化並納管至 `custom_skills/`：第一批 Markdown 備份含 **66 項 skills**；最新 `skills_export.zip` 含 91 項，其中 63 項與既有 ID 重疊而保留原版本，另有 **28 項以獨立 ID 新增**。目前 repository 共 108 個可安裝套件與 118 個 registry entries；每個新增項目都具備獨立的 `SKILL.md`、`manifest.json`、來源 SHA-256、輸入／輸出契約、權限宣告、風險分級、人工核准點與停止條件。完整來源索引請見 [`docs/skill-archive-catalog.md`](docs/skill-archive-catalog.md) 與 [`docs/skill-archive-catalog-zip.md`](docs/skill-archive-catalog-zip.md)。
+
+## Recommended Starting Points
+
+為了讓使用者不必先閱讀 108 個 skill 的完整內容，repository 另提供一份依照逐一測試、風險、connector 依賴與外部寫入邊界產生的 [推薦索引與完整排序](docs/recommendation-index.md)。目前 108 個完整 skills 均通過適用的契約測試；其中 21 個列為 **A｜優先推薦**、30 個列為 **A-｜條件優先推薦**、57 個列為 **B｜條件推薦**，沒有 C 級技能。`skills.json` 已依此排名排列，並在每個完整 skill entry 附上 `recommendation.rank`、`score`、`level`、`test_scope`、`status` 與安全判定理由；OpenAPI、MCP 與 workflow 輔助 entries 保留在 registry 後段，不虛構測試分數。
+
+| 選擇情境 | 建議入口 | 使用邊界 |
+|---|---|---|
+| 一般規劃、文件、內容或低風險分析 | 先從推薦索引的 A 級開始 | 仍須閱讀目標 skill 的 `SKILL.md` 與 manifest。 |
+| 涉及 medium risk、敏感資料或決策影響 | 使用 A- 級並先人工覆核 | 確認資料最小化、來源、假設與輸出審查責任。 |
+| 涉及 connector、網路、發送、部署或外部寫入 | 只在明確授權與批准下使用 B 級 | 優先採唯讀、草稿、sandbox 或 dry-run；不可僅因排名高就直接執行。 |
+
+這份排序是**治理與安全輔助指標**，不是領域專業品質、成功率或投資報酬率保證。107 個 `instruction_only` skills 的 PASS 代表封裝、manifest、標準段落、activation 與四類 eval 契約通過；只有 `data_analysis` 使用隔離 CSV fixture 完成離線 executable smoke test。外部 connector、部署、帳戶變更、付費、發送與第三方寫入均未在本次測試中執行。
 
 本儲存庫目標是支援以下使用情境：
 
@@ -292,6 +304,18 @@ python scripts/smoke_test_skills.py
 
 `smoke_test_skills.py` 對 instruction-only skills 只做文件與 manifest dry-run，不會自動登入、發送資料、部署或寫入第三方服務。可執行 skill 請使用去識別化 fixture 做明確的 CLI smoke test；外部 connector 請使用 mock、sandbox 或唯讀權限，除非使用者已明確批准真實操作。
 
+若要依逐一測試結果重建公開推薦排序，先取得相同 commit 的測試快照，再執行：
+
+```bash
+python scripts/generate_recommendation_index.py \\
+  --registry skills.json \\
+  --results docs/evaluations/github-skills-test-results.json \\
+  --output-registry skills.json \\
+  --output-markdown docs/recommendation-index.md
+```
+
+此生成器只會對測試快照中的完整 local skills 加入 recommendation metadata，並將沒有納入本次安全測試的 OpenAPI、MCP 或 workflow 輔助 entries 保留在 registry 後段，不會替它們虛構分數。修改推薦規則時，必須同步更新生成器、`docs/manifest-contract.md`、推薦索引、測試快照與 CHANGELOG。
+
 ### 10. Pull Request 前的完整檢查
 
 在提交前，請從 repository 根目錄執行以下命令：
@@ -327,7 +351,7 @@ PR 描述至少應包含變更目的、影響的 skill、輸入／輸出是否�
 
 ## Core Skills
 
-本節保留原有的核心技能與既有整合入口。兩批附件匯入技能均以獨立目錄納管，不覆蓋既有技能；若要查看完整清單、類別、風險與關聯技能，請使用 [`docs/skill-archive-catalog.md`](docs/skill-archive-catalog.md) 與 [`docs/skill-archive-catalog-zip.md`](docs/skill-archive-catalog-zip.md)。
+本節保留原有的核心技能與既有整合入口。兩批附件匯入技能均以獨立目錄納管，不覆蓋既有技能；若要依測試與安全條件選擇技能，請先使用 [`docs/recommendation-index.md`](docs/recommendation-index.md)，再以 [`docs/skill-archive-catalog.md`](docs/skill-archive-catalog.md) 與 [`docs/skill-archive-catalog-zip.md`](docs/skill-archive-catalog-zip.md) 查看完整來源、類別、風險與關聯技能。
 
 ### 1. Data Analysis Skill
 

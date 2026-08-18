@@ -2,6 +2,25 @@
 
 本檔案記錄對使用者、技能契約與公開維護流程有影響的變更。版本遵循語意化版本概念；若 manifest、輸出格式或安全邊界改變，應在此說明。
 
+## [1.4.0] - 2026-08-18
+
+### Added
+
+- 新增 `scripts/generate_recommendation_index.py`，依可重現的逐一測試快照生成 108 個完整 skills 的推薦排名與 registry metadata。
+- 新增 `docs/recommendation-index.md`，提供 A、A-、B、C 四級分層、完整排序、測試範圍與限制說明。
+- 新增 `docs/evaluations/`，保存逐一測試與 inventory 的 JSON／CSV 機器可讀快照，作為排序來源與後續 drift review 的依據。
+
+### Changed
+
+- `skills.json` 版本提升至 1.4.0；108 個完整 skills 依 recommendation rank 排列，並附 `rank`、`score`、`level`、`status`、`test_scope` 與安全邊界摘要。
+- OpenAPI、MCP 與 workflow 輔助 entries 保留於 registry 後段，不再被誤當成已完成逐一測試的 skill，也不虛構推薦分數。
+- README、manifest contract 與 self-assessment rubric 補充推薦分級的選擇邏輯、人工批准邊界、測試限制與推薦索引重建流程。
+
+### Safety
+
+- 明確標示推薦排序是治理與安全輔助指標，不是專業品質、成功率或 ROI 保證。
+- 107 個 `instruction_only` skills 僅以唯讀契約／內容／eval dry-run 驗證；唯一的 `data_analysis` executable test 使用隔離、離線、去識別化 CSV fixture，未執行外部寫入。
+
 ## [1.3.0] - 2026-08-18
 
 ### Added

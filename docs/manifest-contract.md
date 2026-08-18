@@ -37,3 +37,9 @@
 ## Registry relationship
 
 `skills.json` 是快速搜尋與相容性索引，不應成為另一份獨立的技能定義。具有 `manifest` 路徑的 registry entry 必須與 manifest 的 `id`、`name`、`description`、`runtime` 與 `risk_level` 保持一致。執行 `python scripts/validate_repo.py` 可以檢查這些關係、所有本地 manifest、entrypoint 路徑與整合設定。
+
+### Recommendation metadata
+
+完成可重現的逐一測試後，完整 skill entry 可以附加 `recommendation` 物件，內容包括 `rank`、`score`、`level`、`status`、`test_scope`、`check_count`、`passed_checks`、`connector_count`、`external_write_allowed` 與 `reason`。這些欄位是由 `scripts/generate_recommendation_index.py` 從 `docs/evaluations/github-skills-test-results.json` 產生的衍生索引資料，不取代 skill manifest，也不應手動改寫成與測試結果不同的結論。
+
+推薦分級的用途是協助選擇與安全升級：A 表示低風險、無 connector、無外部寫入且通過測試；A- 表示通常無外部寫入但需要人工覆核的 medium-risk skill；B 表示具有 high risk、connector 或外部寫入邊界，必須在明確授權與批准下使用；C 表示測試失敗或無法安全驗證。排名是相對治理指標，不是專業品質、成功率或業務 ROI 保證。OpenAPI、MCP 與 workflow 輔助 entries 若不屬於完整 local manifest 測試集合，應保留在 registry 但不虛構 recommendation 分數。

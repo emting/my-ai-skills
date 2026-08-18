@@ -17,7 +17,7 @@ The repository reaches **10.0 / 10.0** under the reproducible rubric in `docs/se
 | Safety governance | 1.0 | 108/108 skills include rules, stop conditions, approval scope, dry-run default, and recovery metadata |
 | Behavior evaluation | 1.0 | 108/108 skills have positive trigger, negative trigger, output contract, and safety escalation cases |
 | Maintainability | 1.0 | Import, install, and repository validation utilities are present |
-| CI and open source | 1.0 | GitHub Actions runs validator, pytest, compileall, and self-assessment |
+| CI and open source | 1.0 | GitHub Actions runs validator, pytest, compileall, self-assessment, and recommendation-index regression checks |
 
 ## Import coverage
 
@@ -33,11 +33,15 @@ python3 scripts/self_assessment.py
 git diff --check
 ```
 
-Observed results were repository validation passed, **13 tests passed**, successful Python compilation, clean whitespace checks, and a JSON report with `"score": 10.0`.
+Observed results were repository validation passed, **15 tests passed**, successful Python compilation, clean whitespace checks, recommendation-index regression checks, and a JSON report with `"score": 10.0`.
 
 ## Security verification
 
 The ZIP importer rejects absolute paths, path traversal, and symlink members; imported skills remain `instruction_only`, use draft or read-only defaults, and set `external_write.allowed` to `false`. A high-confidence scan found no API-key prefixes, access tokens, private-key markers, or equivalent secret patterns in the imported material or repository-managed text files. Generic documentation examples such as `os.environ.get("OPENAI_API_KEY")` and placeholder password fields were treated as non-secret examples rather than credentials.
+
+## Recommendation index
+
+The 108 complete local skills now have a reproducible recommendation rank derived from the isolated GitHub installation test snapshot. The distribution is A｜優先推薦 21, A-｜條件優先推薦 30, and B｜條件推薦 57; no skill was assigned C｜暫不推薦. The ranking is a safety and governance aid based on contract coverage, risk, connector dependency, external-write boundaries, and testability. It is not a semantic quality guarantee, and auxiliary OpenAPI, MCP, and workflow registry entries remain unranked when they are outside the tested local-package set.
 
 ## Important limitation
 
