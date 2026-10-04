@@ -11197,6 +11197,1511 @@
         "waf",
         "email"
       ]
+    },
+    {
+      "id": "ai-agent-scenario-tool-selection",
+      "name": "AI Agent 場景盤點與工具選型 Skill",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "AI Agent 場景盤點與工具選型 Skill，盤點工作與生活場景，判斷該用 ChatGPT、Notion AI、Manus、N8N、Claude Code、Codex 或人工流程，避免追工具潮流。",
+      "location": "custom_skills/ai-agent-scenario-tool-selection/",
+      "entrypoint": "custom_skills/ai-agent-scenario-tool-selection/SKILL.md",
+      "instruction_file": "custom_skills/ai-agent-scenario-tool-selection/SKILL.md",
+      "manifest": "custom_skills/ai-agent-scenario-tool-selection/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": true,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": true,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/83aebb8ac86a83cfa64781c8aa319b38",
+        "section_number": 109,
+        "start_line": 1,
+        "end_line": 75,
+        "status": "normalized_and_hardened",
+        "sha256": "3d26a06ad2d0a48d43f8366f5ca2ab89b9bb10df7a651a0f14eeac6436462d46",
+        "archive_sha256": "3d26a06ad2d0a48d43f8366f5ca2ab89b9bb10df7a651a0f14eeac6436462d46",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/83aebb8ac86a83cfa64781c8aa319b38",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:03:01Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "3d26a06ad2d0a48d43f8366f5ca2ab89b9bb10df7a651a0f14eeac6436462d46"
+        }
+      }
+    },
+    {
+      "id": "cfo-finance-analysis-agent",
+      "name": "CFO 財務分析 Agent Skill",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "CFO 財務分析 Agent Skill，將補習班財務訊號轉成可驗證的現金流、預算、ROI、定價與風險建議；任何金額結論必須人工覆核。",
+      "location": "custom_skills/cfo-finance-analysis-agent/",
+      "entrypoint": "custom_skills/cfo-finance-analysis-agent/SKILL.md",
+      "instruction_file": "custom_skills/cfo-finance-analysis-agent/SKILL.md",
+      "manifest": "custom_skills/cfo-finance-analysis-agent/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/a70ebb8ac86a82919e7981084013d158",
+        "section_number": 110,
+        "start_line": 1,
+        "end_line": 83,
+        "status": "normalized_and_hardened",
+        "sha256": "c0015c1849aa4afd9e7689fcc06a16085d78e05fbe6348ab8f7aba3d38a13169",
+        "archive_sha256": "c0015c1849aa4afd9e7689fcc06a16085d78e05fbe6348ab8f7aba3d38a13169",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/a70ebb8ac86a82919e7981084013d158",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:01:07Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "c0015c1849aa4afd9e7689fcc06a16085d78e05fbe6348ab8f7aba3d38a13169"
+        }
+      }
+    },
+    {
+      "id": "chro-talent-faculty-agent",
+      "name": "CHRO 人才與師資 Agent Skill",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "CHRO 人才與師資 Agent Skill，將補習班的師資、排班、培訓與倫理事件轉成可行的人力決策建議；薪酬與聘用承諾必須人工覆核。",
+      "location": "custom_skills/chro-talent-faculty-agent/",
+      "entrypoint": "custom_skills/chro-talent-faculty-agent/SKILL.md",
+      "instruction_file": "custom_skills/chro-talent-faculty-agent/SKILL.md",
+      "manifest": "custom_skills/chro-talent-faculty-agent/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/9d9ebb8ac86a8312a8138174d2107042",
+        "section_number": 111,
+        "start_line": 1,
+        "end_line": 78,
+        "status": "normalized_and_hardened",
+        "sha256": "513b7e8c5d7f039b49e45127f4d830c127edc8bded7252923cc6cc8c0d53fa46",
+        "archive_sha256": "513b7e8c5d7f039b49e45127f4d830c127edc8bded7252923cc6cc8c0d53fa46",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/9d9ebb8ac86a8312a8138174d2107042",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:01:07Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "513b7e8c5d7f039b49e45127f4d830c127edc8bded7252923cc6cc8c0d53fa46"
+        }
+      }
+    },
+    {
+      "id": "coo-operations-efficiency-agent",
+      "name": "COO 營運效能 Agent Skill",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "COO 營運效能 Agent Skill，將補習班營運訊號轉成問題定義、根因分析、資源調度、SOP 改善與實驗驗證方案。",
+      "location": "custom_skills/coo-operations-efficiency-agent/",
+      "entrypoint": "custom_skills/coo-operations-efficiency-agent/SKILL.md",
+      "instruction_file": "custom_skills/coo-operations-efficiency-agent/SKILL.md",
+      "manifest": "custom_skills/coo-operations-efficiency-agent/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/eb7ebb8ac86a834f981c81d833b78caf",
+        "section_number": 112,
+        "start_line": 1,
+        "end_line": 81,
+        "status": "normalized_and_hardened",
+        "sha256": "3f09f3d2bf09dea2e47ac17a23c26788e3ae5efff9fbc6655fa910ce52edb301",
+        "archive_sha256": "3f09f3d2bf09dea2e47ac17a23c26788e3ae5efff9fbc6655fa910ce52edb301",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/eb7ebb8ac86a834f981c81d833b78caf",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:01:07Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "3f09f3d2bf09dea2e47ac17a23c26788e3ae5efff9fbc6655fa910ce52edb301"
+        }
+      }
+    },
+    {
+      "id": "cpro-brand-communication-agent",
+      "name": "CPRO 品牌傳播 Agent Skill",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "CPRO 品牌傳播 Agent Skill，將品牌、社群、口碑、家長溝通與對外訊息轉成分眾、可信、合規且可執行的傳播方案；對外稿件需人工審稿。",
+      "location": "custom_skills/cpro-brand-communication-agent/",
+      "entrypoint": "custom_skills/cpro-brand-communication-agent/SKILL.md",
+      "instruction_file": "custom_skills/cpro-brand-communication-agent/SKILL.md",
+      "manifest": "custom_skills/cpro-brand-communication-agent/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": false,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/ff6ebb8ac86a82b9a4a60113450dcce3",
+        "section_number": 113,
+        "start_line": 1,
+        "end_line": 81,
+        "status": "normalized_and_hardened",
+        "sha256": "361d1558c95a0f0aa4a10e5c4fafce00dcb846d669a7a3faea2966c24d6e05c9",
+        "archive_sha256": "361d1558c95a0f0aa4a10e5c4fafce00dcb846d669a7a3faea2966c24d6e05c9",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/ff6ebb8ac86a82b9a4a60113450dcce3",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:01:07Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "361d1558c95a0f0aa4a10e5c4fafce00dcb846d669a7a3faea2966c24d6e05c9"
+        }
+      }
+    },
+    {
+      "id": "creative-growth-tactics",
+      "name": "創意成長戰術推薦 Skill｜60+ 非常規點子庫",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "創意成長戰術推薦 Skill，輸入產品／客群、當前目標與限制後，從 60+ 非常規成長戰術庫（Tom Orbach，七大目標）選出 2–3 個最適點子，改寫成該產品的具體做法與第一步草稿；對外內容與金額承諾須人工覆核。",
+      "location": "custom_skills/creative-growth-tactics/",
+      "entrypoint": "custom_skills/creative-growth-tactics/SKILL.md",
+      "instruction_file": "custom_skills/creative-growth-tactics/SKILL.md",
+      "manifest": "custom_skills/creative-growth-tactics/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": true,
+        "browser_automation": true,
+        "third_party_processing": true,
+        "shell": true,
+        "git": true,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": true,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/f5f66d4b2ee64baea90b66241e78fa2a",
+        "section_number": 114,
+        "start_line": 1,
+        "end_line": 469,
+        "status": "normalized_and_hardened",
+        "sha256": "ed40793d7692754dc726d9a9a6d2854497d52760ea65b592931735ec6e82bbb6",
+        "archive_sha256": "ed40793d7692754dc726d9a9a6d2854497d52760ea65b592931735ec6e82bbb6",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/f5f66d4b2ee64baea90b66241e78fa2a",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:41:38Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "ed40793d7692754dc726d9a9a6d2854497d52760ea65b592931735ec6e82bbb6"
+        }
+      }
+    },
+    {
+      "id": "cso-sales-conversion-agent",
+      "name": "CSO 銷售轉化 Agent Skill",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "CSO 銷售轉化 Agent Skill，將招生、試聽、續班與名單分級訊號轉成客戶旅程、異議處理、促案與追蹤計畫；報價與折扣必須人工審核。",
+      "location": "custom_skills/cso-sales-conversion-agent/",
+      "entrypoint": "custom_skills/cso-sales-conversion-agent/SKILL.md",
+      "instruction_file": "custom_skills/cso-sales-conversion-agent/SKILL.md",
+      "manifest": "custom_skills/cso-sales-conversion-agent/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/33cebb8ac86a83f3b297814018f8754a",
+        "section_number": 115,
+        "start_line": 1,
+        "end_line": 80,
+        "status": "normalized_and_hardened",
+        "sha256": "e26366781f17e635228035bd7d30777e55331a04a38460f9c01b882d06d83d93",
+        "archive_sha256": "e26366781f17e635228035bd7d30777e55331a04a38460f9c01b882d06d83d93",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/33cebb8ac86a83f3b297814018f8754a",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:01:07Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "e26366781f17e635228035bd7d30777e55331a04a38460f9c01b882d06d83d93"
+        }
+      }
+    },
+    {
+      "id": "faith-science-integration",
+      "name": "信仰 × 科學跨域整合 Skill v1.1｜證據、釋經與牧養安全",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "信仰 × 科學跨域整合 Skill v1.1，將聖經／神學與心理學、哲學、健康、AI 或社會科學整合成文章、講道或教材時，建立逐句主張台帳並檢查證據強度、經文處境、類別錯置與牧養安全；對外發布前由人覆核。",
+      "location": "custom_skills/faith-science-integration/",
+      "entrypoint": "custom_skills/faith-science-integration/SKILL.md",
+      "instruction_file": "custom_skills/faith-science-integration/SKILL.md",
+      "manifest": "custom_skills/faith-science-integration/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/c663dac9cf274405ba838c137659c550",
+        "section_number": 116,
+        "start_line": 1,
+        "end_line": 117,
+        "status": "normalized_and_hardened",
+        "sha256": "a737183af74a0307ebe941fc751df447d1b77a84cbaf9351f5da4ba31ef9ac97",
+        "archive_sha256": "a737183af74a0307ebe941fc751df447d1b77a84cbaf9351f5da4ba31ef9ac97",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/c663dac9cf274405ba838c137659c550",
+          "notion_version": "v1.1",
+          "notion_last_edited": "2026-09-24T00:58:32Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "a737183af74a0307ebe941fc751df447d1b77a84cbaf9351f5da4ba31ef9ac97"
+        }
+      }
+    },
+    {
+      "id": "instagram-growth-viral-content-engine",
+      "name": "Instagram 成長策略與病毒內容引擎",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Instagram 成長策略與病毒內容引擎，從帳號定位、Bio、五大內容支柱、演算法友善週排程、停止滑動鉤子到 Reel 點子庫的可重複使用 IG 成長系統；涉及兒少影像需先取得監護人授權。",
+      "location": "custom_skills/instagram-growth-viral-content-engine/",
+      "entrypoint": "custom_skills/instagram-growth-viral-content-engine/SKILL.md",
+      "instruction_file": "custom_skills/instagram-growth-viral-content-engine/SKILL.md",
+      "manifest": "custom_skills/instagram-growth-viral-content-engine/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供的背景、文件、素材或限制條件。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": false,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/49aebb8ac86a82e8bcd5819be148061f",
+        "section_number": 117,
+        "start_line": 1,
+        "end_line": 192,
+        "status": "normalized_and_hardened",
+        "sha256": "4d7334eaa2a0110ce8adf9220c59f16650dfc3d34144a9ad44f95f643a1fe77a",
+        "archive_sha256": "4d7334eaa2a0110ce8adf9220c59f16650dfc3d34144a9ad44f95f643a1fe77a",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/49aebb8ac86a82e8bcd5819be148061f",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:51:40Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "4d7334eaa2a0110ce8adf9220c59f16650dfc3d34144a9ad44f95f643a1fe77a"
+        }
+      }
+    },
+    {
+      "id": "llm-jailbreak-defense-prompt-security",
+      "name": "LLM 越獄防禦與 Prompt 安全 Skill",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "LLM 越獄防禦與 Prompt 安全 Skill，從防禦與測試角度檢查 LLM Prompt、Agent 指令與 RAG 流程的越獄、注入、角色操縱、編碼混淆與語意歧義風險；不提供攻擊實作細節。",
+      "location": "custom_skills/llm-jailbreak-defense-prompt-security/",
+      "entrypoint": "custom_skills/llm-jailbreak-defense-prompt-security/SKILL.md",
+      "instruction_file": "custom_skills/llm-jailbreak-defense-prompt-security/SKILL.md",
+      "manifest": "custom_skills/llm-jailbreak-defense-prompt-security/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/67cebb8ac86a82919ae781a6762a847a",
+        "section_number": 118,
+        "start_line": 1,
+        "end_line": 103,
+        "status": "normalized_and_hardened",
+        "sha256": "f186750e72a2e775f37730cb9a19169a267d63abbee4416c3e95bd70e1dd739e",
+        "archive_sha256": "f186750e72a2e775f37730cb9a19169a267d63abbee4416c3e95bd70e1dd739e",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/67cebb8ac86a82919ae781a6762a847a",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:51:40Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "f186750e72a2e775f37730cb9a19169a267d63abbee4416c3e95bd70e1dd739e"
+        }
+      }
+    },
+    {
+      "id": "personal-voice-modeling-style-guard",
+      "name": "個人聲音建模與風格守門 Skill｜保留作者辨識度",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "個人聲音建模與風格守門 Skill，從作者代表範文萃取可追溯的 Voice Card，據此改寫或審稿，同時保護作者的事實、立場與台灣語感；不替作者補寫經歷或觀點，對外發布前由作者本人覆核。",
+      "location": "custom_skills/personal-voice-modeling-style-guard/",
+      "entrypoint": "custom_skills/personal-voice-modeling-style-guard/SKILL.md",
+      "instruction_file": "custom_skills/personal-voice-modeling-style-guard/SKILL.md",
+      "manifest": "custom_skills/personal-voice-modeling-style-guard/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/cb8794ca66a04b18bc2fd6ecd9800f03",
+        "section_number": 119,
+        "start_line": 1,
+        "end_line": 79,
+        "status": "normalized_and_hardened",
+        "sha256": "6e318eeeb80bbf35e2440eef60c8b400b9ef75bd43ae8628f642678798da16d5",
+        "archive_sha256": "6e318eeeb80bbf35e2440eef60c8b400b9ef75bd43ae8628f642678798da16d5",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/cb8794ca66a04b18bc2fd6ecd9800f03",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:41:47Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "6e318eeeb80bbf35e2440eef60c8b400b9ef75bd43ae8628f642678798da16d5"
+        }
+      }
+    },
+    {
+      "id": "seo-geo-growth-ops",
+      "name": "SEO／GEO 成長作業 Skill｜基於 seo-geo-claude-skills",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "SEO／GEO 成長作業 Skill，把網站內容、品牌頁、FAQ、Schema 與第三方驗證整理成能同時提升搜尋排名與 AI 引用機率的成長工作流；缺少頁面內容時標示為未檢查，不編造評價或數據。",
+      "location": "custom_skills/seo-geo-growth-ops/",
+      "entrypoint": "custom_skills/seo-geo-growth-ops/SKILL.md",
+      "instruction_file": "custom_skills/seo-geo-growth-ops/SKILL.md",
+      "manifest": "custom_skills/seo-geo-growth-ops/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": true,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/22aebb8ac86a83deb1bd01f3af819f9a",
+        "section_number": 120,
+        "start_line": 1,
+        "end_line": 129,
+        "status": "normalized_and_hardened",
+        "sha256": "8ff5ee13fde2f45b8d9176e7372bacd492f4b9506ed6f6ab82e629c9c0e509e2",
+        "archive_sha256": "8ff5ee13fde2f45b8d9176e7372bacd492f4b9506ed6f6ab82e629c9c0e509e2",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/22aebb8ac86a83deb1bd01f3af819f9a",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:40:19Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "8ff5ee13fde2f45b8d9176e7372bacd492f4b9506ed6f6ab82e629c9c0e509e2"
+        }
+      }
+    },
+    {
+      "id": "skill-iteration-quality-engineering",
+      "name": "Skill 迭代工程與品質驗證 Skill",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Skill 迭代工程與品質驗證 Skill，終結 Prompt 輪迴，將 Skill 建立與修改流程工程化：食譜式目標、執行鏈路追蹤、可診斷錯誤訊息、健康檢查、0/1 測試與版本保存。",
+      "location": "custom_skills/skill-iteration-quality-engineering/",
+      "entrypoint": "custom_skills/skill-iteration-quality-engineering/SKILL.md",
+      "instruction_file": "custom_skills/skill-iteration-quality-engineering/SKILL.md",
+      "manifest": "custom_skills/skill-iteration-quality-engineering/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": true,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/b6aebb8ac86a83e2a9b081891fb0a32f",
+        "section_number": 121,
+        "start_line": 1,
+        "end_line": 335,
+        "status": "normalized_and_hardened",
+        "sha256": "7df330fef5ab3f3f820f83ed3f0dfcdab378c696cf6e0c9e0ad5a46c4e2519e7",
+        "archive_sha256": "7df330fef5ab3f3f820f83ed3f0dfcdab378c696cf6e0c9e0ad5a46c4e2519e7",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/b6aebb8ac86a83e2a9b081891fb0a32f",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T00:59:00Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "7df330fef5ab3f3f820f83ed3f0dfcdab378c696cf6e0c9e0ad5a46c4e2519e7"
+        }
+      }
+    },
+    {
+      "id": "skill-router",
+      "name": "Skill Router｜任務分流與 Skill 選擇",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Skill Router 任務分流與 Skill 選擇，判斷任務階段與意圖並選出一個主要 Skill；Router 只分流，不取代專業 Skill 執行，也不自行補造專業結論。",
+      "location": "custom_skills/skill-router/",
+      "entrypoint": "custom_skills/skill-router/SKILL.md",
+      "instruction_file": "custom_skills/skill-router/SKILL.md",
+      "manifest": "custom_skills/skill-router/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供的背景、文件、素材或限制條件。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": false,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": false,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "instruction-only",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/2b2ebb8ac86a8313b96701184d734bdc",
+        "section_number": 122,
+        "start_line": 1,
+        "end_line": 56,
+        "status": "normalized_and_hardened",
+        "sha256": "3170a1eb03788ae9d061920eda1c4b3cfade49eb0a2f3ca3e514114ae3f19743",
+        "archive_sha256": "3170a1eb03788ae9d061920eda1c4b3cfade49eb0a2f3ca3e514114ae3f19743",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-04",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/2b2ebb8ac86a8313b96701184d734bdc",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T00:58:32Z",
+          "synced_at": "2026-10-04",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "3170a1eb03788ae9d061920eda1c4b3cfade49eb0a2f3ca3e514114ae3f19743"
+        }
+      }
     }
   ],
   "recommendation_index": {

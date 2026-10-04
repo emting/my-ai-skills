@@ -129,7 +129,17 @@
     "normalizer_version": "1.3.0",
     "normalized_at": "2026-08-18",
     "hash_algorithm": "sha256",
-    "provenance_verified": true
+    "provenance_verified": true,
+    "notion": {
+      "type": "notion_page",
+      "notion_url": "https://app.notion.com/p/fb5ebb8ac86a820ab239817d685e07cf",
+      "notion_version": "v1.0",
+      "notion_last_edited": "2026-09-24T01:38:28Z",
+      "synced_at": "2026-10-04",
+      "sync_script_version": "1.0.0",
+      "hash_algorithm": "sha256",
+      "sha256": "d9d96de8f15acfc95f9ee1bd47e9de2167b7e90603591c883bc99fe10484f179"
+    }
   },
   "related_skills": [
     "notion-ai-workflow-design"

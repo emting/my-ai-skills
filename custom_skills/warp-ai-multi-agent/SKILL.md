@@ -3,86 +3,99 @@ name: warp-ai-multi-agent
 description: Warp AI Multi-Agent War Room Launch Configuration. Use when the user asks to configure Warp terminal launch configurations, set up multi-pane CLI agent layouts, or troubleshoot Warp terminal AI agent workflows.
 ---
 
-# Warp Ai Multi Agent
+# Warp AI Multi-Agent 戰情室 Skill
 
-## Warp AI Multi-Agent War Room
+> **定位**：將 Warp Launch Configurations 變成 AI Multi-Agent 戰情室，一鍵啟動多個 CLI Agent 面板，適合本機多代理協作、重構、研究與執行監控。
 
-A skill for designing and configuring Warp Terminal Launch Configurations to create a multi-pane CLI AI Agent war room layout.
+## 使用情境
+- 需要同時開啟 Amp、Codex、Gemini、Warp Agent 或 Log Pane。
+- 需要固定四分欄工作區，避免每次手動配置。
+- 需要跨裝置同步 AI 工作站配置。
+- 需要處理多 CLI 工具的快捷鍵衝突與啟動驗收。
 
-## When to Use
+## 前置需求
+- Warp 支援 Launch Configurations。
+- 已安裝並可在 terminal 呼叫：
+  - Amp：大型重構與多檔編輯。
+  - Codex CLI：精準腳本生成。
+  - Gemini CLI：長文本與多模態分析。
+- 若使用右下角 log pane，需有實際 log 路徑或替代啟動命令。
 
-Use this skill when the user asks to:
-
-  - Set up or configure Warp Terminal Launch Configurations
-
-  - Create a multi-pane CLI Agent workspace (e.g., Amp, Codex, Gemini, Warp Agent)
-
-  - Troubleshoot keybindings, terminal layouts, or launch scripts in Warp
-
-## Default Configuration
-
-Four-pane split layout:
-
-  - Top-Left: Amp (large refactoring & multi-file editing)
-
-  - Bottom-Left: Codex CLI (script generation)
-
-  - Top-Right: Gemini CLI (long-context & multimodal analysis)
-
-  - Bottom-Right: Status, logging, or token/cost monitor pane
-
-\`\`\`yaml
-
+## 預設配置
+```yaml
 name: AI Multi-Agent
-
 windows:
-
   - tabs:
-
       - title: AI Command Center
-
         layout:
-
           split_direction: horizontal
-
           children:
-
             - layout:
-
                 split_direction: vertical
-
                 children:
-
                   - command: "amp"
-
                   - command: "codex chat"
-
             - layout:
-
                 split_direction: vertical
-
                 children:
-
                   - command: "gemini"
+                  - command: "echo '🟢 Ready — Warp Agent / Log Pane'"
+```
 
-                  - command: "echo '[低風險] Ready — Warp Agent / Log Pane'"
+## 主流程
+1. 檢查 CLI 工具是否可直接呼叫。
+2. 建立 Warp Launch Configuration。
+3. 貼入 YAML 並命名。
+4. 一鍵啟動四分欄。
+5. 檢查每個面板是否正確啟動。
+6. 若快捷鍵衝突，調整 Honor Terminal ESC Sequences 與 Keybindings。
+7. 若需跨裝置，存入 Warp Drive。
 
-## Workflow & Validation
+## 固定輸出格式
+輸出為單一、可直接貼入 Warp 的有效 YAML 區塊，加上短清單：
 
-1. Verify CLI tools are installed and callable in terminal environment.  
-2. Generate or update the Warp Launch Configuration YAML block.  
-3. Verify panel layout and keybindings to avoid terminal shortcut conflicts.  
-4. Save to Warp Drive for cross-device synchronization if required.
+1. **目標配置**：左上／左下／右上／右下各放什麼。
+2. **YAML**：完整、可解析的單一 YAML 區塊（不含佔位符）。
+3. **驗收清單**
+   - [ ] 每個 CLI 可呼叫
+   - [ ] Warp 成功載入配置
+   - [ ] 四分欄位置正確
+   - [ ] 快捷鍵無衝突
+   - [ ] 右下角 pane 有實際用途
+4. **排錯**
 
-## Gotchas
+| 問題 | 原因 | 修正 |
+|---|---|---|
 
-- Multiple terminal panes provide workspace layout, not mandatory simultaneous agent execution.  
-- Do not spawn secondary agents solely to review primary agent outputs unless needed for parallel tasks.  
-- Ensure the YAML configuration is complete and ready to paste into Warp editor.
+## 品質標準
+- YAML 必須是可貼入編輯器的完整區塊。
+- 右下角不要只放無意義 clear，應放狀態提示、log 或控制台。
+- 每個 pane 的用途要明確。
+- 啟動配置前先確認工具已安裝；實際套用前先在測試環境解析 YAML 並驗證每個 CLI 命令。
+
+## Opus 5 世代模型校準
+### 四分欄不等於四個 Agent 都要動
+這是本 Skill 在新世代最容易踩的坑。四分欄是**你的工作台佈局**，不是「每個任務都要四個 Agent 一起上」的指令。委派門檻：
+- 只有任務夠大、彼此獨立且可並行時才分給多個 Agent，例如跨多檔案的大範圍調查。
+- 幾次工具呼叫就能完成的事，在一個面板做完就好。
+- **不要開第二個 Agent 來複核第一個 Agent 的輸出。** 這是舊世代的補強做法，在新模型上只是成本倍增。多面板的價值在**平行跨範圍**，不在互相監視。
+
+### 右下角 pane 的新用途
+原本建議放狀態提示或 log。新世代下更值得放的是 **token／成本監控**：多 Agent 並行時成本上升很快，看得到才控得住。
+
+### 成本用 effort 控，不要關 thinking
+各 CLI Agent 若支援 effort 或類似強度參數，用它來調成本。**不要用關閉 thinking 省錢**：那可能造成工具呼叫外洩成純文字與內部 XML 標籤外洩，在多面板環境下特別難除錯。舊模型調好的 effort 預設值換新模型後要重新掃一次，不要直接沿用。
+
+### 驗收清單是給人勾的
+驗收清單是你自己確認環境用的，保留。但不要要求模型「輸出 YAML 前再自我檢查一次」。
+
+### 輸出長度
+這是配置型 Skill，輸出應該就是 **YAML 加短清單**。不要附送終端機工作流的背景介紹或各 CLI 工具的優缺點比較，除非你問了。
+
+## 啟用提示詞
+請啟用「Warp AI Multi-Agent 戰情室 Skill」。任務：幫我規劃或排錯 Warp 多代理啟動配置，輸出 YAML、驗收清單與排錯建議。
 
 ---
-
-## 二、 商業策略、創業與定價
 
 ## 標準執行契約
 
@@ -134,3 +147,7 @@ windows:
 ## 來源追蹤
 
 此技能由 `docs/sources/Skills_Full_Configurations_Backup_20260818.md` 的第 10 項正規化而來（原始行號 257–345）。來源內容已補上本 repository 的輸入、輸出、權限、安全與停止契約。
+
+## Notion 同步紀錄
+
+本技能的指令本文同步自 Notion「Skill 頁面整理庫」頁面 https://app.notion.com/p/826ebb8ac86a83e6b5c1017be7d22828（Notion 版本 v1.0，最後編輯 2026-09-24T01:53:57Z）。上方內容以 Notion 為準；標準執行契約為本 repository 的安全治理補充，同步時不會被覆蓋。

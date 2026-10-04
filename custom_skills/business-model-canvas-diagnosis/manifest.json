@@ -131,7 +131,17 @@
     "normalizer_version": "1.3.0",
     "normalized_at": "2026-08-18",
     "hash_algorithm": "sha256",
-    "provenance_verified": true
+    "provenance_verified": true,
+    "notion": {
+      "type": "notion_page",
+      "notion_url": "https://app.notion.com/p/4deebb8ac86a832e910b01189d0ec6c7",
+      "notion_version": "v1.0",
+      "notion_last_edited": "2026-09-24T01:06:42Z",
+      "synced_at": "2026-10-04",
+      "sync_script_version": "1.0.0",
+      "hash_algorithm": "sha256",
+      "sha256": "a6fdf77945d809be2d0d15cf279f47b61be86163252d96c7d408bac4efb6692e"
+    }
   },
   "related_skills": [
     "analyzing-business-models",

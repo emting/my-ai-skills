@@ -180,5 +180,17 @@
     "delegates_to": [],
     "selection_notes": "先檢查任務目的、輸入資料與外部權限；相鄰技能重疊時以最小權限與最窄範圍優先。"
   },
-  "related_skills": []
+  "related_skills": [],
+  "source": {
+    "notion": {
+      "type": "notion_page",
+      "notion_url": "https://app.notion.com/p/b88ebb8ac86a83908fca81911ba7ef72",
+      "notion_version": "v1.0",
+      "notion_last_edited": "2026-09-24T01:01:07Z",
+      "synced_at": "2026-10-04",
+      "sync_script_version": "1.0.0",
+      "hash_algorithm": "sha256",
+      "sha256": "e72b212e6ae0b167f9bd1092bdcbeed78435ee041106e03f76ca059bfeec1cec"
+    }
+  }
 }

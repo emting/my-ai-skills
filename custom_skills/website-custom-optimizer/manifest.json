@@ -184,5 +184,17 @@
   },
   "related_skills": [
     "website-landing-page-builder"
-  ]
+  ],
+  "source": {
+    "notion": {
+      "type": "notion_page",
+      "notion_url": "https://app.notion.com/p/9acebb8ac86a83a1bf498107a250fd44",
+      "notion_version": "v1.0",
+      "notion_last_edited": "2026-09-24T01:06:43Z",
+      "synced_at": "2026-10-04",
+      "sync_script_version": "1.0.0",
+      "hash_algorithm": "sha256",
+      "sha256": "f07a3f297d771b72d78d767894aa402e96c5e64cc8484014b8566c45a41c967f"
+    }
+  }
 }
