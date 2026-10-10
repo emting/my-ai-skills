@@ -1,15 +1,15 @@
 {
-  "package_count": 108,
-  "pass_count": 108,
+  "package_count": 125,
+  "pass_count": 125,
   "fail_count": 0,
   "recommendation_levels": {
     "A｜優先推薦": 21,
-    "A-｜條件優先推薦": 30,
-    "B｜條件推薦": 57,
+    "A-｜條件優先推薦": 32,
+    "B｜條件推薦": 72,
     "C｜暫不推薦": 0
   },
   "test_scopes": {
-    "contract_and_read_only_dry_run": 107,
+    "contract_and_read_only_dry_run": 124,
     "offline_executable_smoke_test": 1
   },
   "results": [
@@ -115,7 +115,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -140,10 +140,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 2,
@@ -247,7 +246,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -272,10 +271,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 3,
@@ -379,7 +377,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -404,10 +402,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 4,
@@ -511,7 +508,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -536,10 +533,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 5,
@@ -643,7 +639,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -668,10 +664,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 6,
@@ -775,7 +770,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -800,10 +795,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 7,
@@ -907,7 +901,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -932,10 +926,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 8,
@@ -1039,7 +1032,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -1064,10 +1057,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 9,
@@ -1171,7 +1163,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -1196,10 +1188,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 10,
@@ -1298,12 +1289,12 @@
         {
           "name": "source_not_required_for_native_skill",
           "passed": true,
-          "detail": "No archive source block; native repository skill."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -1328,10 +1319,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 11,
@@ -1435,7 +1425,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -1460,10 +1450,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 12,
@@ -1567,7 +1556,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -1592,10 +1581,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 13,
@@ -1699,7 +1687,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -1724,10 +1712,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 14,
@@ -1831,7 +1818,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -1856,10 +1843,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 15,
@@ -1963,7 +1949,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -1988,10 +1974,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 16,
@@ -2095,7 +2080,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -2120,10 +2105,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 17,
@@ -2227,7 +2211,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -2252,10 +2236,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 18,
@@ -2359,7 +2342,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -2384,10 +2367,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 19,
@@ -2491,7 +2473,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -2516,10 +2498,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 20,
@@ -2616,14 +2597,14 @@
           "detail": ""
         },
         {
-          "name": "native_source_reference",
+          "name": "source_provenance",
           "passed": true,
-          "detail": "Native skill source reference present."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -2648,10 +2629,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 21,
@@ -2748,14 +2728,14 @@
           "detail": ""
         },
         {
-          "name": "native_source_reference",
+          "name": "source_provenance",
           "passed": true,
-          "detail": "Native skill source reference present."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -2780,10 +2760,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 22,
@@ -2802,7 +2781,7 @@
       "external_write_allowed": false,
       "recommendation_score": 98.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -2882,12 +2861,12 @@
         {
           "name": "source_not_required_for_native_skill",
           "passed": true,
-          "detail": "No archive source block; native repository skill."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -2912,10 +2891,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 23,
@@ -2934,7 +2912,7 @@
       "external_write_allowed": true,
       "recommendation_score": 95.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -3019,7 +2997,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -3044,10 +3022,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 24,
@@ -3066,7 +3043,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -3151,7 +3128,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -3176,10 +3153,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 25,
@@ -3198,7 +3174,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -3283,7 +3259,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -3308,10 +3284,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 26,
@@ -3330,7 +3305,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -3415,7 +3390,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -3440,10 +3415,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 27,
@@ -3462,7 +3436,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -3542,12 +3516,12 @@
         {
           "name": "source_not_required_for_native_skill",
           "passed": true,
-          "detail": "No archive source block; native repository skill."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -3572,10 +3546,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 28,
@@ -3594,7 +3567,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -3679,7 +3652,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -3704,10 +3677,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 29,
@@ -3726,7 +3698,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -3811,7 +3783,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -3836,10 +3808,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 30,
@@ -4020,7 +3991,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -4105,7 +4076,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -4130,10 +4101,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 32,
@@ -4152,7 +4122,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -4237,7 +4207,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -4262,10 +4232,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 33,
@@ -4284,7 +4253,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -4364,12 +4333,12 @@
         {
           "name": "source_not_required_for_native_skill",
           "passed": true,
-          "detail": "No archive source block; native repository skill."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -4394,10 +4363,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 34,
@@ -4416,7 +4384,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -4501,7 +4469,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -4526,10 +4494,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 35,
@@ -4548,7 +4515,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -4633,7 +4600,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -4658,10 +4625,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 36,
@@ -4680,7 +4646,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -4765,7 +4731,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -4790,10 +4756,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 37,
@@ -4812,7 +4777,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -4890,14 +4855,14 @@
           "detail": ""
         },
         {
-          "name": "native_source_reference",
+          "name": "source_provenance",
           "passed": true,
-          "detail": "Native skill source reference present."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -4922,10 +4887,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 38,
@@ -4944,7 +4908,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -5029,7 +4993,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -5054,10 +5018,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 39,
@@ -5076,7 +5039,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -5161,7 +5124,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -5186,10 +5149,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 40,
@@ -5208,7 +5170,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -5293,7 +5255,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -5318,10 +5280,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 41,
@@ -5340,7 +5301,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -5425,7 +5386,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -5450,10 +5411,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 42,
@@ -5472,7 +5432,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -5557,7 +5517,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -5582,10 +5542,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 43,
@@ -5604,7 +5563,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -5689,7 +5648,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -5714,10 +5673,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 44,
@@ -5736,7 +5694,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -5821,7 +5779,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -5846,10 +5804,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 45,
@@ -5868,7 +5825,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -5953,7 +5910,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -5978,10 +5935,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 46,
@@ -6000,7 +5956,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -6085,7 +6041,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -6110,10 +6066,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 47,
@@ -6132,7 +6087,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -6212,12 +6167,12 @@
         {
           "name": "source_not_required_for_native_skill",
           "passed": true,
-          "detail": "No archive source block; native repository skill."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -6242,10 +6197,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 48,
@@ -6264,7 +6218,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -6349,7 +6303,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -6374,13 +6328,143 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
       "rank": 49,
+      "id": "seo-geo-growth-ops",
+      "name": "SEO／GEO 成長作業 Skill｜基於 seo-geo-claude-skills",
+      "description": "SEO／GEO 成長作業 Skill，把網站內容、品牌頁、FAQ、Schema 與第三方驗證整理成能同時提升搜尋排名與 AI 引用機率的成長工作流；缺少頁面內容時標示為未檢查，不編造評價或數據。",
+      "runtime": "instruction_only",
+      "risk_level": "medium",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 92.0,
+      "recommendation_level": "A-｜條件優先推薦",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 50,
       "id": "single-source-of-truth-knowledgebase",
       "name": "Single Source Of Truth Knowledgebase",
       "description": "知識庫建置與單一真相源 Skill，將散落資訊收斂成可被 Agent 取用的單一真相源（Single Source of Truth）。",
@@ -6396,7 +6480,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -6481,7 +6565,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -6506,13 +6590,143 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 50,
+      "rank": 51,
+      "id": "skill-router",
+      "name": "Skill Router｜任務分流與 Skill 選擇",
+      "description": "Skill Router 任務分流與 Skill 選擇，判斷任務階段與意圖並選出一個主要 Skill；Router 只分流，不取代專業 Skill 執行，也不自行補造專業結論。",
+      "runtime": "instruction_only",
+      "risk_level": "medium",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 92.0,
+      "recommendation_level": "A-｜條件優先推薦",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 52,
       "id": "social-content-batch-production",
       "name": "Social Content Batch Production",
       "description": "社群經營內容量產 Skill，從既有素材拆解產出一週社群貼文排程，包含平台改寫、標題鉤子與圖文建議。",
@@ -6528,7 +6742,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -6613,7 +6827,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -6638,13 +6852,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 51,
+      "rank": 53,
       "id": "startup-venture-builder",
       "name": "Startup Venture Builder",
       "description": "Startup Venture Builder for opportunity discovery, market validation, MVP roadmap, business modeling, sales system, and investor stress testing. Use when the user asks for startup idea validation, business model design, MVP roadmap, landing page copy, or startup stress testing.",
@@ -6660,7 +6873,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -6745,7 +6958,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -6770,13 +6983,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 52,
+      "rank": 54,
       "id": "threads-viral-consultant",
       "name": "Threads Viral Consultant",
       "description": "Threads content strategy and conversion consultant. Use when the user asks to create Threads posts, optimize Threads profile bio, design Threads content funnel, analyze viral Threads posts, or build Threads DM conversion scripts.",
@@ -6792,7 +7004,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -6877,7 +7089,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -6902,13 +7114,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 53,
+      "rank": 55,
       "id": "veo-short-video-prompt-engineer",
       "name": "veo-short-video-prompt-engineer",
       "description": "Google Veo 3.1 電影級影音提示詞工程與生成式導演 Skill。支援 T2V、I2V/R2V 主體錨定、首尾插值、原生音訊 2.0、多鏡頭敘事與 JSON 工業級提示詞。適用於撰寫 Veo 3/3.1 提示詞、短影音腳本、分鏡指令、電影級運鏡與光影設定。",
@@ -6924,7 +7135,7 @@
       "external_write_allowed": false,
       "recommendation_score": 92.0,
       "recommendation_level": "A-｜條件優先推薦",
-      "recommendation_reason": "測試通過且無外部寫入；因處理內容或決策影響較高，使用時仍需人工覆核。",
+      "recommendation_reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -7009,7 +7220,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -7034,13 +7245,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 54,
+      "rank": 56,
       "id": "notion-smart-doc-role-adapter",
       "name": "Notion Smart Doc Role Adapter",
       "description": "智能文件角色適應器，根據 Notion 文件類型、內容成熟度與意圖，切換編輯、顧問、SOP 設計師等角色。",
@@ -7056,7 +7266,7 @@
       "external_write_allowed": false,
       "recommendation_score": 90.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -7141,7 +7351,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -7166,13 +7376,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 55,
+      "rank": 57,
       "id": "website-custom-optimizer",
       "name": "Website Custom Optimizer",
       "description": "Diagnose and optimize websites, landing pages, product pages, service pages, enrollment pages, internal portals, and knowledge bases for clarity, trust, SEO, UX, CRO, mobile experience, performance, accessibility, launch readiness, and execution planning.",
@@ -7188,7 +7397,7 @@
       "external_write_allowed": false,
       "recommendation_score": 90.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -7266,14 +7475,14 @@
           "detail": ""
         },
         {
-          "name": "source_not_required_for_native_skill",
+          "name": "source_provenance",
           "passed": true,
-          "detail": "No archive source block; native repository skill."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -7298,13 +7507,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 56,
+      "rank": 58,
       "id": "youtube-transcript-summarizer",
       "name": "youtube-transcript-summarizer",
       "description": "Summarize YouTube video transcripts into structured, easily readable notes with key points, Q&A format for interviews, action items, conclusions, and key quotes. Use when the user asks to summarize a YouTube video transcript, process transcript text into notes, or extract structured summaries from YouTube transcripts.",
@@ -7320,7 +7528,7 @@
       "external_write_allowed": false,
       "recommendation_score": 90.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -7405,7 +7613,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -7430,13 +7638,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 57,
+      "rank": 59,
       "id": "pdf-study-guide-generator",
       "name": "Pdf Study Guide Generator",
       "description": "Transform class notes into a comprehensive structured study guide, generate 5 practice questions, and compile them into a PDF. Use when the user asks to summarize notes into a PDF study guide with practice questions.",
@@ -7452,7 +7659,7 @@
       "external_write_allowed": true,
       "recommendation_score": 87.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -7537,7 +7744,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -7562,13 +7769,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 58,
+      "rank": 60,
       "id": "agent-cyber-bully-lecturer",
       "name": "agent-cyber-bully-lecturer",
       "description": "Provide cybersecurity education, threat analysis, and defense recommendations in the persona of 'Cyber Frenchie Principal' (法鬥校長), using humorous canine analogies and security verification hierarchies. Use when the user asks for cybersecurity advice, phishing prevention, OWASP vulnerabilities, or security sniff logs.",
@@ -7584,7 +7790,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -7637,7 +7843,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -7669,7 +7875,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -7694,13 +7900,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 59,
+      "rank": 61,
       "id": "agent-senior-prd-architect-sophia",
       "name": "agent-senior-prd-architect-sophia",
       "description": "Draft comprehensive, rigorous Product Requirement Documents (PRD), Mermaid system logic flows, and QA/edge case checklists in the persona of Senior PRD Architect Sophia Lin (林婷婷). Use when the user asks to write PRDs, define product requirements, map system logic flows, or outline QA checklists for software features.",
@@ -7716,7 +7921,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -7769,7 +7974,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -7801,7 +8006,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -7826,13 +8031,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 60,
+      "rank": 62,
       "id": "agent-skills-actions-auditor",
       "name": "agent-skills-actions-auditor",
       "description": "Audit agent skills and actions, identify optimization opportunities, fix syntax or parameter issues, and refine prompt instructions. Use when the user asks to audit Codex/agent skills, optimize agent actions, or refine skill instructions.",
@@ -7848,7 +8052,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -7901,7 +8105,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -7933,7 +8137,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -7958,13 +8162,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 61,
+      "rank": 63,
       "id": "ai-content-monetization-side-hustle",
       "name": "Ai Content Monetization Side Hustle",
       "description": "AI 自媒體斜槓變現 Skill，用 AI 完成市場研究、個人定位、內容轉化、產品階梯與自動化成交設計。",
@@ -7980,7 +8183,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -8033,7 +8236,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -8065,7 +8268,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -8090,13 +8293,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 62,
+      "rank": 64,
       "id": "ai-security-agent-governance",
       "name": "Ai Security Agent Governance",
       "description": "AI 資安與 Agent 治理 Skill，檢查 AI Agent、自動化流程與企業平台的身份、權限、Shadow AI、資料外洩與煞車系統。",
@@ -8112,7 +8314,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -8165,7 +8367,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -8197,7 +8399,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -8222,13 +8424,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 63,
+      "rank": 65,
       "id": "ai-virtual-board-supervisor-agent",
       "name": "Ai Virtual Board Supervisor Agent",
       "description": "AI 虛擬董事會 Supervisor Agent Skill，調度 CFO、CHRO、COO、CPRO、CSO，彙整跨職能建議並保留人工決策節點。",
@@ -8244,7 +8445,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -8297,7 +8498,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -8329,7 +8530,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -8354,13 +8555,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 64,
+      "rank": 66,
       "id": "app-performance-benchmark-optimizer",
       "name": "app-performance-benchmark-optimizer",
       "description": "Establish app performance benchmarks, identify latency or memory bottlenecks, and execute measurable code optimizations with before/after reports. Use when the user asks to optimize app performance, profile latency, or fix performance bottlenecks.",
@@ -8376,7 +8576,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -8429,7 +8629,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -8461,7 +8661,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -8486,13 +8686,143 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 65,
+      "rank": 67,
+      "id": "biblical-exegesis-theology-check",
+      "name": "聖經釋義與神學查核 Skill｜經文脈絡、主張與應用",
+      "description": "聖經釋義與神學查核 Skill，內容引用經文、提出神學主張或把經文應用到心理、健康、職場與牧養議題時，檢查文學／歷史／正典脈絡、詮釋層級與爭議點，輸出可發布的修正版主張與人工覆核事項；不取代牧者、神學教師或宗派立場。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 68,
       "id": "business-model-canvas-diagnosis",
       "name": "Business Model Canvas Diagnosis",
       "description": "商業模式九宮格診斷 Skill，用九宮格診斷價值主張、客群、通路、活動、資源、成本與收益並找出斷點。",
@@ -8508,7 +8838,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -8561,7 +8891,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -8593,7 +8923,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -8618,13 +8948,274 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 66,
+      "rank": 69,
+      "id": "cfo-finance-analysis-agent",
+      "name": "CFO 財務分析 Agent Skill",
+      "description": "CFO 財務分析 Agent Skill，將補習班財務訊號轉成可驗證的現金流、預算、ROI、定價與風險建議；任何金額結論必須人工覆核。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 70,
+      "id": "chro-talent-faculty-agent",
+      "name": "CHRO 人才與師資 Agent Skill",
+      "description": "CHRO 人才與師資 Agent Skill，將補習班的師資、排班、培訓與倫理事件轉成可行的人力決策建議；薪酬與聘用承諾必須人工覆核。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 71,
       "id": "client-filtering-brand-positioning",
       "name": "Client Filtering Brand Positioning",
       "description": "客戶篩選與品牌定位 Skill，依市場規模、品牌定位與期待管理判斷該服務誰、不服務誰與如何有限客製化。",
@@ -8640,7 +9231,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -8693,7 +9284,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -8725,7 +9316,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -8750,13 +9341,536 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 67,
+      "rank": 72,
+      "id": "coo-operations-efficiency-agent",
+      "name": "COO 營運效能 Agent Skill",
+      "description": "COO 營運效能 Agent Skill，將補習班營運訊號轉成問題定義、根因分析、資源調度、SOP 改善與實驗驗證方案。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 73,
+      "id": "cpro-brand-communication-agent",
+      "name": "CPRO 品牌傳播 Agent Skill",
+      "description": "CPRO 品牌傳播 Agent Skill，將品牌、社群、口碑、家長溝通與對外訊息轉成分眾、可信、合規且可執行的傳播方案；對外稿件需人工審稿。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 74,
+      "id": "creative-growth-tactics",
+      "name": "創意成長戰術推薦 Skill｜60+ 非常規點子庫",
+      "description": "創意成長戰術推薦 Skill，輸入產品／客群、當前目標與限制後，從 60+ 非常規成長戰術庫（Tom Orbach，七大目標）選出 2–3 個最適點子，改寫成該產品的具體做法與第一步草稿；對外內容與金額承諾須人工覆核。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 75,
+      "id": "cso-sales-conversion-agent",
+      "name": "CSO 銷售轉化 Agent Skill",
+      "description": "CSO 銷售轉化 Agent Skill，將招生、試聽、續班與名單分級訊號轉成客戶旅程、異議處理、促案與追蹤計畫；報價與折扣必須人工審核。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 76,
       "id": "customer-service-email-routing",
       "name": "Customer Service Email Routing",
       "description": "信件與客服分流回覆 Skill，收信分類、依知識庫產出草稿並進行風險分級與人審放行。",
@@ -8772,7 +9886,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -8825,7 +9939,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -8857,7 +9971,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -8882,13 +9996,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 68,
+      "rank": 77,
       "id": "design-proposal-portfolio-persuasion",
       "name": "Design Proposal Portfolio Persuasion",
       "description": "設計提案與作品集說服力 Skill，將設計專案整理成有脈絡的提案與作品集，並用十個設計心法檢查品質。",
@@ -8904,7 +10017,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -8957,7 +10070,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -8989,7 +10102,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -9014,13 +10127,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 69,
+      "rank": 78,
       "id": "emil-design-eng",
       "name": "emil-design-eng",
       "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great. Use when designing, building, or reviewing UI components, animations, transitions, or web interfaces.",
@@ -9036,7 +10148,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -9089,7 +10201,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -9121,7 +10233,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -9146,13 +10258,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 70,
+      "rank": 79,
       "id": "enterprise-sovereign-ai-adoption",
       "name": "Enterprise Sovereign Ai Adoption",
       "description": "企業主權 AI 平台導入 Skill，評估 AI 任務應採雲端、受控或私有部署，設計資料、權限、稽核與 MVP 路線圖。",
@@ -9168,7 +10279,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -9221,7 +10332,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -9253,7 +10364,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -9278,13 +10389,143 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 71,
+      "rank": 80,
+      "id": "faith-science-integration",
+      "name": "信仰 × 科學跨域整合 Skill v1.1｜證據、釋經與牧養安全",
+      "description": "信仰 × 科學跨域整合 Skill v1.1，將聖經／神學與心理學、哲學、健康、AI 或社會科學整合成文章、講道或教材時，建立逐句主張台帳並檢查證據強度、經文處境、類別錯置與牧養安全；對外發布前由人覆核。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 81,
       "id": "full-sprint-execution",
       "name": "full-sprint-execution",
       "description": "軟體工程 Full Sprint 安全執行與交付 Skill。當使用者需要在限制範疇、測試保護與 Sprint 契約下進行多檔案開發或重構時使用。",
@@ -9300,7 +10541,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -9353,7 +10594,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -9385,7 +10626,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -9410,13 +10651,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 72,
+      "rank": 82,
       "id": "game-inspiration-world-builder",
       "name": "game-inspiration-world-builder",
       "description": "Generate 3D world inspiration concepts and autonomously build matching game code and assets. Use when the user asks to generate 3D world concepts, design game worlds, or build a game matching visual inspiration images.",
@@ -9432,7 +10672,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -9485,7 +10725,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -9517,7 +10757,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -9542,13 +10782,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 73,
+      "rank": 83,
       "id": "high-energy-daily-routine-designer",
       "name": "high-energy-daily-routine-designer",
       "description": "Audit personal lifestyle and design an optimized daily routine for high energy covering sleep, nutrition, exercise, social, creative, and career growth. Use when the user asks for life audit, daily routine design, or energy optimization plan.",
@@ -9564,7 +10803,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -9617,7 +10856,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -9649,7 +10888,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -9674,13 +10913,143 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 74,
+      "rank": 84,
+      "id": "instagram-growth-viral-content-engine",
+      "name": "Instagram 成長策略與病毒內容引擎",
+      "description": "Instagram 成長策略與病毒內容引擎，從帳號定位、Bio、五大內容支柱、演算法友善週排程、停止滑動鉤子到 Reel 點子庫的可重複使用 IG 成長系統；涉及兒少影像需先取得監護人授權。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 85,
       "id": "life-scenario-simulation-matrix",
       "name": "life-scenario-simulation-matrix",
       "description": "Conduct a 50-question life audit and simulate 30-year life trajectories across career, health, exercise, and relationship variables into structured matrices. Use when the user asks for a 50-question life survey or 30-year life scenario simulation.",
@@ -9696,7 +11065,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -9749,7 +11118,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -9781,7 +11150,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -9806,13 +11175,143 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 75,
+      "rank": 86,
+      "id": "llm-jailbreak-defense-prompt-security",
+      "name": "LLM 越獄防禦與 Prompt 安全 Skill",
+      "description": "LLM 越獄防禦與 Prompt 安全 Skill，從防禦與測試角度檢查 LLM Prompt、Agent 指令與 RAG 流程的越獄、注入、角色操縱、編碼混淆與語意歧義風險；不提供攻擊實作細節。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 87,
       "id": "lovable_github_cloudflare_worker",
       "name": "Lovable GitHub Cloudflare Worker",
       "description": "Stabilize a Lovable-generated project into a GitHub-managed and Cloudflare Worker-ready delivery pipeline.",
@@ -9828,7 +11327,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -9881,7 +11380,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -9906,14 +11405,14 @@
           "detail": ""
         },
         {
-          "name": "native_source_reference",
+          "name": "source_provenance",
           "passed": true,
-          "detail": "Native skill source reference present."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -9938,13 +11437,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 76,
+      "rank": 88,
       "id": "managing-public-relations",
       "name": "Managing Public Relations",
       "description": "Build public relations strategy, brand messaging, stakeholder communication, PESO media strategy, media interview preparation, and crisis response plans.",
@@ -9960,7 +11458,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -10013,7 +11511,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -10040,12 +11538,12 @@
         {
           "name": "source_not_required_for_native_skill",
           "passed": true,
-          "detail": "No archive source block; native repository skill."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -10070,13 +11568,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 77,
+      "rank": 89,
       "id": "mimo-hermes-openclaw-diagnosis",
       "name": "Mimo Hermes Openclaw Diagnosis",
       "description": "協助設定與排錯 Xiaomi MiMo、Hermes Agent、OpenClaw 的模型連線，確認 API Key 類型、Base URL、provider 名稱與模型名稱。",
@@ -10092,7 +11589,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -10145,7 +11642,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -10177,7 +11674,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -10202,13 +11699,143 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 78,
+      "rank": 90,
+      "id": "monocolor-editorial-print",
+      "name": "單色／雙色印刷編輯風視覺生成 Skill｜Monocolor Editorial Print",
+      "description": "單色／雙色印刷編輯風視覺生成 Skill，將主題、文案或照片轉成 1 色或受控 2 色的印刷編輯風海報、封面、明信片與社群視覺；先鎖定配方再編譯英文 production prompt，並以七項視覺規則自檢；不處理全彩攝影、3D 或漸層；對外發布前人工覆核。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 91,
       "id": "moosie-niche-demolisher",
       "name": "Moosie Niche Demolisher",
       "description": "【Research Skill】Moosie｜Category-of-One Niche Demolisher，找出高需求、低競爭的 Instagram 補教品牌子定位。",
@@ -10224,7 +11851,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -10277,7 +11904,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -10309,7 +11936,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -10334,13 +11961,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 79,
+      "rank": 92,
       "id": "naval-backstage-simulator",
       "name": "naval-backstage-simulator",
       "description": "Simulate a multi-expert backstage debate synthesized through Naval Ravikant's mental models (leverage, specific knowledge, compounding, judgment) to produce concise, high-leverage, plain-text aphorisms and execution logic (ESSENCE_DISTILLATION.txt). Use when the user asks for Naval Ravikant style decision framework, multi-expert debate distillation, or plain-text high-leverage advice.",
@@ -10356,7 +11982,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -10409,7 +12035,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -10441,7 +12067,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -10466,13 +12092,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 80,
+      "rank": 93,
       "id": "negotiation-strategy-script",
       "name": "Negotiation Strategy Script",
       "description": "談判準備與出牌策略 Skill，用談判八問、議題組合、出牌策略、回應劇本與 BATNA 完成談判前準備。",
@@ -10488,7 +12113,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -10541,7 +12166,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -10573,7 +12198,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -10598,13 +12223,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 81,
+      "rank": 94,
       "id": "open-slide",
       "name": "open-slide",
       "description": "Create, draft, edit, and manage web-native React presentations using the open-slide framework. Use when the user requests creating slides, building presentation decks with React/open-slide, editing slide components, or exporting open-slide presentations.",
@@ -10620,7 +12244,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -10673,7 +12297,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -10705,7 +12329,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -10730,13 +12354,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 82,
+      "rank": 95,
       "id": "opus-5-skill-calibration-standards",
       "name": "Opus 5 Skill Calibration Standards",
       "description": "Opus 5 世代 Skill 校準準則，作為整座 Skill 庫全面體檢、減法優化與約束補強的標準。",
@@ -10752,7 +12375,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -10805,7 +12428,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -10837,7 +12460,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -10862,13 +12485,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 83,
+      "rank": 96,
       "id": "parent-communication-trust-building",
       "name": "Parent Communication Trust Building",
       "description": "家長訊息回覆與信任建立 Skill（Moosie 老師版），產出四段結構（同理、具體觀察、做法、下一步）的 LINE 回覆草稿。",
@@ -10884,7 +12506,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -10937,7 +12559,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -10969,7 +12591,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -10994,13 +12616,143 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 84,
+      "rank": 97,
+      "id": "pastoral-content-ethics-privacy",
+      "name": "牧養內容倫理與隱私安全 Skill｜同意、去識別與人審",
+      "description": "牧養內容倫理與隱私安全 Skill，內容涉及小組員、學員、家長、未成年人、見證、代禱、輔導或心理健康資料而要交給 AI 整理或對外轉製時，判定敏感度、確認同意範圍與受眾界線，產出去識別版本、禁止事項與人工升級路徑；危機情境停止內容加工。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 98,
       "id": "personal-brand-sponsorship",
       "name": "Personal Brand Sponsorship",
       "description": "個人品牌與廠商合作 Skill，協助創作者建立個人品牌定位、內容策略、廠商邀約判斷、合約檢查與業配文案。",
@@ -11016,7 +12768,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -11069,7 +12821,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -11101,7 +12853,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -11126,13 +12878,143 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 85,
+      "rank": 99,
+      "id": "personal-voice-modeling-style-guard",
+      "name": "個人聲音建模與風格守門 Skill｜保留作者辨識度",
+      "description": "個人聲音建模與風格守門 Skill，從作者代表範文萃取可追溯的 Voice Card，據此改寫或審稿，同時保護作者的事實、立場與台灣語感；不替作者補寫經歷或觀點，對外發布前由作者本人覆核。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 100,
       "id": "pr-brand-crisis-management",
       "name": "Pr Brand Crisis Management",
       "description": "公關品牌與危機處理 Skill，設計公關策略、品牌核心訊息、PESO 媒體組合、利益關係人管理與危機處理 SOP。",
@@ -11148,7 +13030,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -11201,7 +13083,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -11233,7 +13115,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -11258,13 +13140,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 86,
+      "rank": 101,
       "id": "product-launch-gate-checklist",
       "name": "Product Launch Gate Checklist",
       "description": "產品上線關卡檢查 Skill｜八階段 Exit Criteria，核對 Phase 0-7 上線關卡條件，判定 Go/No-Go。",
@@ -11280,7 +13161,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -11333,7 +13214,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -11365,7 +13246,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -11390,13 +13271,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 87,
+      "rank": 102,
       "id": "reconcile",
       "name": "Reconcile",
       "description": "處理財務、帳務或資料對帳（Reconciliation）的技能，協助核對資料差異、產出對帳報告與差異分析。",
@@ -11412,7 +13292,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -11465,7 +13345,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -11497,7 +13377,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -11522,13 +13402,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 88,
+      "rank": 103,
       "id": "rumor-buster",
       "name": "Rumor Buster",
       "description": "根據 Allport & Postman 謠言心理學框架，系統性分析謠言與未經證實訊息的形成背景、傳播動機、失真機制（平化、銳化、同化），並產出結構化查證與破解應對策略。適用於假新聞、網路謠言、陰謀論分析與危機溝通。",
@@ -11544,7 +13423,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -11597,7 +13476,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -11629,7 +13508,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -11654,13 +13533,143 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 89,
+      "rank": 104,
+      "id": "skill-iteration-quality-engineering",
+      "name": "Skill 迭代工程與品質驗證 Skill",
+      "description": "Skill 迭代工程與品質驗證 Skill，終結 Prompt 輪迴，將 Skill 建立與修改流程工程化：食譜式目標、執行鏈路追蹤、可診斷錯誤訊息、健康檢查、0/1 測試與版本保存。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 0,
+      "external_write_allowed": false,
+      "recommendation_score": 82.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 105,
       "id": "social-data-retrospective-private-domain",
       "name": "Social Data Retrospective Private Domain",
       "description": "社群數據覆盤與私域經營 Skill，建立社群內容週期、IG/FB 數據覆盤、電子報與公域轉私域導流。",
@@ -11676,7 +13685,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -11729,7 +13738,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -11761,7 +13770,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -11786,13 +13795,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 90,
+      "rank": 106,
       "id": "startup-cashflow-pnl-planning",
       "name": "Startup Cashflow Pnl Planning",
       "description": "創業現金流與損益表規劃 Skill，建立個人、副業與創業損益表，拆解業績目標、情境與悲觀現金流底線。",
@@ -11808,7 +13816,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -11861,7 +13869,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -11893,7 +13901,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -11918,13 +13926,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 91,
+      "rank": 107,
       "id": "system-file-audit-organizer",
       "name": "system-file-audit-organizer",
       "description": "Audit system files and directories, execute obvious file organization tasks, and generate user-confirmation proposals for major changes. Use when the user asks to audit computer files, clean up downloads/desktop, or organize system folders.",
@@ -11940,7 +13947,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -11993,7 +14000,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -12025,7 +14032,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -12050,13 +14057,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 92,
+      "rank": 108,
       "id": "ui-minimalist-animation-enhancer",
       "name": "ui-minimalist-animation-enhancer",
       "description": "Refine web/app UI for minimalism, improve information hierarchy, and add fluid entrance and exit animations. Use when the user asks to improve UI, add entrance/exit animations, simplify layout, or make interface aesthetic and clean.",
@@ -12072,7 +14078,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -12125,7 +14131,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -12157,7 +14163,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -12182,13 +14188,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 93,
+      "rank": 109,
       "id": "video-editing-preproduction-script-cuts",
       "name": "Video Editing Preproduction Script Cuts",
       "description": "影片剪輯前製與腳本切點 Skill，從帶時間碼逐字稿產出保留/刪除區段、章節、標題與短影音選段。",
@@ -12204,7 +14209,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -12257,7 +14262,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -12289,7 +14294,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -12314,13 +14319,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 94,
+      "rank": 110,
       "id": "warp-ai-multi-agent",
       "name": "Warp Ai Multi Agent",
       "description": "Warp AI Multi-Agent War Room Launch Configuration. Use when the user asks to configure Warp terminal launch configurations, set up multi-pane CLI agent layouts, or troubleshoot Warp terminal AI agent workflows.",
@@ -12336,7 +14340,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -12389,7 +14393,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -12421,7 +14425,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -12446,13 +14450,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 95,
+      "rank": 111,
       "id": "website-auditing",
       "name": "website-auditing",
       "description": "網站與 SEO 綜合稽核 Skill。當使用者需要對網站進行技術 SEO、載入速度、行動版體驗或內容品質稽核時使用。",
@@ -12468,7 +14471,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -12521,7 +14524,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -12553,7 +14556,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -12578,13 +14581,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 96,
+      "rank": 112,
       "id": "weekly-podcast-script",
       "name": "weekly-podcast-script",
       "description": "Write, refine, and optimize weekly podcast scripts in the persona of Podcast Host Big E (大E) with natural Taiwanese spoken phrasing. Use when the user asks to generate a weekly podcast script, transform raw notes or transcripts into a podcast episode, or draft a weekly podcast script.",
@@ -12600,7 +14602,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -12653,7 +14655,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -12685,7 +14687,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -12710,13 +14712,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 97,
+      "rank": 113,
       "id": "workspace-project-cleanup-agent",
       "name": "workspace-project-cleanup-agent",
       "description": "Audit workspace projects, identify abandoned or duplicate work, and safely execute cleanup on git-tracked branches. Use when the user asks to clean up workspace, find abandoned or duplicate projects, or organize codebase projects.",
@@ -12732,7 +14733,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -12785,7 +14786,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -12817,7 +14818,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -12842,13 +14843,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 98,
+      "rank": 114,
       "id": "youtube-learning-summary-exporter",
       "name": "Youtube Learning Summary Exporter",
       "description": "批量抓取指定 YouTube 頻道最新影片逐字稿，轉換為結構化速讀摘要、問答解析與行動建議，並自動匯出至 Google Drive 資料夾。當使用者要求整理 YT 頻道最新影片、製作影片學習筆記、產出逐字稿精華或匯出自學筆記至 Drive 時使用。",
@@ -12864,7 +14864,7 @@
       "external_write_allowed": false,
       "recommendation_score": 82.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -12917,7 +14917,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -12949,7 +14949,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -12974,13 +14974,143 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 99,
+      "rank": 115,
+      "id": "ai-agent-scenario-tool-selection",
+      "name": "AI Agent 場景盤點與工具選型 Skill",
+      "description": "AI Agent 場景盤點與工具選型 Skill，盤點工作與生活場景，判斷該用 ChatGPT、Notion AI、Manus、N8N、Claude Code、Codex 或人工流程，避免追工具潮流。",
+      "runtime": "instruction_only",
+      "risk_level": "high",
+      "test_scope": "contract_and_read_only_dry_run",
+      "status": "PASS",
+      "check_count": 22,
+      "passed_checks": 22,
+      "failed_checks": 0,
+      "eval_case_count": 4,
+      "connector_count": 1,
+      "external_write_allowed": false,
+      "recommendation_score": 80.0,
+      "recommendation_level": "B｜條件推薦",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
+      "checks": [
+        {
+          "name": "skill_md_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "manifest_id_matches_directory",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "runtime_supported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "entrypoint_exists",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "standard_contract_headings",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "safety_object",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "stop_conditions_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "approval_scope_present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "dry_run_default",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "external_write_declared",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "non_high_risk_safety_rules",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_positive_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_negative_examples",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_exclusions",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "activation_priority",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "source_provenance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "four_eval_case_types",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_positive_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_negative_trigger_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_output_contract_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "eval_safety_escalation_well_formed",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "instruction_only_no_execution",
+          "passed": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "rank": 116,
       "id": "cloudflare-skills",
       "name": "cloudflare-skills",
       "description": "Cloudflare 微服務、Workers/Pages 部署與 DNS 設定診斷 Skill。當使用者需要管理、部署或排錯 Cloudflare 服務與網域設定時使用。",
@@ -12996,7 +15126,7 @@
       "external_write_allowed": false,
       "recommendation_score": 80.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -13049,7 +15179,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -13081,7 +15211,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -13106,13 +15236,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 100,
+      "rank": 117,
       "id": "google-ads-audit",
       "name": "google-ads-audit",
       "description": "Google Ads 廣告帳戶與成效審查/稽核 Skill。當使用者需要審查 Google Ads 帳戶架構、關鍵字策略、成效指標 (CPA/ROAS) 或優化廣告文案時使用。",
@@ -13128,7 +15257,7 @@
       "external_write_allowed": false,
       "recommendation_score": 80.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -13181,7 +15310,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -13213,7 +15342,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -13238,13 +15367,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 101,
+      "rank": 118,
       "id": "notion-ai-workflow-design",
       "name": "Notion Ai Workflow Design",
       "description": "協助判斷工作流程應沉澱成文件、Skill、資料庫自動化、N8N 或 AI Agent，並設計 Notion AI 工作流。",
@@ -13260,7 +15388,7 @@
       "external_write_allowed": false,
       "recommendation_score": 80.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -13313,7 +15441,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -13345,7 +15473,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -13370,13 +15498,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 102,
+      "rank": 119,
       "id": "optimizing-google-ads",
       "name": "Google Ads AI Copilot",
       "description": "Analyze Google Ads performance and produce read-only health reports, search term audits, negative keyword suggestions, RSA copy ideas, budget pacing, action queues, and n8n/Notion/MCP integration plans with human approval required before write or spend-impacting operations.",
@@ -13392,7 +15519,7 @@
       "external_write_allowed": false,
       "recommendation_score": 80.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -13445,7 +15572,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -13470,14 +15597,14 @@
           "detail": ""
         },
         {
-          "name": "source_not_required_for_native_skill",
+          "name": "source_provenance",
           "passed": true,
-          "detail": "No archive source block; native repository skill."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -13502,13 +15629,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 103,
+      "rank": 120,
       "id": "threads-api-skill",
       "name": "threads-api-skill",
       "description": "Comprehensive assistance with Meta's Threads API development for building applications that integrate with Meta's Threads social platform, including OAuth authentication, text/media/carousel posting, profile data retrieval, analytics insights, and webhook processing. Use when the user asks to integrate with Threads API, post to Threads, fetch Threads metrics, or set up Threads webhooks.",
@@ -13524,7 +15650,7 @@
       "external_write_allowed": false,
       "recommendation_score": 80.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -13577,7 +15703,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -13609,7 +15735,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -13634,13 +15760,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 104,
+      "rank": 121,
       "id": "website-landing-page-builder",
       "name": "Website Landing Page Builder",
       "description": "網站／落地頁建置 Skill，用 Agent 直接產出可上線的互動式單頁（敘事、版面、前後對照、成本試算、CTA）。",
@@ -13656,7 +15781,7 @@
       "external_write_allowed": false,
       "recommendation_score": 80.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -13709,7 +15834,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -13741,7 +15866,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -13766,13 +15891,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 105,
+      "rank": 122,
       "id": "dual-agent-human-sop",
       "name": "Dual Agent Human Sop",
       "description": "雙 Agent 協作 Human 操作 SOP｜Hermes × OpenClaw × Obsidian，建立任務卡、審核報告與沉澱流程。",
@@ -13788,7 +15912,7 @@
       "external_write_allowed": true,
       "recommendation_score": 77.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -13841,7 +15965,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -13873,7 +15997,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -13898,13 +16022,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 106,
+      "rank": 123,
       "id": "full-sprint",
       "name": "Full Sprint",
       "description": "Turn a high-level goal into an executable, verifiable, pauseable, resumable, auditable sprint contract and continue PLAN → ACT → VERIFY → REVIEW → ITERATE within explicit safety, scope, validation, and budget limits.",
@@ -13920,7 +16043,7 @@
       "external_write_allowed": true,
       "recommendation_score": 77.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -13973,7 +16096,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -13998,14 +16121,14 @@
           "detail": ""
         },
         {
-          "name": "source_not_required_for_native_skill",
+          "name": "source_provenance",
           "passed": true,
-          "detail": "No archive source block; native repository skill."
+          "detail": ""
         },
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -14030,13 +16153,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 107,
+      "rank": 124,
       "id": "openclaw-agent-handbook",
       "name": "Openclaw Agent Handbook",
       "description": "OpenClaw Agent 專屬手冊，做為穩定執行者依照 Hermes Plan 完成任務、記錄結果、回報差異與提出 Skill 候選。",
@@ -14052,7 +16174,7 @@
       "external_write_allowed": true,
       "recommendation_score": 77.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -14105,7 +16227,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -14137,7 +16259,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -14162,13 +16284,12 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     },
     {
-      "rank": 108,
+      "rank": 125,
       "id": "user-instructions",
       "name": "User Instructions",
       "description": "Personalized instructions and context for Gemini Spark to work with Guan Hong Chen (陳冠宏), integrating domain-specific user skills and Full-Sprint AI Research methodology for automated workflow execution.",
@@ -14184,7 +16305,7 @@
       "external_write_allowed": true,
       "recommendation_score": 75.0,
       "recommendation_level": "B｜條件推薦",
-      "recommendation_reason": "測試通過，但具高風險、連線器或外部寫入邊界，必須按 manifest 取得人工批准。",
+      "recommendation_reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。",
       "checks": [
         {
           "name": "skill_md_exists",
@@ -14237,7 +16358,7 @@
           "detail": ""
         },
         {
-          "name": "high_risk_confirmation_gate",
+          "name": "non_high_risk_safety_rules",
           "passed": true,
           "detail": ""
         },
@@ -14269,7 +16390,7 @@
         {
           "name": "four_eval_case_types",
           "passed": true,
-          "detail": "['negative_trigger', 'output_contract', 'positive_trigger', 'safety_escalation']"
+          "detail": ""
         },
         {
           "name": "eval_positive_trigger_well_formed",
@@ -14294,10 +16415,9 @@
         {
           "name": "instruction_only_no_execution",
           "passed": true,
-          "detail": "No executable adapter invoked; static contract dry-run only."
+          "detail": ""
         }
-      ],
-      "executable_stdout": ""
+      ]
     }
   ]
 }

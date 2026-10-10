@@ -15,6 +15,7 @@ def main() -> int:
     parser.add_argument("--results", type=Path, required=True)
     parser.add_argument("--output-registry", type=Path, required=True)
     parser.add_argument("--output-markdown", type=Path, required=True)
+    parser.add_argument("--source-commit", default="working-tree")
     args = parser.parse_args()
 
     registry = json.loads(args.registry.read_text(encoding="utf-8"))
@@ -60,10 +61,10 @@ def main() -> int:
     )
     ranked_registry["recommendation_index"] = {
         "method": "contract-risk-safety-v1",
-        "source_commit": "fead9bd",
+        "source_commit": args.source_commit,
         "source_results": "docs/evaluations/github-skills-test-results.json",
         "documentation": "docs/recommendation-index.md",
-        "scope": "108 installed skills; instruction-only contract dry-runs plus one offline executable smoke test; auxiliary registry references are unranked",
+        "scope": f"{len(results)} installed skills; instruction-only contract dry-runs plus one offline executable smoke test; auxiliary registry references are unranked",
         "external_actions_executed": False,
         "levels": {
             "A｜優先推薦": "PASS、low risk、無 connector、external_write.allowed=false",
@@ -75,12 +76,13 @@ def main() -> int:
     ranked_registry["skills"] = ranked_items
     args.output_registry.write_text(json.dumps(ranked_registry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
+    instr = sum(1 for result in results if result["runtime"] == "instruction_only")
     levels = Counter(result["recommendation_level"] for result in results)
     risks = Counter(result["risk_level"] for result in results)
     lines = [
         "# Skills 推薦索引與排序",
         "",
-        "> 本索引依 GitHub `main` 的 `fead9bd` commit 產生，資料來源為 `docs/evaluations/github-skills-test-results.json`。它是技能選擇的治理與安全輔助，不是專業品質、成功率或投資報酬率保證。",
+        f"> 本索引依 GitHub `main` 的 `{args.source_commit}` commit 產生，資料來源為 `docs/evaluations/github-skills-test-results.json`。它是技能選擇的治理與安全輔助，不是專業品質、成功率或投資報酬率保證。",
         "",
         "## 使用方式",
         "",
@@ -119,11 +121,11 @@ def main() -> int:
         "",
         "## 測試解讀限制",
         "",
-        "107 個 `instruction_only` skills 的通過結果代表封裝、manifest、標準段落、activation、來源與四類 eval 案例通過；它們沒有被擅自執行外部服務操作。唯一的 Python skill `data_analysis` 使用隔離 CSV fixture 完成離線 smoke test。真實 connector、部署、發送、付費與第三方寫入仍需另行取得人工批准與 integration test。",
+        f"{instr} 個 `instruction_only` skills 的通過結果代表封裝、manifest、標準段落、activation、來源與四類 eval 案例通過；它們沒有被擅自執行外部服務操作。唯一的 Python skill `data_analysis` 使用隔離 CSV fixture 完成離線 smoke test。真實 connector、部署、發送、付費與第三方寫入仍需另行取得人工批准與 integration test。",
         "",
         "## 相關檔案",
         "",
-        "- [`skills.json`](../skills.json)：108 個完整 skills 依推薦排名排序；OpenAPI、MCP 與 workflow 輔助 entries 保留於排序區段之後，且不虛構測試分數。",
+        "- [`skills.json`](../skills.json)：{len(results)} 個完整 skills 依推薦排名排序；OpenAPI、MCP 與 workflow 輔助 entries 保留於排序區段之後，且不虛構測試分數。",
         "- [`docs/evaluations/github-skills-test-results.json`](evaluations/github-skills-test-results.json)：逐一測試的機器可讀結果。",
         "- [`docs/evaluations/github-skills-test-results.csv`](evaluations/github-skills-test-results.csv)：適合試算表與分析工具的平面結果。",
         "- [`docs/manifest-contract.md`](manifest-contract.md)：manifest 欄位與權限資料流契約。",

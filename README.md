@@ -11,7 +11,7 @@
 
 ## Recommended Starting Points
 
-為了讓使用者不必先閱讀 108 個 skill 的完整內容，repository 另提供一份依照逐一測試、風險、connector 依賴與外部寫入邊界產生的 [推薦索引與完整排序](docs/recommendation-index.md)。目前 108 個完整 skills 均通過適用的契約測試；其中 21 個列為 **A｜優先推薦**、30 個列為 **A-｜條件優先推薦**、57 個列為 **B｜條件推薦**，沒有 C 級技能。`skills.json` 已依此排名排列，並在每個完整 skill entry 附上 `recommendation.rank`、`score`、`level`、`test_scope`、`status` 與安全判定理由；OpenAPI、MCP 與 workflow 輔助 entries 保留在 registry 後段，不虛構測試分數。
+為了讓使用者不必先閱讀 125 個 skill 的完整內容，repository 另提供一份依照逐一測試、風險、connector 依賴與外部寫入邊界產生的 [推薦索引與完整排序](docs/recommendation-index.md)。目前 125 個完整 skills 均通過適用的契約測試；其中 21 個列為 **A｜優先推薦**、32 個列為 **A-｜條件優先推薦**、72 個列為 **B｜條件推薦**，沒有 C 級技能。`skills.json` 已依此排名排列，並在每個完整 skill entry 附上 `recommendation.rank`、`score`、`level`、`test_scope`、`status` 與安全判定理由；OpenAPI、MCP 與 workflow 輔助 entries 保留在 registry 後段，不虛構測試分數。
 
 | 選擇情境 | 建議入口 | 使用邊界 |
 |---|---|---|
@@ -19,7 +19,7 @@
 | 涉及 medium risk、敏感資料或決策影響 | 使用 A- 級並先人工覆核 | 確認資料最小化、來源、假設與輸出審查責任。 |
 | 涉及 connector、網路、發送、部署或外部寫入 | 只在明確授權與批准下使用 B 級 | 優先採唯讀、草稿、sandbox 或 dry-run；不可僅因排名高就直接執行。 |
 
-這份排序是**治理與安全輔助指標**，不是領域專業品質、成功率或投資報酬率保證。107 個 `instruction_only` skills 的 PASS 代表封裝、manifest、標準段落、activation 與四類 eval 契約通過；只有 `data_analysis` 使用隔離 CSV fixture 完成離線 executable smoke test。外部 connector、部署、帳戶變更、付費、發送與第三方寫入均未在本次測試中執行。
+這份排序是**治理與安全輔助指標**，不是領域專業品質、成功率或投資報酬率保證。124 個 `instruction_only` skills 的 PASS 代表封裝、manifest、標準段落、activation 與四類 eval 契約通過；只有 `data_analysis` 使用隔離 CSV fixture 完成離線 executable smoke test。外部 connector、部署、帳戶變更、付費、發送與第三方寫入均未在本次測試中執行。
 
 本儲存庫目標是支援以下使用情境：
 
@@ -697,7 +697,7 @@ python scripts/smoke_test_skills.py
 python scripts/install_local_skills.py --uninstall
 ```
 
-本 repository 目前包含 108 個可安裝套件，其中 107 個是 instruction-only skills，1 個是 Python CLI。`smoke_test_skills.py` 對 instruction-only skills 只做唯讀 dry-run，不會自動登入、發送網路請求、部署、推送或修改第三方服務。
+本 repository 目前包含 125 個可安裝套件，其中 124 個是 instruction-only skills，1 個是 Python CLI。`smoke_test_skills.py` 對 instruction-only skills 只做唯讀 dry-run，不會自動登入、發送網路請求、部署、推送或修改第三方服務。
 
 ## Safety
 
