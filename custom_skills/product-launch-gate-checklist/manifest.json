@@ -1,7 +1,7 @@
 {
   "id": "product-launch-gate-checklist",
   "name": "Product Launch Gate Checklist",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "產品上線關卡檢查 Skill｜八階段 Exit Criteria，核對 Phase 0-7 上線關卡條件，判定 Go/No-Go。",
   "entrypoint": "SKILL.md",
   "runtime": "instruction_only",
@@ -130,7 +130,17 @@
     "normalizer_version": "1.3.0",
     "normalized_at": "2026-08-18",
     "hash_algorithm": "sha256",
-    "provenance_verified": true
+    "provenance_verified": true,
+    "notion": {
+      "type": "notion_page",
+      "notion_url": "https://app.notion.com/p/ba3ebb8ac86a8345ba2e817fc3701e27",
+      "notion_version": "v1.1",
+      "notion_last_edited": "2026-09-24T00:58:32Z",
+      "synced_at": "2026-10-10",
+      "sync_script_version": "1.0.0",
+      "hash_algorithm": "sha256",
+      "sha256": "f07b4a7f8aa502238a3b18e6274a9564fc9ba21f39cbe955a90147dfc5cb473f"
+    }
   },
   "related_skills": [],
   "schema_version": "1.1.0",

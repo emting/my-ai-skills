@@ -12702,6 +12702,329 @@
           "sha256": "3170a1eb03788ae9d061920eda1c4b3cfade49eb0a2f3ca3e514114ae3f19743"
         }
       }
+    },
+    {
+      "id": "biblical-exegesis-theology-check",
+      "name": "聖經釋義與神學查核 Skill｜經文脈絡、主張與應用",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "聖經釋義與神學查核 Skill，內容引用經文、提出神學主張或把經文應用到心理、健康、職場與牧養議題時，檢查文學／歷史／正典脈絡、詮釋層級與爭議點，輸出可發布的修正版主張與人工覆核事項；不取代牧者、神學教師或宗派立場。",
+      "location": "custom_skills/biblical-exegesis-theology-check/",
+      "entrypoint": "custom_skills/biblical-exegesis-theology-check/SKILL.md",
+      "instruction_file": "custom_skills/biblical-exegesis-theology-check/SKILL.md",
+      "manifest": "custom_skills/biblical-exegesis-theology-check/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/89f0a2262a79449283487ae173321013",
+        "section_number": 123,
+        "start_line": 1,
+        "end_line": 71,
+        "status": "normalized_and_hardened",
+        "sha256": "5420f74e5f4c09db225c3f38d1769ad2ebb7e0c2ded5e0e2eb9ac35f1249b859",
+        "archive_sha256": "5420f74e5f4c09db225c3f38d1769ad2ebb7e0c2ded5e0e2eb9ac35f1249b859",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/89f0a2262a79449283487ae173321013",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:50:15Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "5420f74e5f4c09db225c3f38d1769ad2ebb7e0c2ded5e0e2eb9ac35f1249b859"
+        }
+      }
+    },
+    {
+      "id": "monocolor-editorial-print",
+      "name": "單色／雙色印刷編輯風視覺生成 Skill｜Monocolor Editorial Print",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "單色／雙色印刷編輯風視覺生成 Skill，將主題、文案或照片轉成 1 色或受控 2 色的印刷編輯風海報、封面、明信片與社群視覺；先鎖定配方再編譯英文 production prompt，並以七項視覺規則自檢；不處理全彩攝影、3D 或漸層；對外發布前人工覆核。",
+      "location": "custom_skills/monocolor-editorial-print/",
+      "entrypoint": "custom_skills/monocolor-editorial-print/SKILL.md",
+      "instruction_file": "custom_skills/monocolor-editorial-print/SKILL.md",
+      "manifest": "custom_skills/monocolor-editorial-print/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": true,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/5e43ab4a6c1b43759c8cc0c9cf85daed",
+        "section_number": 124,
+        "start_line": 1,
+        "end_line": 184,
+        "status": "normalized_and_hardened",
+        "sha256": "e734a3125654647040dba6ebb15313008b8dfcd56ea055ad4f7fea526162a916",
+        "archive_sha256": "e734a3125654647040dba6ebb15313008b8dfcd56ea055ad4f7fea526162a916",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/5e43ab4a6c1b43759c8cc0c9cf85daed",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:53:58Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "e734a3125654647040dba6ebb15313008b8dfcd56ea055ad4f7fea526162a916"
+        }
+      }
+    },
+    {
+      "id": "pastoral-content-ethics-privacy",
+      "name": "牧養內容倫理與隱私安全 Skill｜同意、去識別與人審",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "牧養內容倫理與隱私安全 Skill，內容涉及小組員、學員、家長、未成年人、見證、代禱、輔導或心理健康資料而要交給 AI 整理或對外轉製時，判定敏感度、確認同意範圍與受眾界線，產出去識別版本、禁止事項與人工升級路徑；危機情境停止內容加工。",
+      "location": "custom_skills/pastoral-content-ethics-privacy/",
+      "entrypoint": "custom_skills/pastoral-content-ethics-privacy/SKILL.md",
+      "instruction_file": "custom_skills/pastoral-content-ethics-privacy/SKILL.md",
+      "manifest": "custom_skills/pastoral-content-ethics-privacy/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/7bd67b0e32844dffa56e54b029e4efc2",
+        "section_number": 125,
+        "start_line": 1,
+        "end_line": 79,
+        "status": "normalized_and_hardened",
+        "sha256": "4ca1ddb9114a72f21bb57feb050a70b71a71f9597e6f4c2adf85dd9cc6e8d2d2",
+        "archive_sha256": "4ca1ddb9114a72f21bb57feb050a70b71a71f9597e6f4c2adf85dd9cc6e8d2d2",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/7bd67b0e32844dffa56e54b029e4efc2",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-24T01:48:31Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "4ca1ddb9114a72f21bb57feb050a70b71a71f9597e6f4c2adf85dd9cc6e8d2d2"
+        }
+      }
     }
   ],
   "recommendation_index": {

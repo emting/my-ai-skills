@@ -128,7 +128,17 @@
     "normalizer_version": "1.3.0",
     "normalized_at": "2026-08-18",
     "hash_algorithm": "sha256",
-    "provenance_verified": true
+    "provenance_verified": true,
+    "notion": {
+      "type": "notion_page",
+      "notion_url": "https://app.notion.com/p/47debb8ac86a830fb52e81f76bce91cb",
+      "notion_version": "v1.0",
+      "notion_last_edited": "2026-09-24T01:48:31Z",
+      "synced_at": "2026-10-10",
+      "sync_script_version": "1.0.0",
+      "hash_algorithm": "sha256",
+      "sha256": "a83fcd285272292d73c46b1ce1c06d036e445981e0ef71c9202bfb205ff8fa91"
+    }
   },
   "related_skills": [],
   "schema_version": "1.1.0",
