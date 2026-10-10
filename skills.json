@@ -3106,6 +3106,124 @@
       }
     },
     {
+      "id": "decision-tree-requirement-stress-test",
+      "name": "需求壓力測試｜Decision Tree 訪談",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "將計畫、設計或決策展開成 Decision Tree，每輪只詢問目前可回答的 Frontier，並為每題附建議答案。",
+      "location": "custom_skills/decision-tree-requirement-stress-test/",
+      "entrypoint": "custom_skills/decision-tree-requirement-stress-test/SKILL.md",
+      "instruction_file": "custom_skills/decision-tree-requirement-stress-test/SKILL.md",
+      "manifest": "custom_skills/decision-tree-requirement-stress-test/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/878ebb8ac86a8269bc738193ee8c0a59",
+        "section_number": 127,
+        "start_line": 1,
+        "end_line": 60,
+        "status": "normalized_and_hardened",
+        "sha256": "17c838863482985d9c18f223c4e5c7665451cfc02bb977aeeff89cbef12332d8",
+        "archive_sha256": "17c838863482985d9c18f223c4e5c7665451cfc02bb977aeeff89cbef12332d8",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/878ebb8ac86a8269bc738193ee8c0a59",
+          "notion_version": "v0.1",
+          "notion_last_edited": "2026-08-25T09:01:45Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "17c838863482985d9c18f223c4e5c7665451cfc02bb977aeeff89cbef12332d8"
+        }
+      },
+      "recommendation": {
+        "rank": 33,
+        "score": 92.0,
+        "level": "A-｜條件優先推薦",
+        "status": "PASS",
+        "test_scope": "contract_and_read_only_dry_run",
+        "check_count": 22,
+        "passed_checks": 22,
+        "connector_count": 0,
+        "external_write_allowed": false,
+        "reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。"
+      }
+    },
+    {
       "id": "designing-pricing-systems",
       "name": "Designing Pricing Systems",
       "visibility": "public",
@@ -3186,7 +3304,126 @@
         "social-proof"
       ],
       "recommendation": {
-        "rank": 33,
+        "rank": 34,
+        "score": 92.0,
+        "level": "A-｜條件優先推薦",
+        "status": "PASS",
+        "test_scope": "contract_and_read_only_dry_run",
+        "check_count": 22,
+        "passed_checks": 22,
+        "connector_count": 0,
+        "external_write_allowed": false,
+        "reason": "測試通過、中風險、無外部寫入；使用前需人工覆核。"
+      }
+    },
+    {
+      "id": "handoff",
+      "name": "Handoff｜工作階段交接",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "把需要跨 Agent、工作區、同事或支線任務移動的 Context 壓縮成可接手文件；一般階段轉換不濫用 Handoff。",
+      "location": "custom_skills/handoff/",
+      "entrypoint": "custom_skills/handoff/SKILL.md",
+      "instruction_file": "custom_skills/handoff/SKILL.md",
+      "manifest": "custom_skills/handoff/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "medium",
+      "activation_policy": "intent_match_with_scope_check",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/674ebb8ac86a83d9bf94814da8bb5649",
+        "section_number": 128,
+        "start_line": 1,
+        "end_line": 52,
+        "status": "normalized_and_hardened",
+        "sha256": "738189486fbad53f8681dd2cfec2299a5c4720a59390ba43c55d2329587ba365",
+        "archive_sha256": "738189486fbad53f8681dd2cfec2299a5c4720a59390ba43c55d2329587ba365",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/674ebb8ac86a83d9bf94814da8bb5649",
+          "notion_version": "v0.1",
+          "notion_last_edited": "2026-08-25T09:01:40Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "738189486fbad53f8681dd2cfec2299a5c4720a59390ba43c55d2329587ba365"
+        }
+      },
+      "recommendation": {
+        "rank": 35,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -3297,7 +3534,7 @@
         "progressive-quiz-generator"
       ],
       "recommendation": {
-        "rank": 34,
+        "rank": 36,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -3398,7 +3635,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 35,
+        "rank": 37,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -3499,7 +3736,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 36,
+        "rank": 38,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -3554,7 +3791,7 @@
         "tooling"
       ],
       "recommendation": {
-        "rank": 37,
+        "rank": 39,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -3656,7 +3893,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 38,
+        "rank": 40,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -3757,7 +3994,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 39,
+        "rank": 41,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -3869,7 +4106,7 @@
         "research-to-insight"
       ],
       "recommendation": {
-        "rank": 40,
+        "rank": 42,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -3969,7 +4206,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 41,
+        "rank": 43,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -4072,7 +4309,7 @@
         "designing-pricing-systems"
       ],
       "recommendation": {
-        "rank": 42,
+        "rank": 44,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -4184,7 +4421,7 @@
         "ai-project-feasibility-assessment"
       ],
       "recommendation": {
-        "rank": 43,
+        "rank": 45,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -4285,7 +4522,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 44,
+        "rank": 46,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -4386,7 +4623,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 45,
+        "rank": 47,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -4487,7 +4724,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 46,
+        "rank": 48,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -4576,7 +4813,7 @@
         "decision-report"
       ],
       "recommendation": {
-        "rank": 47,
+        "rank": 49,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -4677,7 +4914,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 48,
+        "rank": 50,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -4795,7 +5032,7 @@
         }
       },
       "recommendation": {
-        "rank": 49,
+        "rank": 51,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -4896,7 +5133,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 50,
+        "rank": 52,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -5013,7 +5250,7 @@
         }
       },
       "recommendation": {
-        "rank": 51,
+        "rank": 53,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -5114,7 +5351,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 52,
+        "rank": 54,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -5214,7 +5451,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 53,
+        "rank": 55,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -5316,7 +5553,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 54,
+        "rank": 56,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -5427,7 +5664,7 @@
         "video-editing-preproduction-script-cuts"
       ],
       "recommendation": {
-        "rank": 55,
+        "rank": 57,
         "score": 92.0,
         "level": "A-｜條件優先推薦",
         "status": "PASS",
@@ -5531,7 +5768,7 @@
         "adapting-notion-docs"
       ],
       "recommendation": {
-        "rank": 56,
+        "rank": 58,
         "score": 90.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -5629,7 +5866,7 @@
         "launch-checklist"
       ],
       "recommendation": {
-        "rank": 57,
+        "rank": 59,
         "score": 90.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -5741,7 +5978,7 @@
         "youtube-learning-summary-exporter"
       ],
       "recommendation": {
-        "rank": 58,
+        "rank": 60,
         "score": 90.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -5842,7 +6079,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 59,
+        "rank": 61,
         "score": 87.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -5955,7 +6192,7 @@
         "ai-security-agent-governance"
       ],
       "recommendation": {
-        "rank": 60,
+        "rank": 62,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -6067,7 +6304,7 @@
         "ai-project-feasibility-assessment"
       ],
       "recommendation": {
-        "rank": 61,
+        "rank": 63,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -6180,7 +6417,7 @@
         "enterprise-sovereign-ai-adoption"
       ],
       "recommendation": {
-        "rank": 62,
+        "rank": 64,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -6282,7 +6519,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 63,
+        "rank": 65,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -6384,7 +6621,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 64,
+        "rank": 66,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -6486,7 +6723,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 65,
+        "rank": 67,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -6598,7 +6835,7 @@
         "website-auditing"
       ],
       "recommendation": {
-        "rank": 66,
+        "rank": 68,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -6717,7 +6954,7 @@
         }
       },
       "recommendation": {
-        "rank": 67,
+        "rank": 69,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -6822,7 +7059,7 @@
         "analyzing-business-models"
       ],
       "recommendation": {
-        "rank": 68,
+        "rank": 70,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -6942,7 +7179,7 @@
         }
       },
       "recommendation": {
-        "rank": 69,
+        "rank": 71,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -7062,7 +7299,7 @@
         }
       },
       "recommendation": {
-        "rank": 70,
+        "rank": 72,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -7164,7 +7401,126 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 71,
+        "rank": 73,
+        "score": 82.0,
+        "level": "B｜條件推薦",
+        "status": "PASS",
+        "test_scope": "contract_and_read_only_dry_run",
+        "check_count": 22,
+        "passed_checks": 22,
+        "connector_count": 0,
+        "external_write_allowed": false,
+        "reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。"
+      }
+    },
+    {
+      "id": "conversation-to-spec",
+      "name": "Conversation to Spec｜對話轉可執行規格",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "把目前對話與已確認決策整理成規格，不重新訪談、不引入未討論需求，並明列驗收條件與範圍外項目。",
+      "location": "custom_skills/conversation-to-spec/",
+      "entrypoint": "custom_skills/conversation-to-spec/SKILL.md",
+      "instruction_file": "custom_skills/conversation-to-spec/SKILL.md",
+      "manifest": "custom_skills/conversation-to-spec/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/2ddebb8ac86a820980d981fb971f0275",
+        "section_number": 126,
+        "start_line": 1,
+        "end_line": 51,
+        "status": "normalized_and_hardened",
+        "sha256": "f14a5d0733bdbe20ecd77a5112486f7b816f14284c78991e8a7a09480daa904f",
+        "archive_sha256": "f14a5d0733bdbe20ecd77a5112486f7b816f14284c78991e8a7a09480daa904f",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/2ddebb8ac86a820980d981fb971f0275",
+          "notion_version": "v0.1",
+          "notion_last_edited": "2026-09-24T00:28:58Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "f14a5d0733bdbe20ecd77a5112486f7b816f14284c78991e8a7a09480daa904f"
+        }
+      },
+      "recommendation": {
+        "rank": 74,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -7284,7 +7640,7 @@
         }
       },
       "recommendation": {
-        "rank": 72,
+        "rank": 75,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -7404,7 +7760,7 @@
         }
       },
       "recommendation": {
-        "rank": 73,
+        "rank": 76,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -7524,7 +7880,7 @@
         }
       },
       "recommendation": {
-        "rank": 74,
+        "rank": 77,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -7644,7 +8000,7 @@
         }
       },
       "recommendation": {
-        "rank": 75,
+        "rank": 78,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -7747,7 +8103,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 76,
+        "rank": 79,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -7850,7 +8206,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 77,
+        "rank": 80,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -7964,7 +8320,7 @@
         "ui-minimalist-animation-enhancer"
       ],
       "recommendation": {
-        "rank": 78,
+        "rank": 81,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -8066,7 +8422,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 79,
+        "rank": 82,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -8185,7 +8541,7 @@
         }
       },
       "recommendation": {
-        "rank": 80,
+        "rank": 83,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -8297,7 +8653,7 @@
         "agent-task-packaging"
       ],
       "recommendation": {
-        "rank": 81,
+        "rank": 84,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -8406,7 +8762,126 @@
         "provenance_verified": true
       },
       "recommendation": {
-        "rank": 82,
+        "rank": 85,
+        "score": 82.0,
+        "level": "B｜條件推薦",
+        "status": "PASS",
+        "test_scope": "contract_and_read_only_dry_run",
+        "check_count": 22,
+        "passed_checks": 22,
+        "connector_count": 0,
+        "external_write_allowed": false,
+        "reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。"
+      }
+    },
+    {
+      "id": "hermes-agent-handbook",
+      "name": "Hermes Agent 專屬手冊｜架構、職責、規範與模板",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "Hermes Agent 的角色、職責邊界、Plan／Review／Skill Candidate 模板與規範（深層參考，不獨立執行任務）。",
+      "location": "custom_skills/hermes-agent-handbook/",
+      "entrypoint": "custom_skills/hermes-agent-handbook/SKILL.md",
+      "instruction_file": "custom_skills/hermes-agent-handbook/SKILL.md",
+      "manifest": "custom_skills/hermes-agent-handbook/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": true,
+        "git": true,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/8c1ebb8ac86a8273b92e01d00e154fb2",
+        "section_number": 129,
+        "start_line": 1,
+        "end_line": 53,
+        "status": "normalized_and_hardened",
+        "sha256": "a7482ea78f384b1cebaffe985eab741b61b89a96643c99cbba4b7cc1141ca74c",
+        "archive_sha256": "a7482ea78f384b1cebaffe985eab741b61b89a96643c99cbba4b7cc1141ca74c",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/8c1ebb8ac86a8273b92e01d00e154fb2",
+          "notion_version": "v0.1",
+          "notion_last_edited": "2026-08-25T08:35:47Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "a7482ea78f384b1cebaffe985eab741b61b89a96643c99cbba4b7cc1141ca74c"
+        }
+      },
+      "recommendation": {
+        "rank": 86,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -8515,7 +8990,7 @@
         "provenance_verified": true
       },
       "recommendation": {
-        "rank": 83,
+        "rank": 87,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -8634,7 +9109,7 @@
         }
       },
       "recommendation": {
-        "rank": 84,
+        "rank": 88,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -8746,7 +9221,7 @@
         "decision-making-superpowers"
       ],
       "recommendation": {
-        "rank": 85,
+        "rank": 89,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -8866,7 +9341,7 @@
         }
       },
       "recommendation": {
-        "rank": 86,
+        "rank": 90,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -8928,7 +9403,7 @@
         "deployment"
       ],
       "recommendation": {
-        "rank": 87,
+        "rank": 91,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -9023,7 +9498,127 @@
         "media-qa"
       ],
       "recommendation": {
-        "rank": 88,
+        "rank": 92,
+        "score": 82.0,
+        "level": "B｜條件推薦",
+        "status": "PASS",
+        "test_scope": "contract_and_read_only_dry_run",
+        "check_count": 22,
+        "passed_checks": 22,
+        "connector_count": 0,
+        "external_write_allowed": false,
+        "reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。"
+      }
+    },
+    {
+      "id": "meeting-followup-workflow",
+      "name": "Meeting Follow-up Workflow｜會議後續自動化",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "把會議紀錄轉成決策、待辦、負責人、截止日與 follow-up 訊息；負責人與期限不明時標「待確認」而不猜測。",
+      "location": "custom_skills/meeting-followup-workflow/",
+      "entrypoint": "custom_skills/meeting-followup-workflow/SKILL.md",
+      "instruction_file": "custom_skills/meeting-followup-workflow/SKILL.md",
+      "manifest": "custom_skills/meeting-followup-workflow/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": true,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/8a3ebb8ac86a821082c301d43afe6160",
+        "section_number": 131,
+        "start_line": 1,
+        "end_line": 73,
+        "status": "normalized_and_hardened",
+        "sha256": "f9315205fde703016861e5861a5024e4e1c86940876ab2a5c303af1d37c2ec41",
+        "archive_sha256": "f9315205fde703016861e5861a5024e4e1c86940876ab2a5c303af1d37c2ec41",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/8a3ebb8ac86a821082c301d43afe6160",
+          "notion_version": "v0.1",
+          "notion_last_edited": "2026-08-25T08:35:55Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "f9315205fde703016861e5861a5024e4e1c86940876ab2a5c303af1d37c2ec41"
+        }
+      },
+      "recommendation": {
+        "rank": 93,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -9125,7 +9720,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 89,
+        "rank": 94,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -9245,7 +9840,7 @@
         }
       },
       "recommendation": {
-        "rank": 90,
+        "rank": 95,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -9348,7 +9943,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 91,
+        "rank": 96,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -9457,7 +10052,7 @@
         "provenance_verified": true
       },
       "recommendation": {
-        "rank": 92,
+        "rank": 97,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -9558,7 +10153,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 93,
+        "rank": 98,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -9671,7 +10266,127 @@
         "presentation-yaml-design-architect"
       ],
       "recommendation": {
-        "rank": 94,
+        "rank": 99,
+        "score": 82.0,
+        "level": "B｜條件推薦",
+        "status": "PASS",
+        "test_scope": "contract_and_read_only_dry_run",
+        "check_count": 22,
+        "passed_checks": 22,
+        "connector_count": 0,
+        "external_write_allowed": false,
+        "reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。"
+      }
+    },
+    {
+      "id": "open-slide-presentation",
+      "name": "簡報製作 skill｜open-slide 設計參考・可編輯簡報・逐頁驗收",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "候選／待驗證：把已確認的主題與來源做成可審閱、可編輯的簡報；先查核再設計，逐頁實際檢視後才算驗收，分享與花費另行核准。",
+      "location": "custom_skills/open-slide-presentation/",
+      "entrypoint": "custom_skills/open-slide-presentation/SKILL.md",
+      "instruction_file": "custom_skills/open-slide-presentation/SKILL.md",
+      "manifest": "custom_skills/open-slide-presentation/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": true,
+        "browser_automation": true,
+        "third_party_processing": true,
+        "shell": true,
+        "git": true,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/3f4ebb8ac86a81b992c2c201ed0736fa",
+        "section_number": 132,
+        "start_line": 1,
+        "end_line": 126,
+        "status": "normalized_and_hardened",
+        "sha256": "4736dca55a056c2b1a84306b85edf599e7d10e0926a482c13599313a63ddfcb4",
+        "archive_sha256": "4736dca55a056c2b1a84306b85edf599e7d10e0926a482c13599313a63ddfcb4",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/3f4ebb8ac86a81b992c2c201ed0736fa",
+          "notion_version": "v0.1",
+          "notion_last_edited": "2026-10-09T13:23:51Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "4736dca55a056c2b1a84306b85edf599e7d10e0926a482c13599313a63ddfcb4"
+        }
+      },
+      "recommendation": {
+        "rank": 100,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -9773,7 +10488,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 95,
+        "rank": 101,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -9875,7 +10590,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 96,
+        "rank": 102,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -9995,7 +10710,7 @@
         }
       },
       "recommendation": {
-        "rank": 97,
+        "rank": 103,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -10097,7 +10812,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 98,
+        "rank": 104,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -10217,7 +10932,7 @@
         }
       },
       "recommendation": {
-        "rank": 99,
+        "rank": 105,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -10318,7 +11033,126 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 100,
+        "rank": 106,
+        "score": 82.0,
+        "level": "B｜條件推薦",
+        "status": "PASS",
+        "test_scope": "contract_and_read_only_dry_run",
+        "check_count": 22,
+        "passed_checks": 22,
+        "connector_count": 0,
+        "external_write_allowed": false,
+        "reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。"
+      }
+    },
+    {
+      "id": "primary-research",
+      "name": "Primary Research｜第一方來源研究",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "針對明確研究問題優先查閱官方文件、原始碼、規格與第一方資料，區分來源明說、推論、建議與待確認。",
+      "location": "custom_skills/primary-research/",
+      "entrypoint": "custom_skills/primary-research/SKILL.md",
+      "instruction_file": "custom_skills/primary-research/SKILL.md",
+      "manifest": "custom_skills/primary-research/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": true,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/cb9ebb8ac86a83dcb01d81fb32573420",
+        "section_number": 133,
+        "start_line": 1,
+        "end_line": 55,
+        "status": "normalized_and_hardened",
+        "sha256": "139168f5b8d4b8fc253d94a014d826fb5e229f3fb5231e88b623edac685394b2",
+        "archive_sha256": "139168f5b8d4b8fc253d94a014d826fb5e229f3fb5231e88b623edac685394b2",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/cb9ebb8ac86a83dcb01d81fb32573420",
+          "notion_version": "v0.1",
+          "notion_last_edited": "2026-08-25T09:01:45Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "139168f5b8d4b8fc253d94a014d826fb5e229f3fb5231e88b623edac685394b2"
+        }
+      },
+      "recommendation": {
+        "rank": 107,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -10419,7 +11253,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 101,
+        "rank": 108,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -10521,7 +11355,126 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 102,
+        "rank": 109,
+        "score": 82.0,
+        "level": "B｜條件推薦",
+        "status": "PASS",
+        "test_scope": "contract_and_read_only_dry_run",
+        "check_count": 22,
+        "passed_checks": 22,
+        "connector_count": 0,
+        "external_write_allowed": false,
+        "reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。"
+      }
+    },
+    {
+      "id": "remaining-quota-task-selection",
+      "name": "剩餘額度任務選擇｜Codex 額度重置前套利框架",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "額度即將重置時，把候選任務分為元最佳化／可驗證工程／整理（加閘門）／娛樂生成四級，搭配安全閘門與通用 Prompt 公式挑選值得跑的長任務。",
+      "location": "custom_skills/remaining-quota-task-selection/",
+      "entrypoint": "custom_skills/remaining-quota-task-selection/SKILL.md",
+      "instruction_file": "custom_skills/remaining-quota-task-selection/SKILL.md",
+      "manifest": "custom_skills/remaining-quota-task-selection/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": false,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/098ebb8ac86a835cb79b81b5c336f01c",
+        "section_number": 134,
+        "start_line": 1,
+        "end_line": 83,
+        "status": "normalized_and_hardened",
+        "sha256": "8e5e6da1e9dfe818b33f586639adf372714587b1f7f9ec0f2172b2c00057456f",
+        "archive_sha256": "8e5e6da1e9dfe818b33f586639adf372714587b1f7f9ec0f2172b2c00057456f",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/098ebb8ac86a835cb79b81b5c336f01c",
+          "notion_version": "v0.1",
+          "notion_last_edited": "2026-08-25T06:01:21Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "8e5e6da1e9dfe818b33f586639adf372714587b1f7f9ec0f2172b2c00057456f"
+        }
+      },
+      "recommendation": {
+        "rank": 110,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -10623,7 +11576,126 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 103,
+        "rank": 111,
+        "score": 82.0,
+        "level": "B｜條件推薦",
+        "status": "PASS",
+        "test_scope": "contract_and_read_only_dry_run",
+        "check_count": 22,
+        "passed_checks": 22,
+        "connector_count": 0,
+        "external_write_allowed": false,
+        "reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。"
+      }
+    },
+    {
+      "id": "short-video-production",
+      "name": "短影音製作 skill｜腳本查核・配音・Flow・字幕剪輯",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "候選／待驗證：把主題做成可審閱的直式短影音，先查核腳本再花配音與生成點數，逐階段報價核准，最後交付影片、字幕與驗收紀錄，不自動發布。",
+      "location": "custom_skills/short-video-production/",
+      "entrypoint": "custom_skills/short-video-production/SKILL.md",
+      "instruction_file": "custom_skills/short-video-production/SKILL.md",
+      "manifest": "custom_skills/short-video-production/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": false,
+        "browser_automation": true,
+        "third_party_processing": true,
+        "shell": false,
+        "git": false,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/3f4ebb8ac86a815a8f6be3349f195101",
+        "section_number": 135,
+        "start_line": 1,
+        "end_line": 111,
+        "status": "normalized_and_hardened",
+        "sha256": "34fe1bd148c12121e5cb2ed2fd832de21ac471a7f479f2f98b272c5b7187e0a3",
+        "archive_sha256": "34fe1bd148c12121e5cb2ed2fd832de21ac471a7f479f2f98b272c5b7187e0a3",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/3f4ebb8ac86a815a8f6be3349f195101",
+          "notion_version": "v0.1",
+          "notion_last_edited": "2026-10-09T07:22:20Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "34fe1bd148c12121e5cb2ed2fd832de21ac471a7f479f2f98b272c5b7187e0a3"
+        }
+      },
+      "recommendation": {
+        "rank": 112,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -10743,7 +11815,7 @@
         }
       },
       "recommendation": {
-        "rank": 104,
+        "rank": 113,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -10845,7 +11917,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 105,
+        "rank": 114,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -10947,7 +12019,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 106,
+        "rank": 115,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -11056,7 +12128,7 @@
         "provenance_verified": true
       },
       "recommendation": {
-        "rank": 107,
+        "rank": 116,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -11168,7 +12240,7 @@
         "design-proposal-portfolio-persuasion"
       ],
       "recommendation": {
-        "rank": 108,
+        "rank": 117,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -11269,7 +12341,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 109,
+        "rank": 118,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -11371,7 +12443,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 110,
+        "rank": 119,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -11483,7 +12555,7 @@
         "website-landing-page-builder"
       ],
       "recommendation": {
-        "rank": 111,
+        "rank": 120,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -11596,7 +12668,7 @@
         "couple-podcast-hosting"
       ],
       "recommendation": {
-        "rank": 112,
+        "rank": 121,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -11707,7 +12779,7 @@
         "system-file-audit-organizer"
       ],
       "recommendation": {
-        "rank": 113,
+        "rank": 122,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -11809,7 +12881,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 114,
+        "rank": 123,
         "score": 82.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -11929,7 +13001,7 @@
         }
       },
       "recommendation": {
-        "rank": 115,
+        "rank": 124,
         "score": 80.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -12043,7 +13115,7 @@
         "website-landing-page-builder"
       ],
       "recommendation": {
-        "rank": 116,
+        "rank": 125,
         "score": 80.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -12155,7 +13227,127 @@
         "marketing-brief-competitor-analyst"
       ],
       "recommendation": {
-        "rank": 117,
+        "rank": 126,
+        "score": 80.0,
+        "level": "B｜條件推薦",
+        "status": "PASS",
+        "test_scope": "contract_and_read_only_dry_run",
+        "check_count": 22,
+        "passed_checks": 22,
+        "connector_count": 1,
+        "external_write_allowed": false,
+        "reason": "測試通過但屬高風險、依賴連線器或具外部寫入邊界；必須人工批准。"
+      }
+    },
+    {
+      "id": "hermes-openclaw-pi-collaboration",
+      "name": "Hermes × OpenClaw × Pi × Obsidian｜本機三 Agent 協作架構與 SOP",
+      "visibility": "public",
+      "type": "instruction",
+      "description": "以 Hermes 規劃與驗收、OpenClaw 負責渠道排程與跨服務執行、Pi 負責程式庫內開發、Human 最終負責的本機三 Agent 協作架構，含任務契約、路由、安全閘門與知識沉澱。",
+      "location": "custom_skills/hermes-openclaw-pi-collaboration/",
+      "entrypoint": "custom_skills/hermes-openclaw-pi-collaboration/SKILL.md",
+      "instruction_file": "custom_skills/hermes-openclaw-pi-collaboration/SKILL.md",
+      "manifest": "custom_skills/hermes-openclaw-pi-collaboration/manifest.json",
+      "runtime": "instruction_only",
+      "inputs": [
+        {
+          "name": "request",
+          "type": "text",
+          "required": true,
+          "description": "使用者希望完成的任務、問題或產出目標。"
+        },
+        {
+          "name": "context",
+          "type": "text",
+          "required": false,
+          "description": "背景、受眾、現況、限制與已知決策脈絡。"
+        },
+        {
+          "name": "source_materials",
+          "type": "text_or_files",
+          "required": false,
+          "description": "使用者提供或明確授權的資料與外部來源；需要即時資訊時應記錄來源與擷取時間。"
+        },
+        {
+          "name": "constraints",
+          "type": "list",
+          "required": false,
+          "description": "時程、格式、語氣、預算、權限與不得變更事項。"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "type": "markdown",
+          "required": true,
+          "description": "依技能目的產出的分析、策略、腳本、內容、清單或計畫。"
+        },
+        {
+          "name": "assumptions_and_risks",
+          "type": "markdown",
+          "required": true,
+          "description": "假設、未驗證事項、風險、限制與人工核准點。"
+        },
+        {
+          "name": "verification",
+          "type": "markdown",
+          "required": true,
+          "description": "來源、檢查方式、驗收條件與尚待確認事項。"
+        }
+      ],
+      "permissions": {
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "api_key_required": true,
+        "browser_automation": true,
+        "third_party_processing": true,
+        "shell": true,
+        "git": true,
+        "google_ads_read": false,
+        "google_ads_write": false,
+        "notion_read": false,
+        "notion_write": false,
+        "n8n_write": false,
+        "mcp_write_tools": false
+      },
+      "risk_level": "high",
+      "activation_policy": "explicit_request",
+      "tags": [
+        "instruction-only",
+        "network-aware",
+        "privacy-sensitive",
+        "human-gated",
+        "notion-sync"
+      ],
+      "source": {
+        "type": "notion_page",
+        "file": "https://app.notion.com/p/521ebb8ac86a838bb73881add5fc2dd0",
+        "section_number": 130,
+        "start_line": 1,
+        "end_line": 283,
+        "status": "normalized_and_hardened",
+        "sha256": "2dcfbdac1bedd8b17f40595a69951e3e6e95f70cba8de0c90156254a17a279ed",
+        "archive_sha256": "2dcfbdac1bedd8b17f40595a69951e3e6e95f70cba8de0c90156254a17a279ed",
+        "source_path": "notion page",
+        "normalizer_version": "1.4.0",
+        "normalized_at": "2026-10-10",
+        "hash_algorithm": "sha256",
+        "provenance_verified": true,
+        "notion": {
+          "type": "notion_page",
+          "notion_url": "https://app.notion.com/p/521ebb8ac86a838bb73881add5fc2dd0",
+          "notion_version": "v1.0",
+          "notion_last_edited": "2026-09-03T14:10:31Z",
+          "synced_at": "2026-10-10",
+          "sync_script_version": "1.0.0",
+          "hash_algorithm": "sha256",
+          "sha256": "2dcfbdac1bedd8b17f40595a69951e3e6e95f70cba8de0c90156254a17a279ed"
+        }
+      },
+      "recommendation": {
+        "rank": 127,
         "score": 80.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -12257,7 +13449,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 118,
+        "rank": 128,
         "score": 80.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -12350,7 +13542,7 @@
         "moosie"
       ],
       "recommendation": {
-        "rank": 119,
+        "rank": 129,
         "score": 80.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -12463,7 +13655,7 @@
         "threads-viral-consultant"
       ],
       "recommendation": {
-        "rank": 120,
+        "rank": 130,
         "score": 80.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -12564,7 +13756,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 121,
+        "rank": 131,
         "score": 80.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -12666,7 +13858,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 122,
+        "rank": 132,
         "score": 77.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -12765,7 +13957,7 @@
         "safe-execution"
       ],
       "recommendation": {
-        "rank": 123,
+        "rank": 133,
         "score": 77.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -12867,7 +14059,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 124,
+        "rank": 134,
         "score": 77.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -12970,7 +14162,7 @@
         "status": "normalized_and_hardened"
       },
       "recommendation": {
-        "rank": 125,
+        "rank": 135,
         "score": 75.0,
         "level": "B｜條件推薦",
         "status": "PASS",
@@ -13233,10 +14425,10 @@
   ],
   "recommendation_index": {
     "method": "contract-risk-safety-v1",
-    "source_commit": "b2feb2d",
+    "source_commit": "bbd1dd5",
     "source_results": "docs/evaluations/github-skills-test-results.json",
     "documentation": "docs/recommendation-index.md",
-    "scope": "125 installed skills; instruction-only contract dry-runs plus one offline executable smoke test; auxiliary registry references are unranked",
+    "scope": "135 installed skills; instruction-only contract dry-runs plus one offline executable smoke test; auxiliary registry references are unranked",
     "external_actions_executed": false,
     "levels": {
       "A｜優先推薦": "PASS、low risk、無 connector、external_write.allowed=false",

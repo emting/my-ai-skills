@@ -4,20 +4,70 @@ description: 雙 Agent 協作 Human 操作 SOP｜Hermes × OpenClaw × Obsidian�
 ---
 
 # Dual Agent Human Sop
+> **定位**：把人類在 Hermes × OpenClaw 系統中的啟動、監督、審核與沉澱動作變成清楚 SOP。
 
-## 定位
+## 1. 使用情境
+使用者要操作本機雙 Agent 系統、啟動任務、審核結果或沉澱 Skill／SOP 時啟用。適用：Human 啟動 Hermes 任務、將任務交給 OpenClaw 執行、檢查 execution report、判斷是否返工、將成功流程沉澱為 Skill Candidate、維護 Obsidian Vault 的任務紀錄。
 
-本機雙 Agent（Hermes × OpenClaw × Obsidian）個人操作 SOP：建立任務卡、要求 Hermes 規劃、人工檢查 Plan、交付 OpenClaw 執行、審核報告並沉澱 SOP/Skill。
+## 2. 主要目標
+1. 降低操作混亂：讓 Human 每次都知道下一步該做什麼。
+2. 確保審核品質：避免只看結果，不檢查過程與風險。
+3. 維持任務閉環：每個任務都要有計畫、執行、回顧與收尾。
+4. 促進知識沉澱：把可重複流程轉成 SOP 或 Skill Candidate。
+5. 避免錯誤放大：高風險或不確定操作需人工確認。
 
-## 核心流程
+## 3. Human 操作流程
+- **Step 1 建立任務卡**：任務名稱、背景、目標、輸入資料、限制條件、成功標準、風險等級。
+- **Step 2 請 Hermes 規劃**：任務理解、執行計畫、檔案讀寫範圍、OpenClaw 指令、驗收標準、風險提醒。
+- **Step 3 人工檢查 Plan**：是否理解正確、有越權操作、讀寫範圍過大、缺少必要資料、需要分批執行。
+- **Step 4 交給 OpenClaw 執行**：確認指令具體、輸入資料完整、輸出位置明確、不會覆蓋重要資料、有回報格式。
+- **Step 5 審核 Execution Report**：實際做了什麼、是否符合 Plan、有無錯誤或偏差、是否留下可追蹤紀錄、是否需要返工。
+- **Step 6 沉澱 SOP／Skill**：SOP（給人或 Agent 照流程執行）、Skill Candidate（給 AI 在類似任務自動啟用）、Review（記錄學到什麼）。
 
-1.  建立任務卡與風險分級（低/中/高）。
+## 4. 風險分級
+| 風險 | 定義 | Human 動作 |
+|---|---|---|
+| 低 | 只讀、整理、摘要、產出草稿 | 可直接執行，完成後抽查 |
+| 中 | 會新增檔案、修改非核心文件 | 先看 Plan，再允許執行 |
+| 高 | 會刪除、覆蓋、批量修改或影響正式資料 | 必須人工批准，必要時先備份 |
 
-2.  請 Hermes 產出 Plan，人工檢查讀寫與權限。
+## 5. Review 檢查清單
+- 任務是否完成原始目標？
+- 是否有未說明的改動？
+- 是否有錯誤、遺漏或幻覺？
+- 是否有資料來源與依據？
+- 是否產生可重複流程？
+- 是否需要升級為 SOP 或 Skill Candidate？
+- 是否需要人工補充決策？
 
-3.  交給 OpenClaw 執行並產出 Execution Report。
+## 6. 輸出格式
+**任務卡**：任務名稱／背景／目標／輸入資料／限制／成功標準／風險等級。
+**Human Review**：完成度／問題／是否返工／是否沉澱／建議下一步。
+**Skill Candidate 建議**：候選名稱／觸發條件／可複用流程／必要輸入／品質標準。
 
-4.  Human Review 驗收與沉澱 SOP / Skill Candidate。
+## 7. 品質標準
+- Human 不應只按執行，要先確認 Plan。
+- 高風險任務必須分批或備份。
+- Review 必須檢查過程與結果。
+- 可複用流程要沉澱，不要只停留在單次任務。
+- 不確定處要標記待確認。
+
+## 8. 啟用提示詞
+```text
+請啟用「雙 Agent 協作 Human 操作 SOP」。
+
+任務：
+【描述我要交給 Hermes / OpenClaw 的任務】
+
+要求：
+1. 幫我建立任務卡。
+2. 指出 Human 需要確認的風險與限制。
+3. 設計 Hermes Plan、OpenClaw Execution Report 與 Human Review 格式。
+4. 判斷完成後是否適合沉澱為 SOP 或 Skill Candidate。
+```
+
+## 完成條件
+每輪循環都有任務卡、執行紀錄、審核結果與是否沉澱成 Skill 的明確結論。
 
 ---
 
@@ -71,3 +121,7 @@ description: 雙 Agent 協作 Human 操作 SOP｜Hermes × OpenClaw × Obsidian�
 ## 來源追蹤
 
 此技能由 `docs/sources/Skills_Full_Configurations_Backup_20260818.md` 的第 5 項正規化而來（原始行號 115–140）。來源內容已補上本 repository 的輸入、輸出、權限、安全與停止契約。
+
+## Notion 同步紀錄
+
+本技能的指令本文同步自 Notion「Skill 頁面整理庫」頁面 https://app.notion.com/p/f6febb8ac86a83afb7c301c97ed46694（Notion 版本 v0.1，最後編輯 2026-08-25T08:35:50Z）。上方內容以 Notion 為準；標準執行契約為本 repository 的安全治理補充，同步時不會被覆蓋。

@@ -1,6 +1,6 @@
 # Skills 推薦索引與排序
 
-> 本索引依 GitHub `main` 的 `b2feb2d` commit 產生，資料來源為 `docs/evaluations/github-skills-test-results.json`。它是技能選擇的治理與安全輔助，不是專業品質、成功率或投資報酬率保證。
+> 本索引依 GitHub `main` 的 `bbd1dd5` commit 產生，資料來源為 `docs/evaluations/github-skills-test-results.json`。它是技能選擇的治理與安全輔助，不是專業品質、成功率或投資報酬率保證。
 
 ## 使用方式
 
@@ -11,15 +11,15 @@
 | 分級 | 數量 | 判定 |
 |---|---:|---|
 | A｜優先推薦 | 21 | 測試通過、low risk、無 connector、無外部寫入。 |
-| A-｜條件優先推薦 | 32 | 測試通過、通常無外部寫入，但為 medium risk；需人工覆核。 |
-| B｜條件推薦 | 72 | 測試通過但有 high risk、connector 或外部寫入邊界。 |
+| A-｜條件優先推薦 | 34 | 測試通過、通常無外部寫入，但為 medium risk；需人工覆核。 |
+| B｜條件推薦 | 80 | 測試通過但有 high risk、connector 或外部寫入邊界。 |
 | C｜暫不推薦 | 0 | 測試失敗或無法安全驗證；本次為 0。 |
 
 | 維度 | 統計 |
 |---|---:|
-| 技能總數 | 125 |
-| 測試通過 | 125/125 |
-| 風險分布 | low 23；medium 36；high 66 |
+| 技能總數 | 135 |
+| 測試通過 | 135/135 |
+| 風險分布 | low 23；medium 38；high 74 |
 | 外部操作 | 0 次；所有 instruction-only 技能只做唯讀 dry-run |
 
 ## 完整排名
@@ -90,196 +90,216 @@
   描述：決策諮詢 Skill（顧問級提問與方案比較），把重大選擇拆成方案矩陣：條件釐清、成本效益、風險、逆轉成本與建議。
 | 32 | `decision-making-superpowers` | Decision Making Superpowers | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：obra/superpowers 決策類 skill，協助把模糊問題、選項與權衡條件整理成可判斷、可比較、可執行的決策流程。
-| 33 | `designing-pricing-systems` | Designing Pricing Systems | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 33 | `decision-tree-requirement-stress-test` | 需求壓力測試｜Decision Tree 訪談 | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+  描述：將計畫、設計或決策展開成 Decision Tree，每輪只詢問目前可回答的 Frontier，並為每題附建議答案。
+| 34 | `designing-pricing-systems` | Designing Pricing Systems | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Design pricing strategy, quotation logic, sales conversion flows, repurchase systems, CRM follow-up, discounts, trials, referrals, and social proof for products and services.
-| 34 | `interactive-skill-learning-curriculum` | interactive-skill-learning-curriculum | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 35 | `handoff` | Handoff｜工作階段交接 | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+  描述：把需要跨 Agent、工作區、同事或支線任務移動的 Context 壓縮成可接手文件；一般階段轉換不濫用 Handoff。
+| 36 | `interactive-skill-learning-curriculum` | interactive-skill-learning-curriculum | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Research optimal learning methods for any target skill and design an interactive curriculum with videos, podcasts, reading materials, and checkable milestones. Use when the user asks to teach a skill, create a learning roadmap, or build an interactive course curriculum.
-| 35 | `logotype-design-logic-practice` | Logotype Design Logic Practice | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 37 | `logotype-design-logic-practice` | Logotype Design Logic Practice | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：標準字設計：從生活創意到邏輯實踐，拆成識別性、造型性、系統性三原則，提供 Brief、檢核表與規範。
-| 36 | `marketing-brief-competitor-analyst` | Marketing Brief Competitor Analyst | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 38 | `marketing-brief-competitor-analyst` | Marketing Brief Competitor Analyst | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Analyze marketing briefs, research real-time market competitors, and deliver strategic brand messaging positioning recommendations. Use when the user asks to analyze marketing briefs, research competitors, or refine brand positioning.
-| 37 | `mcp_builder` | MCP Builder | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 39 | `mcp_builder` | MCP Builder | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Guide MCP server setup, Warp integration, and validation steps for new tools or services.
-| 38 | `merchant-info-verification` | Merchant Info Verification | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 40 | `merchant-info-verification` | Merchant Info Verification | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：店家官網與社群資料查核 Skill，批次查核店家官網、地址、Google Maps 與官方 Instagram 等公開資料。
-| 39 | `moosie-ai-startup-brand-assets` | Moosie Ai Startup Brand Assets | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 41 | `moosie-ai-startup-brand-assets` | Moosie Ai Startup Brand Assets | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Moosie Education AI 新創申請與品牌資產整理，包含英文官網、LinkedIn、Pitch deck 與對外品牌敘事。
-| 40 | `multi-agent-research-workflow` | multi-agent-research-workflow | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 42 | `multi-agent-research-workflow` | multi-agent-research-workflow | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：An advanced multi-agent research workflow inspired by Claude Research architecture, enhanced with Full Sprint engineering controls. Use when conducting deep multi-perspective research, executing parallel subagent investigation tasks, or synthesizing research into actionable software engineering sprint contracts.
-| 41 | `mvp-validation-iteration` | Mvp Validation Iteration | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 43 | `mvp-validation-iteration` | Mvp Validation Iteration | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：產品 MVP 驗證與迭代 Skill，用需求四象限、MVP、假廣告、預購、用戶訪談與放棄率分析驗證產品。
-| 42 | `pricing-strategy-conversion-system` | Pricing Strategy Conversion System | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 44 | `pricing-strategy-conversion-system` | Pricing Strategy Conversion System | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：定價策略與成交系統 Skill，設計價格、報價情境、成交流程與回購系統。
-| 43 | `product-idea-scoring-matrix` | product-idea-scoring-matrix | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 45 | `product-idea-scoring-matrix` | product-idea-scoring-matrix | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Generate 100 product or SaaS ideas based on skills/interests and score each across market demand, execution difficulty, differentiation, startup cost, and time-to-first-revenue. Use when the user asks for 100 product ideas, SaaS ideation, or startup idea scoring matrix.
-| 44 | `product-revenue-growth-tracker` | Product Revenue Growth Tracker | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 46 | `product-revenue-growth-tracker` | Product Revenue Growth Tracker | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Calculate revenue growth rates across product lines, build dynamic spreadsheets, and generate trend charts. Use when the user asks to compute revenue growth rates or plot product line revenue trends.
-| 45 | `real-estate-market-modeler` | Real Estate Market Modeler | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 47 | `real-estate-market-modeler` | Real Estate Market Modeler | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Analyze real estate transactions, research local market trends and forecasts, and build a financial valuation/modeling Google Sheet. Use when the user asks to evaluate real estate deals, research nearby property trends, or build real estate valuation spreadsheets.
-| 46 | `renovation-expense-tracker` | Renovation Expense Tracker | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 48 | `renovation-expense-tracker` | Renovation Expense Tracker | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Process renovation receipts, categorize contractor engineering items and costs, and generate an expense tracking Google Sheet. Use when the user asks to organize renovation receipts or build a renovation project cost tracking spreadsheet.
-| 47 | `research-lab` | research-lab — AI 研究實驗室 | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 49 | `research-lab` | research-lab — AI 研究實驗室 | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Break complex research, investigation, market analysis, product analysis, competitor analysis, technical trend research, business model analysis, growth strategy, SEO/GEO, education, AI, or tutoring topics into verifiable breadth scans, depth dives, cross-validation, and decision-ready reports.
-| 48 | `research-to-insight` | Research To Insight | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 50 | `research-to-insight` | Research To Insight | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Research-to-Insight 多來源研究轉洞察技能包，把文章、PDF、網頁、簡報等轉成 10 種結構化成果。
-| 49 | `seo-geo-growth-ops` | SEO／GEO 成長作業 Skill｜基於 seo-geo-claude-skills | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 51 | `seo-geo-growth-ops` | SEO／GEO 成長作業 Skill｜基於 seo-geo-claude-skills | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：SEO／GEO 成長作業 Skill，把網站內容、品牌頁、FAQ、Schema 與第三方驗證整理成能同時提升搜尋排名與 AI 引用機率的成長工作流；缺少頁面內容時標示為未檢查，不編造評價或數據。
-| 50 | `single-source-of-truth-knowledgebase` | Single Source Of Truth Knowledgebase | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 52 | `single-source-of-truth-knowledgebase` | Single Source Of Truth Knowledgebase | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：知識庫建置與單一真相源 Skill，將散落資訊收斂成可被 Agent 取用的單一真相源（Single Source of Truth）。
-| 51 | `skill-router` | Skill Router｜任務分流與 Skill 選擇 | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 53 | `skill-router` | Skill Router｜任務分流與 Skill 選擇 | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Skill Router 任務分流與 Skill 選擇，判斷任務階段與意圖並選出一個主要 Skill；Router 只分流，不取代專業 Skill 執行，也不自行補造專業結論。
-| 52 | `social-content-batch-production` | Social Content Batch Production | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 54 | `social-content-batch-production` | Social Content Batch Production | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：社群經營內容量產 Skill，從既有素材拆解產出一週社群貼文排程，包含平台改寫、標題鉤子與圖文建議。
-| 53 | `startup-venture-builder` | Startup Venture Builder | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 55 | `startup-venture-builder` | Startup Venture Builder | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Startup Venture Builder for opportunity discovery, market validation, MVP roadmap, business modeling, sales system, and investor stress testing. Use when the user asks for startup idea validation, business model design, MVP roadmap, landing page copy, or startup stress testing.
-| 54 | `threads-viral-consultant` | Threads Viral Consultant | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 56 | `threads-viral-consultant` | Threads Viral Consultant | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Threads content strategy and conversion consultant. Use when the user asks to create Threads posts, optimize Threads profile bio, design Threads content funnel, analyze viral Threads posts, or build Threads DM conversion scripts.
-| 55 | `veo-short-video-prompt-engineer` | veo-short-video-prompt-engineer | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 57 | `veo-short-video-prompt-engineer` | veo-short-video-prompt-engineer | `instruction_only` | medium | 92.00 | A-｜條件優先推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Google Veo 3.1 電影級影音提示詞工程與生成式導演 Skill。支援 T2V、I2V/R2V 主體錨定、首尾插值、原生音訊 2.0、多鏡頭敘事與 JSON 工業級提示詞。適用於撰寫 Veo 3/3.1 提示詞、短影音腳本、分鏡指令、電影級運鏡與光影設定。
-| 56 | `notion-smart-doc-role-adapter` | Notion Smart Doc Role Adapter | `instruction_only` | medium | 90.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
+| 58 | `notion-smart-doc-role-adapter` | Notion Smart Doc Role Adapter | `instruction_only` | medium | 90.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
   描述：智能文件角色適應器，根據 Notion 文件類型、內容成熟度與意圖，切換編輯、顧問、SOP 設計師等角色。
-| 57 | `website-custom-optimizer` | Website Custom Optimizer | `instruction_only` | medium | 90.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
+| 59 | `website-custom-optimizer` | Website Custom Optimizer | `instruction_only` | medium | 90.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
   描述：Diagnose and optimize websites, landing pages, product pages, service pages, enrollment pages, internal portals, and knowledge bases for clarity, trust, SEO, UX, CRO, mobile experience, performance, accessibility, launch readiness, and execution planning.
-| 58 | `youtube-transcript-summarizer` | youtube-transcript-summarizer | `instruction_only` | medium | 90.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
+| 60 | `youtube-transcript-summarizer` | youtube-transcript-summarizer | `instruction_only` | medium | 90.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
   描述：Summarize YouTube video transcripts into structured, easily readable notes with key points, Q&A format for interviews, action items, conclusions, and key quotes. Use when the user asks to summarize a YouTube video transcript, process transcript text into notes, or extract structured summaries from YouTube transcripts.
-| 59 | `pdf-study-guide-generator` | Pdf Study Guide Generator | `instruction_only` | medium | 87.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | True | PASS |
+| 61 | `pdf-study-guide-generator` | Pdf Study Guide Generator | `instruction_only` | medium | 87.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | True | PASS |
   描述：Transform class notes into a comprehensive structured study guide, generate 5 practice questions, and compile them into a PDF. Use when the user asks to summarize notes into a PDF study guide with practice questions.
-| 60 | `agent-cyber-bully-lecturer` | agent-cyber-bully-lecturer | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 62 | `agent-cyber-bully-lecturer` | agent-cyber-bully-lecturer | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Provide cybersecurity education, threat analysis, and defense recommendations in the persona of 'Cyber Frenchie Principal' (法鬥校長), using humorous canine analogies and security verification hierarchies. Use when the user asks for cybersecurity advice, phishing prevention, OWASP vulnerabilities, or security sniff logs.
-| 61 | `agent-senior-prd-architect-sophia` | agent-senior-prd-architect-sophia | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 63 | `agent-senior-prd-architect-sophia` | agent-senior-prd-architect-sophia | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Draft comprehensive, rigorous Product Requirement Documents (PRD), Mermaid system logic flows, and QA/edge case checklists in the persona of Senior PRD Architect Sophia Lin (林婷婷). Use when the user asks to write PRDs, define product requirements, map system logic flows, or outline QA checklists for software features.
-| 62 | `agent-skills-actions-auditor` | agent-skills-actions-auditor | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 64 | `agent-skills-actions-auditor` | agent-skills-actions-auditor | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Audit agent skills and actions, identify optimization opportunities, fix syntax or parameter issues, and refine prompt instructions. Use when the user asks to audit Codex/agent skills, optimize agent actions, or refine skill instructions.
-| 63 | `ai-content-monetization-side-hustle` | Ai Content Monetization Side Hustle | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 65 | `ai-content-monetization-side-hustle` | Ai Content Monetization Side Hustle | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：AI 自媒體斜槓變現 Skill，用 AI 完成市場研究、個人定位、內容轉化、產品階梯與自動化成交設計。
-| 64 | `ai-security-agent-governance` | Ai Security Agent Governance | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 66 | `ai-security-agent-governance` | Ai Security Agent Governance | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：AI 資安與 Agent 治理 Skill，檢查 AI Agent、自動化流程與企業平台的身份、權限、Shadow AI、資料外洩與煞車系統。
-| 65 | `ai-virtual-board-supervisor-agent` | Ai Virtual Board Supervisor Agent | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 67 | `ai-virtual-board-supervisor-agent` | Ai Virtual Board Supervisor Agent | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：AI 虛擬董事會 Supervisor Agent Skill，調度 CFO、CHRO、COO、CPRO、CSO，彙整跨職能建議並保留人工決策節點。
-| 66 | `app-performance-benchmark-optimizer` | app-performance-benchmark-optimizer | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 68 | `app-performance-benchmark-optimizer` | app-performance-benchmark-optimizer | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Establish app performance benchmarks, identify latency or memory bottlenecks, and execute measurable code optimizations with before/after reports. Use when the user asks to optimize app performance, profile latency, or fix performance bottlenecks.
-| 67 | `biblical-exegesis-theology-check` | 聖經釋義與神學查核 Skill｜經文脈絡、主張與應用 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 69 | `biblical-exegesis-theology-check` | 聖經釋義與神學查核 Skill｜經文脈絡、主張與應用 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：聖經釋義與神學查核 Skill，內容引用經文、提出神學主張或把經文應用到心理、健康、職場與牧養議題時，檢查文學／歷史／正典脈絡、詮釋層級與爭議點，輸出可發布的修正版主張與人工覆核事項；不取代牧者、神學教師或宗派立場。
-| 68 | `business-model-canvas-diagnosis` | Business Model Canvas Diagnosis | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 70 | `business-model-canvas-diagnosis` | Business Model Canvas Diagnosis | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：商業模式九宮格診斷 Skill，用九宮格診斷價值主張、客群、通路、活動、資源、成本與收益並找出斷點。
-| 69 | `cfo-finance-analysis-agent` | CFO 財務分析 Agent Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 71 | `cfo-finance-analysis-agent` | CFO 財務分析 Agent Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：CFO 財務分析 Agent Skill，將補習班財務訊號轉成可驗證的現金流、預算、ROI、定價與風險建議；任何金額結論必須人工覆核。
-| 70 | `chro-talent-faculty-agent` | CHRO 人才與師資 Agent Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 72 | `chro-talent-faculty-agent` | CHRO 人才與師資 Agent Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：CHRO 人才與師資 Agent Skill，將補習班的師資、排班、培訓與倫理事件轉成可行的人力決策建議；薪酬與聘用承諾必須人工覆核。
-| 71 | `client-filtering-brand-positioning` | Client Filtering Brand Positioning | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 73 | `client-filtering-brand-positioning` | Client Filtering Brand Positioning | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：客戶篩選與品牌定位 Skill，依市場規模、品牌定位與期待管理判斷該服務誰、不服務誰與如何有限客製化。
-| 72 | `coo-operations-efficiency-agent` | COO 營運效能 Agent Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 74 | `conversation-to-spec` | Conversation to Spec｜對話轉可執行規格 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+  描述：把目前對話與已確認決策整理成規格，不重新訪談、不引入未討論需求，並明列驗收條件與範圍外項目。
+| 75 | `coo-operations-efficiency-agent` | COO 營運效能 Agent Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：COO 營運效能 Agent Skill，將補習班營運訊號轉成問題定義、根因分析、資源調度、SOP 改善與實驗驗證方案。
-| 73 | `cpro-brand-communication-agent` | CPRO 品牌傳播 Agent Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 76 | `cpro-brand-communication-agent` | CPRO 品牌傳播 Agent Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：CPRO 品牌傳播 Agent Skill，將品牌、社群、口碑、家長溝通與對外訊息轉成分眾、可信、合規且可執行的傳播方案；對外稿件需人工審稿。
-| 74 | `creative-growth-tactics` | 創意成長戰術推薦 Skill｜60+ 非常規點子庫 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 77 | `creative-growth-tactics` | 創意成長戰術推薦 Skill｜60+ 非常規點子庫 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：創意成長戰術推薦 Skill，輸入產品／客群、當前目標與限制後，從 60+ 非常規成長戰術庫（Tom Orbach，七大目標）選出 2–3 個最適點子，改寫成該產品的具體做法與第一步草稿；對外內容與金額承諾須人工覆核。
-| 75 | `cso-sales-conversion-agent` | CSO 銷售轉化 Agent Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 78 | `cso-sales-conversion-agent` | CSO 銷售轉化 Agent Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：CSO 銷售轉化 Agent Skill，將招生、試聽、續班與名單分級訊號轉成客戶旅程、異議處理、促案與追蹤計畫；報價與折扣必須人工審核。
-| 76 | `customer-service-email-routing` | Customer Service Email Routing | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 79 | `customer-service-email-routing` | Customer Service Email Routing | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：信件與客服分流回覆 Skill，收信分類、依知識庫產出草稿並進行風險分級與人審放行。
-| 77 | `design-proposal-portfolio-persuasion` | Design Proposal Portfolio Persuasion | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 80 | `design-proposal-portfolio-persuasion` | Design Proposal Portfolio Persuasion | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：設計提案與作品集說服力 Skill，將設計專案整理成有脈絡的提案與作品集，並用十個設計心法檢查品質。
-| 78 | `emil-design-eng` | emil-design-eng | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 81 | `emil-design-eng` | emil-design-eng | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great. Use when designing, building, or reviewing UI components, animations, transitions, or web interfaces.
-| 79 | `enterprise-sovereign-ai-adoption` | Enterprise Sovereign Ai Adoption | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 82 | `enterprise-sovereign-ai-adoption` | Enterprise Sovereign Ai Adoption | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：企業主權 AI 平台導入 Skill，評估 AI 任務應採雲端、受控或私有部署，設計資料、權限、稽核與 MVP 路線圖。
-| 80 | `faith-science-integration` | 信仰 × 科學跨域整合 Skill v1.1｜證據、釋經與牧養安全 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 83 | `faith-science-integration` | 信仰 × 科學跨域整合 Skill v1.1｜證據、釋經與牧養安全 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：信仰 × 科學跨域整合 Skill v1.1，將聖經／神學與心理學、哲學、健康、AI 或社會科學整合成文章、講道或教材時，建立逐句主張台帳並檢查證據強度、經文處境、類別錯置與牧養安全；對外發布前由人覆核。
-| 81 | `full-sprint-execution` | full-sprint-execution | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 84 | `full-sprint-execution` | full-sprint-execution | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：軟體工程 Full Sprint 安全執行與交付 Skill。當使用者需要在限制範疇、測試保護與 Sprint 契約下進行多檔案開發或重構時使用。
-| 82 | `game-inspiration-world-builder` | game-inspiration-world-builder | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 85 | `game-inspiration-world-builder` | game-inspiration-world-builder | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Generate 3D world inspiration concepts and autonomously build matching game code and assets. Use when the user asks to generate 3D world concepts, design game worlds, or build a game matching visual inspiration images.
-| 83 | `high-energy-daily-routine-designer` | high-energy-daily-routine-designer | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 86 | `hermes-agent-handbook` | Hermes Agent 專屬手冊｜架構、職責、規範與模板 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+  描述：Hermes Agent 的角色、職責邊界、Plan／Review／Skill Candidate 模板與規範（深層參考，不獨立執行任務）。
+| 87 | `high-energy-daily-routine-designer` | high-energy-daily-routine-designer | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Audit personal lifestyle and design an optimized daily routine for high energy covering sleep, nutrition, exercise, social, creative, and career growth. Use when the user asks for life audit, daily routine design, or energy optimization plan.
-| 84 | `instagram-growth-viral-content-engine` | Instagram 成長策略與病毒內容引擎 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 88 | `instagram-growth-viral-content-engine` | Instagram 成長策略與病毒內容引擎 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Instagram 成長策略與病毒內容引擎，從帳號定位、Bio、五大內容支柱、演算法友善週排程、停止滑動鉤子到 Reel 點子庫的可重複使用 IG 成長系統；涉及兒少影像需先取得監護人授權。
-| 85 | `life-scenario-simulation-matrix` | life-scenario-simulation-matrix | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 89 | `life-scenario-simulation-matrix` | life-scenario-simulation-matrix | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Conduct a 50-question life audit and simulate 30-year life trajectories across career, health, exercise, and relationship variables into structured matrices. Use when the user asks for a 50-question life survey or 30-year life scenario simulation.
-| 86 | `llm-jailbreak-defense-prompt-security` | LLM 越獄防禦與 Prompt 安全 Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 90 | `llm-jailbreak-defense-prompt-security` | LLM 越獄防禦與 Prompt 安全 Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：LLM 越獄防禦與 Prompt 安全 Skill，從防禦與測試角度檢查 LLM Prompt、Agent 指令與 RAG 流程的越獄、注入、角色操縱、編碼混淆與語意歧義風險；不提供攻擊實作細節。
-| 87 | `lovable_github_cloudflare_worker` | Lovable GitHub Cloudflare Worker | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 91 | `lovable_github_cloudflare_worker` | Lovable GitHub Cloudflare Worker | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Stabilize a Lovable-generated project into a GitHub-managed and Cloudflare Worker-ready delivery pipeline.
-| 88 | `managing-public-relations` | Managing Public Relations | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 92 | `managing-public-relations` | Managing Public Relations | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Build public relations strategy, brand messaging, stakeholder communication, PESO media strategy, media interview preparation, and crisis response plans.
-| 89 | `mimo-hermes-openclaw-diagnosis` | Mimo Hermes Openclaw Diagnosis | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 93 | `meeting-followup-workflow` | Meeting Follow-up Workflow｜會議後續自動化 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+  描述：把會議紀錄轉成決策、待辦、負責人、截止日與 follow-up 訊息；負責人與期限不明時標「待確認」而不猜測。
+| 94 | `mimo-hermes-openclaw-diagnosis` | Mimo Hermes Openclaw Diagnosis | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：協助設定與排錯 Xiaomi MiMo、Hermes Agent、OpenClaw 的模型連線，確認 API Key 類型、Base URL、provider 名稱與模型名稱。
-| 90 | `monocolor-editorial-print` | 單色／雙色印刷編輯風視覺生成 Skill｜Monocolor Editorial Print | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 95 | `monocolor-editorial-print` | 單色／雙色印刷編輯風視覺生成 Skill｜Monocolor Editorial Print | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：單色／雙色印刷編輯風視覺生成 Skill，將主題、文案或照片轉成 1 色或受控 2 色的印刷編輯風海報、封面、明信片與社群視覺；先鎖定配方再編譯英文 production prompt，並以七項視覺規則自檢；不處理全彩攝影、3D 或漸層；對外發布前人工覆核。
-| 91 | `moosie-niche-demolisher` | Moosie Niche Demolisher | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 96 | `moosie-niche-demolisher` | Moosie Niche Demolisher | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：【Research Skill】Moosie｜Category-of-One Niche Demolisher，找出高需求、低競爭的 Instagram 補教品牌子定位。
-| 92 | `naval-backstage-simulator` | naval-backstage-simulator | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 97 | `naval-backstage-simulator` | naval-backstage-simulator | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Simulate a multi-expert backstage debate synthesized through Naval Ravikant's mental models (leverage, specific knowledge, compounding, judgment) to produce concise, high-leverage, plain-text aphorisms and execution logic (ESSENCE_DISTILLATION.txt). Use when the user asks for Naval Ravikant style decision framework, multi-expert debate distillation, or plain-text high-leverage advice.
-| 93 | `negotiation-strategy-script` | Negotiation Strategy Script | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 98 | `negotiation-strategy-script` | Negotiation Strategy Script | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：談判準備與出牌策略 Skill，用談判八問、議題組合、出牌策略、回應劇本與 BATNA 完成談判前準備。
-| 94 | `open-slide` | open-slide | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 99 | `open-slide` | open-slide | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Create, draft, edit, and manage web-native React presentations using the open-slide framework. Use when the user requests creating slides, building presentation decks with React/open-slide, editing slide components, or exporting open-slide presentations.
-| 95 | `opus-5-skill-calibration-standards` | Opus 5 Skill Calibration Standards | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 100 | `open-slide-presentation` | 簡報製作 skill｜open-slide 設計參考・可編輯簡報・逐頁驗收 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+  描述：候選／待驗證：把已確認的主題與來源做成可審閱、可編輯的簡報；先查核再設計，逐頁實際檢視後才算驗收，分享與花費另行核准。
+| 101 | `opus-5-skill-calibration-standards` | Opus 5 Skill Calibration Standards | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Opus 5 世代 Skill 校準準則，作為整座 Skill 庫全面體檢、減法優化與約束補強的標準。
-| 96 | `parent-communication-trust-building` | Parent Communication Trust Building | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 102 | `parent-communication-trust-building` | Parent Communication Trust Building | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：家長訊息回覆與信任建立 Skill（Moosie 老師版），產出四段結構（同理、具體觀察、做法、下一步）的 LINE 回覆草稿。
-| 97 | `pastoral-content-ethics-privacy` | 牧養內容倫理與隱私安全 Skill｜同意、去識別與人審 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 103 | `pastoral-content-ethics-privacy` | 牧養內容倫理與隱私安全 Skill｜同意、去識別與人審 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：牧養內容倫理與隱私安全 Skill，內容涉及小組員、學員、家長、未成年人、見證、代禱、輔導或心理健康資料而要交給 AI 整理或對外轉製時，判定敏感度、確認同意範圍與受眾界線，產出去識別版本、禁止事項與人工升級路徑；危機情境停止內容加工。
-| 98 | `personal-brand-sponsorship` | Personal Brand Sponsorship | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 104 | `personal-brand-sponsorship` | Personal Brand Sponsorship | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：個人品牌與廠商合作 Skill，協助創作者建立個人品牌定位、內容策略、廠商邀約判斷、合約檢查與業配文案。
-| 99 | `personal-voice-modeling-style-guard` | 個人聲音建模與風格守門 Skill｜保留作者辨識度 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 105 | `personal-voice-modeling-style-guard` | 個人聲音建模與風格守門 Skill｜保留作者辨識度 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：個人聲音建模與風格守門 Skill，從作者代表範文萃取可追溯的 Voice Card，據此改寫或審稿，同時保護作者的事實、立場與台灣語感；不替作者補寫經歷或觀點，對外發布前由作者本人覆核。
-| 100 | `pr-brand-crisis-management` | Pr Brand Crisis Management | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 106 | `pr-brand-crisis-management` | Pr Brand Crisis Management | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：公關品牌與危機處理 Skill，設計公關策略、品牌核心訊息、PESO 媒體組合、利益關係人管理與危機處理 SOP。
-| 101 | `product-launch-gate-checklist` | Product Launch Gate Checklist | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 107 | `primary-research` | Primary Research｜第一方來源研究 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+  描述：針對明確研究問題優先查閱官方文件、原始碼、規格與第一方資料，區分來源明說、推論、建議與待確認。
+| 108 | `product-launch-gate-checklist` | Product Launch Gate Checklist | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：產品上線關卡檢查 Skill｜八階段 Exit Criteria，核對 Phase 0-7 上線關卡條件，判定 Go/No-Go。
-| 102 | `reconcile` | Reconcile | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 109 | `reconcile` | Reconcile | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：處理財務、帳務或資料對帳（Reconciliation）的技能，協助核對資料差異、產出對帳報告與差異分析。
-| 103 | `rumor-buster` | Rumor Buster | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 110 | `remaining-quota-task-selection` | 剩餘額度任務選擇｜Codex 額度重置前套利框架 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+  描述：額度即將重置時，把候選任務分為元最佳化／可驗證工程／整理（加閘門）／娛樂生成四級，搭配安全閘門與通用 Prompt 公式挑選值得跑的長任務。
+| 111 | `rumor-buster` | Rumor Buster | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：根據 Allport & Postman 謠言心理學框架，系統性分析謠言與未經證實訊息的形成背景、傳播動機、失真機制（平化、銳化、同化），並產出結構化查證與破解應對策略。適用於假新聞、網路謠言、陰謀論分析與危機溝通。
-| 104 | `skill-iteration-quality-engineering` | Skill 迭代工程與品質驗證 Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 112 | `short-video-production` | 短影音製作 skill｜腳本查核・配音・Flow・字幕剪輯 | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+  描述：候選／待驗證：把主題做成可審閱的直式短影音，先查核腳本再花配音與生成點數，逐階段報價核准，最後交付影片、字幕與驗收紀錄，不自動發布。
+| 113 | `skill-iteration-quality-engineering` | Skill 迭代工程與品質驗證 Skill | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Skill 迭代工程與品質驗證 Skill，終結 Prompt 輪迴，將 Skill 建立與修改流程工程化：食譜式目標、執行鏈路追蹤、可診斷錯誤訊息、健康檢查、0/1 測試與版本保存。
-| 105 | `social-data-retrospective-private-domain` | Social Data Retrospective Private Domain | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 114 | `social-data-retrospective-private-domain` | Social Data Retrospective Private Domain | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：社群數據覆盤與私域經營 Skill，建立社群內容週期、IG/FB 數據覆盤、電子報與公域轉私域導流。
-| 106 | `startup-cashflow-pnl-planning` | Startup Cashflow Pnl Planning | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 115 | `startup-cashflow-pnl-planning` | Startup Cashflow Pnl Planning | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：創業現金流與損益表規劃 Skill，建立個人、副業與創業損益表，拆解業績目標、情境與悲觀現金流底線。
-| 107 | `system-file-audit-organizer` | system-file-audit-organizer | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 116 | `system-file-audit-organizer` | system-file-audit-organizer | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Audit system files and directories, execute obvious file organization tasks, and generate user-confirmation proposals for major changes. Use when the user asks to audit computer files, clean up downloads/desktop, or organize system folders.
-| 108 | `ui-minimalist-animation-enhancer` | ui-minimalist-animation-enhancer | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 117 | `ui-minimalist-animation-enhancer` | ui-minimalist-animation-enhancer | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Refine web/app UI for minimalism, improve information hierarchy, and add fluid entrance and exit animations. Use when the user asks to improve UI, add entrance/exit animations, simplify layout, or make interface aesthetic and clean.
-| 109 | `video-editing-preproduction-script-cuts` | Video Editing Preproduction Script Cuts | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 118 | `video-editing-preproduction-script-cuts` | Video Editing Preproduction Script Cuts | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：影片剪輯前製與腳本切點 Skill，從帶時間碼逐字稿產出保留/刪除區段、章節、標題與短影音選段。
-| 110 | `warp-ai-multi-agent` | Warp Ai Multi Agent | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 119 | `warp-ai-multi-agent` | Warp Ai Multi Agent | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Warp AI Multi-Agent War Room Launch Configuration. Use when the user asks to configure Warp terminal launch configurations, set up multi-pane CLI agent layouts, or troubleshoot Warp terminal AI agent workflows.
-| 111 | `website-auditing` | website-auditing | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 120 | `website-auditing` | website-auditing | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：網站與 SEO 綜合稽核 Skill。當使用者需要對網站進行技術 SEO、載入速度、行動版體驗或內容品質稽核時使用。
-| 112 | `weekly-podcast-script` | weekly-podcast-script | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 121 | `weekly-podcast-script` | weekly-podcast-script | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Write, refine, and optimize weekly podcast scripts in the persona of Podcast Host Big E (大E) with natural Taiwanese spoken phrasing. Use when the user asks to generate a weekly podcast script, transform raw notes or transcripts into a podcast episode, or draft a weekly podcast script.
-| 113 | `workspace-project-cleanup-agent` | workspace-project-cleanup-agent | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 122 | `workspace-project-cleanup-agent` | workspace-project-cleanup-agent | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：Audit workspace projects, identify abandoned or duplicate work, and safely execute cleanup on git-tracked branches. Use when the user asks to clean up workspace, find abandoned or duplicate projects, or organize codebase projects.
-| 114 | `youtube-learning-summary-exporter` | Youtube Learning Summary Exporter | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
+| 123 | `youtube-learning-summary-exporter` | Youtube Learning Summary Exporter | `instruction_only` | high | 82.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | False | PASS |
   描述：批量抓取指定 YouTube 頻道最新影片逐字稿，轉換為結構化速讀摘要、問答解析與行動建議，並自動匯出至 Google Drive 資料夾。當使用者要求整理 YT 頻道最新影片、製作影片學習筆記、產出逐字稿精華或匯出自學筆記至 Drive 時使用。
-| 115 | `ai-agent-scenario-tool-selection` | AI Agent 場景盤點與工具選型 Skill | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
+| 124 | `ai-agent-scenario-tool-selection` | AI Agent 場景盤點與工具選型 Skill | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
   描述：AI Agent 場景盤點與工具選型 Skill，盤點工作與生活場景，判斷該用 ChatGPT、Notion AI、Manus、N8N、Claude Code、Codex 或人工流程，避免追工具潮流。
-| 116 | `cloudflare-skills` | cloudflare-skills | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
+| 125 | `cloudflare-skills` | cloudflare-skills | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
   描述：Cloudflare 微服務、Workers/Pages 部署與 DNS 設定診斷 Skill。當使用者需要管理、部署或排錯 Cloudflare 服務與網域設定時使用。
-| 117 | `google-ads-audit` | google-ads-audit | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
+| 126 | `google-ads-audit` | google-ads-audit | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
   描述：Google Ads 廣告帳戶與成效審查/稽核 Skill。當使用者需要審查 Google Ads 帳戶架構、關鍵字策略、成效指標 (CPA/ROAS) 或優化廣告文案時使用。
-| 118 | `notion-ai-workflow-design` | Notion Ai Workflow Design | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
+| 127 | `hermes-openclaw-pi-collaboration` | Hermes × OpenClaw × Pi × Obsidian｜本機三 Agent 協作架構與 SOP | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
+  描述：以 Hermes 規劃與驗收、OpenClaw 負責渠道排程與跨服務執行、Pi 負責程式庫內開發、Human 最終負責的本機三 Agent 協作架構，含任務契約、路由、安全閘門與知識沉澱。
+| 128 | `notion-ai-workflow-design` | Notion Ai Workflow Design | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
   描述：協助判斷工作流程應沉澱成文件、Skill、資料庫自動化、N8N 或 AI Agent，並設計 Notion AI 工作流。
-| 119 | `optimizing-google-ads` | Google Ads AI Copilot | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
+| 129 | `optimizing-google-ads` | Google Ads AI Copilot | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
   描述：Analyze Google Ads performance and produce read-only health reports, search term audits, negative keyword suggestions, RSA copy ideas, budget pacing, action queues, and n8n/Notion/MCP integration plans with human approval required before write or spend-impacting operations.
-| 120 | `threads-api-skill` | threads-api-skill | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
+| 130 | `threads-api-skill` | threads-api-skill | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
   描述：Comprehensive assistance with Meta's Threads API development for building applications that integrate with Meta's Threads social platform, including OAuth authentication, text/media/carousel posting, profile data retrieval, analytics insights, and webhook processing. Use when the user asks to integrate with Threads API, post to Threads, fetch Threads metrics, or set up Threads webhooks.
-| 121 | `website-landing-page-builder` | Website Landing Page Builder | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
+| 131 | `website-landing-page-builder` | Website Landing Page Builder | `instruction_only` | high | 80.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | False | PASS |
   描述：網站／落地頁建置 Skill，用 Agent 直接產出可上線的互動式單頁（敘事、版面、前後對照、成本試算、CTA）。
-| 122 | `dual-agent-human-sop` | Dual Agent Human Sop | `instruction_only` | high | 77.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | True | PASS |
+| 132 | `dual-agent-human-sop` | Dual Agent Human Sop | `instruction_only` | high | 77.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | True | PASS |
   描述：雙 Agent 協作 Human 操作 SOP｜Hermes × OpenClaw × Obsidian，建立任務卡、審核報告與沉澱流程。
-| 123 | `full-sprint` | Full Sprint | `instruction_only` | high | 77.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | True | PASS |
+| 133 | `full-sprint` | Full Sprint | `instruction_only` | high | 77.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | True | PASS |
   描述：Turn a high-level goal into an executable, verifiable, pauseable, resumable, auditable sprint contract and continue PLAN → ACT → VERIFY → REVIEW → ITERATE within explicit safety, scope, validation, and budget limits.
-| 124 | `openclaw-agent-handbook` | Openclaw Agent Handbook | `instruction_only` | high | 77.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | True | PASS |
+| 134 | `openclaw-agent-handbook` | Openclaw Agent Handbook | `instruction_only` | high | 77.00 | B｜條件推薦 | contract_and_read_only_dry_run | 0 | True | PASS |
   描述：OpenClaw Agent 專屬手冊，做為穩定執行者依照 Hermes Plan 完成任務、記錄結果、回報差異與提出 Skill 候選。
-| 125 | `user-instructions` | User Instructions | `instruction_only` | high | 75.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | True | PASS |
+| 135 | `user-instructions` | User Instructions | `instruction_only` | high | 75.00 | B｜條件推薦 | contract_and_read_only_dry_run | 1 | True | PASS |
   描述：Personalized instructions and context for Gemini Spark to work with Guan Hong Chen (陳冠宏), integrating domain-specific user skills and Full-Sprint AI Research methodology for automated workflow execution.
 
 ## 測試解讀限制
 
-124 個 `instruction_only` skills 的通過結果代表封裝、manifest、標準段落、activation、來源與四類 eval 案例通過；它們沒有被擅自執行外部服務操作。唯一的 Python skill `data_analysis` 使用隔離 CSV fixture 完成離線 smoke test。真實 connector、部署、發送、付費與第三方寫入仍需另行取得人工批准與 integration test。
+134 個 `instruction_only` skills 的通過結果代表封裝、manifest、標準段落、activation、來源與四類 eval 案例通過；它們沒有被擅自執行外部服務操作。唯一的 Python skill `data_analysis` 使用隔離 CSV fixture 完成離線 smoke test。真實 connector、部署、發送、付費與第三方寫入仍需另行取得人工批准與 integration test。
 
 ## 相關檔案
 

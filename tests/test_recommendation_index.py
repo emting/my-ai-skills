@@ -23,10 +23,10 @@ def test_ranked_registry_matches_evaluation_snapshot() -> None:
 
     ranked = [item for item in items if "recommendation" in item]
     auxiliary = [item for item in items if "recommendation" not in item]
-    assert len(items) == 135
-    assert len(ranked) == len(results) == 125
+    assert len(items) == 145
+    assert len(ranked) == len(results) == 135
     assert len(auxiliary) == 10
-    assert [item["recommendation"]["rank"] for item in ranked] == list(range(1, 126))
+    assert [item["recommendation"]["rank"] for item in ranked] == list(range(1, 136))
     assert {item["id"] for item in ranked} == {result["id"] for result in results}
 
     result_by_id = {result["id"]: result for result in results}
@@ -44,11 +44,11 @@ def test_recommendation_distribution_and_documentation() -> None:
     registry = load_json(REGISTRY_PATH)
     ranked = [item for item in registry["skills"] if "recommendation" in item]
     levels = Counter(item["recommendation"]["level"] for item in ranked)
-    assert levels == Counter({"B｜條件推薦": 72, "A-｜條件優先推薦": 32, "A｜優先推薦": 21})
+    assert levels == Counter({"B｜條件推薦": 80, "A-｜條件優先推薦": 34, "A｜優先推薦": 21})
     assert all(item["recommendation"]["status"] == "PASS" for item in ranked)
 
     index = INDEX_PATH.read_text(encoding="utf-8")
     assert "## 完整排名" in index
-    assert "| 125 |" in index
+    assert "| 135 |" in index
     assert "OpenAPI、MCP 與 workflow 輔助 entries" in index
     assert "## References" in index

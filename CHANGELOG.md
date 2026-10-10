@@ -6,7 +6,8 @@
 
 - 新增 `scripts/sync_notion_skills.py`：把 Notion「Skill 頁面整理庫」的正式 Skill 頁面同步到 `custom_skills/`，保留 repository 的標準執行契約並記錄來源雜湊；已更新 41 個既有 skill、新增 17 個 skill。
 - 新增 `scripts/run_contract_evaluation.py`：以與既有快照相同的 22 項唯讀契約檢查重跑全部 skills，並驗證與原 108 筆評分完全一致。
-- 重新產生推薦排名：125 個完整 skills 全數 PASS（A 21、A- 32、B 72、C 0）；`skills.json`、`docs/recommendation-index.md` 與 `docs/evaluations/` 同步更新。
+- 重新產生推薦排名：135 個完整 skills 全數 PASS（A 21、A- 34、B 80、C 0）；`skills.json`、`docs/recommendation-index.md` 與 `docs/evaluations/` 同步更新。
+- 同步 Notion「Skill 候選／架構」23 頁：新增 10 個 v0.1 候選 skills（conversation-to-spec、handoff、decision-tree-requirement-stress-test、primary-research、remaining-quota-task-selection、hermes-openclaw-pi-collaboration、hermes-agent-handbook、meeting-followup-workflow、short-video-production、open-slide-presentation），並更新 13 個既有 skills 的指令本文。
 
 ## [1.4.0] - 2026-08-18
 
